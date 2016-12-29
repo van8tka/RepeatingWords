@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RepeatingWords.AddWord"
+                xmlns:locale ="clr-namespace:RepeatingWords;assembly=RepeatingWords"
+           Style="{StaticResource TitleApp}">
+  <ScrollView>
+    <StackLayout>
+      <Label x:Name="DictionaryName"  VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium"/>
+      <Button Style="{StaticResource buttonStyle}" Text="{locale:Translate ButtonAddWord}" Clicked="CreateWordButtonClick"></Button>
+      <Button Style="{StaticResource buttonStyle}" Text="{locale:Translate ButtonRepeatWords}" Clicked="RepeatWordsButtonClick"></Button>
+   
+      <ListView x:Name ="wordsList" ItemsSource="{Binding}" ItemSelected ="OnItemSelected" HasUnevenRows = "true" RowHeight = "-1" SeparatorColor="Green">
+       <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>                                             
+              <ViewCell.View>
+              <Grid>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="*">
+                  </ColumnDefinition>
+                  <ColumnDefinition Width="*">
+                  </ColumnDefinition>
+                  <ColumnDefinition Width="*">
+                  </ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Text="{Binding RusWord}" FontSize="Medium" TextColor="White" Grid.Column="0" />
+                <Label Text="{Binding EngWord}" FontSize="Medium" TextColor="Yellow" Grid.Column="1" />
+                <Label Text="{Binding Transcription}" FontSize="Medium" TextColor="Gray" Grid.Column="2" />
+              </Grid>
+              </ViewCell.View>
+                </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ButtonAddDict" xml:space="preserve">
+    <value>Добавить словарь</value>
+    <comment>Добавление словаря</comment>
+  </data>
+  <data name="ButtonAddDictionaryOrWords" xml:space="preserve">
+    <value>Добавить словарь или слова</value>
+    <comment>Добавление словаря и (или) слов</comment>
+  </data>
+  <data name="ButtonAddWord" xml:space="preserve">
+    <value>Добавить слово</value>
+    <comment>Кн добавить слово</comment>
+  </data>
+  <data name="ButtonAddWorFrFile" xml:space="preserve">
+    <value>Загрузить слова из файла</value>
+    <comment>Кн загрузки слов из файла</comment>
+  </data>
+  <data name="ButtonCreate" xml:space="preserve">
+    <value>Создать</value>
+    <comment>Кнопка создать</comment>
+  </data>
+  <data name="ButtonHowCreateDictAndaddWord" xml:space="preserve">
+    <value>Создание словаря и добавление отдельных слов</value>
+    <comment>Кн Создание словаря и добавление отдельных слов</comment>
+  </data>
+  <data name="ButtonHowIportFile" xml:space="preserve">
+    <value>Как импортировать слова из файла</value>
+    <comment>Кн Как импортировать слова из файла</comment>
+  </data>
+  <data name="ButtonNextWord" xml:space="preserve">
+    <value>Следующее слово</value>
+    <comment>Кн следующего слова</comment>
+  </data>
+  <data name="ButtonRemove" xml:space="preserve">
+    <value>Удалить словарь</value>
+    <comment>Кн удалить словарь</comment>
+  </data>
+  <data name="ButtonRepeatWords" xml:space="preserve">
+    <value>Изучение слов по карточкам</value>
+    <comment>Кн повторение карточек</comment>
+  </data>
+  <data name="ButtonTurnCard" xml:space="preserve">
+    <value>Перевернуть карточку</value>
+    <comment>Кн перевернуть карточку</comment>
+  </data>
+  <data name="ChooseDictionaryForRepeat" xml:space="preserve">
+    <value>Выбрать словарь для изучения</value>
+    <comment>Выбор словаря для изучения слов(повторения)</comment>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Продолжить с прошлого места</value>
+    <comment>Продолжение повторения слов с того места где остановились прошлый раз</comment>
+  </data>
+  <data name="EntryNameDict" xml:space="preserve">
+    <value>Введите название словаря</value>
+    <comment>Поле ввода Введите название словаря</comment>
+  </data>
+  <data name="HeaderMain" xml:space="preserve">
+    <value>Используйте карточки для изучения иностранных слов и их повторения.</value>
+    <comment>Заголовок на главной странице</comment>
+  </data>
+  <data name="HowUseApp" xml:space="preserve">
+    <value>Как пользоваться этой программой</value>
+    <comment>Справочная информация</comment>
+  </data>
+  <data name="LabelChooseDict" xml:space="preserve">
+    <value>Выберите словарь</value>
+    <comment>Заг выберите словарь</comment>
+  </data>
+  <data name="LabelChooseDictOrCreate" xml:space="preserve">
+    <value>Выберите словарь или создайте новый</value>
+    <comment>Заголовок выбор словаря или создание нового</comment>
+  </data>
+  <data name="LabelChooseFile" xml:space="preserve">
+    <value>Выберите файл для загрузки в словарь</value>
+    <comment>Заголовок Списка файлов для загрузки в БД</comment>
+  </data>
+  <data name="LabelFirstWord" xml:space="preserve">
+    <value>Введите слово на русском</value>
+    <comment>Заголовок введите слово на русском(первое слово)</comment>
+  </data>
+  <data name="LabelForStart" xml:space="preserve">
+    <value>Для начала работы с программой необходимо:</value>
+  </data>
+  <data name="LabelHeadAddFile" xml:space="preserve">
+    <value>Добавление слов из файла</value>
+  </data>
+  <data name="LabelHeadCreateInstr" xml:space="preserve">
+    <value>Создание словаря и добавление слов</value>
+  </data>
+  <data name="LabelInstruction" xml:space="preserve">
+    <value>Инструкция по использованию программы</value>
+    <comment>Заголовок Инструкция по использованию программы</comment>
+  </data>
+  <data name="LabelNameDict" xml:space="preserve">
+    <value>Введите название нового словаря</value>
+    <comment>Заголовок Введите название нового словаря</comment>
+  </data>
+  <data name="LabelNeedAddFile" xml:space="preserve">
+    <value>Для добавления слов из файла необходимо:</value>
+  </data>
+  <data name="LabelNeedCreate" xml:space="preserve">
+    <value>Создать на компьютере через программу Блокнот(Notepad) файл c расширением txt."</value>
+  </data>
+  <data name="LabelPathToRoot" xml:space="preserve">
+    <value>Путь к корневому каталогу:</value>
+    <comment>Заголовок с указанием пути к корню системы</comment>
+  </data>
+  <data name="LabelScreen1" xml:space="preserve">
+    <value>Добавить словарь со словами, для этого нажмем на кнопку [Добавить словарь или слова]</value>
+  </data>
+  <data name="LabelScreen2" xml:space="preserve">
+    <value>Нажать кнопку [Добавить словарь]</value>
+  </data>
+  <data name="LabelScreen21" xml:space="preserve">
+    <value>Заполнить файл словами в следующем порядке: слово, транскрипция, перевод. Обязательно транскрипция в центре строки для разделения русского слова и его перевода, и обязательно использование квадратных скобок!</value>
+  </data>
+  <data name="LabelScreen22" xml:space="preserve">
+    <value>Далее при сохранении файла указать кодировку UTF-8.</value>
+  </data>
+  <data name="LabelScreen231" xml:space="preserve">
+    <value>Закинуть созданный файл на телефон в корневую папку.</value>
+  </data>
+  <data name="LabelScreen232" xml:space="preserve">
+    <value>Запустить программу на телефоне, выбрать словарь и нажать кнопку [Добавить слова из файла]</value>
+  </data>
+  <data name="LabelScreen24" xml:space="preserve">
+    <value>Откроется окно с указанием пути, откуда происходит считывание информации о файлах и список файлов формата .txt. Нажимаем на наш файл и ожидаем пока все слова загрузятся в словарь. Если Вы не можете обнаружить необходимый файл, проверьте путь по которому он расположен.</value>
+  </data>
+  <data name="LabelScreen25" xml:space="preserve">
+    <value>Когда слова загрузятся в словарь, откроется окно со списком слов.</value>
+  </data>
+  <data name="LabelScreen3" xml:space="preserve">
+    <value>Ввести название словаря и нажать кнопку [Создать]</value>
+  </data>
+  <data name="LabelScreen4" xml:space="preserve">
+    <value>Нажать на созданный словарь</value>
+  </data>
+  <data name="LabelScreen5" xml:space="preserve">
+    <value>Нажать на кнопку [Добавить слово]</value>
+  </data>
+  <data name="LabelScreen6" xml:space="preserve">
+    <value>Ввести слово на русском, его перевод и транскрипцию (поле Транскрипция запонять необязательно). И нажать на кнопку [Добавить слово]</value>
+  </data>
+  <data name="LabelScreen7" xml:space="preserve">
+    <value>После добавления слов, можно сразу перейти к изучению, нажав на кнопку [Изучение слов по карточкам]</value>
+  </data>
+  <data name="LabelScreen8" xml:space="preserve">
+    <value>Выбираем какой язык будет отображаться первый</value>
+  </data>
+  <data name="LabelScreen9" xml:space="preserve">
+    <value>Для перехода к следующему слову нажимаем кнопку [Следующее слово], для отображения перевода слова нажимаем на кнопку [Перевернуть карточку]</value>
+  </data>
+  <data name="LabelSecondWord" xml:space="preserve">
+    <value>Введите перевод слова</value>
+    <comment>Заголовок Введите перевод слова(второе)</comment>
+  </data>
+  <data name="LabelTranscription" xml:space="preserve">
+    <value>Введите транскрипцию</value>
+    <comment>Заголовок Введите транскрипцию</comment>
+  </data>
+  <data name="TitleMain" xml:space="preserve">
+    <value>Карточки слов</value>
+    <comment>Текст в Title</comment>
+  </data>
+  <data name="ModalActCancel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="ModalActChange" xml:space="preserve">
+    <value>Изменить</value>
+  </data>
+  <data name="ModalActFromFtoTr" xml:space="preserve">
+    <value>С русского на иностранный</value>
+  </data>
+  <data name="ModalActFromTrtoF" xml:space="preserve">
+    <value>С иностранного на русский</value>
+  </data>
+  <data name="ModalAddWords" xml:space="preserve">
+    <value>Слова добавлены в словарь</value>
+  </data>
+  <data name="ModalAllWordsComplete" xml:space="preserve">
+    <value>Пройдены все слова</value>
+  </data>
+  <data name="ModalChooceAction" xml:space="preserve">
+    <value>Выберите действие над словом:</value>
+  </data>
+  <data name="ModalChooseLang" xml:space="preserve">
+    <value>Выберите отображение языка карточки:</value>
+  </data>
+  <data name="ModalDict" xml:space="preserve">
+    <value>Словарь</value>
+  </data>
+  <data name="ModalException" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="ModalFinish" xml:space="preserve">
+    <value>Закончить</value>
+  </data>
+  <data name="ModalIncorrectFile" xml:space="preserve">
+    <value>Слова недобавлены в словарь, возможно некорректный файл</value>
+  </data>
+  <data name="ModalNoWord" xml:space="preserve">
+    <value>Словарь не содержит слов</value>
+  </data>
+  <data name="ModalRemove" xml:space="preserve">
+    <value>удален.</value>
+  </data>
+  <data name="ModalRemoveAct" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="ModalRestart" xml:space="preserve">
+    <value>Начать заново</value>
+  </data>
+  <data name="ModalWord" xml:space="preserve">
+    <value>Слово</value>
+  </data>
+  <data name="ModalWordRemove" xml:space="preserve">
+    <value>удалено.</value>
+  </data>
+  <data name="ModelForAddingWord" xml:space="preserve">
+    <value>Для добавления слова обязательно введите русское значение и перевод(транскрипция не обязательна).</value>
+  </data>
+  <data name="ModelNoFillFull" xml:space="preserve">
+    <value>Не все поля заполнены</value>
+  </data>
+  <data name="ModelWordAdd" xml:space="preserve">
+    <value>Слово добавлено!</value>
+  </data>
+  <data name="ModelWordChange" xml:space="preserve">
+    <value>Слово изменено!</value>
+  </data>
+  <data name="ModalDictOrWordRemove" xml:space="preserve">
+    <value>Словарь или слово удалено!</value>
+  </data>
+  <data name="ButtonShowWords" xml:space="preserve">
+    <value>Просмотр списка слов</value>
+    <comment>Переход на страницу списка слов словаря</comment>
+  </data>
+</root>

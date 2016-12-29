@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RepeatingWords.Pages.ChooseFile"
+               xmlns:local="clr-namespace:RepeatingWords;assembly=RepeatingWords"
+             Style="{StaticResource TitleApp}">
+  <Label Text="{local:Translate LabelChooseFile}" VerticalOptions="Center" HorizontalOptions="Center" />
+ 
+  <StackLayout>
+    <Label Text="{local:Translate LabelPathToRoot}" TextColor="Blue" FontSize="Large"/>
+    <Label x:Name="textPath" TextColor="Blue" FontSize="Large"/>
+    <ListView x:Name ="fileList" ItemsSource="{Binding}" ItemSelected ="FileSelected">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <ViewCell.View>
+              <StackLayout Orientation="Horizontal">
+                <Label Text="{Binding}" FontSize="Medium" TextColor="Yellow"/>
+              </StackLayout>
+            </ViewCell.View>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+
+  </StackLayout>
+
+
+</ContentPage>

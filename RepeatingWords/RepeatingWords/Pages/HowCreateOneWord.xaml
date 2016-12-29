@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RepeatingWords.Pages.HowCreateOneWord"
+             xmlns:locale ="clr-namespace:RepeatingWords;assembly=RepeatingWords"
+              Style="{StaticResource TitleApp}">
+  <ScrollView>
+    <StackLayout>
+      <Label Text="{locale:Translate LabelHeadCreateInstr}" TextColor="White" HorizontalOptions="Center" FontSize="Large"/>
+      <Label Text="{locale:Translate LabelForStart}" HorizontalOptions="Center" FontSize="Medium"/>
+      <Label Text="{locale:Translate LabelScreen1}" FontSize="Medium"/>
+      <Image Source="screen1.jpg" />
+      <Label Text="{locale:Translate LabelScreen2}" FontSize="Medium"/>
+      <Image Source="screen2.jpg" />
+      <Label Text="{locale:Translate LabelScreen3}" FontSize="Medium"/>
+      <Image Source="screen3.jpg" />
+      <Label Text="{locale:Translate LabelScreen4}" FontSize="Medium"/>
+      <Image Source="screen4.jpg" />
+      <Label Text="{locale:Translate LabelScreen5}" FontSize="Medium"/>
+      <Image Source="screen5.jpg" />
+      <Label Text="{locale:Translate LabelScreen6}" FontSize="Medium"/>
+      <Image Source="screen6.jpg" />
+      <Label Text="{locale:Translate LabelScreen7}" FontSize="Medium"/>
+      <Image Source="screen7.jpg" />
+      <Label Text="{locale:Translate LabelScreen8}" FontSize="Medium"/>
+      <Image Source="screen8.jpg" />
+      <Label Text="{locale:Translate LabelScreen9}" FontSize="Medium"/>
+      <Image Source="screen9.jpg" />
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

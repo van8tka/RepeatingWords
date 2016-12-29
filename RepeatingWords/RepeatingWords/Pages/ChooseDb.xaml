@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RepeatingWords.ChooseDb"
+                xmlns:local="clr-namespace:RepeatingWords;assembly=RepeatingWords"
+           Style="{StaticResource TitleApp}">
+    <StackLayout>
+       
+    </StackLayout>
+  <ScrollView>
+    <StackLayout>
+      <Label Text="{local:Translate LabelChooseDictOrCreate}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" TextColor="White"/>
+      <Button Style="{StaticResource buttonStyle}" Text="{local:Translate ButtonAddDict}" Clicked="AddDictionaryButtonClick"></Button>
+
+      <ListView x:Name ="dictionaryList" ItemsSource="{Binding}" ItemSelected ="OnItemSelected" SeparatorColor="Green">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <ViewCell.View>
+                <StackLayout Orientation="Horizontal">
+                  <Label Text="{Binding Name}" FontSize="Large" TextColor="Yellow"/>
+                </StackLayout>
+              </ViewCell.View>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+      
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

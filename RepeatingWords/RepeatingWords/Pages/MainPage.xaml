@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RepeatingWords.MainPage"
+              xmlns:local="clr-namespace:RepeatingWords;assembly=RepeatingWords"
+          Style="{StaticResource TitleApp}"
+            >
+  <StackLayout>
+        <Label Text="{local:Translate HeaderMain}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" TextColor="White" HeightRequest="150"/>
+    
+        <Button Style="{StaticResource buttonStyle}" Text="{local:Translate ButtonAddDictionaryOrWords}" Clicked="ChooseDbButtonClick"></Button>
+        <Button Style="{StaticResource buttonStyle}" Text="{local:Translate ChooseDictionaryForRepeat}" Clicked="ChooseDictionaryButtonClick"></Button>
+        <Button Style="{StaticResource buttonStyle}" Text="{local:Translate Continue}" Clicked="ReturnButtonClick"></Button>
+        <Button Style="{StaticResource buttonStyle}" Text="{local:Translate HowUseApp}" Clicked="SpravkaButtonClick"></Button>
+   
+ </StackLayout>
+
+</ContentPage>

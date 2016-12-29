@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RepeatingWords.Spravka"
+              xmlns:locale ="clr-namespace:RepeatingWords;assembly=RepeatingWords"
+             Style="{StaticResource TitleApp}">
+
+  <StackLayout>
+    <Label Text="{locale:Translate LabelInstruction}" TextColor="White" HorizontalOptions="Center" FontSize="Large" HeightRequest="150"/>
+    
+    <Button Text="{locale:Translate ButtonHowCreateDictAndaddWord}" Clicked="CreateOneWordButtonClick" Style="{StaticResource buttonStyle}"/>
+    <Button Text="{locale:Translate ButtonHowIportFile}" Clicked="CreateFromFileButtonClick" Style="{StaticResource buttonStyle}"/>
+  </StackLayout>
+  
+ 
+</ContentPage>

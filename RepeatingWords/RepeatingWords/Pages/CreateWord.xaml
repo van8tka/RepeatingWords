@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RepeatingWords.CreateWord"
+               xmlns:locale ="clr-namespace:RepeatingWords;assembly=RepeatingWords"
+            Style="{StaticResource TitleApp}">
+  <StackLayout>
+    <Label Text="{locale:Translate LabelFirstWord}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" TextColor="White"/>
+    <Entry Text="{Binding RusWord}" Placeholder="{locale:Translate LabelFirstWord}" FontSize="Large" TextColor="Yellow"></Entry>
+    <Label Text="{locale:Translate LabelSecondWord}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" TextColor="White"/>
+    <Entry Text="{Binding EngWord}" Placeholder="{locale:Translate LabelSecondWord}" FontSize="Large" TextColor="Yellow"></Entry>
+    <Label Text="{locale:Translate LabelTranscription}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" TextColor="White"/>
+    <Entry Text="{Binding Transcription}" Placeholder="{locale:Translate LabelTranscription}" FontSize="Large" TextColor="Yellow"></Entry>
+    
+    
+    <Button Style="{StaticResource buttonStyle}" Clicked="CreateWordButtonClick" Text="{locale:Translate ButtonAddWord}"></Button>
+  </StackLayout>
+
+</ContentPage>
