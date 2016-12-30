@@ -10,7 +10,6 @@ namespace RepeatingWords
         public MainPage()
         {
             InitializeComponent();
-            //new AdMobView { AdUnitId = "ca-app-pub-5351987413735598/6110192261" };
         }
         private async void ChooseDbButtonClick(object sender, System.EventArgs e)
         {

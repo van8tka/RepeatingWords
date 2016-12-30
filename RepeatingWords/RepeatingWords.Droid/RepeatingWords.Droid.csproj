@@ -147,18 +147,6 @@
       <HintPath>..\..\packages\Xamarin.Forms.2.3.3.175\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Xamarin.GooglePlayServices.Ads, Version=1.0.0.0, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Crosslight.Xamarin.GooglePlayServices.Ads.27.0.0.1\lib\MonoAndroid10\Xamarin.GooglePlayServices.Ads.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Xamarin.GooglePlayServices.AppIndexing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Crosslight.Xamarin.GooglePlayServices.AppIndexing.27.0.0.1\lib\MonoAndroid10\Xamarin.GooglePlayServices.AppIndexing.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Xamarin.GooglePlayServices.Basement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Crosslight.Xamarin.GooglePlayServices.Basement.27.0.0.1\lib\MonoAndroid10\Xamarin.GooglePlayServices.Basement.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FileWorker.cs" />
@@ -180,7 +168,9 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RepeatingWords\RepeatingWords.csproj">
