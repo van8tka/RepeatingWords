@@ -8,10 +8,10 @@
     <Label x:Name="LabelCountOfWords" TextColor="White"/>
     <Label HeightRequest="20"></Label>
     <Label x:Name="WordForRepeat" VerticalOptions="Center" HorizontalOptions="Center" FontSize="27" HeightRequest="250"/>
-   
+    <locale:AdMobView WidthRequest="320" HeightRequest="50" />
     <Button Text="{locale:Translate ButtonNextWord}" Clicked="NextWordButtonClick" FontSize="Large" BackgroundColor="Blue" TextColor="White" HeightRequest="100"></Button>
     <Button Text="{locale:Translate ButtonTurnCard}" Clicked="TurnAroundWordButtonClick" FontSize="Large" BackgroundColor="Green" TextColor="White" HeightRequest="100"></Button>
-    
+   
   </StackLayout>
  
 </ContentPage>

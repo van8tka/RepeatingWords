@@ -35,6 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AdMobView.cs" />
+    <Compile Include="IAdmobInterstitial.cs" />
     <Compile Include="IFileWorker.cs" />
     <Compile Include="ILocalize.cs" />
     <Compile Include="Pages\AddWord.xaml.cs">

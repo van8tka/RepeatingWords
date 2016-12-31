@@ -1,5 +1,6 @@
 ﻿using RepeatingWords.Model;
 using RepeatingWords.Pages;
+using RepeatingWords;
 
 using Xamarin.Forms;
 
@@ -10,6 +11,7 @@ namespace RepeatingWords
         public MainPage()
         {
             InitializeComponent();
+           
         }
         private async void ChooseDbButtonClick(object sender, System.EventArgs e)
         {

@@ -2,8 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
@@ -30,7 +28,7 @@ namespace RepeatingWords.Pages
             //кол во слов и пройденных слов
             LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString();
            UpdateWord(Count,FromRus);
-           
+            DependencyService.Get<IAdmobInterstitial>().Show("ca-app-pub-5351987413735598/1185308269");
         }
 
 
@@ -47,7 +45,7 @@ namespace RepeatingWords.Pages
             //сколько слов всего и пройдено
             LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString();
             UpdateWord(Count, FromRus);
-
+            DependencyService.Get<IAdmobInterstitial>().Show("ca-app-pub-5351987413735598/1185308269");
         }
 
         private void HowCount(int idword)

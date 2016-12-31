@@ -1,11 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="cardsofwords.cardsofwords" android:versionCode="2" android:versionName="1.1">
-	<uses-sdk android:minSdkVersion="15" android:targetSdkVersion="25" />
-
-  <application android:label="Cards of words" android:icon="@drawable/icon">
-  
-  </application>
-  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-  <uses-permission android:name="android.permission.INTERNET" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="cardsofwords.cardsofwords" android:versionName="1.2" android:versionCode="3">
+	<uses-sdk android:minSdkVersion="15" android:targetSdkVersion="22" />
+	<application android:label="Cards of words" android:icon="@drawable/icon">
+		<activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:theme="@android:style/Theme.Translucent" />
+	</application>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
 </manifest>
-
