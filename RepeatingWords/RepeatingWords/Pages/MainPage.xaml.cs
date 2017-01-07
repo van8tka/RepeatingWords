@@ -1,6 +1,5 @@
 ﻿using RepeatingWords.Model;
 using RepeatingWords.Pages;
-using RepeatingWords;
 
 using Xamarin.Forms;
 

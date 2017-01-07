@@ -684,6 +684,15 @@ namespace RepeatingWords {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Set language to voice.
+        /// </summary>
+        internal static string PickerText {
+            get {
+                return ResourceManager.GetString("PickerText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cards of words.
         /// </summary>
         internal static string TitleMain {

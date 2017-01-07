@@ -1,6 +1,4 @@
-﻿
-using System;
-using Android.Gms.Ads;
+﻿using Android.Gms.Ads;
 
 namespace RepeatingWords.Droid
 {

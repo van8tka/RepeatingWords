@@ -374,4 +374,8 @@
 words</value>
     <comment>Переход на страницу списка слов словаря</comment>
   </data>
+  <data name="PickerText" xml:space="preserve">
+    <value>Set language to voice</value>
+    <comment>Текст в picker - выпадающем списке для выбора языка озвучки.</comment>
+  </data>
 </root>

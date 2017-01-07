@@ -4,6 +4,7 @@ using RepeatingWords;
 using RepeatingWords.Droid;
 using Xamarin.Forms.Platform.Android;
 
+
 [assembly: ExportRenderer(typeof(AdMobView), typeof(AdMobRenderer))]
 namespace RepeatingWords.Droid
 {
@@ -14,9 +15,9 @@ namespace RepeatingWords.Droid
             {
                 base.OnElementChanged(e);
 
-                if (Control == null)
-                {
-                    var ad = new AdView(Forms.Context);
+            if (Control == null)
+            {
+                var ad = new AdView(Forms.Context);
                     ad.AdSize = AdSize.Banner;
                     ad.AdUnitId = "ca-app-pub-5351987413735598/7586925463";
 
@@ -24,7 +25,7 @@ namespace RepeatingWords.Droid
                     ad.LoadAd(requestbuilder.Build());
 
                     SetNativeControl(ad);
-                }
             }
+        }
         }
     }

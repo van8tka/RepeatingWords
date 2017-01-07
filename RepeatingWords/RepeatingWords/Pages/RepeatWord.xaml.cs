@@ -23,13 +23,14 @@ namespace RepeatingWords.Pages
             //переменная для многократного переворота карточки
             Turn = FromRus;
             this.iDdictionary = iDdictionary;
-           
-             words = App.Wr.GetWords(iDdictionary);
+
+            words = App.Wr.GetWords(iDdictionary);
             //кол во слов и пройденных слов
             LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString();
            UpdateWord(Count,FromRus);
             DependencyService.Get<IAdmobInterstitial>().Show("ca-app-pub-5351987413735598/1185308269");
         }
+
 
 
         public RepeatWord(LastAction la)
@@ -40,6 +41,7 @@ namespace RepeatingWords.Pages
             Turn = FromRus;
             iDdictionary = la.IdDictionary;
             words = App.Wr.GetWords(la.IdDictionary);
+           
             //определяем чему равен Count;
             HowCount(la.IdWord);
             //сколько слов всего и пройдено
@@ -47,6 +49,12 @@ namespace RepeatingWords.Pages
             UpdateWord(Count, FromRus);
             DependencyService.Get<IAdmobInterstitial>().Show("ca-app-pub-5351987413735598/1185308269");
         }
+
+
+
+      
+
+
 
         private void HowCount(int idword)
         {
@@ -77,13 +85,20 @@ namespace RepeatingWords.Pages
             {
                WordForRepeat.TextColor = Color.Lime;
                WordForRepeat.Text = GetWords(count).RusWord;
+                //управление видимостью озвучки
+                ButtonVoice.IsVisible = false;
+                picker.IsVisible = false;
             }
             else
             {
                 WordForRepeat.TextColor = Color.Yellow;
                 Words w = GetWords(count);
                 WordForRepeat.Text = w.EngWord + "\n" + w.Transcription;
+                //управление видимостью озвучки
+                ButtonVoice.IsVisible = true;
+                picker.IsVisible = true;
             }
+           
         }
 
         //для получения слова
@@ -148,6 +163,57 @@ namespace RepeatingWords.Pages
           {
             UpdateWord(Count, !Turn);
             Turn = !Turn;//перевернули карточку
+        }
+
+        string lang = "en_GB";
+
+        private void picker_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (picker.Items[picker.SelectedIndex].ToString())
+            {
+                case "English":
+                    {
+                        lang = "en_GB";
+                        break;
+                    }
+                case "French":
+                    {
+                        lang = "fr_FR";
+                        break;
+                    }
+                case "German":
+                    {
+                        lang = "de_DE";
+                        break;
+                    }
+                case "Polish":
+                    {
+                        lang = "pl_PL";
+                        break;
+                    }
+                case "Ukrainian":
+                    {
+                        lang = "uk_UK";
+                        break;
+                    }
+                case "Italian":
+                    {
+                        lang = "it_IT";
+                        break;
+                    }
+                case "Русский":
+                    {
+                        lang = "ru_RU";
+                        break;
+                    }
+                default: break;
+            }
+        }
+
+
+      private void BtnClickSpeech(object sender, EventArgs e)
+        {
+             DependencyService.Get<ITextToSpeech>().Speak(GetWords(Count).EngWord,lang);
         }
     }
 }

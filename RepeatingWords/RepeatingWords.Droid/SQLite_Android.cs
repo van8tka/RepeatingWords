@@ -1,4 +1,3 @@
-using System;
 using RepeatingWords.Droid;
 using System.IO;
 using Xamarin.Forms;

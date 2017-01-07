@@ -354,4 +354,8 @@
     <value>Просмотр списка слов</value>
     <comment>Переход на страницу списка слов словаря</comment>
   </data>
+  <data name="PickerText" xml:space="preserve">
+    <value>Выберите язык озвучки</value>
+    <comment>Текст в picker - выпадающем списке для выбора языка озвучки.</comment>
+  </data>
 </root>
