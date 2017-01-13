@@ -47,7 +47,7 @@
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AotAssemblies>False</AotAssemblies>
     <EnableLLVM>False</EnableLLVM>
-    <EnableProguard>False</EnableProguard>
+    <EnableProguard>True</EnableProguard>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -166,6 +166,7 @@
   <ItemGroup>
     <Compile Include="AdMobRenderer.cs" />
     <Compile Include="AdMobRendererInterstitial.cs" />
+    <Compile Include="CheckConnect.cs" />
     <Compile Include="FileWorker.cs" />
     <Compile Include="InterstitialAdListener.cs" />
     <Compile Include="Localize.cs" />

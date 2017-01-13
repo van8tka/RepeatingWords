@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RepeatingWords.Pages.DictionarysFrNet"
+  xmlns:locale ="clr-namespace:RepeatingWords;assembly=RepeatingWords"
+  Style="{StaticResource TitleApp}">
+  <ScrollView>
+    <StackLayout>
+     <Label Text="{locale:Translate LabelDictionaryListFromNet}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium"/>
+
+      <ListView x:Name ="dictionaryNetList" ItemsSource="{Binding}" ItemSelected ="OnItemSelected" SeparatorColor="Green">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <ViewCell.View>
+                <StackLayout Orientation="Horizontal">
+                  <Label Text="{Binding Name}" FontSize="Large" TextColor="Yellow"/>
+                </StackLayout>
+              </ViewCell.View>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

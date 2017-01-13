@@ -4,7 +4,7 @@ using Xamarin.Forms;
 using Android.Speech.Tts;
 using RepeatingWords.Droid;
 
-[assembly: Xamarin.Forms.Dependency(typeof(TextToSpeechImplementation))]
+[assembly: Dependency(typeof(TextToSpeechImplementation))]
 
 namespace RepeatingWords.Droid
 {

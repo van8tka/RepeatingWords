@@ -3,6 +3,7 @@ using RepeatingWords.Pages;
 using System.Linq;
 using Xamarin.Forms;
 
+
 namespace RepeatingWords
 {
     public partial class AddWords : ContentPage
@@ -76,6 +77,8 @@ namespace RepeatingWords
             AddWord adw = new AddWord(dictionary);
             await Navigation.PushAsync(adw);
         }
+
+     
 
     }
 }

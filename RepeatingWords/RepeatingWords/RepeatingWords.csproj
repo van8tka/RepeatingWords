@@ -37,9 +37,11 @@
   <ItemGroup>
     <Compile Include="AdMobView.cs" />
     <Compile Include="IAdmobInterstitial.cs" />
+    <Compile Include="ICheckConnect.cs" />
     <Compile Include="IFileWorker.cs" />
     <Compile Include="ILocalize.cs" />
     <Compile Include="ITextToSpeech.cs" />
+    <Compile Include="OnlineDictionaryService.cs" />
     <Compile Include="Pages\AddWord.xaml.cs">
       <DependentUpon>AddWord.xaml</DependentUpon>
     </Compile>
@@ -65,6 +67,9 @@
       <DependentUpon>CreateWord.xaml</DependentUpon>
     </Compile>
     <Compile Include="ISQLite.cs" />
+    <Compile Include="Pages\DictionarysFrNet.xaml.cs">
+      <DependentUpon>DictionarysFrNet.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\HowCreateFromFile.xaml.cs">
       <DependentUpon>HowCreateFromFile.xaml</DependentUpon>
     </Compile>
@@ -98,6 +103,9 @@
     <Compile Include="TranslateExtension.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\json.net-7.0.1\lib\android\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="SQLite-net, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\sqlite-net-pcl.1.2.1\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
       <Private>True</Private>
@@ -213,6 +221,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\HowCreateFromFile.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\DictionarysFrNet.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

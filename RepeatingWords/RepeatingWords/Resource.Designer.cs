@@ -98,6 +98,15 @@ namespace RepeatingWords {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add dictionaries from the server.
+        /// </summary>
+        internal static string ButtonAddWorFrNet {
+            get {
+                return ResourceManager.GetString("ButtonAddWorFrNet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create.
         /// </summary>
         internal static string ButtonCreate {
@@ -239,6 +248,15 @@ namespace RepeatingWords {
         internal static string LabelChooseFile {
             get {
                 return ResourceManager.GetString("LabelChooseFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select the dictionary for load into the phone.
+        /// </summary>
+        internal static string LabelDictionaryListFromNet {
+            get {
+                return ResourceManager.GetString("LabelDictionaryListFromNet", resourceCulture);
             }
         }
         
@@ -527,6 +545,15 @@ namespace RepeatingWords {
         internal static string ModalAllWordsComplete {
             get {
                 return ResourceManager.GetString("ModalAllWordsComplete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check internet connection.
+        /// </summary>
+        internal static string ModalCheckNet {
+            get {
+                return ResourceManager.GetString("ModalCheckNet", resourceCulture);
             }
         }
         

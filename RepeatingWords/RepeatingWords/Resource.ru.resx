@@ -358,4 +358,14 @@
     <value>Выберите язык озвучки</value>
     <comment>Текст в picker - выпадающем списке для выбора языка озвучки.</comment>
   </data>
+  <data name="ButtonAddWorFrNet" xml:space="preserve">
+    <value>Добавить словарь из интернета</value>
+    <comment>Загрузка словарей из devprogram.ru</comment>
+  </data>
+  <data name="ModalCheckNet" xml:space="preserve">
+    <value>Проверьте наличие интернет соединения</value>
+  </data>
+  <data name="LabelDictionaryListFromNet" xml:space="preserve">
+    <value>Выберите словарь для загрузки в память телефона</value>
+  </data>
 </root>

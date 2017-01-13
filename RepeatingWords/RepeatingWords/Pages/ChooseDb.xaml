@@ -11,7 +11,7 @@
     <StackLayout>
       <Label Text="{local:Translate LabelChooseDictOrCreate}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" TextColor="White"/>
       <Button Style="{StaticResource buttonStyle}" Text="{local:Translate ButtonAddDict}" Clicked="AddDictionaryButtonClick"></Button>
-
+      <Button Style="{StaticResource buttonStyle}" Text="{local:Translate ButtonAddWorFrNet}" Clicked="AddWordsFromNetButtonClick"></Button>
       <ListView x:Name ="dictionaryList" ItemsSource="{Binding}" ItemSelected ="OnItemSelected" SeparatorColor="Green">
         <ListView.ItemTemplate>
           <DataTemplate>

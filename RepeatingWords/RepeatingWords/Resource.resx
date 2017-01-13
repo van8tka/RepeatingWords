@@ -378,4 +378,14 @@ words</value>
     <value>Set language to voice</value>
     <comment>Текст в picker - выпадающем списке для выбора языка озвучки.</comment>
   </data>
+  <data name="ButtonAddWorFrNet" xml:space="preserve">
+    <value>Add dictionaries from the server</value>
+    <comment>Загрузка словарей из devprogram.ru</comment>
+  </data>
+  <data name="ModalCheckNet" xml:space="preserve">
+    <value>Check internet connection</value>
+  </data>
+  <data name="LabelDictionaryListFromNet" xml:space="preserve">
+    <value>Select the dictionary for load into the phone</value>
+  </data>
 </root>

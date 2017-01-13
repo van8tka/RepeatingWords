@@ -1,9 +1,6 @@
 ﻿using RepeatingWords.Model;
-using System;
+using RepeatingWords.Pages;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
@@ -11,6 +8,7 @@ namespace RepeatingWords
 {
     public partial class ChooseDb : ContentPage
     {
+      
         public ChooseDb()
         {
             InitializeComponent();
@@ -18,7 +16,7 @@ namespace RepeatingWords
        //обработка перехода на страницу
         protected override void OnAppearing()
         {
-            dictionaryList.ItemsSource = App.Db.GetDictionarys();
+            dictionaryList.ItemsSource = App.Db.GetDictionarys();         
             base.OnAppearing();
         }
         //обработка нажатия по эл списка
@@ -35,6 +33,23 @@ namespace RepeatingWords
             Dictionary dictionary = new Dictionary();
             cdb.BindingContext = dictionary;
             await Navigation.PushAsync(cdb);
+        }
+
+
+        //обр нажатия добавления словарей из интернета
+        protected async void AddWordsFromNetButtonClick(object sender, System.EventArgs e)
+        {
+            //проверим состояние сети.. вкл или выкл
+            bool isConnect = DependencyService.Get<ICheckConnect>().CheckTheNet();
+            if (!isConnect)
+            {
+                await DisplayAlert(Resource.ModalException, Resource.ModalCheckNet, "Ok");
+            }
+            else
+            {
+                DictionarysFrNet dfn = new DictionarysFrNet();
+                await Navigation.PushAsync(dfn);
+            }
         }
     }
 }
