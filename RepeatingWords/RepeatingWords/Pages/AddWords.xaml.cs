@@ -42,7 +42,7 @@ namespace RepeatingWords
 
         }
        protected async void DelleteDbButtonClick(object sender, System.EventArgs e)
-        {
+        { 
             var dictionary = (Dictionary)BindingContext;
             //удаляем словарь
             App.Db.DeleteDictionary(dictionary.Id);

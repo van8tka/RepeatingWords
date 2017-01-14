@@ -5,6 +5,7 @@
              xmlns:locale ="clr-namespace:RepeatingWords;assembly=RepeatingWords"
              Style="{StaticResource TitleApp}">
   <StackLayout>
+    <locale:AdMobView WidthRequest="320" HeightRequest="50" />
       <Grid>
          <Grid.ColumnDefinitions>
            <!--определяем ширину столбцов как 25% 50% 25%-->
@@ -14,9 +15,8 @@
          </Grid.ColumnDefinitions>
          <Grid.RowDefinitions>
             <RowDefinition Height="80" />
-           <RowDefinition Height="140" />
-           <RowDefinition Height="55" />
-         </Grid.RowDefinitions>
+            <RowDefinition Height="140" />
+        </Grid.RowDefinitions>
 
             <Label x:Name="LabelCountOfWords" TextColor="White" Grid.Column="0" Grid.Row="0"/>
     <Picker x:Name="picker" SelectedIndexChanged="picker_SelectedIndexChanged" Title="{locale:Translate PickerText}" Grid.Column="1" Grid.Row="0">
@@ -35,7 +35,7 @@
             <Button x:Name="ButtonVoice" Clicked="BtnClickSpeech" Grid.Column="2" Grid.Row="0" Image="voice.png" />
        <Label x:Name="WordForRepeat" VerticalOptions="Center" HorizontalOptions="Center" FontSize="27" HeightRequest="160"  Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3"/>
     
-        <locale:AdMobView WidthRequest="320" HeightRequest="50" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" />
+       
     
     </Grid>
    

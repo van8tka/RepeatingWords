@@ -14,28 +14,41 @@ namespace RepeatingWords.Pages
         public DictionarysFrNet()
         {
             InitializeComponent();
+            actIndicator2.IsRunning = false;
             ListLoad();
         }
-        async Task<bool> ListLoad()
-        {          
+
+              
+        async Task ListLoad()
+        {
+            actIndicator2.IsRunning = true;
             //получаем данные в формате Json, Диссериализуем их и получаем словари
             IEnumerable<Dictionary> dictionaryList = await onService.Get();
+            actIndicator2.IsRunning = false;
             //передаем словари(список) в xaml элементу Listview
             dictionaryNetList.ItemsSource = dictionaryList;
-            return true;
+           
         }
         
        private async void OnItemSelected(object sender,SelectedItemChangedEventArgs e)
         {
             try
-            {//получаем список слов выбранного словаря в интеренете
-                IEnumerable<Words> wordsList = await onService.Get(((Dictionary)e.SelectedItem).Id);
+            {
+                Dictionary dictionaryNet = (Dictionary)e.SelectedItem;
+                int id = dictionaryNet.Id;
+
                 //создаем этот словарь локально
-                App.Db.CreateDictionary((Dictionary)e.SelectedItem);
-                //получаем последний словарь
-                int idLast = App.Db.GetDictionarys().LastOrDefault().Id;
+                App.Db.CreateDictionary(dictionaryNet);
+                actIndicator2.IsRunning = true;
+                //получаем список слов выбранного словаря в интеренете
+                IEnumerable<Words> wordsList = await onService.Get(id);
+                            
                 //проходим по списку слов и создаем слова для этого словаря
-                foreach(var i in wordsList)
+                  actIndicator2.IsRunning = false;
+
+                //получаем последний словарь(который только что создали)
+                int idLast = App.Db.GetDictionarys().LastOrDefault().Id;
+                foreach (var i in wordsList)
                 {
                     Words newW = new Words()
                     {
@@ -47,7 +60,8 @@ namespace RepeatingWords.Pages
                     };
                     App.Wr.CreateWord(newW);
                 }
-                AddWord adw = new AddWord((Dictionary)e.SelectedItem);
+
+                AddWord adw = new AddWord(dictionaryNet);
                 await Navigation.PushAsync(adw);
             }
             catch (Exception er)
@@ -55,5 +69,7 @@ namespace RepeatingWords.Pages
                 DisplayAlert("Error", er.Message, "Ok");
             }
         }
+             
+     
     }
 }

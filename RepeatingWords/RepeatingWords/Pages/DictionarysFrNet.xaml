@@ -8,6 +8,8 @@
     <StackLayout>
      <Label Text="{locale:Translate LabelDictionaryListFromNet}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium"/>
 
+      <ActivityIndicator x:Name="actIndicator2"  Color="White" />
+      
       <ListView x:Name ="dictionaryNetList" ItemsSource="{Binding}" ItemSelected ="OnItemSelected" SeparatorColor="Green">
         <ListView.ItemTemplate>
           <DataTemplate>

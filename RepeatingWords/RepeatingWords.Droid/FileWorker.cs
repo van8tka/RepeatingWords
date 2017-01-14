@@ -43,11 +43,11 @@ namespace RepeatingWords.Droid
             {
                 List<string> lines = new List<string>();
                 string line;
-                while((line=reader.ReadLine())!=null)
+            while((line= await reader.ReadLineAsync())!=null)
                 {
                     lines.Add(line);
                 }
-                return lines;
+               return lines;
             }
         }
 
