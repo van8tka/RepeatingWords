@@ -1,0 +1,64 @@
+﻿Любить	[ lʌv ]	Love
+Обожать	[ə'dɔː]	Adore
+Слышать	[ hiə ]	Hear
+Смотреть	[ si: ]	See
+Помнить	[ ri'membə ]	Remember
+Нуждаться	[ ni:d ]	Need
+Ненавидеть	[ heit ]	Hate
+Знать	[ nəu ]	Know
+Чувствовать	[ fi:l ]	Feel
+Смотреть	[ luk ]	Look
+Значить, означать	[ mi:n ]	Mean
+Вообразить	[ imæʤin ]	Imagine
+Принимать	[ ək'sept ]	Accept
+Обещать	[ 'prɔmis ]	Promise
+Признавать	[ 'rekəgnaiz ]	Recognize
+Верить, полагать	[ bi'li:v ]	Believe
+Соглашаться	[ ə'gri: ]	Agree
+Казаться	[ si:m ]	Seem
+Появляться	[ ə'piə ]	Appear
+Заботиться (о)	[keə]	Care (for)
+Состоять	[ kən'sist ]	Consist
+Содержать 	[ kən'tein ]	Contain
+Отрицать	[ di'nai ]	Deny
+Зависеть	[ di'pend ]	Depend
+Сомневаться	[ daut ]	Doubt
+Соответствовать, подходить (одежда)	[ fit ]	Fit
+Впечатлять	[ 'impres ]	Impress
+Включать	[ in'klu:d ]	Include
+Иметь значение	[ 'mætə ]	Matter
+Замечать	[ 'nəutis ]	Notice
+Обладать	[ pə'zes ]	Possess
+Предпочитать	[ pri:fə: ]	Prefer
+Реализовать	[ 'riəlaiz ]	Realise
+Отказывать	[ ri'fju:z ]	Refuse
+Чувствовать	[ sens ]	Sense
+Желать	[wɪʃ]	Wish
+Выбирать	[tʃuːz]	Choose
+Создавать	[krɪˈeɪt]	Create
+Надеятся	[həʊp]	Hope
+Ошибаться	[ˈbiː mɪˈsteɪkən]	Be mistaken
+Опаздывать	[‘biː leɪt]	Be late
+Быть занятым	[ˈbiː ˈbɪzɪ]	Be busy
+Обсуждать	[dɪsˈkʌs]	Discuss
+Запрещать	[fəˈbɪd]	Forbid
+Считать	[kənˈsɪdə]	Consider
+Расценивать, рассматривать	[rɪˈɡɑːd]	Regard
+Полагаться	[rɪˈlaɪ]	Rely
+Достигать	[əˈtʃiːv]	Achieve
+Возражать	[ˈɒbdʒ|ɛkt]	Object
+Критиковать	[ˈkrɪtɪsaɪz]	Critisize
+Винить	[bleɪm]	Blame
+Принимать	[əkˈsɛpt]	Accept
+Притворятся	[prɪˈtɛnd]	Pretend
+Быть в курсе, осведомлённым	[ˈbiː əˈwɛər ɒv]	Be aware
+Завидовать	[ˈɛnvɪ]	Envy
+Предавать	[bɪˈtreɪ]	Betray
+Полагать	[səˈpəʊz]	Suppose
+Интересоваться	[ˈwʌndə]	Wonder
+Продумывать	[ˈθɪŋkˈəʊvə]	Think over
+Вести	[liːd]	Lead
+Продвигать	[prəˈməʊt]	Promote
+Участвовать	[pɑːˈtɪsɪpeɪt]	Participate
+Опрашивать	[ˈɪntəvjuː]	Interview
+Доверять	[trʌst]	Trust

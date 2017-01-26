@@ -1,0 +1,158 @@
+﻿город(небольшой)[taun]town
+город(большой)[ˈsɪtɪ]	city
+места[ˈpleɪsɪz]places
+больница[ˈhɒspɪtl̩ ]hospital
+скорая помощь[ˈæmbjələns ]ambulance 
+продуктовый магазин[ˈɡrəʊsəristɔː ]grocery store
+билетная касса[ˈtɪkɪt ˈɒfɪs ]ticket office
+стадион[ˈsteɪdɪəm ]stadium
+вокзал[ˈreɪlweɪ ˈsteɪʃn̩ ]railway station
+церковь[tʃɜːtʃ ]church
+собор[kəˈθiːdrəl]cathedral
+зоопарк[zuː ]zoo
+рынок[ˈmɑːkɪt ]market
+пожарная часть[ˈfaɪə ˈsteɪʃn̩ ]fire station
+заправка[ɡæs ˈsteɪʃn̩ ]gas station
+банкомат[ˌeɪtiːˈem ]ATM
+парк аттракционов[əˈmjuːzməntpɑːk ]amusement park
+каток[ˈskeɪtɪŋrɪŋk ]skating rink
+тюрьма[ˈprɪzn̩ / ʤeɪl]prison = jail
+замок[ˈkɑːsl̩]castle
+памятник[ˈmɒnjʊmənt]monument
+крепость[ˈfɔːtrɪs]fortress
+мост[brɪdʒ ]bridge
+башня[ˈtaʊə ]tower
+мечеть[mɒsk ]mosque
+кладбище[ˈsemətri ]cemetery
+прачечная	[ˈlɔːndri ]laundry
+безопасный[seɪf ]safe
+переполненный, многолюдный	[ ˈkraʊdɪd ]crowded
+шумный[ˈnɔɪzi ]noisy
+тихий[ˈkwaɪət ]quiet
+опасный[ˈdeɪndʒərəs ]dangerous
+трущобы[slʌmz ]slums
+интенсивное движение[ˈhevi ˈtræfɪk ]heavy traffic
+загрязнённыйв оздух	[pəˈluːtɪdeə ]polluted air
+древний[ˈeɪnʃənt ]ancient
+современный[ ˈmɒdn̩ = kənˈtemprəri ]modern = contemporary
+обветшалый[ˈʃæbi = ˈrənˈdaʊn ]shabby = run-down
+передвижение погороду[ˈɡetɪŋəˈraʊnd ]Getting around
+Концертный зал[kənˈsɜːt hɔːl ]Concert hall
+Торговый центр[ˈʃɒpɪŋ mɔːl ]Shopping mall
+Международный аэропорт[ˌɪntəˈnæʃn̩əl ˈeəpɔːt ]International airport
+Банк[bæŋk ]Bank
+Полицейский участок[ pəˈliːs ˈsteɪʃn̩ ]Police station
+Дом[ haʊs ]House
+Школа [ skuːl ]School
+Университет[ ˌjuːnɪˈvɜːsəti ]University
+Церковь[ tʃɜːtʃ ]Church
+Больница[ ˈhɒspɪtl ]Hospital
+Музей[ mjuˈziːəm ]Museum
+Театр[ ˈθɪə.tər ]Theater
+Обменник	[ˈkʌrənsi ɪkˈstʃeɪndʒ ]Currency exchange
+Кино[ ˈsɪnəmə ]Cinema
+Памятник[ˈmɒnjʊmənt]Monument
+Мост[brɪdʒ ]Bridge
+Консульство[ˈkɒnsjʊlət ]Consulate
+Район[ˈdɪstrɪkt ]District
+Центр города[ ˈdaʊntaʊn = ðə ˈsɪti ˈsentə ]Downtown = the city centre
+Окраина города[ ði ˈaʊtskɜːts ]The outskirts
+Загород[ˈkʌntrisaɪd ]Countryside
+Казино[kəˈsiːnəʊ ]Casino
+Здание городского управления[ˈsɪti hɔːl]City hall
+Разводной мост[ˈdrɔːbrɪdʒ ]Drawbridge
+Храм[ˈtempl̩ ]Temple
+Часовня[ˈtʃæpl̩ ]Chapel
+Мечеть[mɒsk ]Mosque
+Монастырь[ˈmɒnəstri ]Monastery
+Здание суда[ˈkɔːthaʊs ]Courthouse
+Небоскреб	[ˈskaɪskreɪpə ]Skyscraper
+Галерея искусств[ɑːt ˈɡæləri ]Art gallery
+Выставка[ˌeksɪˈbɪʃn̩ ]Exhibition
+Консерватория[kənˈsɜːvətr̩i ]Conservatory
+Опера[ˈɒprə ˈhaʊs ]Opera house
+Концерт['kɔnsət / ɡɪɡ ]Concert = gig
+Концертная площадка[ˈmjuːzɪk ˈvenjuː ]Music venue
+Театральное представление[θiˈætrɪk(ə)l̩ pə'fɔːmən(t)s]Theatrical performance
+Игровой автомат[ˈslɒt məʃiːn ]Slot-machine
+Универмаг[dɪˈpɑːtmənt stɔː ]Department store
+Газетный киоск[ˈnjuːzstænd ]Newsstand
+Посольство[ˈembəsi ]Embassy 
+Юридическая фирма	[lɔː ˈɒfɪs ]Law office
+Роддом[məˈtɜːnɪti həʊm ]Maternity home
+Кладбище	[ˈsemətri ]Cemetery
+Регистратура, ЗАГС[ˈredʒɪstri ˈɒfɪs ]Registry office
+Аэропорт внутренних авиалиний[dəˈmestɪk ˈeəpɔːt ]Domestic airport
+Страховая компания	[ ɪnˈʃʊərəns ˈkʌmpəni ]	Insurance company
+Прачечная	[ˈlɔːndri ]Laundry
+Ремонт обуви[ʃuː rɪˈpeə ]Shoe repair
+Зона отдыха[ˌrekrɪˈeɪʃn̩ ˈeəriə ]Recreation area
+Заповедник[ˈsæŋktʃʊəri ]Sanctuary
+Культурный центр[ˈkʌltʃə ˈsentə ]Culture centre
+Очень крупный город[məˈtrɒpəlɪs ]Metropolis
+Деловой район[ˈbɪznəs ˈeəriə ]Business area
+Жилой район[ˌrezɪˈdenʃl̩ ˈeəriə ]Residential area
+Правительственный район[ˈɡʌvənmənt ˈeəriə ]Government area
+Район, окрестность[ ˈneɪbəhʊd / vɪˈsɪnɪti ]	Neighbourhood / vicinity
+Пригород[ ˈsʌbɜːb ]Suburb
+Загород[ˈkʌntrisaɪd ]Countryside
+Безопасный[seɪf ]Safe
+Переполненный, многолюдный[ ˈkraʊdɪd ]Crowded
+Передвижение по городу[ˈɡetɪŋ əˈraʊnd ]Getting around
+Площадь[skweə ]Square
+Главная дорога[meɪn rəʊd ]Main road
+Светофор[ˈtræfɪk laɪts ]Traffic lights
+Пешеход[pɪˈdestrɪən ]Pedestrian
+Канал[kəˈnæl ]Canal
+Набережная[en'bankment ]Embankment
+Тротуар[ˈpeɪvmənt / ˈsaɪdwɔːk ]Pavement / sidewalk
+Пешеходный переход[ˈkrɒsɪŋ / ˈzebrə ]Crossing / zebra
+Подземный переход[ˈʌndəɡraʊnd ˈkrɒsɪŋ ]Underground crossing
+Перекресток[ˌɪntəˈsekʃn̩ / ˈkrɒsrəʊdz ]Intersection / crossroads
+Общественный транспорт[ˈpʌblɪk ˈtrænspɔːt ]Public transport
+Стоянка такси[ˈtæksi ræŋk]Taxi rank
+Второстепенная дорога[saɪd striːt ]Side street
+Проездной билет[ˈsɪtipɑːs ]City pass
+Автобусный маршрут[bʌs ruːt ]Bus route
+Велосипедная дорожка[ˈsaɪkl̩ leɪn ]Cycle lane
+Фуникулер[ˈkeɪbl̩ kɑː ]Cable car
+Гавань, порт[ˈhɑːbə ]Harbour
+Док, пристань[ˈdɒk ]Dock
+Двухэтажный автобус[ˌdʌbl̩ ˈdekə bʌs ]Double-decker bus
+Второстепенная дорога[saɪd striːt ]Side street
+Квартал[ˈblɒk ]Block
+Урна[ ˈlɪtə bɪn ]Litter bin
+Мусорный бак[træʃ kənˈteɪnə ]Trash container
+Стройка[ˈbɪldɪŋ saɪt ]Building site
+Люк[ˈmænhəʊl ]Manhole
+Уличный фонарь[street light]Streetlight
+Потеряться[ˈɡet lɒst ]	To get lost
+Тур по городу[ˈsɪti tʊə ]City tour
+Экскурсия	[ɪkˈskɜːʃn̩ ]	Excursion 
+Гид[ə ɡaɪd ]A guide 
+Достопримечательности[saɪts ]Sights 
+Туристы[ˈvɪzɪtəz / ˈtʊərɪsts ]Visitors / tourists 
+Входная плата[ədˈmɪʃn̩ fiː / ədˈmɪʃn̩ tʃɑːdʒ ]	Admission fee / admission charge
+Цена[feə / praɪs ]Fare / price 
+Путеводитель[ ˈɡaɪdbʊk ]Guidebook 
+Историческая достопримечательность[hɪˈstɒrɪk ˈlændmɑːk ]Historic landmark 
+План поездки[ˈtrævl̩ aɪˈtɪnərəri ]Travel itinerary 
+Осматривать достопримечательности[ɡəʊ ˈsaɪtsiːɪŋ ]To go sightseeing
+Поехать на экскурсию[teɪk ə tʊə ]To take a tour 
+В городе за рулём[ˈdraɪvɪŋ ɪn ðə ˈsɪti ]Driving in the city
+Аренда машины[kɑː ˈhaɪə / kɑː ˈrentl̩ ]Car hire / car rental
+Мойка[kɑː wɒʃ ]Car wash 
+Авторемонт[kɑː rɪˈpeə ]Car repair
+Пробка[ˈtræfɪk dʒæm 	Traffic jam 
+Шиномонтаж[ˈtaɪə ˈfɪtɪŋ ]Tyre fitting
+Дорога с односторонним движением[ˌwʌnˈweɪ striːt ]One-way street
+Дорожный знак[rəʊd saɪn ]	Road sign
+Тупик[ded end ]Dead end
+Парковка[kɑː pɑːk  / ˈpɑːkɪŋ lɒt ]Car park / parking lot 
+Счетчик платы за стоянку[ˈpɑːkɪŋ ˈmiːtə ]Parking meter
+Многоуровневая парковка[ˈmʌlti -ˈstɔːri kɑː pɑːk ]Multi-storey car park
+Перекрёсток с круговым движением[ˈraʊndəˌbaʊt ]Roundabout
+Дорожные работы[rəʊd ˈwɜːks ]Road works
+Инспектор дорожного движения[ˈtræfɪk ˈwɔːdn̩ ]Traffic warden
+Эвакуировать машину[təʊ əˈweɪ ə kɑː ]To tow away a car
+Заплатить штраф[peɪ ə faɪn ]Pay a fine

@@ -32,7 +32,7 @@
     </Picker>    
       
     
-            <Button x:Name="ButtonVoice" Clicked="BtnClickSpeech" Grid.Column="2" Grid.Row="0" Image="voice.png" />
+            <Button x:Name="ButtonVoice" Clicked="BtnClickSpeech" Grid.Column="2" Grid.Row="0"/>
        <Label x:Name="WordForRepeat" VerticalOptions="Center" HorizontalOptions="Center" FontSize="27" HeightRequest="160"  Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3"/>
     
        

@@ -1,0 +1,78 @@
+﻿  день	  [deɪ]	day
+  неделя	  [wiːk]	week
+  месяц	  [mʌnθ]	month
+  квартал	  [ˈkwɔːtə(r)]	quarter
+  год	  [jɪə(r)]	year
+  десятилетие	  [ˈdekeɪd]	decade
+  столетие	  [ˈsentʃəri]	century
+  тысячелетие	  [mɪˈleniəm]	millennium
+  ежегодно	  [ˈænjuəli]	annually
+  календарь	  [ˈkælɪndə(r)]	calendar
+  полдень	  [nuːn]	noon
+  после полудня	  [ɪn ðə ˌɑːftəˈnuːn]	in the afternoon
+  полночь	  [ˈmɪdnaɪt]	midnight
+  ночь	  [naɪt]	night
+  утро	  [ˈmɔːnɪŋ]	morning
+  вечер	  [ˈiːvnɪŋ]	evening
+  вечером	  [ɪn ðə ˈiːvnɪŋ]	in the evening
+  утром	  [ɪn ðə ˈmɔːnɪŋ]	in the morning
+  ночью	  [æt naɪt]	at night
+  сегодня	  [təˈdeɪ]	today
+  завтра	  [təˈmɒrəʊ]	tomorrow
+  вчера	  [ˈjestədeɪ]	yesterday
+  позавчера	  [deɪ bɪˈfɔː(r) ˈjestədeɪ]	day before yesterday
+  послезавтра	  [deɪ ˈɑːftə(r) təˈmɒrəʊ]	day after tomorrow
+  время	  [taɪm ]	time
+  час	  [ˈaʊə(r)]	hour
+  минута	  [ˈmɪnɪt]	minute
+  секунда	  [ˈsekənd]	second
+  миллисекунда	  [ˈmɪlisekənd]	millisecond
+  микросекунда	  [ˈmaɪkrəʊsekənd]	microsecond
+  наносекунда	  [ˈnænəʊsekənd]	nanosecond
+  десять минут четвертого вечера	[]	ten past three p.m.
+  без шестнадцати шесть утра	[]	sixteen to six a.m.
+  без пятнадцати восемь	[]	quarter to eight
+точно девять	 []	exactly nine
+половина пятого	[]	half past four
+около трех	 []	about three
+  часы	  [klɒk]	clock
+  настоящее	  [ˈpreznt]	present
+  прошлое	  [pɑːst]	past
+  будущее	  [ˈfjuːtʃə(r)]	future
+  понедельник	  [ˈmʌndeɪ, -di]	Monday
+  вторник	  ['tjuːzdeɪ, -di]	Tuesday
+  среда	  ['wɛnzdeɪ, -di]	Wednesday
+  четверг	  ['θəːzdeɪ, -di]	Thursday
+  пятница	  ['frʌɪdeɪ, -di]	Friday
+  суббота	  ['satədeɪ, -di]	Saturday
+  воскресенье	  ['sʌndeɪ, -di]	Sunday
+  выходные	  [ˌwiːkˈend]	weekend
+  неделя	  [wiːk]	week
+  рабочий день	  [ˈwɜːkdeɪ]	workday
+  праздник	  [ˈhɒlədeɪ]	holiday
+  в пятницу	 []	on Friday
+  ежедневно	  [ˈdeɪli]	daily
+  еженедельно	  [ˈwiːkli]	weekly
+  январь	  ['ʤænju(ə)ri]	January
+  февраль	  ['febru(ə)ri]	February
+  март	  [ma:ʧ]	March
+  апрель	  ['eipr(ə)l]	April
+  май	  [mei]	May
+  июнь	  [ʤu:n]	June
+  июль	  [ʤu'lai]	July
+  август	  ['o:gəst]	August
+  сентябрь	  [sep'tembə]	September
+  октябрь	  [оk'təubə]	October
+  ноябрь	  [nəu'vembə]	November
+  декабрь	  [di'sembə]	December
+  осень	  [ˈɔːtəm]	autumn
+  зима	  [ˈwɪntə(r)]	winter
+  весна	  [sprɪŋ]	spring
+  лето	  [ˈsʌmə(r)]	summer
+  квартал	  [ˈkwɔːtə(r)]	quarter
+  ежемесячно	  [ˈmʌnθli]	monthly
+  поквартально	  [ˈkwɔːtəli]	quarterly
+  месяц	  [mʌnθ]	month
+  сезон	  [ˈsiːzn]	season
+  в июне	[]	in June
+8 Октября	 []	on the 8th of October

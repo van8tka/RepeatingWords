@@ -118,15 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ButtonAddDict" xml:space="preserve">
-    <value>Add the dictionary</value>
+    <value>Create dictionary</value>
     <comment>Добавление словаря</comment>
   </data>
   <data name="ButtonAddDictionaryOrWords" xml:space="preserve">
-    <value>Add the dictionary and the words</value>
+    <value>Add dictionary and words</value>
     <comment>Добавление словаря и (или) слов</comment>
   </data>
   <data name="ButtonAddWord" xml:space="preserve">
-    <value>Add the word</value>
+    <value>Create word</value>
     <comment>Кн добавить слово</comment>
   </data>
   <data name="ButtonAddWorFrFile" xml:space="preserve">

@@ -1,0 +1,123 @@
+﻿  лямка	  [ˈstræp]	strap
+  шарф	  [skɑː(r)f]	scarf
+  рюкзак	  [ˈbækpæk]	backpack
+  шерсть	  [wʊl]	wool
+  капюшон	  [hʊd]	hood
+  плащ	  [ˈreɪnkəʊt]	raincoat
+  рубашка	  [ʃɜː(r)t]	shirt
+  ширинка	  [flaɪ]	fly
+  мокасины	  [ˈmɒkəsɪnz]	moccasins
+  льняная ткань	  [ˈlɪnɪn]	linen
+  жилет	  [ˈweɪskəʊt]	waistcoat
+  бикини	  [bɪˈkiːni]	bikini
+  трусики	  [ˈpæntɪz]	panties
+  солнцезащитные очки	  ['sʌnˌglɑːsɪz]	sunglasses
+  твид	  [twiːd]	tweed
+  футболка	  [ˈtiː ʃɜː(r)t]	t-shirt
+  ремень	  [belt]	belt
+  бархат	  [ˈvelvɪt]	velvet
+  хлопок	  [ˈkɒtn]	cotton
+  вьетнамки	  [θɒŋz]	thongs
+  шляпа	  [ˈhæt]	hat
+  стринги	  [strɪŋz]	strings
+  плать	  [dres]	dress
+  часы	  [wɒtʃ]	watch
+  халат	  [ˈbɑːθrəʊb]	bathrobe
+  обувь	  [ˈfʊtweə(r)]	footwear
+  карманные часы	  [ˈpɒkɪt wɒtʃ]	pocket watch
+  бумажник	  [ˈwɒlɪt]	wallet
+  подкладка	  [ˈlaɪnɪŋ]	lining
+  куртка	  [ˈdʒækɪt]	jacket
+  манжет	  [kʌf]	cuff
+  берет	  [ˈbereɪ]	beret
+  пижама	  [pəˈdʒɑːməz]	pajamas
+  застежка	  [klɑːsp]	clasp
+  пляжная одежда	  [ˈbiːtʃweə(r)]	beachwear
+  цепочка	  [tʃeɪn]	chain
+  зонтик	  [ʌmˈbrelə]	umbrella
+  молния	  [ˈzɪpə(r)]	zipper
+  атлас	  [ˈsætɪn]	satin
+  драгоценный камень	  [ˈdʒuːəl]	jewel
+  шитьё одежды	  [ˈteɪlərɪŋ]	tailoring
+  шелк	  [sɪlk]	silk
+  галстук	  [taɪ]	tie
+  кепка	  [ˈkæp]	cap
+  молния	  [ˈfɑːsnə(r)]	fastener
+  резинка	  [ɪˈlæstɪk]	elastic
+  балахон	  [ˈswetʃɜː(r)t]	sweatshirt
+  колготки	  [taɪts]	tights
+  резиновые сапоги	  [ˈrʌbə(r) boots]	rubber boots
+  брюки	  [ˈtraʊzəz]	trousers
+  ночная сорочка	  [ˈnaɪtˌgaʊn]	nightgown
+  сапоги	  [buːts]	boots
+  байка	  [beɪz]	baize
+  кожа	  [ˈleðə(r)]	leather
+  браслет	  [ˈbreɪslɪt]	bracelet
+  джинсы	  [ˈʤi:nz]	jeans
+  ремешок	  [ˈstræp]	strap
+  свитер	  [ˈswetə(r)]	sweater
+  кольцо	  [ˈrɪŋ]	ring
+  бусы	  [biːdz]	beads
+  ожерелье	  [ˈnekləs]	necklace
+  чемоданчик	  [ˈbriːfkeɪs]	briefcase
+  замша	  [sweɪd]	suede
+  носок	  [sɒk]	sock
+  блузка	  [blaʊs]	blouse
+  верхняя одежда	  [ˈaʊtəˌrwe(r)]	outerwear
+  шорты	  [ˈʃɔ:rts]	shorts
+  очки	  [ˈɡlɑːsɪz]	glasses
+  деловой костюм	  [ˈbɪznəs əˈtaɪə(r)]	business attire
+  купальник	  [ˈswɪmˌsu:t]	swimsuit
+  шкатулка для драгоценностей	  [ˈdʒuːəlri bɒks]	jewelry box
+  серьга	  [ˈɪərɪŋ]	earring
+  дамская шляпа	  [ˈbɒnɪt]	bonnet
+  нижнее белье	  [ˈʌndəweə(r)]	underwear
+  лифчик	  [ˈbr:ɑzɪər]	brassiere
+  штаны	  [pænts]	pants
+  оправа	  [freɪm]	frame
+  платок	  [bænˈdænʌ]	bandana
+  ранец	  [ˈsætʃl̩]	satchel
+  босоножки	  [ˈsændl̩z]	sandals
+  трусы	  [ˈbri:fs]	briefs
+  бюстгальтер	  [ˈbr:ɑ]	bra
+  юбка	  [ˈskɜː(r)t]	skirt
+  алмаз	  [ˈdaɪəmənd]	diamond
+  ситец	  [tʃɪnts]	chintz
+  варежка	  [ˈmɪtʌn]	mitten
+  пальто	  [kəʊt]	coat
+  тапки	  [ˈslɪpɜrz]	slippers
+  чулки	  [ˈstɒkɪŋz]	stockings
+  трусы	  [pænts]	pants
+  дужка	  [ɑː(r)m]	arm
+  носовой платок	  [ˈhæŋkə(r)tʃɪf]	handkerchief
+  костюм	  [suːt]	suit
+  спортивная обувь	  [ˈtreɪnəz]	trainers
+  шлем	  [ˈhelmɪt]	helmet
+  рубин	  [ˈruːbi]	ruby
+  кружево	  [leɪs]	lace
+  туфли	  [ʃuːz]	shoes
+  крючок	  [hʊk]	hook
+  пуговица	  [ˈbʌtn̩]	button
+  воротник	  [ˈkɒlə(r)]	collar
+  пуговица	  [ˈbʌtn̩]	button
+  подгузник	  [ˈnæpi]	nappy
+  платье	  [ɡaʊn]	gown
+  мешочек	  [paʊtʃ]	pouch
+  раскрывающийся медальон	  [ˈlɒkɪt]	locket
+  кошелек	  [pɜː(r)s]	purse
+  карман	  [ˈpɒkɪt]	pocket
+  линза	  [ˈlenz]	lens
+  заколка	  [bɜrˈet]	barrette
+  перчатка	  [ɡlʌv]	glove
+  вельвет	  [ˌvelvəˈtiːn]	velveteen
+  ювелирные изделия	  [ˈdʒuːəlri]	jewelry
+  сумка	  [bæɡ]	bag
+  дамская сумочка	  [ˈhændbæɡ]	handbag
+  брошь	  [brəʊtʃ]	brooch
+  наручные часы	  [ˈrɪstwɒtʃ]	wristwatch
+  кальсоны	  [ˈʌndə(r)pænts]	underpants
+  шов, линия шва	  [siːm]	seam
+  нейлон	  [ˈnaɪlɒn]	nylon
+  бахрома	  [frɪndʒ]	fringe
+  аксессуар	  [əkˈsesəri]	accessory
+  головной убор	  [ˈhedɡɪə(r)]	headgear

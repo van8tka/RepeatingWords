@@ -62,7 +62,7 @@ namespace RepeatingWords {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add the dictionary.
+        ///   Looks up a localized string similar to Create dictionary.
         /// </summary>
         internal static string ButtonAddDict {
             get {
@@ -71,7 +71,7 @@ namespace RepeatingWords {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add the dictionary and the words.
+        ///   Looks up a localized string similar to Add dictionary and words.
         /// </summary>
         internal static string ButtonAddDictionaryOrWords {
             get {
@@ -80,7 +80,7 @@ namespace RepeatingWords {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add the word.
+        ///   Looks up a localized string similar to Create word.
         /// </summary>
         internal static string ButtonAddWord {
             get {

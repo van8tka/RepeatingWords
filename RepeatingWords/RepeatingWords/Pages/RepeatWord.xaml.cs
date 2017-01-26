@@ -27,7 +27,7 @@ namespace RepeatingWords.Pages
             words = App.Wr.GetWords(iDdictionary);
             //кол во слов и пройденных слов
             LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString();
-           UpdateWord(Count,FromRus);
+            UpdateWord(Count,FromRus);
             DependencyService.Get<IAdmobInterstitial>().Show("ca-app-pub-5351987413735598/1185308269");
         }
 
@@ -86,16 +86,29 @@ namespace RepeatingWords.Pages
                WordForRepeat.TextColor = Color.Lime;
                WordForRepeat.Text = GetWords(count).RusWord;
                 //управление видимостью озвучки
-                ButtonVoice.IsVisible = false;
-                picker.IsVisible = false;
+                ButtonVoice.IsVisible = true;
+                ButtonVoice.IsEnabled = false;
+                picker.IsVisible = true;
+                ButtonVoice.Image = "voiceX.png";
             }
             else
             {
                 WordForRepeat.TextColor = Color.Yellow;
                 Words w = GetWords(count);
-                WordForRepeat.Text = w.EngWord + "\n" + w.Transcription;
+                //если транскрипции нет 
+                if(w.Transcription=="[]")
+                {//выводим только перевод
+                    WordForRepeat.Text = w.EngWord;
+                }
+                else
+                {//перевод и транскрипцию
+                    WordForRepeat.Text = w.EngWord + "\n" + w.Transcription;
+                }
+              
                 //управление видимостью озвучки
                 ButtonVoice.IsVisible = true;
+                ButtonVoice.IsEnabled = true;
+                ButtonVoice.Image = "voice.png";
                 picker.IsVisible = true;
             }
            

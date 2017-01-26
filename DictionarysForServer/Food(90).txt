@@ -1,0 +1,89 @@
+﻿Еда[fuːd]Food
+Фрукты[fruːt]Fruit
+слива[plʌm]plum
+груша[peə]pear
+дыня['melən]melon
+ягода['berɪ]berry
+вишня['ʧerɪ]cherry
+дыня['melən]melon
+виноградина[greɪp]grape
+абрикос['eɪprɪkɔt]apricot
+персик[piːʧ]peach
+финик[deɪt]date
+ананас['paɪnæpl]pineapple
+кокос['kəukənʌt]coconut
+изюм['reɪz(ə)n]raisin
+малина['rɑːzb(ə)rɪ]raspberry
+клубника['strɔːb(ə)rɪ]strawberry
+мандарин	[ˌtænʤ(ə)'riːn]tangerine
+арбуз['wɔːtəˌmelən]watermelon
+Овощи['veʤ(ə)təblz]Vegetables
+Репчатыйлук['ʌnjən]onion
+картофель	[pə'teɪtəu]potato
+свекла[biːt]beet
+капуста['kæbɪʤ]cabbage
+морковь['kærət]carrot
+боб, фасоль[biːn]bean
+чеснок['gɑːlɪk]garlic
+оливка['ɔlɪv]olive
+перец['pepə]pepper
+помидор[tə'mɑːtəu]	tomato
+авокадо[ˌævə'kɑːdəu]avocado
+зелень[gri:nz]greens
+редис['rædɪʃ]radish	
+Цветная капуста ['kɔlɪˌflauə]cauliflower
+сельдерей['sel(ə)rɪ]celery
+огурец['kjuːkʌmbə]cucumber
+баклажан	['egplɑːnt / 'əubəʤiːn]eggplant (Am.) / aubergine (Br.)
+имбирь['ʤɪnʤə]ginger
+салат-латук['letɪs]lettuce
+гриб['mʌʃrum]mushroom
+укроп[dɪl]dill
+петрушка	['pɑːslɪ]parsley
+Зеленыйгорошек (горошина)	[piː]pea
+тыква['pʌmpkɪn]pumpkin
+шпинат['spɪnɪʧ / -ʤ]spinach
+репа['tɜːnɪp]turnip
+кабачок[zu'kiːnɪ]zucchini
+свинина[pɔːk]pork
+колбаса['sɔsɪʤ]sausage
+ветчина[hæm]ham
+говядина[bi:f]beef
+баранина['mʌt(ə)n]	mutton
+молодаябаранина, ягненок[læm]lamb
+телятина[vi:l]veal
+индейка['tɜːkɪ]turkey
+фарш[mɪn(t)stmi:t]minced meat
+щука[paɪk]pike
+угорь[i:l]eel
+окунь[bæs]bass
+икра['kævɪɑː]caviar
+осьминог	['ɔktəpəs]octopus
+мидия['mʌs(ə)l]mussel
+устрица['ɔɪstə]oyster
+креветка (большая)	[prɔːn]prawn
+креветка[ʃrɪmp]shrimp
+кальмар[skwɪd]squid
+рис[raɪs]rice
+Овсяная каша['pɔrɪʤ]porridge
+лапша['nuːdl]noodle
+кукуруза[kɔːn]corn
+мука['flauə] flour
+Сдобная булочка[bʌn] bun
+яйцо[eg]egg
+конфета['kændɪ / swi:t]candy / sweet
+мед['hʌnɪ]honey
+горчица['mʌstəd]mustard
+консервы	[kændfu:d / tɪndfu:d]canned food / tinned food
+сырой[rɔː]raw
+зрелый, спелый[raɪp]ripe
+гнилой, испорченный['rɔt(ə)n]rotten
+прокисший, тухлый	[spɔɪld]spoiled
+жесткий[tʌf]tough
+мягкий[sɔft]soft
+черствый, несвежий	[steɪl]stale
+недоваренный['ʌndəkukt]	undercooked
+переваренный['əuvəkukt]	overcooked
+горький['bɪtə]bitter
+хрустящий['krɪspɪ / krʌnʧi]crispy / crunchy
+густой['stɔʤɪ]stodgy
