@@ -9,8 +9,11 @@
      <Style x:Key ="buttonStyle" TargetType="Button">
        <Setter Property="TextColor" Value="White"/>
        <Setter Property="BackgroundColor" Value="Blue"/>
-       <Setter Property="FontSize" Value="Medium"/>
+       <Setter Property="FontSize" Value="Small"/>    
    </Style>
+      
+   
+        
      <Style x:Key="TitleApp" TargetType="ContentPage">
             <Setter Property="Title" Value="{local:Translate TitleMain}"/>
             <Setter Property="Padding" Value="10"/>

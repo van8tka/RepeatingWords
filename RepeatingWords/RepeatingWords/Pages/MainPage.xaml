@@ -7,12 +7,19 @@
             >
   <StackLayout>
     <local:AdMobView WidthRequest="320" HeightRequest="50" />
-        <Label Text="{local:Translate HeaderMain}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" TextColor="White" HeightRequest="150"/>   
+    <Label Text="{local:Translate HeaderMain}" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="150">
+      <Label.FontSize>
+        <OnPlatform x:TypeArguments="x:Double">
+            <OnPlatform.Android>25</OnPlatform.Android>
+            <OnPlatform.WinPhone>25</OnPlatform.WinPhone>
+        </OnPlatform>
+      </Label.FontSize>
+    </Label>   
         <Button Style="{StaticResource buttonStyle}" Text="{local:Translate ButtonAddDictionaryOrWords}" Clicked="ChooseDbButtonClick"></Button>
         <Button Style="{StaticResource buttonStyle}" Text="{local:Translate ChooseDictionaryForRepeat}" Clicked="ChooseDictionaryButtonClick"></Button>
         <Button Style="{StaticResource buttonStyle}" Text="{local:Translate Continue}" Clicked="ReturnButtonClick"></Button>
         <Button Style="{StaticResource buttonStyle}" Text="{local:Translate HowUseApp}" Clicked="SpravkaButtonClick"></Button>
-   
+  
  </StackLayout>
   
 

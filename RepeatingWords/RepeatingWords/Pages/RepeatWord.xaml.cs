@@ -28,7 +28,12 @@ namespace RepeatingWords.Pages
             //кол во слов и пройденных слов
             LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString();
             UpdateWord(Count,FromRus);
-            DependencyService.Get<IAdmobInterstitial>().Show("ca-app-pub-5351987413735598/1185308269");
+            // код для Android
+            if (Device.OS == TargetPlatform.Android)
+            {
+                 DependencyService.Get<IAdmobInterstitial>().Show("ca-app-pub-5351987413735598/1185308269");
+            }
+            
         }
 
 
@@ -41,13 +46,16 @@ namespace RepeatingWords.Pages
             Turn = FromRus;
             iDdictionary = la.IdDictionary;
             words = App.Wr.GetWords(la.IdDictionary);
-           
+
             //определяем чему равен Count;
             HowCount(la.IdWord);
             //сколько слов всего и пройдено
             LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString();
             UpdateWord(Count, FromRus);
-            DependencyService.Get<IAdmobInterstitial>().Show("ca-app-pub-5351987413735598/1185308269");
+            if (Device.OS == TargetPlatform.Android)
+            {
+                DependencyService.Get<IAdmobInterstitial>().Show("ca-app-pub-5351987413735598/1185308269");
+            }
         }
 
 
