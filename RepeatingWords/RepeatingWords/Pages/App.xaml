@@ -11,9 +11,7 @@
        <Setter Property="BackgroundColor" Value="Blue"/>
        <Setter Property="FontSize" Value="Small"/>    
    </Style>
-      
-   
-        
+     
      <Style x:Key="TitleApp" TargetType="ContentPage">
             <Setter Property="Title" Value="{local:Translate TitleMain}"/>
             <Setter Property="Padding" Value="10"/>

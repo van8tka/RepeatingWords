@@ -6,11 +6,11 @@
             Style="{StaticResource TitleApp}">
   <StackLayout>
     <Label Text="{locale:Translate LabelFirstWord}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" TextColor="White"/>
-    <Entry Text="{Binding RusWord}" Placeholder="{locale:Translate LabelFirstWord}" FontSize="Large" TextColor="Yellow"></Entry>
+    <Entry Text="{Binding RusWord}" Placeholder="{locale:Translate LabelFirstWord}" FontSize="Medium" TextColor="Yellow"></Entry>
     <Label Text="{locale:Translate LabelSecondWord}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" TextColor="White"/>
-    <Entry Text="{Binding EngWord}" Placeholder="{locale:Translate LabelSecondWord}" FontSize="Large" TextColor="Yellow"></Entry>
+    <Entry Text="{Binding EngWord}" Placeholder="{locale:Translate LabelSecondWord}" FontSize="Medium" TextColor="Yellow"></Entry>
     <Label Text="{locale:Translate LabelTranscription}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" TextColor="White"/>
-    <Entry Text="{Binding Transcription}" Placeholder="{locale:Translate LabelTranscription}" FontSize="Large" TextColor="Yellow"></Entry>
+    <Entry Text="{Binding Transcription}" Placeholder="{locale:Translate LabelTranscription}" FontSize="Medium" TextColor="Yellow"></Entry>
     
     
     <Button Style="{StaticResource buttonStyle}" Clicked="CreateWordButtonClick" Text="{locale:Translate ButtonAddWord}"></Button>

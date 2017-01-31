@@ -4,13 +4,13 @@
              x:Class="RepeatingWords.Pages.ChooseFile"
                xmlns:local="clr-namespace:RepeatingWords;assembly=RepeatingWords"
              Style="{StaticResource TitleApp}">
-  <Label Text="{local:Translate LabelChooseFile}" VerticalOptions="Center" HorizontalOptions="Center" />
+  <Label Text="{local:Translate LabelChooseFile}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" TextColor="White"/>
  <ScrollView>
   <StackLayout>
-    <Label Text="{local:Translate LabelPathToRoot}" TextColor="Blue" FontSize="Large"/>
-    <Label x:Name="textPath" TextColor="Blue" FontSize="Large"/>
+    <Label Text="{local:Translate LabelPathToRoot}" TextColor="Blue" FontSize="Medium"/>
+    <Label x:Name="textPath" TextColor="Blue" FontSize="Medium"/>
     
-    <!--<ActivityIndicator x:Name="actIndicator3"  Color="White" />-->
+  
     <ActivityIndicator x:Name="actIndicator3" Color="White" />
 
     <ListView x:Name ="fileList" ItemsSource="{Binding}" ItemSelected ="FileSelected">
@@ -19,7 +19,7 @@
           <ViewCell>
             <ViewCell.View>
               <StackLayout Orientation="Horizontal">
-                <Label Text="{Binding}" FontSize="Medium" TextColor="Yellow"/>
+                <Label Text="{Binding}" FontSize="25" TextColor="Yellow"/>
               </StackLayout>
             </ViewCell.View>
           </ViewCell>

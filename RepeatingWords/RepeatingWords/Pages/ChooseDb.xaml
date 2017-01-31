@@ -7,7 +7,7 @@
   
   <ScrollView>
     <StackLayout>
-      <Label Text="{local:Translate LabelChooseDictOrCreate}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" TextColor="White"/>
+      <Label Text="{local:Translate LabelChooseDictOrCreate}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" TextColor="White"/>
       <Button Style="{StaticResource buttonStyle}" Text="{local:Translate ButtonAddDict}" Clicked="AddDictionaryButtonClick"></Button>
       <Button Style="{StaticResource buttonStyle}" Text="{local:Translate ButtonAddWorFrNet}" Clicked="AddWordsFromNetButtonClick"></Button>
       <ListView x:Name ="dictionaryList" ItemsSource="{Binding}" ItemSelected ="OnItemSelected" SeparatorColor="Green">
@@ -16,7 +16,7 @@
             <ViewCell>
               <ViewCell.View>
                 <StackLayout Orientation="Horizontal">
-                  <Label Text="{Binding Name}" FontSize="Large" TextColor="Yellow"/>
+                  <Label Text="{Binding Name}" FontSize="Medium" TextColor="Yellow"/>
                </StackLayout>
               </ViewCell.View>
             </ViewCell>

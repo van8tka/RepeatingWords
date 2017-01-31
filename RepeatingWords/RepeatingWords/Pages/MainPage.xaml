@@ -7,7 +7,7 @@
             >
   <StackLayout>
     <local:AdMobView WidthRequest="320" HeightRequest="50" />
-    <Label Text="{local:Translate HeaderMain}" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="150">
+    <Label Text="{local:Translate HeaderMain}" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="150" TextColor="White">
       <Label.FontSize>
         <OnPlatform x:TypeArguments="x:Double">
             <OnPlatform.Android>25</OnPlatform.Android>

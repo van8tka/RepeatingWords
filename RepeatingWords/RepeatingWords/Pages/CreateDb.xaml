@@ -6,7 +6,7 @@
              Style="{StaticResource TitleApp}">
   <StackLayout>
     <Label Text="{local:Translate LabelNameDict}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" TextColor="White"/>
-   <Entry Text="{Binding Name}" Placeholder="{local:Translate EntryNameDict}" FontSize="Large" TextColor="Yellow"></Entry>
+   <Entry Text="{Binding Name}" Placeholder="{local:Translate EntryNameDict}" FontSize="Medium" TextColor="Yellow"></Entry>
     <Button Style="{StaticResource buttonStyle}" Clicked="CreateDbButtonClick" Text="{local:Translate ButtonCreate}"></Button>
   </StackLayout>
   

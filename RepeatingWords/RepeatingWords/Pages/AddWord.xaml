@@ -6,7 +6,7 @@
            Style="{StaticResource TitleApp}">
   <ScrollView>
     <StackLayout>
-      <Label x:Name="DictionaryName"  VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium"/>
+      <Label x:Name="DictionaryName"  VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" TextColor="White"/>
       <Button Style="{StaticResource buttonStyle}" Text="{locale:Translate ButtonAddWord}" Clicked="CreateWordButtonClick"></Button>
       <Button Style="{StaticResource buttonStyle}" Text="{locale:Translate ButtonRepeatWords}" Clicked="RepeatWordsButtonClick"></Button>
    
@@ -17,19 +17,40 @@
               <ViewCell.View>
               <Grid>
                 <Grid.ColumnDefinitions>
-                  <ColumnDefinition Width="*">
+                 <ColumnDefinition Width="1*">
                   </ColumnDefinition>
-                  <ColumnDefinition Width="*">
+                  <ColumnDefinition Width="1*">
                   </ColumnDefinition>
-                  <ColumnDefinition Width="*">
+                  <ColumnDefinition Width="1*">
                   </ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                   <RowDefinition Height="Auto"></RowDefinition>
                 </Grid.RowDefinitions>
-                <Label Text="{Binding RusWord}" FontSize="Medium" TextColor="White" Grid.Column="0" />
-                <Label Text="{Binding EngWord}" FontSize="Medium" TextColor="Yellow" Grid.Column="1" />
-                <Label Text="{Binding Transcription}" FontSize="Medium" TextColor="Gray" Grid.Column="2" />
+                <Label Text="{Binding RusWord}" TextColor="White" Grid.Column="0" FontSize="Medium">
+                <!--<Label.FontSize>
+                  <OnPlatform x:TypeArguments="x:Double">
+                    <OnPlatform.Android>25</OnPlatform.Android>
+                    <OnPlatform.WinPhone>15</OnPlatform.WinPhone>
+                  </OnPlatform>
+                </Label.FontSize>-->
+                </Label>
+                <Label Text="{Binding EngWord}" TextColor="Yellow" Grid.Column="1" FontSize="Medium" >
+                  <!--<Label.FontSize>
+                    <OnPlatform x:TypeArguments="x:Double">
+                      <OnPlatform.Android>15</OnPlatform.Android>
+                      <OnPlatform.WinPhone>15</OnPlatform.WinPhone>
+                    </OnPlatform>
+                  </Label.FontSize>-->
+                </Label>
+                <Label Text="{Binding Transcription}" TextColor="Gray" Grid.Column="2" FontSize="Medium">
+                  <!--<Label.FontSize>
+                    <OnPlatform x:TypeArguments="x:Double">
+                      <OnPlatform.Android>25</OnPlatform.Android>
+                      <OnPlatform.WinPhone>15</OnPlatform.WinPhone>
+                    </OnPlatform>
+                  </Label.FontSize>-->
+                </Label>
               </Grid>
               </ViewCell.View>
                 </ViewCell>

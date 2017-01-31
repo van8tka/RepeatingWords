@@ -5,6 +5,7 @@ using System.IO;
 using Xamarin.Forms;
 using System.Threading.Tasks;
 using Windows.Storage;
+using Windows.Foundation.Collections;
 
 [assembly: Dependency(typeof(RepeatingWords.UWP.FileWorker))]
 
@@ -15,44 +16,44 @@ namespace RepeatingWords.UWP
         public string GetDocsPath()
         {
             //получаем корень памяти телефона(может отличаться на разл устройствах)
-            StorageFolder localFolder = ApplicationData.Current.LocalFolder;
-            return localFolder.Name;
+                      // название папки для сохранения файлов(в UWP не в корень а впапку Documents)
+
+            string doc = "/Documents/";
+            return doc;
         }
 
         public async Task<IEnumerable<string>> GetFilesAsync()
         {
-            StorageFolder localFolder = ApplicationData.Current.LocalFolder;
-            IEnumerable<string> filenames = from filepath in await localFolder.GetFilesAsync() select filepath.Name;
-            List<string> fileTxt = new List<string>();
 
-            int z = 0;
-            //фильтруем только txt файлы
-            foreach (var i in filenames)
+            IReadOnlyList<StorageFile> files = await KnownFolders.DocumentsLibrary.GetFilesAsync();
+         
+            List<string> filesList = new List<string>();
+            foreach (StorageFile file in files)
             {
-                if (i.EndsWith(".txt"))
+                //фильтруем только txt файлы
+                if (file.Name.EndsWith(".txt"))
                 {
-                    fileTxt.Add(filenames.ElementAt(z));
+                    filesList.Add(file.Name);
                 }
-                z++;
-            }
-
-            filenames = (IEnumerable<string>)fileTxt;
-
-            return filenames;
+            }        
+            return (IEnumerable<string>)filesList;
         }
 
 
 
         public async Task<List<string>> LoadTextAsync(string filename)
         {
-            StorageFolder localFolder = ApplicationData.Current.LocalFolder;
-            // получаем файл
-            StorageFile filepath = await localFolder.GetFileAsync(filename);
-
-            IList<string> lines = await FileIO.ReadLinesAsync(filepath);
-             
-                return (List<string>)lines;
-          
+            StorageFile filepath =await KnownFolders.DocumentsLibrary.GetFileAsync(filename);
+            using (StreamReader reader = new StreamReader(await filepath.OpenStreamForReadAsync()))
+            {
+                List<string> lines = new List<string>();
+                string line;
+                while ((line = await reader.ReadLineAsync()) != null)
+                {
+                    lines.Add(line);
+                }
+                return lines;
+            }
         }
 
     }

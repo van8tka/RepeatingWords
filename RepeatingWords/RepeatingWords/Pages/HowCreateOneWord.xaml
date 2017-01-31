@@ -6,7 +6,7 @@
               Style="{StaticResource TitleApp}">
   <ScrollView>
     <StackLayout>
-      <Label Text="{locale:Translate LabelHeadCreateInstr}" TextColor="White" HorizontalOptions="Center" FontSize="Large"/>
+      <Label Text="{locale:Translate LabelHeadCreateInstr}" TextColor="White" HorizontalOptions="Center" FontSize="Medium"/>
       <Label Text="{locale:Translate LabelForStart}" HorizontalOptions="Center" FontSize="Medium"/>
       <Label Text="{locale:Translate LabelScreen1}" FontSize="Medium"/>
       <Image Source="screen1.jpg" />

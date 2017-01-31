@@ -10,9 +10,6 @@ namespace RepeatingWords.Droid
 {
     public class FileWorker : IFileWorker
     {
-
-
-
         public Task<IEnumerable<string>> GetFilesAsync()
         {
             IEnumerable<string> filenames = from filepath in Directory.EnumerateFiles(GetDocsPath()) select Path.GetFileName(filepath);
