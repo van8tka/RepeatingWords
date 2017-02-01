@@ -118,6 +118,7 @@
     <Content Include="Assets\MainGP188x188.png" />
     <Content Include="Assets\MainGP225x225.png" />
     <Content Include="Assets\MainGP300x300.png" />
+    <Content Include="Assets\MainGP310x310.png" />
     <Content Include="Assets\MainGP600x600.png" />
     <Content Include="Assets\MainGP620X300.png" />
     <Content Include="Assets\MainGP71X71.png" />
@@ -138,6 +139,8 @@
     <Content Include="Assets\StoreLogo.scale-150.png" />
     <Content Include="Assets\StoreLogo.scale-200.png" />
     <Content Include="Assets\StoreLogo.scale-400.png" />
+    <Content Include="Assets\voice.png" />
+    <Content Include="Assets\voiceX.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

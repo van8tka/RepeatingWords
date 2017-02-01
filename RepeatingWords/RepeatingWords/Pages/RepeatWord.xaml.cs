@@ -27,13 +27,19 @@ namespace RepeatingWords.Pages
             words = App.Wr.GetWords(iDdictionary);
             //кол во слов и пройденных слов
             LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString();
-            UpdateWord(Count,FromRus);
+
             // код для Android
             if (Device.OS == TargetPlatform.Android)
             {
-                 DependencyService.Get<IAdmobInterstitial>().Show("ca-app-pub-5351987413735598/1185308269");
+                lang = "en_GB";
+                DependencyService.Get<IAdmobInterstitial>().Show("ca-app-pub-5351987413735598/1185308269");
             }
-            
+            else
+                 if (Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
+            { lang = "en-GB"; }
+         
+            UpdateWord(Count, FromRus);
+
         }
 
 
@@ -46,16 +52,20 @@ namespace RepeatingWords.Pages
             Turn = FromRus;
             iDdictionary = la.IdDictionary;
             words = App.Wr.GetWords(la.IdDictionary);
-
+                              
             //определяем чему равен Count;
             HowCount(la.IdWord);
             //сколько слов всего и пройдено
             LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString();
-            UpdateWord(Count, FromRus);
+
             if (Device.OS == TargetPlatform.Android)
             {
+                lang = "en_GB";
                 DependencyService.Get<IAdmobInterstitial>().Show("ca-app-pub-5351987413735598/1185308269");
             }
+            else if (Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
+            { lang = "en-GB"; }
+            UpdateWord(Count, FromRus);
         }
 
 
@@ -186,7 +196,7 @@ namespace RepeatingWords.Pages
             Turn = !Turn;//перевернули карточку
         }
 
-        string lang = "en_GB";
+        string lang;
 
         private void picker_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -194,37 +204,145 @@ namespace RepeatingWords.Pages
             {
                 case "English":
                     {
-                        lang = "en_GB";
+
+                        if (Device.OS == TargetPlatform.Android)
+                        {
+                            lang = "en_GB";
+                        }
+                        else if (Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
+                        {
+                            lang = "en-GB";
+                        }
+                       
                         break;
                     }
                 case "French":
                     {
-                        lang = "fr_FR";
+                        if (Device.OS == TargetPlatform.Android)
+                        {
+                            lang = "fr_FR";
+                        }
+                        else if (Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
+                        {
+                            lang = "fr-FR";
+                        }
                         break;
                     }
                 case "German":
                     {
-                        lang = "de_DE";
+                        if (Device.OS == TargetPlatform.Android)
+                        {
+                            lang = "de_DE";
+                        }
+                        else if (Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
+                        {
+                            lang = "de-DE";
+                        }
+                      
                         break;
                     }
                 case "Polish":
                     {
-                        lang = "pl_PL";
+                        if (Device.OS == TargetPlatform.Android)
+                        {
+                            lang = "pl_PL";
+                        }
+                        else if (Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
+                        {
+                            lang = "pl-PL";
+                        }
+                      
                         break;
                     }
                 case "Ukrainian":
                     {
-                        lang = "uk_UK";
+                        if (Device.OS == TargetPlatform.Android)
+                        {
+                            lang = "uk_UK";
+                        }
+                        else if (Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
+                        {
+                            lang = "uk-UK";
+                        }
+                       
                         break;
                     }
                 case "Italian":
                     {
-                        lang = "it_IT";
+                        if (Device.OS == TargetPlatform.Android)
+                        {
+                            lang = "it_IT";
+                        }
+                        else if (Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
+                        {
+                            lang = "it-IT";
+                        }
+                      
                         break;
                     }
                 case "Русский":
                     {
-                        lang = "ru_RU";
+                        if (Device.OS == TargetPlatform.Android)
+                        {
+                            lang = "ru_RU";
+                        }
+                        else if (Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
+                        {
+                            lang = "ru-RU";
+                        }
+                      
+                        break;
+                    }
+                case "Chinese":
+                    {
+                        if (Device.OS == TargetPlatform.Android)
+                        {
+                            lang = "zh_CN";
+                        }
+                        else if (Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
+                        {
+                            lang = "zh-CN";
+                        }
+
+                        break;
+                    }
+                case "Japanese":
+                    {
+                        if (Device.OS == TargetPlatform.Android)
+                        {
+                            lang = "ja_JP";
+                        }
+                        else if (Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
+                        {
+                            lang = "ja-JP";
+                        }
+
+                        break;
+                    }
+                case "Portuguese(Brazil)":
+                    {
+                        if (Device.OS == TargetPlatform.Android)
+                        {
+                            lang = "pt_BR";
+                        }
+                        else if (Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
+                        {
+                            lang = "pt-BR";
+                        }
+
+                        break;
+                    }
+                case "Spanish":
+                    {
+                        if (Device.OS == TargetPlatform.Android)
+                        {
+                            lang = "es_ES";
+                        }
+                        else if (Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
+                        {
+                            lang = "es-ES";
+                        }
+
                         break;
                     }
                 default: break;

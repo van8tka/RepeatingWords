@@ -27,7 +27,11 @@
         <x:String>German</x:String>
         <x:String>Polish</x:String>
         <x:String>Ukrainian</x:String>    
-         <x:String>Italian</x:String>   
+       <x:String>Italian</x:String>
+       <x:String>Chinese</x:String>
+       <x:String>Japanese</x:String>
+       <x:String>Portuguese</x:String>
+       <x:String>Spanish</x:String>
       </Picker.Items>
     </Picker>    
       
