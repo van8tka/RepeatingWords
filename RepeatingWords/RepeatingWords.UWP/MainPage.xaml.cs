@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -20,8 +21,16 @@ namespace RepeatingWords.UWP
         public MainPage()
         {
             this.InitializeComponent();
-
             LoadApplication(new RepeatingWords.App());
+           
         }
+        //переопределяем работу кнопки назад
+        protected async override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+            base.OnNavigatedTo(e);
+        }
+     
+
     }
 }

@@ -161,8 +161,7 @@ namespace RepeatingWords {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to View the list of 
-        ///words.
+        ///   Looks up a localized string similar to View the list of words.
         /// </summary>
         internal static string ButtonShowWords {
             get {

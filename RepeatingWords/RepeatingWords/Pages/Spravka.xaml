@@ -6,7 +6,7 @@
              Style="{StaticResource TitleApp}">
 
   <StackLayout>
-    <Label Text="{locale:Translate LabelInstruction}" TextColor="White" HorizontalOptions="Center" FontSize="Medium" HeightRequest="150"/>
+    <Label Text="{locale:Translate LabelInstruction}" TextColor="White" HorizontalTextAlignment="Center" FontSize="Medium" HeightRequest="150"/>
     
     <Button Text="{locale:Translate ButtonHowCreateDictAndaddWord}" Clicked="CreateOneWordButtonClick" Style="{StaticResource buttonStyle}"/>
     <Button Text="{locale:Translate ButtonHowIportFile}" Clicked="CreateFromFileButtonClick" Style="{StaticResource buttonStyle}"/>

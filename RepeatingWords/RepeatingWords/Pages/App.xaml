@@ -9,9 +9,18 @@
      <Style x:Key ="buttonStyle" TargetType="Button">
        <Setter Property="TextColor" Value="White"/>
        <Setter Property="BackgroundColor" Value="Blue"/>
-       <Setter Property="FontSize" Value="Small"/>    
+
+       <Setter Property="FontSize">
+         <Setter.Value>
+           <OnPlatform x:TypeArguments="x:Double">
+             <OnPlatform.Android>20</OnPlatform.Android>
+             <OnPlatform.WinPhone>18</OnPlatform.WinPhone>
+           </OnPlatform>
+         </Setter.Value>        
+       </Setter>    
    </Style>
-     
+    
+         
      <Style x:Key="TitleApp" TargetType="ContentPage">
             <Setter Property="Title" Value="{local:Translate TitleMain}"/>
             <Setter Property="Padding" Value="10"/>

@@ -15,6 +15,7 @@ namespace RepeatingWords.Pages
         IEnumerable<Words> words;
         int Count = 0;
         int countW = 1;
+        string lang;
 
         public RepeatWord(int iDdictionary, bool FromRus)
         {
@@ -68,8 +69,6 @@ namespace RepeatingWords.Pages
             UpdateWord(Count, FromRus);
         }
 
-
-
       
 
 
@@ -104,7 +103,6 @@ namespace RepeatingWords.Pages
                WordForRepeat.TextColor = Color.Lime;
                WordForRepeat.Text = GetWords(count).RusWord;
                 //управление видимостью озвучки
-                ButtonVoice.IsVisible = true;
                 ButtonVoice.IsEnabled = false;
                 picker.IsVisible = true;
                 ButtonVoice.Image = "voiceX.png";
@@ -124,14 +122,13 @@ namespace RepeatingWords.Pages
                 }
               
                 //управление видимостью озвучки
-                ButtonVoice.IsVisible = true;
                 ButtonVoice.IsEnabled = true;
                 ButtonVoice.Image = "voice.png";
                 picker.IsVisible = true;
             }
            
         }
-
+      
         //для получения слова
         Words GetWords(int index)
         {
@@ -185,7 +182,15 @@ namespace RepeatingWords.Pages
                 IdWord = GetWords(Count).Id
             };
             App.LAr.SaveLastAction(i);
-            Navigation.PopToRootAsync();
+            //платформа windows не обрабатывает Navigation.PopToRootAsync();?????
+            if (Device.OS==TargetPlatform.Android)
+            {
+                Navigation.PopToRootAsync();
+            }
+            else if(Device.OS == TargetPlatform.Windows || Device.OS == TargetPlatform.WinPhone)
+            {
+                Navigation.PopAsync();
+            }
             return true;
         }
 
@@ -196,7 +201,11 @@ namespace RepeatingWords.Pages
             Turn = !Turn;//перевернули карточку
         }
 
-        string lang;
+
+        private void BtnClickSpeech(object sender, EventArgs e)
+        {
+            DependencyService.Get<ITextToSpeech>().Speak(GetWords(Count).EngWord, lang);
+        }
 
         private void picker_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -349,10 +358,6 @@ namespace RepeatingWords.Pages
             }
         }
 
-
-      private void BtnClickSpeech(object sender, EventArgs e)
-        {
-             DependencyService.Get<ITextToSpeech>().Speak(GetWords(Count).EngWord,lang);
-        }
+      
     }
 }

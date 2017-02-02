@@ -370,8 +370,7 @@
     <value>The dictionary or word was deleted!</value>
   </data>
   <data name="ButtonShowWords" xml:space="preserve">
-    <value>View the list of 
-words</value>
+    <value>View the list of words</value>
     <comment>Переход на страницу списка слов словаря</comment>
   </data>
   <data name="PickerText" xml:space="preserve">

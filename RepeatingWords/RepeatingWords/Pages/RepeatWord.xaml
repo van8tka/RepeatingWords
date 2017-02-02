@@ -4,7 +4,7 @@
              x:Class="RepeatingWords.Pages.RepeatWord"
              xmlns:locale ="clr-namespace:RepeatingWords;assembly=RepeatingWords"
              Style="{StaticResource TitleApp}">
-  <StackLayout>
+  <StackLayout HorizontalOptions="End">
     <locale:AdMobView WidthRequest="320" HeightRequest="50" />
       <Grid>
          <Grid.ColumnDefinitions>
@@ -21,12 +21,12 @@
             <Label x:Name="LabelCountOfWords" TextColor="White" Grid.Column="0" Grid.Row="0"/>
     <Picker x:Name="picker" SelectedIndexChanged="picker_SelectedIndexChanged" Title="{locale:Translate PickerText}" Grid.Column="1" Grid.Row="0">
       <Picker.Items>
-        <x:String>English</x:String>
-        <x:String>Русский</x:String>
-        <x:String>French</x:String>
-        <x:String>German</x:String>
-        <x:String>Polish</x:String>
-        <x:String>Ukrainian</x:String>    
+       <x:String>English</x:String>
+       <x:String>Русский</x:String>
+       <x:String>French</x:String>
+       <x:String>German</x:String>
+       <x:String>Polish</x:String>
+       <x:String>Ukrainian</x:String>    
        <x:String>Italian</x:String>
        <x:String>Chinese</x:String>
        <x:String>Japanese</x:String>
@@ -37,14 +37,19 @@
       
     
             <Button x:Name="ButtonVoice" Clicked="BtnClickSpeech" Grid.Column="2" Grid.Row="0"/>
+        <!--<Image x:Name="ButtonVoice" Grid.Column="2" Grid.Row="0">
+          <Image.GestureRecognizers>
+            <TapGestureRecognizer Tapped="BtnClickSpeech" />
+          </Image.GestureRecognizers>
+        </Image>-->
        <Label x:Name="WordForRepeat" VerticalOptions="Center" HorizontalOptions="Center" FontSize="27" HeightRequest="160"  Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3"/>
     
        
     
     </Grid>
    
-    <Button Text="{locale:Translate ButtonNextWord}" Clicked="NextWordButtonClick" FontSize="Large" BackgroundColor="Blue" TextColor="White" HeightRequest="100"></Button>
-    <Button Text="{locale:Translate ButtonTurnCard}" Clicked="TurnAroundWordButtonClick" FontSize="Large" BackgroundColor="Green" TextColor="White" HeightRequest="100"></Button>
+    <Button Text="{locale:Translate ButtonNextWord}" Clicked="NextWordButtonClick" FontSize="Medium" BackgroundColor="Blue" TextColor="White" HeightRequest="100"></Button>
+    <Button Text="{locale:Translate ButtonTurnCard}" Clicked="TurnAroundWordButtonClick" FontSize="Medium" BackgroundColor="Green" TextColor="White" HeightRequest="100"></Button>
    
   </StackLayout>
  

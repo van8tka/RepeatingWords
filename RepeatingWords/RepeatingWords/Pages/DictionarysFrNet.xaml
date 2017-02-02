@@ -6,7 +6,7 @@
   Style="{StaticResource TitleApp}">
   <ScrollView>
     <StackLayout>
-     <Label Text="{locale:Translate LabelDictionaryListFromNet}" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White" FontSize="Medium"/>
+     <Label Text="{locale:Translate LabelDictionaryListFromNet}" HorizontalTextAlignment="Center" TextColor="White" FontSize="Medium"/>
 
       <ActivityIndicator x:Name="actIndicator2"  Color="White" />
       

@@ -2,8 +2,7 @@
 using Xamarin.Forms;
 using System.Collections.Generic;
 using System.Linq;
-
-
+using System;
 
 namespace RepeatingWords
 {
@@ -49,25 +48,32 @@ namespace RepeatingWords
         public App()
         {
             InitializeComponent();
+            if (Device.OS == TargetPlatform.Windows || Device.OS == TargetPlatform.WinPhone)
+                InitDb();
             MainPage = new NavigationPage(new MainPage());
-        }
 
-        protected override void OnStart()
+        }
+        //метод инициализации БД тестовыми данными
+        private void InitDb()
         {
-            //инициализация базы данных
             Dictionary dict = Db.GetDictionarys().FirstOrDefault();
-            if(dict==null)
+            if (dict == null)
             {
                 Db.CreateDictionary(dictInit);
                 int z = Db.GetDictionarys().FirstOrDefault().Id;
-                foreach(var w in lw)
+                foreach (var w in lw)
                 {
                     w.IdDictionary = z;
                     Wr.CreateWord(w);
                 }
 
             }
+        }
 
+        protected override void OnStart()
+        {
+            //инициализация базы данных
+            InitDb();
         }
         protected override void OnSleep()
         { }
