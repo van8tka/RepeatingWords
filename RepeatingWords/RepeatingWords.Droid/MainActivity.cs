@@ -3,9 +3,12 @@ using Android.App;
 using Android.Content.PM;
 using Android.OS;
 
+
 namespace RepeatingWords.Droid
 {
-    [Activity(Label = "Cards of words", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+
+    [Activity(Label = "Cards of words", MainLauncher = true, Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    //для установки SplashScreen обязательно использовать FormsAppCompatActivity а не FormsAppActivity
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)

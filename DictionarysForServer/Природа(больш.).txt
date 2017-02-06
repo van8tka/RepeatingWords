@@ -1,0 +1,166 @@
+﻿Лес	['fɔrɪst]	Forest
+Река	['rɪvə]	River
+Море	[siː]	Sea
+Озеро	[leɪk]	Lake 
+Луна	[muːn]	Moon
+Гора	['mauntɪn]	Mountain
+Цветок	['flauə]	Flower
+Поле	[fiːld]	Field
+Звезда	[stɑː]	Star
+Солнце	[sʌn]	Sun
+Дерево	[triː]	Tree
+Волна	[weɪv]	Wave
+Остров	['aɪlənd]	Island
+Океан	['əuʃ(ə)n]	Ocean
+Планета	['plænɪt]	Planet
+Пляж	[biːʧ]	Beach 
+Пещера	[keɪv]	Cave
+Трава	[grɑːs]	Grass
+Холм	[hɪl]	Hill
+Тропинка	[pɑːθ]	Path 
+Пруд	[pɔnd]	Pond
+Скала	[rɔk]	Rock
+Морской берег	['siːʃɔː]	Seashore 
+Ручей	[striːm]	Stream
+Водопад	['wɔːtəfɔːl]	Waterfall
+Домашние животные	[də'mestɪk 'ænɪm(ə)lz]	Domestic animals
+Кошка	[kæt]	Cat
+Курица	['ʧɪkɪn]	Chicken
+Петух	[kɔk]	Cock
+Корова	[kau]	Cow
+Собака	[dɔg]	Dog
+Утка	[dʌk]	Duck
+Коза, козёл	[gəut]	Goat 
+Гусь	[guːs]	Goose
+Свинья	[pɪg]	Pig
+Лошадь	[hɔːs]	Horse
+Бык	[ɔks]	Ox
+Кролик	['ræbɪt]	Rabbit
+Баран	[ræm]	Ram
+Овца	[ʃiːp]	Sheep
+Индюшка	['tɜːkɪ]	Turkey
+Дикие животные	[waɪld 'ænɪm(ə)lz]	Wild animals
+Медведь	[beə]	Bear
+Лев	['laɪən]	Lion
+Обезьяна	['mʌŋkɪ]	Monkey
+Тигр	['taɪgə]	Tiger
+Волк	[wulf]	Wolf
+Зебра	['zebrə]	Zebra
+Лисица	[fɔks]	Fox
+Крокодил	['krɔkədaɪl]	Crocodile
+Слон	['elɪfənt]	Elephant
+Кенгуру	[ˌkæŋg(ə)'ruː]	Kangaroo
+Змея	[sneɪk]	Snake
+Верблюд	['kæm(ə)l]	Camel
+Гепард	['ʧiːtə]	Cheetah
+Олень	[dɪə]	Deer
+Жираф	[ʤɪ'rɑːf]	Giraffe
+Заяц	[heə]	Hare
+Бегемот	[ˌhɪpə'pɔtəməs]	Hippopotamus
+Черепаха	['tɜːtl]	Turtle
+Леопард	['lepəd]	Leopard
+Морской мир	[si: wɜːld]	Sea world
+Акула	[ʃɑːk]	Shark
+Коралл	['kɔrəl]	Coral
+Краб	[kræb]	Crab
+Дельфин	['dɔlfɪn]	Dolphin
+Рыба	[fɪʃ]	Fish
+Медуза	['ʤelɪfɪʃ]	Jellyfish
+Омар	['lɔbstə]	Lobster 
+Осьминог	['ɔktəpəs]	Octopus
+Устрица	['ɔɪstə]	Oyster
+Морской конек	['siːˌhɔːs]	Seahorse
+Креветка	[ʃrɪmp]	Shrimp
+Морская звезда	['stɑːfɪʃ]	Starfish
+Кальмар	[skwɪd]	Squid
+Птицы	[bɜːdz]	Birds
+Пингвин	['peŋgwɪn]	Penguin
+Воробей	['spærəu]	Sparrow
+Фламинго	[flə'mɪŋgəu]	Flamingo
+Орёл	['iːgl]	Eagle
+Попугай	['pærət]	Parrot
+Голубь	['pɪʤən]	Pigeon
+Лебедь	[swɔn]	Swan
+Журавль	[kreɪn]	Crane
+Соловей	['naɪtɪŋgeɪl]	Nightingale
+Страус	['ɔstrɪʧ]	Ostrich
+Сова	[aul]	Owl
+Ворон	['reɪv(ə)n]	Raven 
+Чайка	['siːgʌl]	Seagull
+Аист	[stɔːk]	Stork
+Ласточка	['swɔləu]	Swallow
+Дятел	['wudˌpekə]	Woodpecker
+Насекомые	['ɪnsekts]	Insects
+Муравей	[ænt]	Ant
+Пчела	[biː]	Bee
+Паук	['spaɪdə]	Spider
+Комар	[mɔs'kiːtəu]	Mosquito
+Муха	[flaɪ]	Fly
+Жук	['biːtl]	Beetle
+Червь	[wɜːm]	Worm
+Бабочка	['bʌtəflaɪ]	Butterfly
+Стрекоза	['dræg(ə)nflaɪ]	Dragonfly
+Кузнечик	['grɑːsˌhɔpə]	Grasshopper
+Божья коровка	['leɪdɪbɜːd]	Ladybird
+Саранча	['ləukəst]	Locust
+Моль	[mɔθ]	Moth 
+Улитка	[sneɪl]	Snail
+Термит	['tɜːmaɪt]	Termite 
+Оса	[wɔsp]	Wasp
+Цветы	[flauəz]	Flowers
+Тюльпан	['t(j)uːlɪp]	Tulip
+Подсолнух	['sʌnflauə]	Sunflower
+Роза	[rəuz]	Rose
+Лилия	['lɪlɪ]	Lily
+Колокольчик	['bluːbel]	Bluebell
+Маргаритка	['deɪzɪ]	Daisy
+Одуванчик	['dændɪlaɪən]	Dandelion
+Незабудка	[fə'getmɪnɔt]	Forget-me-not
+Сирень	['laɪlək]	Lilac 
+Лепесток	['pet(ə)l]	Petal
+Стебель	[stɔːk]	Stalk
+Деревья	[ˌtriːz]	Trees
+Яблоня	['æplˌtriː]	Apple tree
+Пальма	[pɑːm]	Palm
+Сосна	[paɪn]	Pine
+Дуб	[əuk]	Oak
+Береза	[bɜːʧ]	Birch
+Ветвь	[brɑːnʧ]	Branch
+Почка	[bʌd]	Bud
+Вишня	['ʧerɪtriː]	Cherry-tree
+Каштан	['ʧesnʌt]	Chestnut
+Ель	[fɜː]	Fir
+Лист	[liːf]	Leaf
+Клен	['meɪpl]	Maple
+Пень	[stʌmp]	Stump
+Ствол	[trʌŋk]	Trunk
+Ива	['wɪləu]	Willow
+Погода	['weðə]	Weather
+Снег	[snəu]	Snow 
+Шторм	[stɔːm]	Storm 
+Cолнце	[sʌn]	Sun 
+Дождь	[reɪn]	Rain 
+Туман	[fɔg]	Fog 
+Облако	[klaud]	Cloud 
+Гром	['θʌndə]	Thunder 
+Прогноз погоды	['weðə 'fɔːkɑːst]	Weather forecast 
+Шторм, буря	[geɪl]	Gale 
+Град	[heɪl]	Hail 
+Осадки	['reɪnfɔːl]	Rainfall 
+Метель	['snəustɔːm]	Snowstorm 
+Прохладно.	['ʧɪlɪ]	It is chilly. 
+Пасмурно.	['klaudɪ]	It is cloudy.
+Холодно.	[kəuld]	It is cold. 
+Мороз.	['frɔstɪ]	It is frosty. 
+Жарко.	[hɔt]	It is hot. 
+Ясно/солнечно.	['sʌnɪ]	It is sunny. 
+Тепло.	[wɔːm]	It is warm. 
+Ветрено.	['wɪndɪ]	It is windy. 
+Идётдождь.	[reɪnɪŋ]	It is raining. 
+Идётснег.	['snəuɪŋ]	It is snowing. 
+Моросит	['drɪzlɪŋ]	It's drizzling
+Ясно.	[klɪə]	It's clear. 
+Туманно.	['fɔgɪ]	It's foggy. 
+Сухо.	[draɪ]	It's dry. 
+Скользко.	['aɪsɪ]	It's icy.
+Сыро.	[wet]	It's wet.

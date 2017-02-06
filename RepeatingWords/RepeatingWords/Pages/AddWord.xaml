@@ -6,7 +6,7 @@
            Style="{StaticResource TitleApp}">
   <ScrollView>
     <StackLayout>
-      <Label x:Name="DictionaryName"  HorizontalTextAlignment="Center" FontSize="Medium" TextColor="White"/>
+      <Label x:Name="DictionaryName"  HorizontalTextAlignment="Center" Style="{StaticResource LableHeadApp}"/>
       <Button Style="{StaticResource buttonStyle}" Text="{locale:Translate ButtonAddWord}" Clicked="CreateWordButtonClick"></Button>
       <Button Style="{StaticResource buttonStyle}" Text="{locale:Translate ButtonRepeatWords}" Clicked="RepeatWordsButtonClick"></Button>
    
@@ -25,15 +25,16 @@
                   </ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                  <RowDefinition Height="Auto"></RowDefinition>
+                  <RowDefinition Height="*"></RowDefinition>
                 </Grid.RowDefinitions>
-                <Label Text="{Binding RusWord}" TextColor="White" Grid.Column="0" FontSize="Medium"/>
                 
+                <Label Text="{Binding RusWord}" TextColor="White" Grid.Column="0" FontSize="Medium"/>
+                 
                 <Label Text="{Binding EngWord}" TextColor="Yellow" Grid.Column="1" FontSize="Medium" />
-               
+                
                 <Label Text="{Binding Transcription}" TextColor="Gray" Grid.Column="2" FontSize="Medium"/>
                
-               </Grid>
+              </Grid>
               </ViewCell.View>
                 </ViewCell>
           </DataTemplate>

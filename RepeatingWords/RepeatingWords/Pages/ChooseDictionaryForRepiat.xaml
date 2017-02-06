@@ -7,7 +7,7 @@
  
   <ScrollView>
     <StackLayout>
-      <Label Text="{locale:Translate LabelChooseDict}" HorizontalTextAlignment="Center" FontSize="Medium" TextColor="White" HeightRequest="70"/>
+      <Label Text="{locale:Translate LabelChooseDict}" HorizontalTextAlignment="Center" Style="{StaticResource LableHeadApp}" HeightRequest="70"/>
     
       <ListView x:Name ="dictionaryList" ItemsSource="{Binding}" ItemSelected ="OnItemSelected" SeparatorColor="Green">
         <ListView.ItemTemplate>
@@ -15,7 +15,7 @@
             <ViewCell>
               <ViewCell.View>
                 <StackLayout Orientation="Horizontal">
-                  <Label Text="{Binding Name}" FontSize="25" TextColor="Yellow"/>
+                  <Label Text="{Binding Name}" FontSize="Medium" TextColor="Yellow"/>
                 </StackLayout>
               </ViewCell.View>
             </ViewCell>

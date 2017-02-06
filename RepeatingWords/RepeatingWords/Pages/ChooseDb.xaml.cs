@@ -47,8 +47,8 @@ namespace RepeatingWords
             }
             else
             {
-                DictionarysFrNet dfn = new DictionarysFrNet();
-                await Navigation.PushAsync(dfn);
+                LanguageFrNet lng = new LanguageFrNet();
+                await Navigation.PushAsync(lng);
             }
         }
     }

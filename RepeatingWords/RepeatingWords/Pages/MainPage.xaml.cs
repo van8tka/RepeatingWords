@@ -1,6 +1,6 @@
 ﻿using RepeatingWords.Model;
 using RepeatingWords.Pages;
-
+using System;
 using Xamarin.Forms;
 
 namespace RepeatingWords
@@ -10,7 +10,10 @@ namespace RepeatingWords
         public MainPage()
         {
             InitializeComponent();
-           
+            if (Device.OS != TargetPlatform.Android)
+                ButtonReview.IsEnabled = false;
+
+
         }
         private async void ChooseDbButtonClick(object sender, System.EventArgs e)
         {
@@ -44,6 +47,14 @@ namespace RepeatingWords
             Spravka spv = new Spravka();
             await Navigation.PushAsync(spv);
         }
-                     
+
+      private void  OtzyvButtonClick(object sender, System.EventArgs e)
+        {
+            if(Device.OS == TargetPlatform.Android)
+              
+              Device.OpenUri(new Uri("https://play.google.com/store/apps/details?id=cardsofwords.cardsofwords"));
+         }
+
+
     }
 }

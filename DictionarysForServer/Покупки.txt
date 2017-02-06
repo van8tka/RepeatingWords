@@ -1,0 +1,104 @@
+﻿Магазины	[ʃɔpz]	Shops
+Книжный	[bʊkstɔ:]	Bookstore
+Продуктовый	[grəʊsəristɔ:]	Grocery store
+Косметика	[kɒz'mɛtɪksʃɒp]	Cosmetics shop
+Универмаг	[dɪ'pa:tməntstɔ:]	Department store
+Аптека	[drʌgstɔ: /'kemɪsts / 'fɑːməsɪ]	Drugstore / chemist's / pharmacy
+Булочная	[beɪkəri]	Bakery
+Кондитерская	['kændɪʃɔp]	Candy shop
+Оптика	[ɒpʹtɒmıtrıst]	Optometrist
+Бутик	[bu:'ti:k]	Boutique
+Рынок	['ma:kɪt]	Market
+Мясной м-н	[bʊtʃəz]	Butcher's
+М-н обуви	[fʊtweə / ʃuː ʃɔp / 'kɔbləz]	Footwear / shoe shop / cobbler's
+Торговый центр	[mɔ:l]	Mall
+Ювелирный м-н	[dʒu:əlristɔ:]	Jewellery store
+Электроника	[ɪlɛk'trɒnɪks]	Electronics
+Книжный	[bʊkstɔ:]	Bookstore
+Косметика	[kɒz'mɛtɪksʃɒp]	Cosmetics shop
+Универмаг	[dɪ'pa:tməntstɔ:]	Department store
+Аптека	[drʌgstɔ: /'kemɪsts /'fɑːməsɪ]	Drugstore / chemist's / pharmacy
+Мебель	[fɜ:nɪtʃəstɔ:]	Furniture store
+Спортивные товары	[spɔ:tgʊdz / spɔ:tsstɔ:]	Sport goods / sports store
+Канцелярия	[steɪʃnəz]	Stationer's
+М-н игрушек	[tɔɪstɔ:]	Toy store
+Антикварный	[æn'ti:kʃɒp]	Antique shop
+Газетныйкиоск	[nju:z 'eɪdʒənts /ʹnju:zstænd]	Newsagent's / news-stand
+Дисконт центр	[dɪskaʊntstɔ:]	Discount store
+М-н тканей	[fæbrɪkstɔ:]	Fabric store
+Магазин посуды	['krɔk(ə)rɪ] / ['kukweə]	Crockery / cookware
+Рыбныймагазин	[fɪʃˌmʌŋgəz /si:fudstɔ:]	Fishmonger's / seafood store
+Цветочный магазин	['flɔrɪst]	Florist 
+Сетьс токовых магазинов	['autletmɔːl]	Outlet mall
+Ломбард	['pɔːnʃɔp]	Pawnshop 
+Винный магазин	['lɪkəstɔː]	Liquor store
+Блошиный рынок	[fli: 'ma:kɪt]	Flea market
+Киоск	[ki(:)ɒsk = stɔ:l]	Kiosk=stall
+Галантерея	[hæbədæʃəri]	Haberdashery
+Зоо магазин	[pɛtʃɒp]	Pet shop
+Бытовые приборы	[ə'plaɪənsstɔ:]	Appliance store
+Сетевой м-н	[tʃeɪnstɔ:]	Chain store
+Деликатесы	[dɛlɪkə'tɛsn]	Delicatessen
+Онлайн покупки	[ˌɔn'laɪn 'ʃɔpɪŋ]	Online shopping
+Список пожеланий	[wɪʃlɪst]	Wish list
+Заказ	[ɔ:də]	Order
+Очередь	[laɪn = kju:]	Line = queue
+Доставка	[dɪ'lɪvəri]	Delivery
+Жаловаться	[kəm'pleɪn]	To complain
+Потребитель	[kən'sju:mə]	Consumer
+Выбирать	[tʃu:z]	To choose
+Примерять	[traɪɒn]	To try on
+Торговаться	[ba:gɪn = 'hægl]	To bargain = haggle
+Платить наличными	[peɪ(in)kæʃ]	To pay (in) cash
+Платить кредиткой	[peɪbaɪ 'krɛdɪtka:d]	To pay by credit card
+Покупать	[pɜ:tʃəs]	To purchase
+Возврат денег	[ri:fʌnd]	Refund
+Возврат	[rɪ'tɜ:n]	Return
+Курьер	[kʊrɪə]	Courier
+Сделать заказ	[meɪkən 'ɔ:də]	To make an order
+В наличии	[in stɒk = ə'veɪləbl]	In stock = available
+Новые товары	[nju: 'aɪtəmz]	New items
+Бесплатная доставка	[fri: 'ʃɪpɪŋ]	Free shipping
+Поврежденный товар	[dæmɪdʒd 'aɪtəm]	Damaged item
+Товар с дефектом	[fɔ:lti 'aɪtəm]	Faulty item
+Замена	[rɪ'pleɪsmənt]	Replacement
+Покупать в кредит	[baɪɒn 'krɛdɪt]	To buy on credit
+Разглядывать витрины	[gəʊ 'wɪndəʊ'ʃɒpɪŋ]	To go window-shopping
+Шопоголик	[ʃɔpə'hɔlɪk]	Shopaholic
+Стоять в очереди	[stænd in ə laɪn]	To stand in a line
+Списокпокупок	[ʃɒpɪŋlɪst]	Shopping list
+Обслуживание клиентов	[kʌstəmə 'sɜ:vɪs]	Customer Service
+Продавец	['selə]	Seller
+Этикетка	[leɪbl]	Label
+Продавать	[sɛl]	To sell
+Предлагать	[ɒfə]	To offer
+Распродажа	[seɪl]	Sale
+Давать скидку	[gɪv ə 'dɪskaʊnt]	To give a discount
+Касса	[kæʃdɛsk /'rɛdʒɪstə]	Cash desk / register
+Кассир	[kæ'ʃɪə]	Cashier
+Продавец	[ʃɒpə'sɪstənt]	Shop assistant
+Ценник	[praɪstæg]	Price tag
+Лучшее предложение	[[bɛstdi:l]	Best deal
+Продано	[səʊldaʊt]	Sold out
+Заворачивать	[ræp]	To wrap
+Фиксированная цена	[fɪkstpraɪs]	Fixed price
+Рекламирование	[ædvətaɪzɪŋ]	Advertising
+Рекламная кампания	[ædvətaɪzɪŋkæm'peɪn]	Advertising campaign
+Реклама (ТВ илирадио)	[kə'mɜ:ʃəl]	Commercial
+Количество и упаковка	['kwɔntətɪz& 'pækɪʤ]	Quantities and package
+ Банка (сливок)	[ʤɑː əv]	Jar of (cream)
+ Пачка / пакет (молока, сигарет)	['kɑːt(ə)n / 'pækɪtəv]	Carton / packet of (milk, cigarettes)
+ Кусок (хлеба)	[slaɪs / pi:səv]	Slice / piece of (bread)
+ Дюжина (яиц)	['dʌz(ə)n əv]	Dozen of (eggs)
+ Бутылка (молока)	['bɔtləv]	Bottle of (milk)
+ Коробка (печенья)	[bɔksəv]	Box of (cookies)
+ Консервная банка (персиков)	[kæn / tɪnəv]	Can / tin of (peaches)
+ Плитка (шоколада)	[ba: əv]	Bar of (chocolate)
+ Кусок (мыла)	[ba: əv]	Bar of (soap)
+ Кусок (говядины)	[kʌtəv]	Cut of (beef)
+ Гроздь(винограда)	[bʌnʧəv]	Bunch of (grapes)
+ Связка(ключей)	[bʌnʧəv]	Bunch of (keys)
+ Полдюжины	[ha:f ə 'dʌz(ə)n]	Half a dozen
+ Клубок (шерсти)	[bɔːləv]	Ball of (wool)
+ Катушка (ниток)	[ri:ləv]	Reel of (thread)
+ Рулон (бумаги)	[rəuləv]	Roll of (paper)

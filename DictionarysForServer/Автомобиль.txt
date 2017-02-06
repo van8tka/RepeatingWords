@@ -1,0 +1,77 @@
+﻿Автомобиль	['ɔːtəmə(u)biːl]	Automobile
+Грузовик	[trʌk]	Truck
+Педаль	['ped(ə)l]	Pedal
+Бак для горючего	[gæs 'tæŋk]	Gas tank
+Колесо, руль	[wi:l]	Wheel
+Такси	['tæksɪ]	Taxi
+Парковка	[pɑːk]	Park
+Стоянка	[pɑːkɪŋpleɪs]	Parking place
+Шина	['taɪə]	Tyre (br.) / tire (am.)
+Тормоз	[breɪk]	Brake
+Багажник	[trʌŋk]	Trunk
+Грузовик	['lɔrɪ]	Lorry
+Метро	['sʌbweɪ\'ʌndəgraund/'metrəu] 	Subway / underground /metro
+Мопед / мотоцикл	['məutəbaɪk]	Motor bike
+Троллейбус	['trɔlɪbʌs]	Trolley bus
+Автобус	[bʌs]	Bus
+Зажигание	[ɪg'nɪʃ(ə)n]	Ignition
+Капот	['bɔnɪt]	Bonnet
+Джип	[ʤiːp]	Jeep
+Лимузин	[ˌlɪmə'ziːn]	Limousine
+Фургон	[væn]	Van
+Автомастерская	['gærɑːʒ]	Garage
+Автозаправка	[͵ri:ʹfju:əlıŋ]	Refuelling
+Авария	['breɪkdaun]	Breakdown
+Салон авто	['pæs(ə)nʤəkəm'pɑːtmənt]	Passenger compartment
+Детали	[kəm'pəunənts]	Components
+Багажник	[but]	Boot
+Бампер	['bʌmpə]	Bumper
+Кузов	[kæb]	Cab
+Карбюратор	[ˌkɑːbə'retə]	Carburettor
+Капот	['bɔnɪt]	Bonnet
+Поршень	['pɪst(ə)n]	Piston
+Колесо заднее	[rɪəwi:l]	Rear wheel
+Кабриолет	[ˌkæbrɪə(u)'leɪ]	Cabriolet
+Хетчбек	['hæʧbæk]	Hatch-back
+Седан	[sɪ'dæn]	Sedan
+Универсал	[ˌjuːnɪ'vɜːs(ə)l]	Universal
+Катафалк	['kætəfælk]	Catafalque
+Авария	['breɪkdaun]	Breakdown
+Стоянка такси	['kæbstænd]	Cabstand
+Станция	['steɪʃ(ə)n]	Station
+Бульдозер	['bulˌdəuzə]	Bulldozer
+Комбайн зерновой	[kəm'baɪn 'hɑːvɪstə]	Combine harvester
+Мусоровоз	[dʌstkɑːt]	Dust-cart
+Экскаватор	['ekskəveɪtə]	Excavator
+Вездеход	['lændˌrəuvə]	Land rover
+Погрузчик	['ləudə]	Loader
+Коляска мотоцикла	['bʌdɪsiːt]	Buddy seat
+Каска, шлем	['helmət]	Helmet
+Бензовоз	['petr(ə)l 'tæŋkə]	Petrol tanker
+Самокат	[puʃ 'saɪkl / ˈskuːtə]	Push-cycle / scooter
+Железная дорога	['reɪlweɪ]	Railway
+Поезд	[treɪn]	Train
+Трамвай	[træm]	Tram
+Рейсовый путь	[træk]	Track
+Ж/ д абонемент	[treɪnpa:s]	Train pass
+Станция, вокзал	['reɪlweɪ 'steɪʃ(ə)n]	Railway station
+Вагон	[ka: / 'kærɪʤ]	Car / carriage
+Платформа	['plætfɔːm]	Platform
+Плацкарт	[bəːθ]	Berth
+Направления ж/д	['reɪl 'netwɜːk]	Rail network
+Спальный вагон / спальное место (в вагоне)	[sliːpıŋ 'kærɪʤ / kuː'ʃet] 	Sleeping carriage/couchette
+Купе	[kəm'pɑːtmənt]	Compartment
+Вагон-ресторан	[daɪnıŋka: / launʤka:]	Dining car/ lounge car
+Дни, в которые ходят поезда	[deɪəvˌɔp(ə)'reɪʃ(ə)n]	Day of operation
+Поездка в один/оба конца	['autwəd 'ʤɜːnɪ /rɪ'tɜːn 'ʤɜːnɪ]	Outward journey/ return journey
+Тепловоз	['diːz(ə)lˌləukə'məutɪv]	Diesel locomotive
+Электровоз	[ɪ'lektrɪkˌləukə'məutɪv]	Electric locomotive
+Пригородный поезд	['ləuk(ə)ltreɪn]	Local train
+Локомотив	[ˌləukə'məutɪv]	Locomotive
+Экспресс	[ɪk'sprestreɪn]	Express train
+Платформа	['plætfɔːm]	Platform
+Семафор	['seməfɔː]	Semaphore
+Паровоз	[stiːm ˌləukə'məutɪv]	Steam locomotive
+Электричка	[sə'bɜːb(ə)ntreɪn]	Suburban train
+Стрелка	[swɪʧ]	Switch
+Садиться / выходить из поезда	[get ɔn / ɔfðətreɪn]	To get on / off the train

@@ -122,7 +122,7 @@
     <comment>Добавление словаря</comment>
   </data>
   <data name="ButtonAddDictionaryOrWords" xml:space="preserve">
-    <value>Добавить словарь или слова</value>
+    <value>Добавить словарь</value>
     <comment>Добавление словаря и (или) слов</comment>
   </data>
   <data name="ButtonAddWord" xml:space="preserve">
@@ -138,11 +138,11 @@
     <comment>Кнопка создать</comment>
   </data>
   <data name="ButtonHowCreateDictAndaddWord" xml:space="preserve">
-    <value>Создание словаря и добавление отдельных слов</value>
+    <value>Создание словаря </value>
     <comment>Кн Создание словаря и добавление отдельных слов</comment>
   </data>
   <data name="ButtonHowIportFile" xml:space="preserve">
-    <value>Как импортировать слова из файла</value>
+    <value>Импорт слов из файла</value>
     <comment>Кн Как импортировать слова из файла</comment>
   </data>
   <data name="ButtonNextWord" xml:space="preserve">
@@ -166,7 +166,7 @@
     <comment>Выбор словаря для изучения слов(повторения)</comment>
   </data>
   <data name="Continue" xml:space="preserve">
-    <value>Продолжить с прошлого места</value>
+    <value>Продолжить</value>
     <comment>Продолжение повторения слов с того места где остановились прошлый раз</comment>
   </data>
   <data name="EntryNameDict" xml:space="preserve">
@@ -178,7 +178,7 @@
     <comment>Заголовок на главной странице</comment>
   </data>
   <data name="HowUseApp" xml:space="preserve">
-    <value>Как пользоваться этой программой</value>
+    <value>Помощь</value>
     <comment>Справочная информация</comment>
   </data>
   <data name="LabelChooseDict" xml:space="preserve">
@@ -355,7 +355,7 @@
     <comment>Переход на страницу списка слов словаря</comment>
   </data>
   <data name="PickerText" xml:space="preserve">
-    <value>Выберите язык озвучки</value>
+    <value>Язык озвучки</value>
     <comment>Текст в picker - выпадающем списке для выбора языка озвучки.</comment>
   </data>
   <data name="ButtonAddWorFrNet" xml:space="preserve">
@@ -367,5 +367,11 @@
   </data>
   <data name="LabelDictionaryListFromNet" xml:space="preserve">
     <value>Выберите словарь для загрузки в память телефона</value>
+  </data>
+  <data name="LabelLanguageListFromNet" xml:space="preserve">
+    <value>Выберите язык для изучения</value>
+  </data>
+  <data name="ButtonReviewText" xml:space="preserve">
+    <value>Оставить отзыв</value>
   </data>
 </root>

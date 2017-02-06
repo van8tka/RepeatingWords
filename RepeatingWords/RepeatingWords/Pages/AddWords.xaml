@@ -6,7 +6,7 @@
              Style="{StaticResource TitleApp}">
             
   <StackLayout>
-    <Label x:Name="DictionaryName" HorizontalTextAlignment="Center" FontSize="Medium" TextColor="White" HeightRequest="200"/>
+    <Label x:Name="DictionaryName" HorizontalTextAlignment="Center" Style="{StaticResource LableHeadApp}" HeightRequest="200"/>
     <Button Style="{StaticResource buttonStyle}" Text="{locale:Translate ButtonAddWord}" Clicked="AddWordButtonClick"></Button>
     <Button Style="{StaticResource buttonStyle}" Text="{locale:Translate ButtonAddWorFrFile}" Clicked="AddWordsFromFileButtonClick"></Button>
     <Button Style="{StaticResource buttonStyle}" Text="{locale:Translate ButtonRemove}" Clicked="DelleteDbButtonClick"></Button>

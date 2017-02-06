@@ -5,7 +5,7 @@
                xmlns:locale ="clr-namespace:RepeatingWords;assembly=RepeatingWords"
             Style="{StaticResource TitleApp}">
   <StackLayout>
-    <Label Text="{locale:Translate LabelFirstWord}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" TextColor="White"/>
+    <Label Text="{locale:Translate LabelFirstWord}" VerticalOptions="Center" HorizontalOptions="Center" Style="{StaticResource LableHeadApp}"/>
     <Entry Text="{Binding RusWord}" Placeholder="{locale:Translate LabelFirstWord}" FontSize="Medium" TextColor="Yellow"></Entry>
     <Label Text="{locale:Translate LabelSecondWord}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" TextColor="White"/>
     <Entry Text="{Binding EngWord}" Placeholder="{locale:Translate LabelSecondWord}" FontSize="Medium" TextColor="Yellow"></Entry>

@@ -122,7 +122,7 @@
     <comment>Добавление словаря</comment>
   </data>
   <data name="ButtonAddDictionaryOrWords" xml:space="preserve">
-    <value>Add dictionary and words</value>
+    <value>Add dictionary</value>
     <comment>Добавление словаря и (или) слов</comment>
   </data>
   <data name="ButtonAddWord" xml:space="preserve">
@@ -138,11 +138,11 @@
     <comment>Кнопка создать</comment>
   </data>
   <data name="ButtonHowCreateDictAndaddWord" xml:space="preserve">
-    <value>How to create the dictionary and add the word</value>
+    <value>Create the dictionary</value>
     <comment>Кн Создание словаря и добавление отдельных слов</comment>
   </data>
   <data name="ButtonHowIportFile" xml:space="preserve">
-    <value>How to import words from the file</value>
+    <value>Import words from the file</value>
     <comment>Кн Как импортировать слова из файла</comment>
   </data>
   <data name="ButtonNextWord" xml:space="preserve">
@@ -162,7 +162,7 @@
     <comment>Кн перевернуть карточку</comment>
   </data>
   <data name="ChooseDictionaryForRepeat" xml:space="preserve">
-    <value>Select the dictionary for studying</value>
+    <value>Select the dictionary</value>
     <comment>Выбор словаря для изучения слов(повторения)</comment>
   </data>
   <data name="Continue" xml:space="preserve">
@@ -178,7 +178,7 @@
     <comment>Заголовок на главной странице</comment>
   </data>
   <data name="HowUseApp" xml:space="preserve">
-    <value>How to use this app</value>
+    <value>Help</value>
     <comment>Справочная информация</comment>
   </data>
   <data name="LabelChooseDict" xml:space="preserve">
@@ -374,11 +374,11 @@
     <comment>Переход на страницу списка слов словаря</comment>
   </data>
   <data name="PickerText" xml:space="preserve">
-    <value>Set language to voice</value>
+    <value>Voice language</value>
     <comment>Текст в picker - выпадающем списке для выбора языка озвучки.</comment>
   </data>
   <data name="ButtonAddWorFrNet" xml:space="preserve">
-    <value>Add dictionaries from the server</value>
+    <value>Add dictionary from the server</value>
     <comment>Загрузка словарей из devprogram.ru</comment>
   </data>
   <data name="ModalCheckNet" xml:space="preserve">
@@ -386,5 +386,11 @@
   </data>
   <data name="LabelDictionaryListFromNet" xml:space="preserve">
     <value>Select the dictionary for load into the phone</value>
+  </data>
+  <data name="LabelLanguageListFromNet" xml:space="preserve">
+    <value>Choose language</value>
+  </data>
+  <data name="ButtonReviewText" xml:space="preserve">
+    <value>Write a review</value>
   </data>
 </root>

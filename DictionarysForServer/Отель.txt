@@ -1,0 +1,100 @@
+﻿Хостел	['hɔst(ə)l]	Hostel
+Гостиница для семей	['fæməlɪ (h)ə(u)'tel]	Family hotel
+Мотель	[məu'tel]	Motel
+Пятизвёздочный отель	['lʌkʃərɪ (h)ə(u)'tel]	Luxury hotel
+Питание: завтрак	[ˌbiːən(d)'biː]	B&b — bed and breakfast
+Полупансион (как правило, завтрак и ужин)	[ˌhɑːf'bɔːd]	Hb — half board
+Трехразовое питание	[ˌful'bɔːd]	FB — full board
+Питание по программе «все включено»	[ɔːlɪn'kluːsɪv]	All inclusive
+Континентальный завтрак	[ˌkɔntɪˈnentl ˈbrekfəst]	CB - Continental breakfast
+Американский завтрак	[ə'merɪkən ˈbrekfəst]	AB – American breakfast
+Типыномеров	 [ruːmtaɪps]	Room types
+Одноместный номер	['sɪŋglruːm]	Single room
+Двухместный номер с двумя кроватями	[twɪnruːm]	Twin room
+Двухместный номер с одной двуспальной кроватью	['dʌblruːm]	Double room
+Два смежных номера гостиницы	[ə'ʤɔɪnɪŋruːmz]	Adjoining rooms
+Категории номеров (по комфортности)	 [ruːmˈkætəɡ(ə)rɪz]	Room categories
+Стандартный номер	['stændədruːm]	Standard room
+Номер повышенной комфортности	[suː'pɪərɪəruːm]	Superior room
+Номер «полулюкс»	['ʤuːnɪəswiːtruːm]	Junior suite room
+Номер «люкс»	[swiːtruːm]	Suite room
+Номер со спальней	[ˈbedrumruːm]	Bedroom
+Угловой номер	[ˈkɔ:nəruːm]	Corner room
+Семейный номер	[ˈfæmɪlɪruːm]	Family room
+Номер с видом на море	[si: vju: ruːm]	Sea view room
+Номер с видом на бассейн	[pu:lvju: ruːm]	Pool view room
+Номер с видом на пляж	[bi:tʃvju: ruːm]	Beach view room
+Номер с видом на горы	[ˈmauntɪn vju: ruːm]	Mountain view room
+Стойка регистрации	 [rɪ'sepʃ(ə)n]	Reception
+Стойка администратора	[rɪ'sepʃ(ə)n desk]	Reception desk
+Счет	[bɪl]	Bill
+Скидка	['dɪskaunt]	Discount
+Первый этаж	[graundflɔː]	Ground floor
+Второй этаж (фактически)	[fæːstflɔː]	First floor
+Лифт	[lɪft\'elɪveɪtə]	Lift (br.) / elevator (am.)
+Вестибюль	['lɔbɪ]	Lobby
+Верхний этаж	[tɔpflɔː]	Top floor
+Багаж	['bægɪʤ\'lʌgɪʤ]	Baggage / luggage
+Утренний звонок	['mɔːnɪŋ kɔːl]	Morning call
+Имеющийся в наличии	[ə'veɪləbl]	Available
+Ключ / электронный ключ от номера	[ruːmkiː\kiː kɑːd]	Room key / key card
+Подтверждение бронирования	['bukɪŋ ˌkɔnfə'meɪʃ(ə)n]	Booking confirmation
+Заранее	[ɪn əd'vɑːn(t)s]	In advance
+Час, с наступлением которого возможно заселение в номер	[ʧekɪn taɪm]	Check-in time
+Час, до которого необходимо освободить номер в день отъезда	[ʧekaut taɪm]	Check-out time
+В стоимость включено	[reɪt ɪn 'kluːds]	Rate includes
+Оплата в местной валюте	['peɪmənt ɪn 'ləuk(ə)l 'kʌrənsɪ]	Payment in local currency
+В данный момент свободных номеров нет.	[æt ðə 'məumənt ðe əra: nəu ru:mz ə'veɪləbl]	At the moment there are no rooms available.
+Брошюры с информацией об отеле и достопримечательностях	['brəuʃəz]	Brochures
+Ручная тележка для багажа	['lʌgɪʤ kɑːt]	Luggage cart
+Взимать плату за нанесенный ущерб	[teɪk ə 'dæmɪʤ ʧɑːʤ]	To take a damage charge
+Взимать плату за пользование платными услугами	[teɪk ən 'ekstrə ruːm ʧɑːʤ]	To take an extra room charge
+Платить по картe	[peɪ wɪð  ə  kɑːd]	To pay with a card
+Расплатиться наличными	[peɪ kæʃ]	To pay cash
+Оплатить услуги	[peɪ fɔː  'sɜːvɪs]	To pay for services
+Выехать из гостиницы	[ʧek aut]	To check out
+Вселиться в гостиницу (зарегистрироваться)	[ʧek ɪn]	To check in
+Заполнить форму	[fɪl ɪn ə fɔːm]	To fill in a form
+Забронировать гостиничный номер	[meɪk ə ˌrezə'veɪʃn fɔːr ə ruːm]	Make a reservation for a room
+Бронировать	[buk]	To book
+Ручная тележка для багажа	['lʌgɪʤ kɑːt]	Luggage cart
+Персонал отеля	 [(h)ə(u)'telstʌf]	Hotel staff
+Управляющий гостиницей	[(h)ə(u)'tel 'mænɪʤə]	Hotel manager
+Администратор	[rɪ'sepʃ(ə)nɪst]	Receptionist
+Дежурный администратор	[desk klɑːk]	Desk clerk
+Горничная	['ʧeɪmbəmeɪd]	Chambermaid
+Привратник, швейцар	['dɔːmən]	Doorman
+Носильщик	['pɔːtə]	Porter
+Коридорный, посыльный	['belbɔɪ]	Bellboy
+Служащий гостиницы	['vælɪt]	Valet
+Комплекс услуг, предоставляемых гостиницей	  [(h)ə(u)'telfəˈsɪlətɪz]	Hotel facilities
+Бар в лобби/вестибюле	['lɔbɪbɑː]	Lobby bar
+Ресторан	['restərɔnt]	Restaurant
+Буфет	[snækbɑː]	Snack bar
+Газетный киоск	[njuːz stænd]	News stand
+Прачечная	['lɔːndrɪ]	Laundry
+Сейф	[seɪf dɪ'pɔzɪt bɔks]	Safe deposit box
+Бассейн	['swɪmɪŋpuːl]	Swimming pool
+Закрытый бассейн	[ˌɪn'dɔː puːl]	Indoor pool
+Тренажерный зал	[weɪt ruːm \ ʤɪm]	Weight room / gym
+Сауна	['sɔːnə]	Sauna
+Джакузи	[hɔttʌb]	Hot tub
+Парковка	['pɑːkɪŋ]	Parking lot
+Обслуживание номеров	[ruːm sɜːvɪs]	Room service
+Небеспокоить	[duː  nɔt dɪ'stɜːb]	Do not disturb
+Душ	['ʃəuə]	Shower
+Полотенце	['tauəl]	Towel
+Простыня	[ʃiːt]	Sheet
+Мыло	[səup]	Soap
+Шампунь	[ʃæm'puː]	Shampoo
+Одеяло	['blæŋkɪt]	Blanket
+Туалетная бумага	['tɔɪlət 'peɪpə]	Toilet paper
+Фен	['heədraɪə\bləu 'draɪə\fæn]	Hairdryer / blow dryer / fan
+Балкон	['bælkənɪ]	Balcony
+Большая двуспальная кровать	['kɪŋ saɪz bed]	King-size bed
+Двуспальная кровать без разделения посередине	[kwiːn saɪz bed]	Queen size bed
+Двуспальная кровать, составленная из двух кроватей	['dʌbl bed]	Double bed
+Односпальная кровать	['sɪŋgl bed]	Single bed
+Подтекающий кран	['liːkɪŋ 'fɔːsɪt]	Leaking faucet
+Убирать комнату	[duː ə ruːm]	To do a room
+Чинить	[fɪks]	To fix

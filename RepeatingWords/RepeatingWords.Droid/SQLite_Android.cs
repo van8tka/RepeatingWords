@@ -13,7 +13,6 @@ namespace RepeatingWords.Droid
         {
             string documentsPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
             string path = Path.Combine(documentsPath, filename);
-            //string path = filename;
             return path;
         }
 

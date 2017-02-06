@@ -1,0 +1,81 @@
+﻿пляж[biːʧ]beach 
+пещера[keɪv]cave
+поле[fiːld]	field
+гора['mauntɪn]mountain
+лес['fɔrɪst]forest
+трава[grɑːs]grass
+холм[hɪl]hill
+остров['aɪlənd]island
+тропинка[pɑːθ]path 
+скала[rɔk]rock
+ручей[striːm]stream
+водопад['wɔːtəfɔːl]waterfall
+волна[weɪv]wave
+Домашние животные[də'mestɪk 'ænɪm(ə)lz]Domestic animals
+петух[kɔk]	cock
+коза, козёл[gəut]goat 
+гусь[guːs]goose
+лошадь[hɔːs]horse
+бык[ɔks]ox
+баран[ræm]ram
+индюшка['tɜːkɪ]turkey
+верблюд['kæm(ə)l]camel
+гепард['ʧiːtə]cheetah
+олень[dɪə]deer
+заяц[heə]hare
+черепаха['tɜːtl]turtle
+рыба[fɪʃ]fish
+медуза['ʤelɪfɪʃ]jellyfish
+омар['lɔbstə]lobster 
+осьминог['ɔktəpəs]octopus
+устрица['ɔɪstə]oyster
+Морской конек['siːˌhɔːs]seahorse
+акула[ʃɑːk]	shark
+креветка[ʃrɪmp]shrimp
+Морская звезда['stɑːfɪʃ]starfish
+кальмар[skwɪd]squid
+журавль[kreɪn]crane
+орёл['iːgl]eagle
+соловей['naɪtɪŋgeɪl]nightingale
+страус['ɔstrɪʧ]ostrich
+сова[aul]owl
+попугай['pærət]parrot
+пингвин['peŋgwɪn]penguin
+голубь['pɪʤən]pigeon
+ворон['reɪv(ə)n]raven 
+чайка['siːgʌl]seagull
+воробей['spærəu]sparrow
+аист[stɔːk]stork
+ласточка['swɔləu]swallow
+лебедь[swɔn]swan
+дятел['wudˌpekə]woodpecker
+Насекомые['ɪnsekts]Insects
+муравей[ænt]ant
+пчела[biː]bee
+жук['biːtl]beetle
+стрекоза['dræg(ə)nflaɪ]	dragonfly
+муха[flaɪ]fly
+кузнечик['grɑːsˌhɔpə]grasshopper
+Божья коровка['leɪdɪbɜːd]ladybird
+комар[mɔs'kiːtəu]mosquito
+улитка[sneɪl]snail
+паук['spaɪdə]spider
+оса[wɔsp]wasp
+червь[wɜːm]worm
+подсолнух	['sʌnflauə]sunflower
+Деревья[ˌtriːz]Trees
+береза[bɜːʧ]birch
+ветвь[brɑːnʧ]branch
+почка[bʌd]bud
+вишня['ʧerɪtriː]cherry-tree
+ель[fɜː]fir
+лист[liːf]leaf
+клен['meɪpl]maple
+пальма[pɑːm]palm
+сосна[paɪn]pine
+пень[stʌmp]stump
+ствол[trʌŋk]trunk
+ива['wɪləuъ]willow
+Погода['weðə]Weather
+облако[klaud]cloud 
+туман[fɔg]	fog 

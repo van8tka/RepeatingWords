@@ -11,19 +11,21 @@ namespace RepeatingWords.Pages
     {
         //создаем класс для работы с WebApi сайта и получения данных
         OnlineDictionaryService onService = new OnlineDictionaryService();
-        public DictionarysFrNet()
+        public DictionarysFrNet(Language lang)
         {
             InitializeComponent();
+            NameLanguage.Text = lang.NameLanguage;
             actIndicator2.IsRunning = false;
-            ListLoad();
+            //метод загрузки списка словаерй выбранного языка по ID языка
+            ListLoad(lang.Id);
         }
 
               
-        async Task ListLoad()
+        async Task ListLoad(int idLang)
         {
             actIndicator2.IsRunning = true;
             //получаем данные в формате Json, Диссериализуем их и получаем словари
-            IEnumerable<Dictionary> dictionaryList = await onService.Get();
+            IEnumerable<Dictionary> dictionaryList = await onService.GetLanguage(idLang);
             actIndicator2.IsRunning = false;
             //передаем словари(список) в xaml элементу Listview
             dictionaryNetList.ItemsSource = dictionaryList;
@@ -66,7 +68,7 @@ namespace RepeatingWords.Pages
             }
             catch (Exception er)
             {
-                DisplayAlert("Error", er.Message, "Ok");
+               await DisplayAlert("Error", er.Message, "Ok");
             }
         }
              

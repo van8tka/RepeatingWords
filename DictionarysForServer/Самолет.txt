@@ -1,0 +1,39 @@
+﻿Самолет	[ 'eəpleɪn]	Airplane
+Туалет	['lævət(ə)rɪ]	Lavatory
+Спасательный жилет	[laɪfvest]	Life vest
+Ремень безопасности	[siːt belt]	Seat belt
+Кислородная маска	['ɔksɪʤənmɑːsk]	Oxygen mask
+Пассажир	[ 'pæsinʤə ]	Passenger
+Посадка (на самолёт)	[ 'bɔ:rdɪŋ ]	Boarding
+Бортпроводник	[flaɪtə'tendənt]	Flight attendant
+Пилот	[ 'pailət ]	Pilot/captain
+Экипаж	[ kru: ]	Crew
+Аварийный выход	[ɪ'mɜːʤ(ə)n(t)sɪ 'egzɪt]	Emergency exit
+Крыло	[wɪŋ]	Wing
+Хвост	[teɪl]	Tail
+Полка в самолете		Locker
+Место возле окна	[ 'windəusi:t ]	Window seat
+Место возле прохода	[ ail si:t ]	Aisle seat
+Среднее сидение	['mɪdlsiːt]	Middle seat
+На борту	[ ɔnbɔ:d ]	On board
+Поднос	[treɪ]	Tray
+Проход	[ ail ]	Aisle
+Знак "Не курить"	[nəu 'sməukɪŋsaɪn]	No Smoking sign
+Знак "Пристегните ремни"	[ˈfɑːs(ə)nsiːt belt saɪn]	Fasten Seat Belt sign
+Первый-класс	[fɜːstklɑːs 'sekʃ(ə)n]	First-class section
+Пассажирский самолёт	[ 'eər‚laɪnər ]	Airliner
+Мешок при воздушной болезни	[eə 'sɪknəsbæg]	Air sickness bag
+Подлокотник	[ˈɑːmrɛst]	Armrest
+Карман кресла	[siːt 'pɔkɪt]	Seat pocket
+Кнопкa вызова	[kɔːl 'bʌtn]	Call button
+Грузовой люк	['kɑːgəudɔː]	Cargo door
+На борту	[ ɔnbɔ:d ]	On board
+Бортинженер	[flaɪt ˌenʤɪ'nɪə]	Flight engineer
+Второй пилот	['kəuˌpaɪlət]	Co-pilot
+Панель контрольно-измерительных приборов	['ɪn(t)strəmənt 'pæn(ə)l]	Instrument panel
+Фюзеляж	['fjuːz(ə)lɑːʒ]	Fuselage
+Кабина летчика	['kɔkpɪt]	Cockpit
+Камбуз	['gælɪ]	Galley
+Шасси	['lændɪŋ gɪə \ 'ʌndəˌkærɪʤ]	Landing gear / undercarriage
+Инструкция по поведению в чрезвычайных ситуациях	[ɪ'mɜːʤ(ə)nsɪ ɪn'strʌkʃ(ə)n kɑːd]	Emergency instruction card
+

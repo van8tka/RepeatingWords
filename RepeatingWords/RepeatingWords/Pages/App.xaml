@@ -6,25 +6,42 @@
              >
   <Application.Resources>
     <ResourceDictionary>
-     <Style x:Key ="buttonStyle" TargetType="Button">
+      <!--BUTTON-->
+  <Style x:Key ="buttonStyle" TargetType="Button">
        <Setter Property="TextColor" Value="White"/>
        <Setter Property="BackgroundColor" Value="Blue"/>
 
        <Setter Property="FontSize">
          <Setter.Value>
            <OnPlatform x:TypeArguments="x:Double">
-             <OnPlatform.Android>20</OnPlatform.Android>
-             <OnPlatform.WinPhone>18</OnPlatform.WinPhone>
+             <OnPlatform.Android>18</OnPlatform.Android>
+             <OnPlatform.WinPhone>17</OnPlatform.WinPhone>
            </OnPlatform>
          </Setter.Value>        
        </Setter>    
    </Style>
     
-         
+         <!--CONTENT-->
      <Style x:Key="TitleApp" TargetType="ContentPage">
             <Setter Property="Title" Value="{local:Translate TitleMain}"/>
             <Setter Property="Padding" Value="10"/>
+           <Setter Property="BackgroundColor" Value="#36363636"/>
       </Style>
+      
+          <!--LABEL-->
+      <Style x:Key="LableHeadApp" TargetType="Label">
+            <Setter Property="TextColor" Value="White"/>
+        <Setter Property="FontSize">
+          <Setter.Value>
+            <OnPlatform x:TypeArguments="x:Double">
+              <OnPlatform.Android>21</OnPlatform.Android>
+              <OnPlatform.WinPhone>18</OnPlatform.WinPhone>
+            </OnPlatform>
+          </Setter.Value>
+        </Setter>
+      </Style>
+
+
     </ResourceDictionary>
   </Application.Resources>
 </Application>

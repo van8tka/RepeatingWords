@@ -1,0 +1,244 @@
+﻿Голодный	['hʌŋgrɪ]	Hungry
+Большой	[bɪg]	Big
+Маленький	['lɪtl  /  smɔːl]	Little / small
+Горячий	[hɔt]	Hot
+Занятой	['bɪzɪ]	Busy
+Помешанный (на чем-л.)	['kreɪzɪ]	Crazy (about)
+Настоящий	[rɪəl]	Real
+Строгий	[strɪkt]	Strict
+Непринужденный, раскованный	[rıʹlækst]	Relaxed
+Наивный	[naɪˈiːv]	Naive
+Меланхоличный	[ˌmelən'kɔlɪk]	Melancholic
+Обыкновенный	['ɔːd(ə)n(ə)rɪ / 'æv(ə)rɪʤ]	Ordinary / average
+Пассивный	[ˈpæsɪv]	Passive
+Настоящий	[truː]	True
+Необщительный	[ʌn'səuʃəbl]	Unsociable
+Реалист	[ˈrɪəlɪst]	Realist
+Патриотичный	[ˌpætrɪ'ɔtɪk]	Patriotic
+Импульсивный	[ɪm'pʌlsɪv]	Impulsive
+Взволнованный	[ɪk'saɪtɪd]	Excited
+Ревнивый	['ʤeləs]	Jealous
+Коварный, хитрый	[slaɪ]	Sly
+Непосредственный	[spɔn'teɪnɪəs]	Spontaneous
+Непредсказуемый	[ˌʌnprɪ'dɪktəbl]	Unpredictable
+Необычный	[ʌn'juːʒ(ə)l / ʌn'kɔmən]	Unusual / uncommon
+Странный, чудной	[wɪəd]	Weird
+Личность	[pəːsəˈnælɪtɪ]	Personality
+Черта характера	[ˈkærɪktərtreɪt]	Character trait
+Темперамент	[ˈtemprəmənt]	Temperament
+Скрупулезный	['ækjərət]	Accurate
+Ужасный (крутой)	['ɔːsəm]	Awesome
+Испытывающий скуку	[bɔːd]	Bored
+Капризный, нетерпеливый	[kə'prɪʃəs /'fretf(ə)l / ɪm'peɪʃ(ə)nt]	Capricious / fretful / impatient
+Хитрый, лукавый, коварный; пронырливый	['kʌnɪŋ]	Cunning
+Эксцентричный	[ɪk'sentrɪk]	Eccentric
+Большой / крупный	[lɑːʤ]	Large
+Беспечный	[lait-ha:ted /i:zi:gəuiŋ]	Light-hearted / easy-going
+Маленький	['lɪtl] / [smɔːl]	Little / small
+Замкнутый	[rɪ'zɜːvd]	Reserved
+Задумчивый	[θɔːtf(ə)l]	Thoughtful
+Жесткий, суровый	[tʌf]	Tough
+Амбициозный, честолюбивый	[æm'bɪʃəs]	Ambitious
+Дружелюбный	['frendlɪ]	Friendly
+Умный	[ˈklevər]	Clever
+Смелый	[breɪv]	Brave
+Красивый	['bjuːtəf(ə)l]	Beautiful
+Хороший	[gud]	Good
+Застенчивый	[ʃaɪ]	Shy
+Серьезный	[ˈsɪərɪəs]	Serious
+Счастливый	['hæpɪ]	Happy
+Честный	['ɔnɪst]	Honest
+Замечательный	[faɪn]	Fine
+Очаровательный; чарующий	['glæm(ə)rəs]	Glamorous
+Идеальный	[aɪˈdiːəl / 'pɜːfɪkt]	Ideal / perfect
+Важный	[ɪm'pɔːt(ə)nt]	Important
+Добрый	[kaɪnd]	Kind
+Позитивный	['pɔzətɪv]	Positive
+Терпеливый	[ˈpeɪſən]	Patient
+Забавный	['hjuːm(ə)rəs / ə'mjuːzɪŋ]	Humorous / amusing
+Независимый	[ˌɪndɪ'pendənt]	Independent
+Верный, преданный	['lɔɪəl]	Loyal
+Благородный	['nəubl]	Noble
+Организованный	['ɔːg(ə)naɪzd]	Organized
+Надежный, верный	[rɪˈlaɪəbəl]	Reliable
+Талантливый	['tæləntɪd]	Talented
+Толерантный	[ˈtɒlərənt]	Tolerant
+Активный	[ˈæktiv]	Active
+Мудрый, рассудительный	[waɪz]	Wise
+Общительный	['səuʃəbl]	Sociable
+Чуткий, чувствительный	['sen(t)sɪtɪv]	Sensitive
+Прекрасный	['wʌndəf(ə)l]	Wonderful
+Ответственный	[rɪˈspɒnsɪbəl]	Responsible
+Здравомыслящий; разумный	['sen(t)sɪbl]	Sensible
+Заботливый, проявляющий заботу	['keəf(ə)l]	Careful
+Тихий, спокойный	[kɑːm]	Calm
+Гордый; обладающий чувством собственного достоинства	[praud]	Proud
+Активный, энергичный	[ˌenə'ʤetɪk]	Energetic
+Гениальный	['ʤiːnɪəs]	Genius
+Зрелый	[mə'tjuə]	Mature
+Внимательный, заботливый	[ə'tentɪv]	Attentive
+Привлекательный	[ə'træktɪv]	Attractive
+Застенчивый, робкий, скромный	['bæʃf(ə)l]	Bashful
+С широкими взглядами, с широким кругозором	[ˌbrɔːd'maɪndɪd]	Broad-minded
+Очаровательный	['ʧɑːmɪŋ]	Charming
+Бодрый	['ʧɪəf(ə)l /braɪt]	Cheerful / bright
+Покладистый	[kəmˈpleɪzənt]	Complaisant
+Уверенный в себе	['kɔnfɪd(ə)nt]	Confident
+Внимательный к другим; деликатный	[kən'sɪd(ə)rət]	Considerate
+Отважный	[kəˈreɪdʒəs]	Courageous
+Любопытный	[ˈkjʊərɪəs]	Curious
+Решительный, непоколебимый, стойкий	[dɪ'tɜːmɪnd]	Determined
+Дисциплинированный	['dɪsəplɪnd]	Disciplined
+Бережливый, расчетливый	[ˌiːkə'nɔmɪk(ə)l]	Economical
+Квалифицированный	[ɪ'fɪʃ(ə)nt]	Efficient
+Восторженный; полный энтузиазма	[ɪnˌθjuːzɪ'æstɪk]	Enthusiastic
+Уравновешенный	['iːv(ə)n 'tempəd]	Even-tempered
+Великолепный	['eks(ə)l(ə)nt]	Excellent
+Очаровательный	['fæsɪneɪtɪŋ]	Fascinating
+Справедливый / беспристрастный	[feər /ɪmˈpɑːſəl]	Fair / impartial
+Верный, преданный	['feɪθf(ə)l]	Faithful
+(Все)прощающий	[fə'gɪvɪŋ]	Forgiving
+Великодушный, щедрый	['ʤen(ə)rəs]	Generous
+Одаренный	['gɪftɪd]	Gifted
+Грациозный	['greɪsf(ə)l]	Graceful
+Трудолюбивый	['hɑːdˌwɜːkɪŋ]	Hard-working
+Гуманный	[hjuːˈmeɪn]	Humane
+Умный, разумный	[ɪnˈtelɪdʒənt]	Intelligent
+(Добро) сердечный	[ˌkaɪnd'hɑːtɪd]	Kind-hearted
+Чудный	['lʌvlɪ]	Lovely
+Веселый	['merɪ]	Merry
+Скромный	[ˈmɒdɪst]	Modest
+Оптимист	[ˈɒptɪmɪst]	Optimist
+Довольный	[pliːzd]	Pleased
+Разумный	['ræʃ(ə)n(ə)l]	Rational
+Благоразумный	['riːz(ə)nəbl]	Reasonable
+Почтительный; вежливый	[rɪ'spektf(ə)l]	Respectful
+Отзывчивый	[rɪˈspɒnsɪv]	Responsive
+Самоуверенный	[self]  [ə'ʃuəd]	Self- assured
+Самостоятельный	[self] [dɪ'pendənt]	Self-dependent
+Проницательный	[ʃruːd]	Shrewd
+Умный	[smɑːt]	Smart
+Великолепный	['splendɪd]	Splendid
+Уравновешенный	['stedɪ]	Steady
+Волевой	[stroŋ- wild]	Strong-willed
+Душа компании	[ðəlaɪfændsəulɔvði 'pɑːtɪ]	The life and soul of the party
+Заслуживающий доверия; надежный	['trʌstˌwɜːðɪ]	Trustworthy
+Понимающий, отзывчивый	[ˌʌndə'stændɪŋ]	Understanding
+Бескорыстный, неэгоистичный	[ʌn'selfɪʃ]	Unselfish
+Тщеславный	[veɪn /kən'siːtɪd]	Vain / conceited
+Остроумный	[ˈwɪtɪ]	Witty
+Плохой	[bæd]	Bad
+Холодный	[kəuld]	Cold
+Глупый	['sɪlɪ]	Silly
+Уродливый	['ʌglɪ]	Ugly
+Злой	[ˈæŋɡrɪ]	Angry
+Ленивый	[leɪzɪ]	Lazy
+Жестокий	[ˈkruːəl]	Cruel
+Жадный	[ˈɡriːdɪ]	Greedy
+Равнодушный	[ɪnˈdɪfrənt]	Indifferent
+Нервный	['nɜːvəs]	Nervous
+Обеспокоенный	['wʌrɪd]	Worried
+Эгоистичный	['selfɪʃ]	Selfish
+Упрямый	[ˈstʌbən]	Stubborn
+Глупый, тупой; скучный	[ˈstjuːpɪd /dʌl]	Stupid / dull
+Ужасный	['terəbl]	Terrible
+Расстроенный	[ʌp'set]	Upset
+Обидчивый	[ˈtʌtſɪ]	Touchy
+Агрессивный, пробивной, настойчивый	[ə'gresɪv]	Aggressive
+Бдительный, осторожный	[ə'lɜːt]	Alert
+Заносчивый, высокомерный	[ˈærəɡənt]	Arrogant
+Хвастливый	['bəustf(ə)l]	Boastful
+Ненадежный	[ˌʌnrɪ'laɪəbl]	Unreliable
+Наводящий скуку	['bɔːrɪŋ /dʌl]	Boring / dull
+Небрежный, невнимательный	['keələs]	Careless
+Циничный	[ˈsɪnɪkəl]	Cynical
+Зависимый (от)	[dɪ'pendənt]	Dependent (on)
+Отвратительный	[dɪs'gʌstɪŋ]	Disgusting
+Завистливый	['envɪəs]	Envious
+Глупый; взбалмошный	['fuːlɪʃ]	Foolish
+Взбешенный, яростный 	[ˈfjuəriəs]	Furious
+Ворчливый	[ˈɡrʌmbəlɪŋ]	Grumbling
+Нечестный	[dɪs'ɔnɪst]	Dishonest
+Ужасный	['hɔrəbl]	Horrible
+Враждебный; недружелюбный	['hɔstaɪl]	Hostile
+Невнимательный (к другим)	[ˌɪnkən'sɪd(ə)rət]	Inconsiderate
+Лживый	[ˈlaɪɪŋ / menˈdeɪʃəs]	Lying / mendacious
+Умеющий ловко манипулировать людьми	[mə'nɪpjələtɪvˌ mə'nɪpjulətɪv]	Manipulative
+Незрелый	[ˌɪmə'tjuə]	Immature
+Унылый, угрюмый	['muːdɪ]	Moody
+Слабоумный	[mə'rɔnɪk]	Moronic
+Мрачный, угрюмый	[mə'rəus]	Morose
+Мерзкий	['nɑːstɪ]	Nasty
+Непослушный, капризный (о ребенке)	[ˈnɔːtɪ]	Naughty
+Упрямый, своевольный	['ɔbstɪnɪt]	Obstinate
+Пессимист	[ˈpesɪmɪst]	Pessimist
+Напыщенный, надутый; полный важности	['pɔmpəs]	Pompous
+Нахальный; бесцеремонный	['puʃɪ]	Pushy
+Непокорный, непослушный	[rɪ'belɪəs]	Rebellious
+Безумный	[ˈrekles]	Reckless
+Шумный; буйный	['raudɪ]	Rowdy
+Эгоцентричный	[ˌself'sentəd]	Self-centered
+Самокритичный	[self-ˈkrɪtɪkəl]	Self-critical
+Скупой, прижимистый, скаредный	['stɪnʤɪ]	Stingy
+Безрассудный	['θɔːtləs]	Thoughtless
+Неуравновешенный	[ʌn'bælən(t)st]	Unbalanced
+Безрассудный	[ʌn'riːz(ə)nəbl]	Unreasonable
+Мстительный	['venʤf(ə)l]	Vengeful
+Злой (злобный)	['wɪkɪd]	Wicked
+Никудышный	[gudfɔː 'nʌθɪŋ]	Good-for-nothing
+Ограниченный, с предрассудками;	[ˌnærəu'maɪndɪd]	Narrow-minded
+Педант	['ped(ə)nt]	A pedant
+Неудачник	['luːzə]	A loser
+Лидер	['liːdə]	A leader
+Сплетник, болтун	['gɔsɪp]	A gossip
+Трудяга	[hɑːd 'wɜːkə]	A hard-worker
+Фантазер	['driːmə]	A dreamer
+Трудоголик	[ˌwɜːkə'hɔlɪk]	A workaholic
+Неисправимый врун	['krɔnɪklaɪə]	A chronic liar
+ТВ-наркоман	[ˌtiː'vi 'ædɪkt]	A TV addict
+Домосед, домоседка	['həumbɔdɪ]	A homebody
+Игрок (человек, легко идущий на риск)	['gæmblə]	A gambler
+Победитель	['wɪnə]	A winner
+Храбрец	[mænɔv 'kʌrɪʤ]	A man of courage
+Тупица	['blɔkhed /'mɔːrɔn]	A blockhead / moron
+Книжный червь, любитель книг	['bukwɜːm]	A bookworm
+Любитель истории	['hɪst(ə)rɪbʌf]	A history buff
+Человек-компьютер, "цифродробилка"	['nʌmbəˌkrʌnʧə]	A number-cruncher
+Модник, модница, франт	['fæʃ(ə)nˌmʌŋgə /'fæʃ(ə)nˌpleɪt /'dændɪ / fæʃə'niːstə]	A fashion-monger / a fashion plate / a dandy / fashionista
+Барахольщик	[ʹpækræt]	A pack rat
+Сквалыга, скопидом, скряга	['maɪzə]	A miser
+Растратчик, мот	['skwɔnd(ə)rə]	A squanderer
+Лежебока, сидень	['kauʧpəˌteɪtəu]	A couch potato
+Ленивец, бездельник	['leɪzɪˌbəunz]	Lazybones
+На все руки мастер	[ʤækəvɔːltreɪdz]	A Jack of all trades
+Любитель острых ощущений	[θrɪl 'siː kə /əd'venʧ(ə)rə]	A thrill seeker / an adventurer
+Чудак	['ɔdbɔːl /'wɪədəu]	An oddball / a weirdo
+Ханжа, блюститель нравов	[pruːd]	A prude
+Лицемер	['hɪpəkrɪt]	A hypocrite
+Неисправимый врун	['krɔnɪklaɪə]	A chronic liar
+Ловкий делец	[smuːð 'ɔp(ə)reɪtə]	A smooth operator
+Горожанин, норовящий обмануть деревенских жителей	[͵sıtıʹslıkə]	A city slicker
+Простак, простофиля	['sɪmplt(ə)n]	A simpleton
+Неуспевающий ученик,	[͵ʌndərəʹtʃi:və]	An underachiever
+Крутой, крепкий парень	[tʌfgaɪ]	A tough guy
+Бесхарактерный человек, тряпка	[ʹsɒftı]	A softy
+Волокита, распутник, бабник	['wumən'ʧeɪsə /'wumənaɪzə]	A woman-chaser / a womanizer
+Сердцеед	['leɪdɪˌkɪlə]	A lady-killer
+Отщепенец, негодяй	[͵blækʹʃi:p]	A black sheep
+Козел отпущения	['skeɪpgəut]	A scapegoat
+Смешно одетый человек, пугало	['skeəkrəu / 'bʌgəbuː]	A scarecrow / bugaboo
+Белая ворона	[(h)waɪtkrəu]	A white crow
+Большая шишка	[bɪgʃɔt]	A big shot
+Тупица	['blɔkhed /'mɔːrɔn]	A blockhead / moron
+Зануда	[bɔː]	A bore
+Умница	[klɪəhed]	A clear head
+Подлиза, лизоблюд	['təudɪ]	A toady
+Хозяин своего слова	[mænɔvhɪzwɜːd]	A man of his word
+Скряга	['nɪgəd]	A niggard
+Паникер	['pænɪkˌmʌŋgə /ə'lɑːmɪst]	A panic-monger/ alarmist
+Паникер	[skeə]	A scare-monger
+Транжира	['spendə]	A spender
+Домосед	[steɪæthəum]	A stay-at-home
+Абсолютный ноль	[ˌæbs(ə)'l(j)uːt 'nʌθɪŋ]	An absolute nothing
+Мастер своего дела	['ekspɜːtæt<one's>ʤɔb]	An expert at one's job
+Лентяй	['aɪdlə]	An idler

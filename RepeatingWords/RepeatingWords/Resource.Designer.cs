@@ -71,7 +71,7 @@ namespace RepeatingWords {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add dictionary and words.
+        ///   Looks up a localized string similar to Add dictionary.
         /// </summary>
         internal static string ButtonAddDictionaryOrWords {
             get {
@@ -98,7 +98,7 @@ namespace RepeatingWords {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add dictionaries from the server.
+        ///   Looks up a localized string similar to Add dictionary from the server.
         /// </summary>
         internal static string ButtonAddWorFrNet {
             get {
@@ -116,7 +116,7 @@ namespace RepeatingWords {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to How to create the dictionary and add the word.
+        ///   Looks up a localized string similar to Create the dictionary.
         /// </summary>
         internal static string ButtonHowCreateDictAndaddWord {
             get {
@@ -125,7 +125,7 @@ namespace RepeatingWords {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to How to import words from the file.
+        ///   Looks up a localized string similar to Import words from the file.
         /// </summary>
         internal static string ButtonHowIportFile {
             get {
@@ -161,6 +161,15 @@ namespace RepeatingWords {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Write a review.
+        /// </summary>
+        internal static string ButtonReviewText {
+            get {
+                return ResourceManager.GetString("ButtonReviewText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to View the list of words.
         /// </summary>
         internal static string ButtonShowWords {
@@ -179,7 +188,7 @@ namespace RepeatingWords {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select the dictionary for studying.
+        ///   Looks up a localized string similar to Select the dictionary.
         /// </summary>
         internal static string ChooseDictionaryForRepeat {
             get {
@@ -215,7 +224,7 @@ namespace RepeatingWords {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to How to use this app.
+        ///   Looks up a localized string similar to Help.
         /// </summary>
         internal static string HowUseApp {
             get {
@@ -301,6 +310,15 @@ namespace RepeatingWords {
         internal static string LabelInstruction {
             get {
                 return ResourceManager.GetString("LabelInstruction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Choose language.
+        /// </summary>
+        internal static string LabelLanguageListFromNet {
+            get {
+                return ResourceManager.GetString("LabelLanguageListFromNet", resourceCulture);
             }
         }
         
@@ -710,7 +728,7 @@ namespace RepeatingWords {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Set language to voice.
+        ///   Looks up a localized string similar to Voice language.
         /// </summary>
         internal static string PickerText {
             get {

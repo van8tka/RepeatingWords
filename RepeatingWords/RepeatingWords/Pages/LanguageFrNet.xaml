@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="RepeatingWords.Pages.DictionarysFrNet"
+             x:Class="RepeatingWords.Pages.LanguageFrNet"
   xmlns:locale ="clr-namespace:RepeatingWords;assembly=RepeatingWords"
   Style="{StaticResource TitleApp}">
   <ScrollView>
     <StackLayout>
-      <Label x:Name ="NameLanguage" HorizontalTextAlignment="Center" TextColor="White" FontSize="Large"/>
-     <Label Text="{locale:Translate LabelDictionaryListFromNet}" HorizontalTextAlignment="Center" Style="{StaticResource LableHeadApp}"/>
+     
+      <Label Text="{locale:Translate LabelLanguageListFromNet}" HorizontalTextAlignment="Center" Style="{StaticResource LableHeadApp}"/>
 
       <ActivityIndicator x:Name="actIndicator2"  Color="White" />
-      
-      <ListView x:Name ="dictionaryNetList" ItemsSource="{Binding}" ItemSelected ="OnItemSelected" SeparatorColor="Green">
+
+      <ListView x:Name ="languageNetList" ItemsSource="{Binding}" ItemSelected ="OnItemSelected" SeparatorColor="Green">
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>
               <ViewCell.View>
                 <StackLayout Orientation="Horizontal">
-                  <Label Text="{Binding Name}" FontSize="Medium" TextColor="Yellow"/>
+                  <Label Text="{Binding NameLanguage}" FontSize="Medium" TextColor="Yellow"/>
                 </StackLayout>
               </ViewCell.View>
             </ViewCell>

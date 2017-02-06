@@ -37,19 +37,15 @@
       
     
             <Button x:Name="ButtonVoice" Clicked="BtnClickSpeech" Grid.Column="2" Grid.Row="0"/>
-        <!--<Image x:Name="ButtonVoice" Grid.Column="2" Grid.Row="0">
-          <Image.GestureRecognizers>
-            <TapGestureRecognizer Tapped="BtnClickSpeech" />
-          </Image.GestureRecognizers>
-        </Image>-->
+      
        <Label x:Name="WordForRepeat" VerticalOptions="Center" HorizontalOptions="Center" FontSize="27" HeightRequest="160"  Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3"/>
     
        
     
     </Grid>
    
-    <Button Text="{locale:Translate ButtonNextWord}" Clicked="NextWordButtonClick" FontSize="Medium" BackgroundColor="Blue" TextColor="White" HeightRequest="100"></Button>
-    <Button Text="{locale:Translate ButtonTurnCard}" Clicked="TurnAroundWordButtonClick" FontSize="Medium" BackgroundColor="Green" TextColor="White" HeightRequest="100"></Button>
+    <Button Text="{locale:Translate ButtonNextWord}" Clicked="NextWordButtonClick"  Style="{StaticResource buttonStyle}" HeightRequest="100"></Button>
+    <Button Text="{locale:Translate ButtonTurnCard}" Clicked="TurnAroundWordButtonClick"  Style="{StaticResource buttonStyle}" BackgroundColor="Green" HeightRequest="100"></Button>
    
   </StackLayout>
  
