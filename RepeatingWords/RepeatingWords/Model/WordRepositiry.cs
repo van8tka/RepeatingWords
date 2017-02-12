@@ -15,7 +15,7 @@ namespace RepeatingWords.Model
             this.database = database;
             //инициализация бд
         }
-
+      
         public IEnumerable<Words> GetWords(int iddiction)
         {
             return (from i in database.Table<Words>().Where(z=>z.IdDictionary==iddiction) select i).ToList();

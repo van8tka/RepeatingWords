@@ -4,12 +4,12 @@
              x:Class="RepeatingWords.AddWord"
                 xmlns:locale ="clr-namespace:RepeatingWords;assembly=RepeatingWords"
            Style="{StaticResource TitleApp}">
-  <ScrollView>
+
     <StackLayout>
       <Label x:Name="DictionaryName"  HorizontalTextAlignment="Center" Style="{StaticResource LableHeadApp}"/>
       <Button Style="{StaticResource buttonStyle}" Text="{locale:Translate ButtonAddWord}" Clicked="CreateWordButtonClick"></Button>
       <Button Style="{StaticResource buttonStyle}" Text="{locale:Translate ButtonRepeatWords}" Clicked="RepeatWordsButtonClick"></Button>
-   
+      <ScrollView>
       <ListView x:Name ="wordsList" ItemsSource="{Binding}" ItemSelected ="OnItemSelected" HasUnevenRows = "true" RowHeight = "-1" SeparatorColor="Green">
        <ListView.ItemTemplate>
           <DataTemplate>
@@ -40,7 +40,7 @@
           </DataTemplate>
         </ListView.ItemTemplate>
       </ListView>
-
+      </ScrollView>
     </StackLayout>
-  </ScrollView>
+  
 </ContentPage>

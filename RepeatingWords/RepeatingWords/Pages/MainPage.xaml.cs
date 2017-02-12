@@ -1,6 +1,7 @@
 ﻿using RepeatingWords.Model;
 using RepeatingWords.Pages;
 using System;
+using System.Linq;
 using Xamarin.Forms;
 
 namespace RepeatingWords
@@ -15,16 +16,30 @@ namespace RepeatingWords
 
 
         }
+
+
+
+
         private async void ChooseDbButtonClick(object sender, System.EventArgs e)
         {
             ChooseDb chd = new ChooseDb();          
             await Navigation.PushAsync(chd);
         }
+
+
+
+
         private async void ChooseDictionaryButtonClick(object sender, System.EventArgs e)
         {
             ChooseDictionaryForRepiat chd = new ChooseDictionaryForRepiat();
             await Navigation.PushAsync(chd);
         }
+
+
+
+
+
+
         private async void ReturnButtonClick(object sender, System.EventArgs e)
         {
 
@@ -32,16 +47,27 @@ namespace RepeatingWords
           
             if (la != null)
             {
-                        RepeatWord adwords = new RepeatWord(la);
-                        await Navigation.PushAsync(adwords);
-             }
+                Dictionary dic = App.Db.GetDictionarys().Where(x=>x.Id==la.IdDictionary).FirstOrDefault();
+                if (dic != null)
+                {
+                    RepeatWord adwords = new RepeatWord(la);
+                    await Navigation.PushAsync(adwords);
+                }
+                else
+                {
+                    await DisplayAlert(Resource.ModalException, Resource.ModalDictOrWordRemove, "Ok");
+                }
+            }
             else
             {
                await DisplayAlert(Resource.ModalException, Resource.ModalDictOrWordRemove, "Ok");
-            }
-
-          
+            }        
         }
+
+
+
+
+
         private async void SpravkaButtonClick(object sender, System.EventArgs e)
         {
             Spravka spv = new Spravka();

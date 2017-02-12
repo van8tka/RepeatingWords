@@ -260,6 +260,15 @@ namespace RepeatingWords {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Turned:.
+        /// </summary>
+        internal static string LabelCountTurned {
+            get {
+                return ResourceManager.GetString("LabelCountTurned", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Select the dictionary for load into the phone.
         /// </summary>
         internal static string LabelDictionaryListFromNet {
@@ -634,6 +643,15 @@ namespace RepeatingWords {
         internal static string ModalIncorrectFile {
             get {
                 return ResourceManager.GetString("ModalIncorrectFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Studying of unlearned words.
+        /// </summary>
+        internal static string ModalLerningTurnedWords {
+            get {
+                return ResourceManager.GetString("ModalLerningTurnedWords", resourceCulture);
             }
         }
         

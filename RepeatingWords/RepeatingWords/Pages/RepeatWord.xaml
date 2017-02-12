@@ -19,6 +19,7 @@
         </Grid.RowDefinitions>
 
             <Label x:Name="LabelCountOfWords" TextColor="White" Grid.Column="0" Grid.Row="0"/>
+            <Label x:Name="LabelCountOfWordsTurn" TextColor="Gray" Grid.Column="1" Grid.Row="0"/>
     <Picker x:Name="picker" SelectedIndexChanged="picker_SelectedIndexChanged" Title="{locale:Translate PickerText}" Grid.Column="1" Grid.Row="0">
       <Picker.Items>
        <x:String>English</x:String>

@@ -393,4 +393,11 @@
   <data name="ButtonReviewText" xml:space="preserve">
     <value>Write a review</value>
   </data>
+  <data name="LabelCountTurned" xml:space="preserve">
+    <value>Turned:</value>
+    <comment>Количество нажатий на кн Перевернуть карточку</comment>
+  </data>
+  <data name="ModalLerningTurnedWords" xml:space="preserve">
+    <value>Studying of unlearned words</value>
+  </data>
 </root>
