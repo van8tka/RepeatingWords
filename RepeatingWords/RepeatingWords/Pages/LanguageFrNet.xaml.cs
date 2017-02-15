@@ -26,7 +26,7 @@ namespace RepeatingWords.Pages
             IEnumerable<Language> langList = await onService.GetLanguage();
             actIndicator2.IsRunning = false;
             //передаем языки(список) в xaml элементу Listview
-            languageNetList.ItemsSource = langList;
+            languageNetList.ItemsSource = langList.OrderBy(x => x.NameLanguage);
 
         }
 

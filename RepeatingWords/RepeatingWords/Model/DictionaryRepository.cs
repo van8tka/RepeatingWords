@@ -12,15 +12,21 @@ namespace RepeatingWords.Model
        
 
         SQLiteConnection database;
+        SQLiteAsyncConnection asyncdatabase;
         public DictionaryRepository(string filename)
         {
             string databasePath = DependencyService.Get<ISQLite>().GetDatabasePath(filename);
             database = new SQLiteConnection(databasePath);
+            asyncdatabase = new SQLiteAsyncConnection(databasePath);
             DBConnection = database;
+            DBConnectionAsync = asyncdatabase;
             database.CreateTable<Dictionary>();
             database.CreateTable<Words>();
             database.CreateTable<LastAction>();         
         }
+
+
+        public SQLiteAsyncConnection DBConnectionAsync { get; }
 
         public SQLiteConnection DBConnection { get; }
       

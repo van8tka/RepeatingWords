@@ -1,7 +1,7 @@
 ﻿using RepeatingWords.Model;
 using RepeatingWords.Pages;
 using System.Collections.Generic;
-
+using System.Linq;
 using Xamarin.Forms;
 
 namespace RepeatingWords
@@ -16,7 +16,7 @@ namespace RepeatingWords
        //обработка перехода на страницу
         protected override void OnAppearing()
         {
-            dictionaryList.ItemsSource = App.Db.GetDictionarys();         
+            dictionaryList.ItemsSource = App.Db.GetDictionarys().OrderBy(x=>x.Name);         
             base.OnAppearing();
         }
         //обработка нажатия по эл списка

@@ -21,14 +21,14 @@ namespace RepeatingWords.Pages
         }
 
               
-        async Task ListLoad(int idLang)
+       private async Task ListLoad(int idLang)
         {
             actIndicator2.IsRunning = true;
             //получаем данные в формате Json, Диссериализуем их и получаем словари
             IEnumerable<Dictionary> dictionaryList = await onService.GetLanguage(idLang);
             actIndicator2.IsRunning = false;
             //передаем словари(список) в xaml элементу Listview
-            dictionaryNetList.ItemsSource = dictionaryList;
+            dictionaryNetList.ItemsSource = dictionaryList.OrderBy(x => x.Name);
            
         }
         
@@ -44,25 +44,16 @@ namespace RepeatingWords.Pages
                 actIndicator2.IsRunning = true;
                 //получаем список слов выбранного словаря в интеренете
                 IEnumerable<Words> wordsList = await onService.Get(id);
-                            
-                //проходим по списку слов и создаем слова для этого словаря
-                  actIndicator2.IsRunning = false;
 
+                
+              
                 //получаем последний словарь(который только что создали)
                 int idLast = App.Db.GetDictionarys().LastOrDefault().Id;
-                foreach (var i in wordsList)
-                {
-                    Words newW = new Words()
-                    {
-                        Id = 0,
-                        IdDictionary = idLast,
-                        RusWord = i.RusWord,
-                        Transcription = i.Transcription,
-                        EngWord = i.EngWord
-                    };
-                    App.Wr.CreateWord(newW);
-                }
+                //проходим по списку слов и создаем слова для этого словаря
+                await GreateWords(idLast, wordsList);
 
+                actIndicator2.IsRunning = false;
+              
                 AddWord adw = new AddWord(dictionaryNet);
                 await Navigation.PushAsync(adw);
             }
@@ -71,7 +62,21 @@ namespace RepeatingWords.Pages
                await DisplayAlert("Error", er.Message, "Ok");
             }
         }
-             
-     
+        //асинхронный метод добавления слов в ыбранный словарь
+        private async Task GreateWords(int idLast, IEnumerable<Words> wordsList)
+        {
+            foreach (var i in wordsList)
+            {
+                Words newW = new Words()
+                {
+                    Id = 0,
+                    IdDictionary = idLast,
+                    RusWord = i.RusWord,
+                    Transcription = i.Transcription,
+                    EngWord = i.EngWord
+                };
+               await App.WrAsync.AsyncCreateWord(newW);
+            }
+        }
     }
 }

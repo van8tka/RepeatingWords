@@ -5,10 +5,12 @@
               xmlns:locale ="clr-namespace:RepeatingWords;assembly=RepeatingWords"
             Style="{StaticResource TitleApp}">
  
-  <ScrollView>
+  
     <StackLayout>
       <Label Text="{locale:Translate LabelChooseDict}" HorizontalTextAlignment="Center" Style="{StaticResource LableHeadApp}" HeightRequest="70"/>
-    
+
+
+      <StackLayout>
       <ListView x:Name ="dictionaryList" ItemsSource="{Binding}" ItemSelected ="OnItemSelected" SeparatorColor="Green">
         <ListView.ItemTemplate>
           <DataTemplate>
@@ -22,7 +24,7 @@
           </DataTemplate>
         </ListView.ItemTemplate>
       </ListView>
-
+      </StackLayout>
     </StackLayout>
-  </ScrollView>
+ 
 </ContentPage>

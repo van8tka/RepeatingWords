@@ -63,7 +63,7 @@ namespace RepeatingWords.Pages
                             Transcription = "[" + fileWords[1] + "]",
                             EngWord = fileWords[2]
                         };//добавим слово в БД
-                        App.Wr.CreateWord(item);
+                       await App.WrAsync.AsyncCreateWord(item);
                     }
                 }
            
@@ -88,7 +88,7 @@ namespace RepeatingWords.Pages
             }
             catch(Exception er)
             {
-                DisplayAlert("Error", er.Message, "Ok");
+               await DisplayAlert("Error", er.Message, "Ok");
             }
         }
 

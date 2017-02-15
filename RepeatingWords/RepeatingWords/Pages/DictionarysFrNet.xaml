@@ -4,13 +4,13 @@
              x:Class="RepeatingWords.Pages.DictionarysFrNet"
   xmlns:locale ="clr-namespace:RepeatingWords;assembly=RepeatingWords"
   Style="{StaticResource TitleApp}">
-  <ScrollView>
+ 
     <StackLayout>
       <Label x:Name ="NameLanguage" HorizontalTextAlignment="Center" TextColor="White" FontSize="Large"/>
      <Label Text="{locale:Translate LabelDictionaryListFromNet}" HorizontalTextAlignment="Center" Style="{StaticResource LableHeadApp}"/>
 
       <ActivityIndicator x:Name="actIndicator2"  Color="White" />
-      
+      <StackLayout>
       <ListView x:Name ="dictionaryNetList" ItemsSource="{Binding}" ItemSelected ="OnItemSelected" SeparatorColor="Green">
         <ListView.ItemTemplate>
           <DataTemplate>
@@ -24,7 +24,7 @@
           </DataTemplate>
         </ListView.ItemTemplate>
       </ListView>
-
+</StackLayout>
     </StackLayout>
-  </ScrollView>
+  
 </ContentPage>

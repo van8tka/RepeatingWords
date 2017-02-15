@@ -10,7 +10,7 @@ namespace RepeatingWords.Pages
         public ChooseDictionaryForRepiat()
         {
             InitializeComponent();
-            this.BindingContext = App.Db.GetDictionarys();
+            this.BindingContext = App.Db.GetDictionarys().OrderBy(x => x.Name);
         }
 
         private async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)

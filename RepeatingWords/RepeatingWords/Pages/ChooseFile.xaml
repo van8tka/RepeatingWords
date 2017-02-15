@@ -5,14 +5,14 @@
                xmlns:local="clr-namespace:RepeatingWords;assembly=RepeatingWords"
              Style="{StaticResource TitleApp}">
   <Label Text="{local:Translate LabelChooseFile}" HorizontalTextAlignment="Center" Style="{StaticResource LableHeadApp}"/>
- <ScrollView>
+
   <StackLayout>
     <Label Text="{local:Translate LabelPathToRoot}" TextColor="Blue" FontSize="Medium"/>
     <Label x:Name="textPath" TextColor="Blue" FontSize="Medium"/>
     
   
     <ActivityIndicator x:Name="actIndicator3" Color="White" />
-
+    <StackLayout>
     <ListView x:Name ="fileList" ItemsSource="{Binding}" ItemSelected ="FileSelected">
       <ListView.ItemTemplate>
         <DataTemplate>
@@ -26,8 +26,8 @@
         </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>
-
+    </StackLayout>
   </StackLayout>
- </ScrollView>
+
 
 </ContentPage>

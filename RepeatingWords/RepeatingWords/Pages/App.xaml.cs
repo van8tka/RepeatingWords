@@ -40,6 +40,8 @@ namespace RepeatingWords
         }
         public static WordRepositiry Wr = new WordRepositiry(Db.DBConnection);
         public static LastActionRepository LAr = new LastActionRepository(Db.DBConnection);
+        //асинхронное соединение с БД 
+        public static WordRepositiry WrAsync = new WordRepositiry(Db.DBConnectionAsync);
 
         public App()
         {
