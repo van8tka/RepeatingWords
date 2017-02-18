@@ -10,7 +10,7 @@
       <Button Style="{StaticResource buttonStyle}" Text="{locale:Translate ButtonAddWord}" Clicked="CreateWordButtonClick"></Button>
       <Button Style="{StaticResource buttonStyle}" Text="{locale:Translate ButtonRepeatWords}" Clicked="RepeatWordsButtonClick"></Button>
       <StackLayout>
-      <ListView x:Name ="wordsList" ItemsSource="{Binding}" ItemSelected ="OnItemSelected" HasUnevenRows = "true" RowHeight = "-1" SeparatorColor="Green">
+      <ListView x:Name ="wordsList" ItemsSource="{Binding}" ItemSelected ="OnItemSelected" HasUnevenRows = "True" RowHeight = "-1" SeparatorColor="Green">
        <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>                                             
@@ -18,22 +18,21 @@
               <Grid>
                 
                   <Grid.ColumnDefinitions>
-                      <ColumnDefinition Width="35*">
+                      <ColumnDefinition Width="*">
                       </ColumnDefinition>
-                      <ColumnDefinition Width="35*">
+                      <ColumnDefinition Width="*">
                       </ColumnDefinition>
-                      <ColumnDefinition Width="30*">
+                      <ColumnDefinition Width="*">
                       </ColumnDefinition>
                   </Grid.ColumnDefinitions>
-                  <Grid.RowDefinitions>
-                    <RowDefinition Height="*"></RowDefinition>
+                 
+                   <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>               
                   </Grid.RowDefinitions>
-             
-                    <Label Text="{Binding RusWord}" TextColor="White" Grid.Column="0" FontSize="17"/>
-                                  
-                    <Label Text="{Binding EngWord}" TextColor="Yellow" Grid.Column="1" FontSize="17"/>
-                                
-                    <Label Text="{Binding Transcription}" TextColor="Gray" Grid.Column="2" FontSize="17"/>
+
+                    <Label Text="{Binding RusWord}" TextColor="White" Grid.Column="0" FontSize="17"/>           
+                    <Label Text="{Binding EngWord}" TextColor="Yellow" Grid.Column="1" FontSize="17"/>                                
+                    <Label Text="{Binding Transcription}" TextColor="Gray" Grid.Column="2" FontSize="17"/> 
              
               </Grid>
               </ViewCell.View>

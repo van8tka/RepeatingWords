@@ -206,13 +206,17 @@ namespace RepeatingWords.Pages
                     //вызовем метод для проверки есть ли в списке перевернутые слова
                     //если есть то создадим БД и добавим в нее слова
                     await CreateTurnedDB();
+                    //обнулим индекс слов
                     Count = 0;
+                    //обнулим кол-во перевернутых слов
                     countTurned = 0;
                     LabelCountOfWordsTurn.Text = TextTurned + " " + countTurned.ToString();
-                    //получим последнюю БД
+                    //получим последнюю БД и очистим список перевернутых слов
+                    TurnedWords.Clear();
                     Dictionary di = App.Db.GetDictionarys().LastOrDefault();
-                    iDdictionary = di.Id;
-                    words = App.Wr.GetWords(di.Id);
+                    iDdictionary = di.Id;//получим новый список слов из БД
+                    words = App.Wr.GetWords(di.Id);//обновим экран
+                    UpdateWord(Count, FromRus);
                 }
                        
             }
