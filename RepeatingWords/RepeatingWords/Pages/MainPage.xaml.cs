@@ -12,8 +12,11 @@ namespace RepeatingWords
         {
             InitializeComponent();
             if (Device.OS != TargetPlatform.Android)
+            {
                 ButtonReview.IsEnabled = false;
-
+                ButtonReview.IsVisible = false;
+            }
+            
 
         }
 

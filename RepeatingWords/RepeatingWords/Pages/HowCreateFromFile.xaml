@@ -11,7 +11,8 @@
       <Label Text="{locale:Translate LabelNeedAddFile}" FontSize="Medium"/>
       <Label Text="{locale:Translate LabelNeedCreate}" FontSize="Medium"/>
       <Label Text="{locale:Translate LabelScreen21}" FontSize="Medium"/>
-      <Image Source="screen21.jpg" />
+
+      <Image Source="screen21.jpg" />    
       <Label Text="{locale:Translate LabelScreen22}" FontSize="Medium"/>
       <Image Source="screen22.jpg" />
       <Label Text="{locale:Translate LabelScreen231}" FontSize="Medium"/>

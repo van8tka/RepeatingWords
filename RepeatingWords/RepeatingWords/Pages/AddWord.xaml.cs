@@ -3,21 +3,34 @@ using RepeatingWords.Pages;
 using System.Collections.Generic;
 using System.Linq;
 using Xamarin.Forms;
+using RepeatingWords.Model;
+using Windows.UI.Xaml.Controls;
+using System;
 
 namespace RepeatingWords
 {
     public partial class AddWord : ContentPage
     {
         Dictionary dict;
-    
+        Metrics screensize;
+        double WidthColumn;
+
+
         public AddWord(Dictionary dictionary)
         {
            InitializeComponent();
             dict = dictionary;
+            //определим размер grid column
+            screensize = new Metrics();
+           
             int ws = App.Wr.GetWords(dictionary.Id).Count();
             //для отображения имени словаря в заголовке
             DictionaryName.Text=dict.Name+" ("+ws.ToString()+")";
-           this.BindingContext = App.Wr.GetWords(dictionary.Id);
+         
+            this.BindingContext = App.Wr.GetWords(dictionary.Id);
+           
+           
+
         }
        
         //обработка перехода на страницу Rendering
@@ -27,13 +40,16 @@ namespace RepeatingWords
             //для отображения имени словаря в заголовке
             DictionaryName.Text = dict.Name + " (" + ws.ToString() + ")";
             wordsList.ItemsSource = App.Wr.GetWords(dict.Id);
+            //полуаем размеры ширины столбцов grid
+                     
             base.OnAppearing();
         }
 
-           
+       
 
-        //обработка нажатия по эл списка
-     private async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+
+    //обработка нажатия по эл списка
+    private async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
        {
             //получаем нажатый элемент
             Words ws = (Words)e.SelectedItem;
@@ -111,6 +127,15 @@ namespace RepeatingWords
             }
             else
                 await DisplayAlert(ModalException, ModalNoWord, "Ок");
+        }
+
+        //переопределяем метод для получения размера экрана устройства
+        protected override void OnSizeAllocated(double width, double height)
+        {
+            base.OnSizeAllocated(width, height);
+
+            screensize.Width = width/3;
+            screensize.Height = height;
         }
 
     }

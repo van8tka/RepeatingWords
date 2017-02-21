@@ -16,13 +16,16 @@
       </Label.FontSize>
     </Label>
     <Label Text="V 1.7" HeightRequest="130" FontSize="12" TextColor="Gray"/>
+    <ScrollView>
+      <StackLayout>
         <Button Style="{StaticResource buttonStyle}"  Text="{local:Translate ButtonAddDictionaryOrWords}" Clicked="ChooseDbButtonClick"></Button>
         <Button Style="{StaticResource buttonStyle}"  Text="{local:Translate ChooseDictionaryForRepeat}" Clicked="ChooseDictionaryButtonClick"></Button>
         <Button Style="{StaticResource buttonStyle}" Text="{local:Translate Continue}" Clicked="ReturnButtonClick"></Button>
         <Button Style="{StaticResource buttonStyle}"  Text="{local:Translate HowUseApp}" Clicked="SpravkaButtonClick"></Button>
 
-    <Button Style="{StaticResource buttonStyle}" x:Name="ButtonReview" Text="{local:Translate ButtonReviewText}" Clicked="OtzyvButtonClick" />
-
+        <Button Style="{StaticResource buttonStyle}" x:Name="ButtonReview" Text="{local:Translate ButtonReviewText}" Clicked="OtzyvButtonClick" />
+      </StackLayout>
+    </ScrollView>
 
   </StackLayout>
   

@@ -139,6 +139,20 @@
     <Content Include="Assets\StoreLogo.scale-150.png" />
     <Content Include="Assets\StoreLogo.scale-200.png" />
     <Content Include="Assets\StoreLogo.scale-400.png" />
+    <Content Include="screen1.jpg" />
+    <Content Include="screen2.jpg" />
+    <Content Include="screen21.jpg" />
+    <Content Include="screen22.jpg" />
+    <Content Include="screen23.jpg" />
+    <Content Include="screen24.jpg" />
+    <Content Include="screen25.jpg" />
+    <Content Include="screen3.jpg" />
+    <Content Include="screen4.jpg" />
+    <Content Include="screen5.jpg" />
+    <Content Include="screen6.jpg" />
+    <Content Include="screen7.jpg" />
+    <Content Include="screen8.jpg" />
+    <Content Include="screen9.jpg" />
     <Content Include="voice.png" />
     <Content Include="voiceX.png" />
     <Content Include="Properties\Default.rd.xml" />
@@ -165,6 +179,9 @@
       <Project>{0AF76DA9-15C2-4276-9ECD-077BBB8B474C}</Project>
       <Name>RepeatingWords</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Image\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
