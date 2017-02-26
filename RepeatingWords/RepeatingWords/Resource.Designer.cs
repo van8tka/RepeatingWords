@@ -368,7 +368,7 @@ namespace RepeatingWords {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Push the button [Add the dictionary and the  words].
+        ///   Looks up a localized string similar to Push the button [Add dictionary].
         /// </summary>
         internal static string LabelScreen1 {
             get {
@@ -377,7 +377,7 @@ namespace RepeatingWords {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Push the button [Add the dictionary].
+        ///   Looks up a localized string similar to Push the button [Create dictionary].
         /// </summary>
         internal static string LabelScreen2 {
             get {
@@ -409,6 +409,15 @@ namespace RepeatingWords {
         internal static string LabelScreen231 {
             get {
                 return ResourceManager.GetString("LabelScreen231", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy this file into your device..
+        /// </summary>
+        internal static string LabelScreen231Win {
+            get {
+                return ResourceManager.GetString("LabelScreen231Win", resourceCulture);
             }
         }
         
@@ -458,7 +467,7 @@ namespace RepeatingWords {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Push the button [Add the word].
+        ///   Looks up a localized string similar to Push the button [Create word].
         /// </summary>
         internal static string LabelScreen5 {
             get {
@@ -494,7 +503,7 @@ namespace RepeatingWords {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to to next word push the button [Next Word], to translation word push the button [Turn the card].
+        ///   Looks up a localized string similar to to next word push the button [Next card], to translation word push the button [Turn the card]. You can choose voice language and push the button to speack word..
         /// </summary>
         internal static string LabelScreen9 {
             get {

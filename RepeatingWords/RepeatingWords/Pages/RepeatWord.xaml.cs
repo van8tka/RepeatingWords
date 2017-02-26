@@ -38,8 +38,8 @@ namespace RepeatingWords.Pages
 
             words = App.Wr.GetWords(iDdictionary);
             //кол во слов и пройденных слов
-            LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString();
-            LabelCountOfWordsTurn.Text = TextTurned+" "+ countTurned.ToString();
+            LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString() + "/" + countTurned.ToString();
+            //LabelCountOfWordsTurn.Text = TextTurned+" "+ countTurned.ToString();
             // код для Android
             if (Device.OS == TargetPlatform.Android)
             {
@@ -68,8 +68,8 @@ namespace RepeatingWords.Pages
             //определяем чему равен Count;
             HowCount(la.IdWord);
             //сколько слов всего и пройдено
-            LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString();
-            LabelCountOfWordsTurn.Text = TextTurned + " " + countTurned.ToString();
+            LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString() + "/" + countTurned.ToString();
+            //LabelCountOfWordsTurn.Text = TextTurned + " " + countTurned.ToString();
             if (Device.OS == TargetPlatform.Android)
             {
                 lang = "en_GB";
@@ -137,7 +137,7 @@ namespace RepeatingWords.Pages
                 ButtonVoice.Image = "voice.png";
                 picker.IsVisible = true;
             }
-            LabelCountOfWordsTurn.Text = TextTurned + " " + countTurned.ToString();
+            //LabelCountOfWordsTurn.Text = TextTurned + " " + countTurned.ToString();
         }
       
 
@@ -210,7 +210,8 @@ namespace RepeatingWords.Pages
                     Count = 0;
                     //обнулим кол-во перевернутых слов
                     countTurned = 0;
-                    LabelCountOfWordsTurn.Text = TextTurned + " " + countTurned.ToString();
+                    LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString() + "/" + countTurned.ToString();
+                    //LabelCountOfWordsTurn.Text = TextTurned + " " + countTurned.ToString();
                     //получим последнюю БД и очистим список перевернутых слов
                     TurnedWords.Clear();
                     Dictionary di = App.Db.GetDictionarys().LastOrDefault();
@@ -221,8 +222,8 @@ namespace RepeatingWords.Pages
                        
             }
             //сколько слов всего и пройдено сколько
-            LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString();
-
+            //LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString();
+            LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString() + "/" + countTurned.ToString();
         }
 
 

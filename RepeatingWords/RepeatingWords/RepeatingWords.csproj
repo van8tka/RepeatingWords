@@ -41,6 +41,7 @@
     <Compile Include="IFileWorker.cs" />
     <Compile Include="ILocalize.cs" />
     <Compile Include="ITextToSpeech.cs" />
+    <Compile Include="IWindOpenFilePicker.cs" />
     <Compile Include="Model\Language.cs" />
     <Compile Include="Model\Metrics.cs" />
     <Compile Include="OnlineDictionaryService.cs" />
@@ -144,6 +145,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
     <None Include="GettingStarted.Xamarin" />
     <None Include="packages.config" />
   </ItemGroup>
