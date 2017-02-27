@@ -1,0 +1,414 @@
+﻿Голодный	['hʌŋgrɪ]	Hungry
+Большой	[bɪg]	Big
+Большой / крупный	[lɑːʤ]	Large
+Маленький	['lɪtl / smɔːl]	Little / small
+Горячий	[hɔt]	Hot
+Занятой	['bɪzɪ]	Busy
+Помешанный (на чем-л.)	['kreɪzɪ]	Crazy (about)
+Настоящий	[rɪəl]	Real
+Строгий	[strɪkt]	Strict
+Настоящий	[truː]	True
+Реалист	[ˈrɪəlɪst]	Realist
+Патриотичный	[ˌpætrɪ'ɔtɪk]	Patriotic
+Импульсивный	[ɪm'pʌlsɪv]	Impulsive
+Взволнованный	[ɪk'saɪtɪd]	Excited
+Ревнивый	['ʤeləs]	Jealous
+Наивный	[naɪˈiːv]	Naive
+Пассивный	[ˈpæsɪv]	Passive
+Странный, чудной	[wɪəd]	Weird
+Коварный, хитрый	[slaɪ]	Sly
+Непосредственный	[spɔn'teɪnɪəs]	Spontaneous
+Непредсказуемый	[ˌʌnprɪ'dɪktəbl]	Unpredictable
+Необычный	[ʌn'juːʒ(ə)l  / ʌn'kɔmən]	Unusual / uncommon
+Черта характера	[ˈkærɪktə(r) treɪt]	Character trait
+Скрупулезный	['ækjərət]	Accurate
+Ужасный (крутой)	['ɔːsəm]	Awesome
+Испытывающий скуку	[bɔːd]	Bored
+Капризный, нетерпеливый	[kə'prɪʃəs   /  ɪm'peɪʃ(ə)nt]	Capricious  / impatient
+Необщительный	[ʌn'səuʃəbl]	Unsociable
+Хитрый, лукавый, коварный; пронырливый	['kʌnɪŋ]	Cunning
+Эксцентричный	[ɪk'sentrɪk]	Eccentric
+Беспечный	 [i:zi:gəuiŋ]	 easy-going
+Замкнутый	[rɪ'zɜːvd]	Reserved
+Задумчивый	[θɔːtf(ə)l]	Thoughtful
+Непринужденный, раскованный	[rıʹlækst]	Relaxed
+Меланхоличный	[ˌmelən'kɔlɪk]	Melancholic
+Обыкновенный	['ɔːd(ə)n(ə)rɪ  / 'æv(ə)rɪʤ]	Ordinary / average
+Жесткий, суровый	[tʌf]	Tough
+Дружелюбный	['frendlɪ]	Friendly
+Умный	[ˈklevə(r)]	Clever
+Умный	[smɑːt]	Smart
+Умный, разумный	[ɪnˈtelɪdʒənt]	Intelligent
+Красивый	['bjuːtɪf(ə)l]	Beautiful
+Хороший	[gud]	Good
+Серьезный	[ˈsɪərɪəs]	Serious
+Счастливый	['hæpɪ]	Happy
+Честный	['ɔnɪst]	Honest
+Идеальный	[aɪˈdiːəl  /  'pɜːfɪkt]	Ideal / perfect
+Важный	[ɪm'pɔːt(ə)nt]	Important
+Добрый	[kaɪnd]	Kind
+Позитивный	[ˈpɒzɪtɪv]	Positive
+Терпеливый	[ˈpeɪʃ(ə)nt]	Patient
+Организованный	['ɔːg(ə)naɪzd]	Organized
+Активный	[ˈæktiv]	Active
+Мудрый, рассудительный	[waɪz]	Wise
+Общительный	['səuʃəb(ə)l]	Sociable
+Веселый 	['ʧɪəf(ə)l  /  braɪt]	Cheerful / bright
+Оптимист	[ˈɒptɪmɪst]	Optimist
+Внимательный, заботливый	[ə'tentɪv]	Attentive
+Чуткий, чувствительный	['sen(t)sɪtɪv]	Sensitive
+Трудолюбивый	['hɑːdˌwɜːkɪŋ]	Hard-working
+Прекрасный	['wʌndəf(ə)l]	Wonderful
+Ответственный	[rɪˈspɒnsɪb(ə)l]	Responsible
+Независимый	[ˌɪndɪ'pendənt]	Independent
+Привлекательный	[ə'træktɪv]	Attractive
+Справедливый 	[feər] 	Fair 
+Амбициозный, честолюбивый	[æm'bɪʃəs]	Ambitious
+Смелый	[breɪv]	Brave
+Квалифицированный	[ɪ'fɪʃ(ə)nt]	Efficient
+Заботливый, проявляющий заботу	['keəf(ə)l]	Careful
+Тихий, спокойный	[kɑːm]	Calm
+Гордый; обладающий чувством собственного достоинства	[praud]	Proud
+Активный, энергичный	[ˌenə'ʤetɪk]	Energetic
+Чудный	['lʌvlɪ]	Lovely
+Веселый	['merɪ]	Merry
+Скромный	[ˈmɒdɪst]	Modest
+Талантливый	['tæləntɪd]	Talented
+Гениальный	['ʤiːnɪəs]	Genius
+Застенчивый	[ʃaɪ]	Shy
+Надежный, верный	[rɪˈlaɪəbəl]	Reliable
+Толерантный	[ˈtɒlərənt]	Tolerant
+Зрелый	[mə'tjuə]	Mature
+Здравомыслящий; разумный	['sen(t)sɪb(ə)l]	Sensible
+Застенчивый, робкий, скромный	['bæʃf(ə)l]	Bashful
+С широкими взглядами, с широким кругозором	[ˌbrɔːd'maɪndɪd]	Broad-minded
+Очаровательный	['ʧɑːmɪŋ]	Charming
+Уверенный в себе	['kɔnfɪd(ə)nt]	Confident
+Верный, преданный	['lɔɪəl]	Loyal
+Любопытный	[ˈkjʊərɪəs]	Curious
+Забавный	['hjuːm(ə)rəs  /  ə'mjuːzɪŋ]	Humorous / amusing
+Решительный, непоколебимый, стойкий	[dɪ'tɜːmɪnd]	Determined
+Дисциплинированный	['dɪsəplɪnd]	Disciplined
+Бережливый, расчетливый	[ˌiːkə'nɔmɪk(ə)l]	Economical
+Восторженный; полный энтузиазма	[ɪnˌθjuːzɪ'æstɪk]	Enthusiastic
+Великолепный	['eks(ə)l(ə)nt]	Excellent
+Очаровательный	['fæsɪneɪtɪŋ]	Fascinating
+Великодушный, щедрый	['ʤen(ə)rəs]	Generous
+Одаренный	['gɪftɪd]	Gifted
+Гуманный	[hjuːˈmeɪn]	Humane
+Довольный	[pliːzd]	Pleased
+Благоразумный	['riːz(ə)nəb(ə)l]	Reasonable
+Волевой	[stroŋ- wild]	Strong-willed
+Понимающий, отзывчивый	[ˌʌndə'stændɪŋ]	Understanding
+Остроумный	[ˈwɪtɪ]	Witty
+Плохой	[bæd]	Bad
+Холодный	[kəuld]	Cold
+Глупый	['sɪlɪ]	Silly
+Злой	[ˈæŋɡrɪ]	Angry
+Ленивый	[leɪzɪ]	Lazy
+Скучный 	['bɔːrɪŋ  / dʌl]	Boring / dull
+Жадный	[ˈɡriːdɪ]	Greedy
+Эгоистичный	['selfɪʃ]	Selfish
+Глупый, тупой; скучный	[ˈstjuːpɪd  / dʌl]	Stupid / dull
+Ужасный	['terəb(ə)l]	Terrible
+Агрессивный, пробивной, настойчивый	[ə'gresɪv]	Aggressive
+Уродливый	['ʌglɪ]	Ugly
+Нервный	['nɜːvəs]	Nervous
+Расстроенный	[ʌp'set]	Upset
+Жестокий	[ˈkruːəl]	Cruel
+Ужасный	['hɔrəb(ə)l]	Horrible
+Унылый, угрюмый	['muːdɪ]	Moody
+Мерзкий	['nɑːstɪ]	Nasty
+Пессимист	[ˈpesɪmɪst]	Pessimist
+Циничный	[ˈsɪnɪkəl]	Cynical
+Зависимый (от)	[dɪ'pendənt]	Dependent (on)
+Отвратительный	[dɪs'gʌstɪŋ]	Disgusting
+Завистливый	['envɪəs]	Envious
+Глупый; взбалмошный	['fuːlɪʃ]	Foolish
+Голова	[ hed ]	Head
+Волосы	[ hɛə ]	Hair
+Глаз	[ ai ]	Eye
+Губы	[ lips ]	Lips
+Зуб (зубы)	[ tu:θ / tiːθ]	Tooth (teeth)         
+Лицо	[ feis ]	Face
+Нос	[ nəuz ]	Nose
+Рот	[ mauθ ]	Mouth
+Ухо	[ iə ]	Ear
+Язык	[ tʌŋ ]	Tongue
+Конечности	[lɪmz]  	Limbs 
+Рука (от плеча до кисти)	[ ɑ:m ]	Arm
+Кисть руки	[ hænd ]	Hand
+Палец руки	[fɪŋɡə(r) ]                                 	Finger       
+Ладонь	[ pɑ:m ]	Palm
+Плечо	[ 'ʃəuldə ]	Shoulder
+Нога(до ступни)	[ leg ]	Leg
+Нога (ступня)/ ноги (ступни)	[ fut  /   fi:t ]	Foot / feet
+Тело	['bɔdɪ]	Body
+Грудь	[ brest ]	Breast
+Живот(желудок)	[ 'stʌmək ]	Stomach
+Живот	[ˈbɛlɪ]	Belly 
+Спина	[ bæk ]	Back
+Талия	[ weist ]	Waist
+Шея	[ nek ]	Neck
+Ягодицы	[‘bʌtəks]	Buttocks 
+Тело	['bɔdɪ]	Body
+Хорошо сложенный (о мужчине)	[ˌwel'bɪlt]	Well-built
+С хорошей фигурой (о женщине)	[‘welʃeɪpt]	Well-shaped
+Худой, тощий	[‘skɪnɪ / 'slendə / θɪn  ]	Skinny / slender / thin  
+Толстый, полный	[əuvə’weɪt / plʌmp/  θɪk / lɑːʤ / ‘tʃʌbɪ]	Overweight / plump (polite)/ thick / large (neutral)/ chubby (little bit overweight, polite)
+Низкий	[ʃɔ:t ] 	Short 
+Высокий	[tɔ:l]	Tall
+Среднего роста	[‘mi:dɪəm haɪt]	Medium height
+Волосы	[heə]	Hair
+Лысый	[bɔ:ld  / 'bɔːld'hedɪd]	Bald /  bald-headed
+Прямые	[streɪt]	Straight
+Волнистые	[‘weɪvɪ]	Wavy
+Кудрявые	['kɜːlɪ]	Curly
+Седые(с проседью)	[greɪ]	Gray
+Седые (полностью)	[wait]	White
+Блондинистые	[blɔnd]	Blond
+Рыжие	['ʤɪnʤə / red]	Ginger / red
+Волосы средней длины, до плеч	[ˌʃəuldə'leŋθ]	Shoulder-length
+Косы	[breɪdz  / plæts] 	Braids / plaits
+Локон, завиток	[lɔk  /  kɜːl] 	Lock / curl 
+Челка	[frɪnʤ  / bæŋz]	Fringe / bangs
+Стрижка	[‘hɛəkʌt]	Haircut
+Причёска	[‘hɛədu:]	Hairdo
+Перманентная завивка	[pə:m]	Perm
+Жидкие волосы	[spɑ:s heə]	Sparse hair
+Редкие	['skæntɪ /  θɪn]	Scanty / thin
+Густые	[θɪk]	Thick 
+Шелковистые	['sɪlkɪ]	Silky
+Крашеные	[daɪd]	Dyed 
+Лицо	[feɪs]	Face
+Бледная кожа	[peɪl skɪn]	Pale skin
+Загорелый	[sʌn- tænd]	Sun-tanned
+Морщины	[‘rɪŋklz]	Wrinkles
+Родинка	[məul]	Mole
+Квадратное / круглое / овальное (лицо)	[skweə /  raund /  'əuv(ə)l]	Square / round / oval
+Впалые щеки	['hɔləu tʃi:ks]	Hollow cheeks  
+Пухлое лицо	[‘tʃʌbɪ feɪs]	Chubby face  
+Гладко выбритый	[ˌkliːn'ʃeɪv(ə)n  / smuːð ʧiːkt]	Clean-shaven / smooth-cheeked  
+Высокие скулы	[haɪ ‘tʃi:kbəunz]	High cheekbones  
+Круговая пластика	[feɪs lɪft]	Face lift  
+Веснушки	['freklz]	Freckles
+Ямочки	[‘dɪmplz]	Dimples
+Угри	[ʹæknı]	Acne
+Шрам	[skɑ:]	Scar
+Оттопыренные уши	['prɔmɪnənt ɪəz]	Prominent ears
+Бородавкa	[wɔ:t]	Wart
+Мочка уха	[ ɪə ləub]	Ear lobe
+Прыщ	[spɔt  /  ‘pɪmpl]	Spot / pimple
+Улыбка	[smaɪl]	Smile
+Глаза	[aɪz]	Eyes
+Синяк под глазом	[blæk aɪ]	Black eye  
+Толстые / тонкие брови	[θɪk  /  θɪn 'aɪbrauz]	Thick / thin eyebrows
+Длинные ресницы	[lɔŋ læʃɪz]	Long lashes  
+Накладные ресницы	[fɔ:ls ailæʃɪs]	False eyelashes   
+Широко посаженные	[waɪd set]	Wide-set
+Раскосые/миндалевидные глаза	['slɑːntɪŋ  /   'ɑːmənd‘ʃeɪpt aɪz]	Slanting / almond-shaped eyes
+Косоглазый	[krɔs aɪd]	Cross eyed 
+Поросячьи глазки	[‘pɪgɪ aɪz]	Piggy eyes  
+Косматые	['ʃægɪ]	Shaggy 
+Густые	['buʃɪ]	Bushy
+Губы	[lɪps]	Lips
+Полные / тонкие губы	[ful  /  θɪn lɪps]	Full / thin lips
+Верхняя / нижняя губа	 ['ʌpə  / 'ləuə lɪp]	Upper / lower lip
+Кусать губы	[baɪt <one's> lɪps]	To bite one's lips
+Поджать губы	[pɜːs <one's> lɪps]	To purse  one's lips
+Презрительно кривить губы	[kɜːl <one's> lɪps]	To curl one's lips
+Нос	[nəuz]	Nose
+Вздёрнутый	[‘ʌptə:nd]	Upturned
+Мясистый	['fleʃɪ]	Fleshy 
+Изогнутый, кривой	['krukɪd]	Crooked
+Крючковатый	[hukt]	Hooked
+Кривой 	['kɜːvd]	Curved 
+Приплюснутый нос	[pʌg nəuz]	Pug nose  
+Нос картошкой	[‘bʌlbəs nəuz]	Bulbous nose  
+Курносый нос	[snʌb nəuz]	Snub nose  
+Подбородок	[ʧɪn]	Chin
+Двойной	[‘dʌbl]	Double 
+Острый	[’pɔɪntɪd]	Pointed
+Массивный	['mæsɪv]	Massive 
+Выдающийся	[prə'truːdɪŋ]	Protruding 
+Круглый 	[raʊnd]	Round 
+Зубы	[tiːθ]	Teeth
+Белоснежные зубы	[‘snəʊ’waɪt ti:θ]	Snow-white teeth
+Крупные	[lɑːʤ] 	Large 
+Мелкие	[smɔːl  / 'taɪnɪ]	Small / tiny
+Редкие	['waɪdlɪ speıst]	Widely-spaced
+Ровные / неровные	[ʌn'iːv(ə)n  / ʌn'iːv(ə)n]	Even / uneven 
+Вставные зубы	[fɔ:ls ti:θ]	False teeth  
+Квадратная челюсть	[skweə ʤɔː]	Square jaw
+Верхняя одежда	[ˌaut'weə]	Outwear
+Пальто, плащ	[kəʊt]	Сoat
+Плащ	['reɪnkəut]	Raincoat
+Куртка	[‘dʒækɪt]	Jacket
+Спортивная куртка	[spɔ:t ‘dʒækɪt]	Sport jacket
+Шуба	[fɜː kəut]	Fur coat
+Пуховик	[daun ‘dʒækɪt]	Down jacket 
+Дублёнка	['ʃiːpskɪn kəut]	Sheepskin coat 
+Зимнее пальто	[‘wɪntə kəut]	Winter coat
+Головные уборы 	['hedgɪə]	Headwear
+Шапка, шляпа	[hæt]	Hat 
+Кепка	[kæp]	Cap
+Берет	['bereɪ]	Beret
+Панама	[sʌn hæt]	Sun hat
+Шерстяная шапка	['wulən hæt]	Woollen hat
+Верхняя часть тела	['ʌpə  'bɔdɪ]	Upper body
+Рубашка	[ʃ3:t]	Shirt
+Футболка	[ti: - ʃ3:t]	T-shirt  
+Свитер, джемпер	[‘dʒʌmpə]	Jumper
+Свитер	[‘swetəʳ]	Sweater
+Блузка	[blaʊz]	Blouse 
+Туника	['tjuːnɪk]	Tunic
+Пуловер	['puləuvə]	Pullover
+Кардиган	['kɑ:dɪgən] 	Cardigan
+Топ	[tɔp]	Top 
+Жилетка	['weɪstkəut  , vɛst]	Waistcoat, vest (am.) 
+Майка	[‘ʌndəvɛst]	Undervest  
+Нижняя часть тела	['ləuə 'bɔdɪ]	Lower body
+Брюки	[‘traʊzɪz ,  pænts]	Trousers (br.), pants (am.)
+Носки	[sɔks]	Socks
+Юбка	[sk3:t]	Skirt 
+Шорты	[‘ʃɔ:ts]	Shorts 
+Колготки	[taɪts  /  'pæntɪhəuz]	Tights, panty hose (am.)
+Джинсы	[ʤiːnz]	Jeans 
+Легинсы	[‘legɪŋz]	Leggings
+Слаксы (широкие брюки)	[slæks]	Slacks
+Гетры	[leg wɔ:məz]	Leg warmers 
+Гольфы	[ni:'haɪ 'stɔkɪŋz]	Knee-high stockings
+Чулки	['stɔkɪŋz  ]	Stockings 
+Все тело	[həul 'bɔdɪ]	Whole body
+Платье	[dres]	Dress 
+Костюм	[su:t]	Suit
+Комбинезон	[‘əʊvərɔ:l  /  'kʌv(ə)rɔːlz]	Overall / coveralls
+Брючный костюм	['trauzə su:t ,  slæk su:t ,  'pænt s(j)uːt]	Trouser suit, slack suit, pantsuit
+Женский костюм (с юбкой)	[skɜːt su:t]	Skirt suit
+Сарафан	['pɪnəfɔ: dres]	Pinafore dress  sundress
+Летнее платье	['sʌmə dres]	Summer dress
+Халат	[rəʊb]	Robe 
+Нижнее бельё	['ʌndəweə]	Underwear
+Бюстгальтер	[brɑ:]	Bra 
+Трусы (мужские)	['ʌndəpænts]	Underpants
+Мужские широкие трусы	['bɔksəz]	Boxers
+Трусики (женские или детские) 	['pæntɪz] 	Panties
+Купальник	[bɪ'kiːnɪ  /  swɪms(j)uːt]	Bikini / swimsuit
+Обувь	['futweə]	Footwear
+Туфли, ботинки	[ʃu:z]	Shoes 
+Ботинки, сапоги	[bu:ts], 	Boots
+Туфли на высоком каблуке	[haɪ hi:lz]	High heels 
+Туфли на низком каблуке	[ləu hi:lz]	Low heels 
+Кроссовки	['treɪnəz , 'sni:kəz]	Trainers (br.), sneakers (am.)
+Обувь на низкой подошве	[flæts]	Flats
+Сандалии	[‘sændlz]	Sandals
+Шлёпки	[flɪp- flɔps]	Flip-flops 
+Домашние тапочки	[‘slɪpəz]	Slippers
+Шнурок	[leɪs]	Lace
+Зимние сапоги	['wɪntə buːts]	Winter boots
+Обувь на шпильках	[stɪ'letəu hi:lz]	Stiletto heels
+Подошва	[səul]	Sole 
+Платформа	['plætfɔːm səul]	Platform sole
+Туфли на платформе	['plætfɔːm ʃu:z]	Platform shoes
+Ковбойские сапоги	['westən buːts , 'kaubɔɪ buːts]	Western boots, cowboy boots
+Туристические ботинки	['haɪkɪŋ buːts]	Hiking boots
+Мокасины	['mɔkəsɪnz]	Moccasins
+Тенниски	['tenɪs ʃu:z]	Tennis shoes
+Аксессуары	[ək'ses(ə)rɪz]	Accessories
+Очки	[glɑ:sɪz]	Glasses 
+Шарф	[skɑ:f]	Scarf 
+Галстук	[taɪ]	Tie
+Кольцо	[rɪŋ]	Ring
+Кошелек	[pə:s/ ‘wɒlɪt]	Purse/ wallet
+Браслет	['breɪslɪt]	Bracelet
+Цепочка	[tʃeɪn]	Chain
+Ожерелье	[‘neklɪs]	Necklace
+Солнечные очки	[‘sʌnˌglɑ:sɪz]	Sunglasses 
+Серьги	[pɪnz  /  'ɪərɪŋz]	Pins / earrings 
+Женская сумка	[‘hændbæg]	Handbag 
+Драгоценности	[‘dʒu:əlrɪ]	Jewellery
+Бижутерия	[bɪ'ʒu:tərɪ]	Bijouterie
+Обруч, повязка на голову	[hɛəʳ- bænd]	Hair-band
+Сумка-клатч	[klʌtʃ]	Clutch
+Брошь	[brəuʧ]	Brooch
+Пашмина	[pæʃ’mi:nə]	Pashmina 
+Бабочка	[baʊ- taɪ]	Bow-tie 
+Стили	[staɪlz]	Styles
+Короткий / длинный рукав	[ʃɔ:t / lɔŋ sli:v]	Short / long sleeve
+Принт / рисунок на одежде	[prɪnt]	Print
+V вырез	[vi- nek]	V-neck
+Мини / миди / макси- юбка	[mini / ’mɪdɪ / maksi sk3:t]	Mini / midi / maxi- skirt
+Платье со складками	[pli:tid dres]	Pleated dress
+В складку	[pli͟:tɪd]	Pleated
+Круглый вырез	[raund nek]	Round-neck
+Пышная юбка	[ful- sk3:t]	Full-skirt
+Материал	['fæbrɪk]	Fabric
+Хлопок	['kɔt(ə)n]	Cotton
+Джинсовая ткань	['denɪm]	Denim
+Шерсть	[wul]	Wool
+Кожа	[‘leðəʳ]	Leather
+Мех	[fə:r]	Fur
+Шелк	[sɪlk]	Silk
+Бархат	['velvɪt]	Velvet
+Вельвет	['kɔ:d(j)ərɔɪ] 	Corduroy
+Вязанный	['nɪtɪd]	Knitted
+Искусственный мех / кожзам	[feɪk fə:r/ ’leðəʳ]	Fake fur / leather
+Полиэстер	[pɔlɪ’ɛstər]	Polyester
+Цвета	['kʌləz]	Colours
+Красный	[rɛd]	Red
+Оранжевый	[‘ɒrɪndʒ]	Orange
+Желтый	[‘jeləʊ]	Yellow 
+Зеленый	[gri:n]	Green 
+Синий	[blu:]	Blue
+Голубой	[laɪt blu:]	Light blue 
+Черный	[blæk]	Black
+Коричневый	[braʊn]	Brown 
+Белый	[waɪt]	White
+Темно-синий	[‘neɪvɪ]	Navy
+Фиолетовый	[‘p3:pl]	Purple
+Бежевый	[beɪʒ]	Beige
+Действия	['ækʃ(ə)nz]	Actions
+Надевать что-то	[pʊt <smth> ɒn]	To put smth on
+Снимать	[teɪk <smth> ɒf]	To take smth off 
+Носить (одежду, украшения)	[wɛə]	To wear 
+Примерять	[ʹtraı ɒn]	To try on
+Переодеваться 	[ʧeɪnʤ kləuðz] 	To change clothes
+Одеваться 	[dress , get dresst]	To dress, to get dressed
+Раздеваться 	[ʌn'dres ,  get ʌn'drest]	To undress, to get undressed
+Одеваться "на выход"	[dres ʌp]	To dress up 
+Подходить (о фасоне, размере)	[fɪt]	To fit
+Подходить, быть к лицу	[s(j)u:t]	To suit
+Подходить (детали одежды между собой; по цвету)	[mætʃ]	To match 
+Нарядная одежда	[smɑːt kləuðz]	Smart clothes
+Вечернее платье	['i:vnɪŋ gaun]	Evening gown
+Смокинг	[tʌks ,  tʌk'si:dəu , 'dɪnə 'ʤækɪt] 	Tux, tuxedo (am.), dinner jacket (br.)
+Спортивная одежда	['spɔːtsweə]	Sportswear
+Тренировочные (штаны) 	['swetpænts]	Sweatpants
+Спортивный костюм	['træks(j)uːt]	Tracksuit
+Домашняя одежда	[həum 'kləuðɪŋ]	Home clothing
+Пижама	[pɪ'ʤɑ:məz] 	Pyjamas
+Халат	['dresɪŋ gaun]	Dressing-gown
+Узор	['pæt(ə)n]	Pattern
+В полоску	[straɪpt]	Striped
+В клеточку	[ʧekt]	Checked 
+Цветастый	['flauərɪ , 'flɔ:r(ə)l]	Flowery, floral
+В горошек	['pɔlkə dɔt]	Polka dot
+Камуфляж	['kæməflɑ:ʒ] 	Camouflage 
+Без рисунка	[pleɪn]	Plain
+Шотландская клетка	[plæd]	Plaid
+Описание	[dɪ'skrɪpʃ(ə)n] 	Description
+Элегантный	['elɪg(ə)nt] 	Elegant
+Повседневный	['kæʒwəl]	Casual
+Плотно облегающий	[taɪt]	Tight 
+Мешковатый	['bægɪ]	Baggy
+Свободный	[lu:s] 	Loose
+Модный	['fæʃ(ə)nəb(ə)l] 	Fashionable 
+Пуговица	[‘bʌt (ə)n]	Button
+Карман	['pɔkɪt]	Pocket
+Воротник	[‘kɔlə]	Collar
+Ремень	[belt]	Belt
+Перчатки	[glʌvz]	Gloves
+Лента	['rɪb(ə)n]	Ribbon
+Капюшон	[hud] 	Hood
+Носовой платок	['hæŋkəʧi:f]	Handkerchief
+Молния	[zɪp]	Zip

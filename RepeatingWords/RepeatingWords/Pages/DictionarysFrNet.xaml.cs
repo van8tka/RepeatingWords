@@ -17,7 +17,7 @@ namespace RepeatingWords.Pages
             NameLanguage.Text = lang.NameLanguage;
             actIndicator2.IsRunning = false;
             //метод загрузки списка словаерй выбранного языка по ID языка
-            ListLoad(lang.Id);
+           ListLoad(lang.Id);
         }
 
               

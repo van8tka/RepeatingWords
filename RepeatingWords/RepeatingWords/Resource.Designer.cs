@@ -413,15 +413,6 @@ namespace RepeatingWords {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copy this file into your device..
-        /// </summary>
-        internal static string LabelScreen231Win {
-            get {
-                return ResourceManager.GetString("LabelScreen231Win", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Push the button [Import words from the file].
         /// </summary>
         internal static string LabelScreen232 {
@@ -476,7 +467,7 @@ namespace RepeatingWords {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Enter the word, translate of the word and transcription. Push the button [Add the word].
+        ///   Looks up a localized string similar to Enter the word, translate of the word and transcription. Push the button [Create word].
         /// </summary>
         internal static string LabelScreen6 {
             get {
@@ -503,7 +494,7 @@ namespace RepeatingWords {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to to next word push the button [Next card], to translation word push the button [Turn the card]. You can choose voice language and push the button to speack word..
+        ///   Looks up a localized string similar to to next word push the button [Next Word], to translation word push the button [Turn the card].
         /// </summary>
         internal static string LabelScreen9 {
             get {

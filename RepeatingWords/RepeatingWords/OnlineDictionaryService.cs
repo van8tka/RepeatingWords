@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.Net.Http;
 using RepeatingWords.Model;
+using System;
 
 namespace RepeatingWords
 {
@@ -35,9 +36,17 @@ namespace RepeatingWords
        //получаем список языков
        public async Task<IEnumerable<Language>>GetLanguage()
         {
-            HttpClient client = GetClient();
-            string result = await client.GetStringAsync(UrlLang);
-            return JsonConvert.DeserializeObject<IEnumerable<Language>>(result);
+            try
+            {
+                HttpClient client = GetClient();
+                string result = await client.GetStringAsync(UrlLang);
+                return JsonConvert.DeserializeObject<IEnumerable<Language>>(result);
+            }
+           catch(Exception er)
+            {
+                string g = er.Message;
+                return null;
+            }
         }
         // получаем список словарей выбранного языка
         public async Task<IEnumerable<Dictionary>>GetLanguage(int idLang)

@@ -1,5 +1,6 @@
 ﻿using SQLite;
 
+
 namespace RepeatingWords.Model
 {
     [Table("Dictionary")]

@@ -245,6 +245,10 @@
     <value>You have to save file in UTF-8.</value>
     <comment>Далее при сохранении файла указать кодировку UTF-8.</comment>
   </data>
+  <data name="LabelScreen231" xml:space="preserve">
+    <value>Load this file into root path of the phone.</value>
+    <comment>Закинуть созданный файл на телефон в корневую папку.</comment>
+  </data>
   <data name="LabelScreen232" xml:space="preserve">
     <value>Push the button [Import words from the file]</value>
     <comment>Запустить программу на телефоне, выбрать словарь и нажать кнопку [Добавить слова из файла]</comment>
@@ -270,7 +274,7 @@
     <comment>Нажать на кнопку [Добавить слово]</comment>
   </data>
   <data name="LabelScreen6" xml:space="preserve">
-    <value>Enter the word, translate of the word and transcription. Push the button [Add the word]</value>
+    <value>Enter the word, translate of the word and transcription. Push the button [Create word]</value>
     <comment>Ввести слово на русском, его перевод и транскрипцию (поле Транскрипция запонять необязательно). И нажать на кнопку [Добавить слово]</comment>
   </data>
   <data name="LabelScreen7" xml:space="preserve">
@@ -282,7 +286,7 @@
     <comment>Выбираем какой язык будет отображаться первый</comment>
   </data>
   <data name="LabelScreen9" xml:space="preserve">
-    <value>to next word push the button [Next card], to translation word push the button [Turn the card]. You can choose voice language and push the button to speack word.</value>
+    <value>to next word push the button [Next Word], to translation word push the button [Turn the card]</value>
     <comment>Для перехода к следующему слову нажимаем кнопку [Следующее слово], для отображения перевода слова нажимаем на кнопку [Перевернуть карточку]</comment>
   </data>
   <data name="LabelSecondWord" xml:space="preserve">
@@ -395,13 +399,5 @@
   </data>
   <data name="ModalLerningTurnedWords" xml:space="preserve">
     <value>Studying of unlearned words</value>
-  </data>
-  <data name="LabelScreen231Win" xml:space="preserve">
-    <value>Copy this file into your device.</value>
-    <comment>Закинуть созданный файл на телефон в корневую папку.</comment>
-  </data>
-  <data name="LabelScreen231" xml:space="preserve">
-    <value>Load this file into root path of the phone.</value>
-    <comment>Закинуть созданный файл на телефон в корневую папку.</comment>
   </data>
 </root>

@@ -1,8 +1,9 @@
-﻿using RepeatingWords.Model;
+﻿using System;
+using RepeatingWords.Model;
 using Xamarin.Forms;
 using System.Collections.Generic;
 using System.Linq;
-using System;
+
 
 namespace RepeatingWords
 {
