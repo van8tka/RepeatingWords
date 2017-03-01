@@ -4,7 +4,8 @@
              x:Class="RepeatingWords.CreateWord"
                xmlns:locale ="clr-namespace:RepeatingWords;assembly=RepeatingWords"
             Style="{StaticResource TitleApp}">
-  <StackLayout>
+    <ScrollView>
+    <StackLayout>
     <Label Text="{locale:Translate LabelFirstWord}" VerticalOptions="Center" HorizontalOptions="Center" Style="{StaticResource LableHeadApp}"/>
     <Entry Text="{Binding RusWord}" Placeholder="{locale:Translate LabelFirstWord}" FontSize="Medium" TextColor="Yellow"></Entry>
     <Label Text="{locale:Translate LabelSecondWord}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" TextColor="White"/>
@@ -15,5 +16,5 @@
     
     <Button Style="{StaticResource buttonStyle}" Clicked="CreateWordButtonClick" Text="{locale:Translate ButtonAddWord}"></Button>
   </StackLayout>
-
+    </ScrollView>
 </ContentPage>

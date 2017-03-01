@@ -11,13 +11,6 @@ namespace RepeatingWords
         public MainPage()
         {
             InitializeComponent();
-            if (Device.OS != TargetPlatform.Android)
-            {
-                ButtonReview.IsEnabled = false;
-                ButtonReview.IsVisible = false;
-            }
-            
-
         }
 
 
@@ -67,22 +60,42 @@ namespace RepeatingWords
             }        
         }
 
+    
+    
+
+
+      private async void ClickedToolsButton(object sender, EventArgs e)
+      {
+            ToolsPage ta = new ToolsPage();
+            await Navigation.PushModalAsync(ta);
+      }
 
 
 
 
-        private async void SpravkaButtonClick(object sender, System.EventArgs e)
+//оставить отзыв о программе
+        private void ClickedLikeButton(object sender, EventArgs e)
+        {
+            if (Device.OS == TargetPlatform.Android)
+                Device.OpenUri(new Uri("https://play.google.com/store/apps/details?id=cardsofwords.cardsofwords"));
+            if (Device.OS == TargetPlatform.Windows||Device.OS==TargetPlatform.WinPhone)
+            { }
+        }
+
+
+
+
+
+        private async void ClickedHelpButton(object sender, EventArgs e)
         {
             Spravka spv = new Spravka();
             await Navigation.PushAsync(spv);
         }
 
-      private void  OtzyvButtonClick(object sender, System.EventArgs e)
-        {
-            if(Device.OS == TargetPlatform.Android)
-              
-              Device.OpenUri(new Uri("https://play.google.com/store/apps/details?id=cardsofwords.cardsofwords"));
-         }
+        
+
+
+            
 
 
     }

@@ -2218,8 +2218,8 @@ namespace RepeatingWords.Droid
 			// aapt resource value: 0x7f0200a0
 			public const int mr_ic_play_light = 2130837664;
 			
-			// aapt resource value: 0x7f0200b1
-			public const int notification_template_icon_bg = 2130837681;
+			// aapt resource value: 0x7f0200b5
+			public const int notification_template_icon_bg = 2130837685;
 			
 			// aapt resource value: 0x7f0200a1
 			public const int screen1 = 2130837665;
@@ -2264,10 +2264,22 @@ namespace RepeatingWords.Droid
 			public const int screen9 = 2130837678;
 			
 			// aapt resource value: 0x7f0200af
-			public const int voice = 2130837679;
+			public const int toolbarImage = 2130837679;
 			
 			// aapt resource value: 0x7f0200b0
-			public const int voiceX = 2130837680;
+			public const int toolbarImageHelp = 2130837680;
+			
+			// aapt resource value: 0x7f0200b1
+			public const int toolbarImageLike = 2130837681;
+			
+			// aapt resource value: 0x7f0200b2
+			public const int toolbarImageTools = 2130837682;
+			
+			// aapt resource value: 0x7f0200b3
+			public const int voice = 2130837683;
+			
+			// aapt resource value: 0x7f0200b4
+			public const int voiceX = 2130837684;
 			
 			static Drawable()
 			{

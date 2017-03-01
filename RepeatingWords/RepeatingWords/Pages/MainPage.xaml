@@ -5,29 +5,36 @@
               xmlns:local="clr-namespace:RepeatingWords;assembly=RepeatingWords"
           Style="{StaticResource TitleApp}"
             >
-  <StackLayout HorizontalOptions="Center">
-    <local:AdMobView WidthRequest="320" HeightRequest="50" />
-    <Label Text="{local:Translate HeaderMain}" HorizontalTextAlignment="Center" TextColor="White">
-      <Label.FontSize>
-      <OnPlatform x:TypeArguments="x:Double">
-        <OnPlatform.Android>22</OnPlatform.Android>
-        <OnPlatform.WinPhone>15</OnPlatform.WinPhone>
-      </OnPlatform>
-      </Label.FontSize>
-    </Label>
-    <Label Text="V 1.7" HeightRequest="130" FontSize="12" TextColor="Gray"/>
+
+
+    <ContentPage.ToolbarItems>
+      
+        <ToolbarItem Name="Tools" Icon="toolbarImageTools.png" Clicked="ClickedToolsButton"></ToolbarItem>
+        <ToolbarItem Name="Like" Icon="toolbarImageLike.png" Clicked="ClickedLikeButton"> </ToolbarItem>
+        <ToolbarItem Name="Help" Icon="toolbarImageHelp.png" Clicked="ClickedHelpButton"></ToolbarItem>
+        
+    </ContentPage.ToolbarItems>
+
+
+
     <ScrollView>
-      <StackLayout>
-        <Button Style="{StaticResource buttonStyle}"  Text="{local:Translate ButtonAddDictionaryOrWords}" Clicked="ChooseDbButtonClick"></Button>
-        <Button Style="{StaticResource buttonStyle}"  Text="{local:Translate ChooseDictionaryForRepeat}" Clicked="ChooseDictionaryButtonClick"></Button>
-        <Button Style="{StaticResource buttonStyle}" Text="{local:Translate Continue}" Clicked="ReturnButtonClick"></Button>
-        <Button Style="{StaticResource buttonStyle}"  Text="{local:Translate HowUseApp}" Clicked="SpravkaButtonClick"></Button>
-
-        <Button Style="{StaticResource buttonStyle}" x:Name="ButtonReview" Text="{local:Translate ButtonReviewText}" Clicked="OtzyvButtonClick" />
-      </StackLayout>
+        <StackLayout HorizontalOptions="Center">
+        <local:AdMobView WidthRequest="320" HeightRequest="50" />
+        <Label Text="{local:Translate HeaderMain}" HorizontalTextAlignment="Center" TextColor="White">
+          <Label.FontSize>
+          <OnPlatform x:TypeArguments="x:Double">
+            <OnPlatform.Android>22</OnPlatform.Android>
+            <OnPlatform.WinPhone>15</OnPlatform.WinPhone>
+          </OnPlatform>
+          </Label.FontSize>
+        </Label>
+        <Label Text="V 1.7" HeightRequest="100" FontSize="12" TextColor="Gray"/>
+      
+                <Button Style="{StaticResource buttonStyle}"  Text="{local:Translate ButtonAddDictionaryOrWords}" Clicked="ChooseDbButtonClick"></Button>
+                <Button Style="{StaticResource buttonStyle}"  Text="{local:Translate ChooseDictionaryForRepeat}" Clicked="ChooseDictionaryButtonClick"></Button>
+                <Button Style="{StaticResource buttonStyle}" Text="{local:Translate Continue}" Clicked="ReturnButtonClick"></Button>
+         
+        </StackLayout>
     </ScrollView>
-
-  </StackLayout>
-  
 
 </ContentPage>

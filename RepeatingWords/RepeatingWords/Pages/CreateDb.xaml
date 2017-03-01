@@ -4,10 +4,11 @@
              x:Class="RepeatingWords.CreateDb"
              xmlns:local="clr-namespace:RepeatingWords;assembly=RepeatingWords"
              Style="{StaticResource TitleApp}">
-  <StackLayout>
+    <ScrollView>
+    <StackLayout>
     <Label Text="{local:Translate LabelNameDict}" VerticalOptions="Center" HorizontalOptions="Center" Style="{StaticResource LableHeadApp}"/>
     <Entry Text="{Binding Name}" Placeholder="{local:Translate EntryNameDict}" FontSize="Medium" TextColor="Yellow"></Entry>
     <Button Style="{StaticResource buttonStyle}" Clicked="CreateDbButtonClick" Text="{local:Translate ButtonCreate}"></Button>
   </StackLayout>
-  
+    </ScrollView>
 </ContentPage>

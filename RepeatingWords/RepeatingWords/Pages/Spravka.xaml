@@ -4,13 +4,15 @@
              x:Class="RepeatingWords.Spravka"
               xmlns:locale ="clr-namespace:RepeatingWords;assembly=RepeatingWords"
              Style="{StaticResource TitleApp}">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="{locale:Translate LabelInstruction}" HorizontalTextAlignment="Center" Style="{StaticResource LableHeadApp}" HeightRequest="150"/>
 
-  <StackLayout>
-    <Label Text="{locale:Translate LabelInstruction}" HorizontalTextAlignment="Center" Style="{StaticResource LableHeadApp}" HeightRequest="150"/>
-    
-    <Button Text="{locale:Translate ButtonHowCreateDictAndaddWord}" Clicked="CreateOneWordButtonClick" Style="{StaticResource buttonStyle}"/>
-    <Button Text="{locale:Translate ButtonHowIportFile}" Clicked="CreateFromFileButtonClick" Style="{StaticResource buttonStyle}"/>
-  </StackLayout>
-  
- 
+            <Button Text="{locale:Translate ButtonHowCreateDictAndaddWord}" Clicked="CreateOneWordButtonClick" Style="{StaticResource buttonStyle}"/>
+            <Button Text="{locale:Translate ButtonHowIportFile}" Clicked="CreateFromFileButtonClick" Style="{StaticResource buttonStyle}"/>
+            <Button x:Name="BtPolicy" Text="{locale:Translate ButtonPolicy}" Clicked="ClickPolicyButton" Style="{StaticResource buttonStyle}"/>
+
+        </StackLayout>
+    </ScrollView>
+
 </ContentPage>

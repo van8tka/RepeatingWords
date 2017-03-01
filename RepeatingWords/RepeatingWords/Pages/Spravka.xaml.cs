@@ -9,6 +9,16 @@ namespace RepeatingWords
         public Spravka()
         {
             InitializeComponent();
+            if (Device.OS == TargetPlatform.Windows || Device.OS ==TargetPlatform.WinPhone)
+            {
+                BtPolicy.IsVisible = true;
+                BtPolicy.IsEnabled = true;
+            }
+            else
+            {
+                BtPolicy.IsVisible = false;
+                BtPolicy.IsEnabled = false;
+            }
         }
         private async void CreateOneWordButtonClick(object sender, EventArgs e)
         {
@@ -19,6 +29,11 @@ namespace RepeatingWords
         {
             HowCreateFromFile hf = new HowCreateFromFile();
             await Navigation.PushAsync(hf);
+        }
+//policy for Windows
+        private void ClickPolicyButton(object sender, EventArgs e)
+        {
+               Device.OpenUri(new Uri("https://devprogram.ru/privacy.html"));
         }
     }
 }

@@ -4,7 +4,8 @@
              x:Class="RepeatingWords.Pages.RepeatWord"
              xmlns:locale ="clr-namespace:RepeatingWords;assembly=RepeatingWords"
              Style="{StaticResource TitleApp}">
-  <StackLayout HorizontalOptions="End">
+    <ScrollView>
+    <StackLayout HorizontalOptions="End">
     <locale:AdMobView WidthRequest="320" HeightRequest="50" />
       <Grid>
          <Grid.ColumnDefinitions>
@@ -49,5 +50,5 @@
     <Button Text="{locale:Translate ButtonTurnCard}" Clicked="TurnAroundWordButtonClick"  Style="{StaticResource buttonStyle}" BackgroundColor="Green" HeightRequest="100"></Button>
    
   </StackLayout>
- 
+    </ScrollView>
 </ContentPage>

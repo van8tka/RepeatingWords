@@ -155,6 +155,10 @@
     <Content Include="screen7.jpg" />
     <Content Include="screen8.jpg" />
     <Content Include="screen9.jpg" />
+    <Content Include="toolbarImage.png" />
+    <Content Include="toolbarImageHelp.png" />
+    <Content Include="toolbarImageLike.png" />
+    <Content Include="toolbarImageTools.png" />
     <Content Include="voice.png" />
     <Content Include="voiceX.png" />
     <Content Include="Properties\Default.rd.xml" />
@@ -184,11 +188,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Analyzer Include="..\..\packages\sqlite-net-pcl.1.3.1\lib\netstandard1.1\SQLite-net.dll" />
-    <Analyzer Include="..\..\packages\SQLitePCLRaw.bundle_green.1.0.1\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll" />
-    <Analyzer Include="..\..\packages\SQLitePCLRaw.core.1.0.1\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.core.dll" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
