@@ -111,8 +111,8 @@ namespace RepeatingWords.Pages
         {
             if (lang)
             {
-               WordForRepeat.TextColor = Color.Lime;
-               WordForRepeat.Text = GetWords(count).RusWord;
+                //WordForRepeat.TextColor = Color.Lime;
+                WordForRepeat.Text = GetWords(count).RusWord;
                 //управление видимостью озвучки
                 ButtonVoice.IsEnabled = false;
                 picker.IsVisible = true;
@@ -120,7 +120,7 @@ namespace RepeatingWords.Pages
             }
             else
             {
-                WordForRepeat.TextColor = Color.Yellow;
+                //WordForRepeat.TextColor = Color.Lime;
                 Words w = GetWords(count);
                 //если транскрипции нет 
                 if(w.Transcription=="[]")

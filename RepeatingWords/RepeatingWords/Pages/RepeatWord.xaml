@@ -4,8 +4,8 @@
              x:Class="RepeatingWords.Pages.RepeatWord"
              xmlns:locale ="clr-namespace:RepeatingWords;assembly=RepeatingWords"
              Style="{StaticResource TitleApp}">
-    <ScrollView>
-    <StackLayout HorizontalOptions="End">
+   
+    <StackLayout HorizontalOptions="StartAndExpand">
     <locale:AdMobView WidthRequest="320" HeightRequest="50" />
       <Grid>
          <Grid.ColumnDefinitions>
@@ -15,13 +15,14 @@
             <ColumnDefinition Width="1*" />
          </Grid.ColumnDefinitions>
          <Grid.RowDefinitions>
-            <RowDefinition Height="80" />
-            <RowDefinition Height="140" />
-        </Grid.RowDefinitions>
+            <RowDefinition Height="80*" />
+            <RowDefinition Height="125*" />
+            <RowDefinition Height="110*" />
+            <RowDefinition Height="110*" />
+                </Grid.RowDefinitions>
 
-            <Label x:Name="LabelCountOfWords" TextColor="White" Grid.Column="0" Grid.Row="0"/>
-            <!--<Label x:Name="LabelCountOfWordsTurn" TextColor="Gray" Grid.Column="1" Grid.Row="0"/>-->
-    <Picker x:Name="picker" SelectedIndexChanged="picker_SelectedIndexChanged" Title="{locale:Translate PickerText}" Grid.Column="1" Grid.Row="0">
+                <Label x:Name="LabelCountOfWords" Style="{DynamicResource LabelColor}" Grid.Column="0" Grid.Row="0"/>
+         <Picker x:Name="picker" SelectedIndexChanged="picker_SelectedIndexChanged" Title="{locale:Translate PickerText}" Grid.Column="1" Grid.Row="0" BackgroundColor="Gray" TextColor="White">
       <Picker.Items>
        <x:String>English</x:String>
        <x:String>Русский</x:String>
@@ -39,16 +40,20 @@
       
     
             <Button x:Name="ButtonVoice" Clicked="BtnClickSpeech" Grid.Column="2" Grid.Row="0"/>
-      
-       <Label x:Name="WordForRepeat" VerticalOptions="Center" HorizontalOptions="Center" FontSize="27" HeightRequest="160"  Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3"/>
-    
-       
-    
-    </Grid>
+
+                <Label Style="{DynamicResource LabelColorWB}" x:Name="WordForRepeat"  HorizontalOptions="Center" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" >
+                    <Label.FontSize>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <OnPlatform.Android>24</OnPlatform.Android>
+                            <OnPlatform.WinPhone>22</OnPlatform.WinPhone>
+                        </OnPlatform>
+                    </Label.FontSize>
+                </Label>
+                       
+            <Button Text="{locale:Translate ButtonNextWord}" Clicked="NextWordButtonClick"  Style="{StaticResource buttonStyle}" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3"></Button>
+            <Button Text="{locale:Translate ButtonTurnCard}" Clicked="TurnAroundWordButtonClick"  Style="{StaticResource buttonStyle}" BackgroundColor="Green" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3"></Button>
    
-    <Button Text="{locale:Translate ButtonNextWord}" Clicked="NextWordButtonClick"  Style="{StaticResource buttonStyle}" HeightRequest="100"></Button>
-    <Button Text="{locale:Translate ButtonTurnCard}" Clicked="TurnAroundWordButtonClick"  Style="{StaticResource buttonStyle}" BackgroundColor="Green" HeightRequest="100"></Button>
+      </Grid>
+        </StackLayout>
    
-  </StackLayout>
-    </ScrollView>
 </ContentPage>

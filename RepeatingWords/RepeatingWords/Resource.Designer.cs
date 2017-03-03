@@ -260,6 +260,15 @@ namespace RepeatingWords {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Choose theme.
+        /// </summary>
+        internal static string LabelChooseTheme {
+            get {
+                return ResourceManager.GetString("LabelChooseTheme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Turned:.
         /// </summary>
         internal static string LabelCountTurned {
@@ -508,6 +517,24 @@ namespace RepeatingWords {
         internal static string LabelSecondWord {
             get {
                 return ResourceManager.GetString("LabelSecondWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dark.
+        /// </summary>
+        internal static string LabelThemeDark {
+            get {
+                return ResourceManager.GetString("LabelThemeDark", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Light.
+        /// </summary>
+        internal static string LabelThemeLight {
+            get {
+                return ResourceManager.GetString("LabelThemeLight", resourceCulture);
             }
         }
         

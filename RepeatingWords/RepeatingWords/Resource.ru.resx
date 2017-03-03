@@ -382,4 +382,13 @@
     <value>Изучение перевернутых слов</value>
     <comment>Кнопка для изучения перевертышей</comment>
   </data>
+  <data name="LabelChooseTheme" xml:space="preserve">
+    <value>Выберите тему</value>
+  </data>
+  <data name="LabelThemeDark" xml:space="preserve">
+    <value>Темная</value>
+  </data>
+  <data name="LabelThemeLight" xml:space="preserve">
+    <value>Светлая</value>
+  </data>
 </root>

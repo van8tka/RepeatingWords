@@ -6,10 +6,10 @@
   Style="{StaticResource TitleApp}">
  
     <StackLayout>
-      <Label x:Name ="NameLanguage" HorizontalTextAlignment="Center" TextColor="White" FontSize="Large"/>
+        <Label x:Name ="NameLanguage" HorizontalTextAlignment="Center" Style="{DynamicResource LabelColorWB}" FontSize="Large"/>
      <Label Text="{locale:Translate LabelDictionaryListFromNet}" HorizontalTextAlignment="Center" Style="{StaticResource LableHeadApp}"/>
 
-      <ActivityIndicator x:Name="actIndicator2"  Color="White" />
+      <ActivityIndicator x:Name="actIndicator2"  Color="Green" />
       <StackLayout>
       <ListView x:Name ="dictionaryNetList" ItemsSource="{Binding}" ItemSelected ="OnItemSelected" SeparatorColor="Green">
         <ListView.ItemTemplate>
@@ -17,7 +17,7 @@
             <ViewCell>
               <ViewCell.View>
                 <StackLayout Orientation="Horizontal">
-                  <Label Text="{Binding Name}" FontSize="Medium" TextColor="Yellow"/>
+                  <Label Text="{Binding Name}" FontSize="Medium" Style="{DynamicResource LabelColor}"/>
                 </StackLayout>
               </ViewCell.View>
             </ViewCell>

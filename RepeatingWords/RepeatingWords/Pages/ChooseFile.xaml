@@ -11,7 +11,7 @@
     <Label x:Name="textPath" TextColor="Blue" FontSize="Medium"/>
     
   
-    <ActivityIndicator x:Name="actIndicator3" Color="White" />
+    <ActivityIndicator x:Name="actIndicator3" Color="Green" />
     <StackLayout>
     <ListView x:Name ="fileList" ItemsSource="{Binding}" ItemSelected ="FileSelected">
       <ListView.ItemTemplate>
@@ -19,7 +19,7 @@
           <ViewCell>
             <ViewCell.View>
               <StackLayout Orientation="Horizontal">
-                <Label Text="{Binding}" FontSize="25" TextColor="Yellow"/>
+                <Label Text="{Binding}" FontSize="25" Style="{DynamicResource LabelColor}"/>
               </StackLayout>
             </ViewCell.View>
           </ViewCell>

@@ -400,4 +400,13 @@
   <data name="ModalLerningTurnedWords" xml:space="preserve">
     <value>Studying of unlearned words</value>
   </data>
+  <data name="LabelChooseTheme" xml:space="preserve">
+    <value>Choose theme</value>
+  </data>
+  <data name="LabelThemeDark" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="LabelThemeLight" xml:space="preserve">
+    <value>Light</value>
+  </data>
 </root>

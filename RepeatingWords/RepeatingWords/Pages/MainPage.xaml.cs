@@ -63,11 +63,19 @@ namespace RepeatingWords
     
     
 
-
+//вызов страницы настроек
       private async void ClickedToolsButton(object sender, EventArgs e)
       {
             ToolsPage ta = new ToolsPage();
-            await Navigation.PushModalAsync(ta);
+            if(Device.OS==TargetPlatform.Android)
+            {
+                await Navigation.PushModalAsync(ta);
+            }
+            if(Device.OS==TargetPlatform.Windows)
+            {
+                await Navigation.PushAsync(ta);
+            }
+            
       }
 
 

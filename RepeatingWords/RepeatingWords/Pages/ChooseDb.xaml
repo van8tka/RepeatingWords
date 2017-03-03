@@ -18,7 +18,7 @@
             <ViewCell>
               <ViewCell.View>
                 <StackLayout Orientation="Horizontal">
-                  <Label Text="{Binding Name}" FontSize="Medium" TextColor="Yellow"/>
+                  <Label Text="{Binding Name}" FontSize="Medium" Style="{DynamicResource LabelColor}" />
                </StackLayout>
               </ViewCell.View>
             </ViewCell>

@@ -3,10 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RepeatingWords.MainPage"
               xmlns:local="clr-namespace:RepeatingWords;assembly=RepeatingWords"
-          Style="{StaticResource TitleApp}"
+          Style="{DynamicResource TitleApp}"
             >
 
-
+    <!--панель управлления-->
     <ContentPage.ToolbarItems>
       
         <ToolbarItem Name="Tools" Icon="toolbarImageTools.png" Clicked="ClickedToolsButton"></ToolbarItem>
@@ -17,14 +17,14 @@
 
 
 
-    <ScrollView>
+   
         <StackLayout HorizontalOptions="Center">
         <local:AdMobView WidthRequest="320" HeightRequest="50" />
-        <Label Text="{local:Translate HeaderMain}" HorizontalTextAlignment="Center" TextColor="White">
+            <Label Text="{local:Translate HeaderMain}" HorizontalTextAlignment="Center" Style="{DynamicResource LableHeadApp}">
           <Label.FontSize>
           <OnPlatform x:TypeArguments="x:Double">
             <OnPlatform.Android>22</OnPlatform.Android>
-            <OnPlatform.WinPhone>15</OnPlatform.WinPhone>
+            <OnPlatform.WinPhone>16</OnPlatform.WinPhone>
           </OnPlatform>
           </Label.FontSize>
         </Label>
@@ -35,6 +35,6 @@
                 <Button Style="{StaticResource buttonStyle}" Text="{local:Translate Continue}" Clicked="ReturnButtonClick"></Button>
          
         </StackLayout>
-    </ScrollView>
+   
 
 </ContentPage>

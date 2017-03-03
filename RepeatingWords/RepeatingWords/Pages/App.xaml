@@ -22,26 +22,57 @@
    </Style>
     
          <!--CONTENT-->
-     <Style x:Key="TitleApp" TargetType="ContentPage">
+        <Style x:Key="TitleAppBlack" TargetType="ContentPage">
             <Setter Property="Title" Value="{local:Translate TitleMain}"/>
             <Setter Property="Padding" Value="10"/>
-           <Setter Property="BackgroundColor" Value="#36363636"/>
-      </Style>
-      
-          <!--LABEL-->
-      <Style x:Key="LableHeadApp" TargetType="Label">
+            <Setter Property="BackgroundColor" Value="#36363636"/>
+       </Style>
+       <Style x:Key="TitleAppWhite" TargetType="ContentPage">
+                <Setter Property="Title" Value="{local:Translate TitleMain}"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="BackgroundColor" Value="#F5F5F5F5"/>
+        </Style>
+            <!--LABEL-->
+      <Style x:Key="LableHeadAppWhite" TargetType="Label">
             <Setter Property="TextColor" Value="White"/>
-        <Setter Property="FontSize">
-          <Setter.Value>
-            <OnPlatform x:TypeArguments="x:Double">
-              <OnPlatform.Android>21</OnPlatform.Android>
-              <OnPlatform.WinPhone>18</OnPlatform.WinPhone>
-            </OnPlatform>
-          </Setter.Value>
-        </Setter>
-      </Style>
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <OnPlatform.Android>21</OnPlatform.Android>
+                            <OnPlatform.WinPhone>18</OnPlatform.WinPhone>
+                        </OnPlatform>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        
+            <Style x:Key="LableHeadAppBlack" TargetType="Label">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="FontSize">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <OnPlatform.Android>21</OnPlatform.Android>
+                            <OnPlatform.WinPhone>18</OnPlatform.WinPhone>
+                        </OnPlatform>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        
+        <!--COLORS LABEL FOR THEME-->
+            <Style x:Key="LabelBlack" TargetType="Label">
+                <Setter Property="TextColor" Value="Black"/>
+            </Style>
+            <Style x:Key="LabelWhite" TargetType="Label">
+                <Setter Property="TextColor" Value="White"/>
+            </Style>
+            <Style x:Key="LabelYellow" TargetType="Label">
+                <Setter Property="TextColor" Value="Yellow"/>
+            </Style>
+            <Style x:Key="LabelNavy" TargetType="Label">
+                <Setter Property="TextColor" Value="Navy"/>
+            </Style>
 
-
-    </ResourceDictionary>
+        </ResourceDictionary>
   </Application.Resources>
 </Application>

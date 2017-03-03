@@ -2,10 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RepeatingWords.Pages.ToolsPage"
-             Title="ToolsPage">
+               xmlns:local="clr-namespace:RepeatingWords;assembly=RepeatingWords"
+             
+            >
   <StackLayout Padding="15">
-       
-        <Grid>
+
+          <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
@@ -16,12 +18,12 @@
                 <RowDefinition Height="35"/>
             </Grid.RowDefinitions>
 
-            <Label Text="Выберите тему" FontSize="Medium" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" TextColor="White"/>
+            <Label Text="{local:Translate LabelChooseTheme}"  Style="{DynamicResource LableHeadApp}" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" />
 
-            <Label Text="Темная" FontSize="Medium" Grid.Column="0" Grid.Row="1" />
+            <Label Text="{local:Translate LabelThemeDark}"  FontSize="Medium" Grid.Column="0" Grid.Row="1" x:Name="Dlabel"/>
             <Switch x:Name="SwDark" VerticalOptions="CenterAndExpand"  HorizontalOptions="Center" Toggled= "switcher_ToggledDark" Grid.Column="1" Grid.Row="1" />
 
-            <Label Text="Светлая"  FontSize="Medium" Grid.Column="0" Grid.Row="2" />
+            <Label Text="{local:Translate LabelThemeLight}"  FontSize="Medium" Grid.Column="0" Grid.Row="2" x:Name="Wlabel"/>
             <Switch x:Name="SwLight" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Toggled= "switcher_ToggledLight" Grid.Column="1" Grid.Row="2" />
 
         </Grid>
