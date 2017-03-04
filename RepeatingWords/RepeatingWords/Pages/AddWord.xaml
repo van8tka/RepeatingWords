@@ -27,7 +27,7 @@
                                         </ColumnDefinition>
                                     </Grid.ColumnDefinitions>
                                     <Grid.RowDefinitions>
-                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="58"/>
                                     </Grid.RowDefinitions>
                                     <Label Text="{Binding RusWord}" Grid.Column="0" FontSize="Medium" Style="{DynamicResource LabelColorWB}">
                                         <Label.FontSize>
