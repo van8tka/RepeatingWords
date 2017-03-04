@@ -9,7 +9,7 @@
         <Label x:Name ="NameLanguage" HorizontalTextAlignment="Center" Style="{DynamicResource LabelColorWB}" FontSize="Large"/>
      <Label Text="{locale:Translate LabelDictionaryListFromNet}" HorizontalTextAlignment="Center" Style="{StaticResource LableHeadApp}"/>
 
-      <ActivityIndicator x:Name="actIndicator2"  Color="Green" />
+      <ActivityIndicator x:Name="actIndicator2"  Color="Blue" />
       <StackLayout>
       <ListView x:Name ="dictionaryNetList" ItemsSource="{Binding}" ItemSelected ="OnItemSelected" SeparatorColor="Green">
         <ListView.ItemTemplate>

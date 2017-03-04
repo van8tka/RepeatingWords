@@ -91,6 +91,8 @@ namespace RepeatingWords
                     Resources["LableHeadApp"] = Resources["LableHeadAppWhite"];
                     Resources["LabelColor"] = Resources["LabelYellow"];
                     Resources["LabelColorWB"] = Resources["LabelWhite"];
+                    Resources["ColorWB"] = Resources["ColorWhite"];
+                    Resources["ColorBlGr"] = Resources["ColorGreen"];
                 }
                 else
                 {
@@ -98,6 +100,8 @@ namespace RepeatingWords
                     Resources["LableHeadApp"] = Resources["LableHeadAppBlack"];
                     Resources["LabelColor"] = Resources["LabelNavy"];
                     Resources["LabelColorWB"] = Resources["LabelBlack"];
+                    Resources["ColorWB"] = Resources["ColorBlack"];
+                    Resources["ColorBlGr"] = Resources["ColorBlue"];
                 }
             }
           catch

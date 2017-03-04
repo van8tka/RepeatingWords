@@ -20,17 +20,34 @@ namespace RepeatingWords
                 BtPolicy.IsEnabled = false;
             }
         }
+
+
         private async void CreateOneWordButtonClick(object sender, EventArgs e)
         {
             HowCreateOneWord hc = new HowCreateOneWord();
             await Navigation.PushAsync(hc);
         }
+
+
         private async void CreateFromFileButtonClick(object sender, EventArgs e)
         {
             HowCreateFromFile hf = new HowCreateFromFile();
             await Navigation.PushAsync(hf);
         }
-//policy for Windows
+        //about app
+        
+        private async void ClickAboutButton(object sender, EventArgs e)
+        {
+            About about = new About();
+            await Navigation.PushAsync(about);
+        }
+
+
+
+
+
+
+        //policy for Windows
         private void ClickPolicyButton(object sender, EventArgs e)
         {
                Device.OpenUri(new Uri("https://devprogram.ru/privacy.html"));

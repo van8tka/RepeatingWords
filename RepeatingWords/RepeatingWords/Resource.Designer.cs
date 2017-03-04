@@ -62,6 +62,15 @@ namespace RepeatingWords {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to About app.
+        /// </summary>
+        internal static string ButtonAbout {
+            get {
+                return ResourceManager.GetString("ButtonAbout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create dictionary.
         /// </summary>
         internal static string ButtonAddDict {
@@ -139,6 +148,15 @@ namespace RepeatingWords {
         internal static string ButtonNextWord {
             get {
                 return ResourceManager.GetString("ButtonNextWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Privacy.
+        /// </summary>
+        internal static string ButtonPolicy {
+            get {
+                return ResourceManager.GetString("ButtonPolicy", resourceCulture);
             }
         }
         
@@ -287,6 +305,15 @@ namespace RepeatingWords {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ivan Kuzmuk.
+        /// </summary>
+        internal static string LabelFIO {
+            get {
+                return ResourceManager.GetString("LabelFIO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Entrer the first word.
         /// </summary>
         internal static string LabelFirstWord {
@@ -373,6 +400,15 @@ namespace RepeatingWords {
         internal static string LabelPathToRoot {
             get {
                 return ResourceManager.GetString("LabelPathToRoot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All rights reserved..
+        /// </summary>
+        internal static string LabelRights {
+            get {
+                return ResourceManager.GetString("LabelRights", resourceCulture);
             }
         }
         
@@ -517,6 +553,15 @@ namespace RepeatingWords {
         internal static string LabelSecondWord {
             get {
                 return ResourceManager.GetString("LabelSecondWord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings.
+        /// </summary>
+        internal static string LabelSettings {
+            get {
+                return ResourceManager.GetString("LabelSettings", resourceCulture);
             }
         }
         

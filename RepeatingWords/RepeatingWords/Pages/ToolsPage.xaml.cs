@@ -48,12 +48,12 @@ namespace RepeatingWords.Pages
                 Application.Current.Resources["LableHeadApp"] = Application.Current.Resources["LableHeadAppWhite"];
                 Application.Current.Resources["LabelColor"] = Application.Current.Resources["LabelYellow"];
                 Application.Current.Resources["LabelColorWB"] = Application.Current.Resources["LabelWhite"];
-                Dlabel.TextColor = Color.White;
-                Wlabel.TextColor = Color.Gray;
+                Application.Current.Resources["ColorWB"] = Application.Current.Resources["ColorWhite"];
+                Application.Current.Resources["ColorBlGr"] = Application.Current.Resources["ColorGreen"];
+                this.BackgroundColor = Color.Black;
             }
            else
-            {//при изменении IsToggled происходит вызов события switcher_ToggledLight
-               
+            {//при изменении IsToggled происходит вызов события switcher_ToggledLight              
                 SwLight.IsToggled = true;
                 App.Current.Properties.Remove(Them);
                 App.Current.Properties.Add(Them, _whiteThem);
@@ -61,8 +61,9 @@ namespace RepeatingWords.Pages
                 Application.Current.Resources["LableHeadApp"] = Application.Current.Resources["LableHeadAppBlack"];
                 Application.Current.Resources["LabelColor"] = Application.Current.Resources["LabelNavy"];
                 Application.Current.Resources["LabelColorWB"] = Application.Current.Resources["LabelBlack"];
-                Dlabel.TextColor = Color.Gray;
-                Wlabel.TextColor = Color.White;
+                Application.Current.Resources["ColorWB"] = Application.Current.Resources["ColorBlack"];
+                Application.Current.Resources["ColorBlGr"] = Application.Current.Resources["ColorBlue"];
+                this.BackgroundColor = Color.Silver;
             }
 
         }

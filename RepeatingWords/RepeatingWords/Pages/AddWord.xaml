@@ -11,58 +11,57 @@
       <Button Style="{StaticResource buttonStyle}" Text="{locale:Translate ButtonRepeatWords}" Clicked="RepeatWordsButtonClick"></Button>
     
     <StackLayout Orientation="Vertical">
-      <ListView x:Name ="wordsList" ItemsSource="{Binding}" ItemSelected ="OnItemSelected"  SeparatorColor="Green">
-     
-       
-         <ListView.ItemTemplate>
-          <DataTemplate>
-            <ViewCell>                                             
-              <ViewCell.View>
+ 
+            <ListView x:Name ="wordsList" ItemsSource="{Binding}" ItemSelected ="OnItemSelected" HasUnevenRows = "true" RowHeight = "-1" SeparatorColor="Green">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*">
+                                        </ColumnDefinition>
+                                        <ColumnDefinition Width="1*">
+                                        </ColumnDefinition>
+                                        <ColumnDefinition Width="1*">
+                                        </ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Text="{Binding RusWord}" Grid.Column="0" FontSize="Medium" Style="{DynamicResource LabelColorWB}">
+                                        <Label.FontSize>
+                                            <OnPlatform x:TypeArguments="x:Double">
+                                                <OnPlatform.Android>17</OnPlatform.Android>
+                                                <OnPlatform.WinPhone>15</OnPlatform.WinPhone>
+                                            </OnPlatform>
+                                        </Label.FontSize>
+                                    </Label>
+                                    <Label Text="{Binding EngWord}" Grid.Column="1" FontSize="Medium" Style="{DynamicResource LabelColor}">
+                                        <Label.FontSize>
+                                            <OnPlatform x:TypeArguments="x:Double">
+                                                <OnPlatform.Android>17</OnPlatform.Android>
+                                                <OnPlatform.WinPhone>15</OnPlatform.WinPhone>
+                                            </OnPlatform>
+                                        </Label.FontSize>
+                                    </Label>
+                                    <Label Text="{Binding Transcription}" Grid.Column="2" FontSize="Medium" TextColor="Gray">
+                                        <Label.FontSize>
+                                            <OnPlatform x:TypeArguments="x:Double">
+                                                <OnPlatform.Android>17</OnPlatform.Android>
+                                                <OnPlatform.WinPhone>15</OnPlatform.WinPhone>
+                                            </OnPlatform>
+                                        </Label.FontSize>
+                                    </Label>
+                                </Grid>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
 
-       <Grid WidthRequest="50">
-                                    
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                 <ColumnDefinition Width="*"/>
-                 <ColumnDefinition Width="*"/>
-          </Grid.ColumnDefinitions>
-                   
-         <Grid.RowDefinitions>
-             <RowDefinition Height="Auto" />
-         </Grid.RowDefinitions>
-                                  
-               <Label Text="{Binding RusWord}" Style="{DynamicResource LabelColorWB}" Grid.Column="0" Grid.Row="0">  
-                    <Label.FontSize>
-                        <OnPlatform x:TypeArguments="x:Double">
-                             <OnPlatform.Android>17</OnPlatform.Android>
-                             <OnPlatform.WinPhone>15</OnPlatform.WinPhone>
-                         </OnPlatform>
-                      </Label.FontSize>
-                  </Label>
-                                    <Label Text="{Binding EngWord}" Style="{DynamicResource LabelColor}"  Grid.Column="1" Grid.Row="0"> 
-                     <Label.FontSize>
-                        <OnPlatform x:TypeArguments="x:Double">
-                             <OnPlatform.Android>17</OnPlatform.Android>
-                             <OnPlatform.WinPhone>15</OnPlatform.WinPhone>
-                         </OnPlatform>
-                      </Label.FontSize>
-                          </Label>
-                                    <Label Text="{Binding Transcription}" TextColor="Gray"  Grid.Column="2" Grid.Row="0">
-                     <Label.FontSize>
-                        <OnPlatform x:TypeArguments="x:Double">
-                             <OnPlatform.Android>17</OnPlatform.Android>
-                             <OnPlatform.WinPhone>15</OnPlatform.WinPhone>
-                         </OnPlatform>
-                      </Label.FontSize>
-                  </Label>
-                </Grid>
-                
-              </ViewCell.View>
-             </ViewCell>
-          </DataTemplate>
-        </ListView.ItemTemplate>
-      </ListView>
-      </StackLayout>
+
+        </StackLayout>
     </StackLayout>
   
 </ContentPage>

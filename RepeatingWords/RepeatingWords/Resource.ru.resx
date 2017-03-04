@@ -391,4 +391,19 @@
   <data name="LabelThemeLight" xml:space="preserve">
     <value>Светлая</value>
   </data>
+  <data name="LabelSettings" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="ButtonPolicy" xml:space="preserve">
+    <value>Приватность</value>
+  </data>
+  <data name="ButtonAbout" xml:space="preserve">
+    <value>О приложении</value>
+  </data>
+  <data name="LabelFIO" xml:space="preserve">
+    <value>Иван Кузьмук</value>
+  </data>
+  <data name="LabelRights" xml:space="preserve">
+    <value>Все права защищены.</value>
+  </data>
 </root>

@@ -9,7 +9,7 @@
 
     <Label Text="{locale:Translate LabelLanguageListFromNet}" HorizontalTextAlignment="Center" Style="{StaticResource LableHeadApp}"/>
 
-    <ActivityIndicator x:Name="actIndicator2"  Color="Green" />
+    <ActivityIndicator x:Name="actIndicator2"  Color="Blue"/>
     <StackLayout>
       <ListView x:Name ="languageNetList" ItemsSource="{Binding}" ItemSelected ="OnItemSelected" SeparatorColor="Green">
         <ListView.ItemTemplate>

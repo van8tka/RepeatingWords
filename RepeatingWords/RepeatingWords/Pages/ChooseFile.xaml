@@ -11,7 +11,7 @@
     <Label x:Name="textPath" TextColor="Blue" FontSize="Medium"/>
     
   
-    <ActivityIndicator x:Name="actIndicator3" Color="Green" />
+    <ActivityIndicator x:Name="actIndicator3" Color="Blue" />
     <StackLayout>
     <ListView x:Name ="fileList" ItemsSource="{Binding}" ItemSelected ="FileSelected">
       <ListView.ItemTemplate>

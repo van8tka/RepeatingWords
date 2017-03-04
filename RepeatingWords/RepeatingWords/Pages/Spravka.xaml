@@ -10,6 +10,9 @@
 
             <Button Text="{locale:Translate ButtonHowCreateDictAndaddWord}" Clicked="CreateOneWordButtonClick" Style="{StaticResource buttonStyle}"/>
             <Button Text="{locale:Translate ButtonHowIportFile}" Clicked="CreateFromFileButtonClick" Style="{StaticResource buttonStyle}"/>
+           
+            <Button x:Name="BtAbout" Text="{locale:Translate ButtonAbout}" Clicked="ClickAboutButton" Style="{StaticResource buttonStyle}"/>
+
             <Button x:Name="BtPolicy" Text="{locale:Translate ButtonPolicy}" Clicked="ClickPolicyButton" Style="{StaticResource buttonStyle}"/>
 
         </StackLayout>

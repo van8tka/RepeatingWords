@@ -49,8 +49,7 @@ namespace RepeatingWords.Pages
             else
                  if (Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
             { lang = "en-GB"; }
-         
-            UpdateWord(Count, FromRus);
+             UpdateWord(Count, FromRus);
 
         }
 
@@ -112,6 +111,8 @@ namespace RepeatingWords.Pages
             if (lang)
             {
                 //WordForRepeat.TextColor = Color.Lime;
+                              
+                WordForRepeat.TextColor = (Color)Application.Current.Resources["ColorWB"];
                 WordForRepeat.Text = GetWords(count).RusWord;
                 //управление видимостью озвучки
                 ButtonVoice.IsEnabled = false;
@@ -120,7 +121,8 @@ namespace RepeatingWords.Pages
             }
             else
             {
-                //WordForRepeat.TextColor = Color.Lime;
+                //WordForRepeat.TextColor = Color.Blue;
+                WordForRepeat.TextColor = (Color)Application.Current.Resources["ColorBlGr"];
                 Words w = GetWords(count);
                 //если транскрипции нет 
                 if(w.Transcription=="[]")
@@ -143,18 +145,12 @@ namespace RepeatingWords.Pages
 
 
 
-
-
-
         //для получения слова
         Words GetWords(int index)
         {
                 Words item = words.ElementAt(index);
                 return item;
         }
-
-
-
 
 
 

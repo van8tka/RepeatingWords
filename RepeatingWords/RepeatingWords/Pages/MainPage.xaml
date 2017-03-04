@@ -28,7 +28,7 @@
           </OnPlatform>
           </Label.FontSize>
         </Label>
-        <Label Text="V 1.7" HeightRequest="100" FontSize="12" TextColor="Gray"/>
+        <Label Text="V 1.8" HeightRequest="100" FontSize="12" TextColor="Gray"/>
       
                 <Button Style="{StaticResource buttonStyle}"  Text="{local:Translate ButtonAddDictionaryOrWords}" Clicked="ChooseDbButtonClick"></Button>
                 <Button Style="{StaticResource buttonStyle}"  Text="{local:Translate ChooseDictionaryForRepeat}" Clicked="ChooseDictionaryButtonClick"></Button>

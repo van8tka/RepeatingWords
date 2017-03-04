@@ -6,12 +6,13 @@
              Style="{StaticResource TitleApp}">
     <ScrollView>
     <StackLayout>
-    <Label x:Name="DictionaryName" HorizontalTextAlignment="Center" Style="{StaticResource LableHeadApp}" HeightRequest="120"/>
+    <Label x:Name="DictionaryName" HorizontalTextAlignment="Center" Style="{StaticResource LableHeadApp}" HeightRequest="100"/>
+            <ActivityIndicator x:Name="actIndicator4" Color="Blue" HeightRequest="10"/>
     <Button x:Name="BtAddWord" Style="{StaticResource buttonStyle}" Text="{locale:Translate ButtonAddWord}" Clicked="AddWordButtonClick"></Button>
     <Button x:Name="BtAddWordFrFile" Style="{StaticResource buttonStyle}" Text="{locale:Translate ButtonAddWorFrFile}" Clicked="AddWordsFromFileButtonClick"></Button>
     <Button x:Name="BtRemove" Style="{StaticResource buttonStyle}" Text="{locale:Translate ButtonRemove}" Clicked="DelleteDbButtonClick"></Button>
     <Button x:Name="BtShowWords" Style="{StaticResource buttonStyle}" Text="{locale:Translate ButtonShowWords}" Clicked="ShowWordsDbButtonClick"></Button>
-    <ActivityIndicator x:Name="actIndicator4" Color="Green"/>
+        
   </StackLayout>
     </ScrollView>
 </ContentPage>

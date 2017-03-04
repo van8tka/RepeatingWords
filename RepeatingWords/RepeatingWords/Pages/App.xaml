@@ -72,6 +72,12 @@
             <Style x:Key="LabelNavy" TargetType="Label">
                 <Setter Property="TextColor" Value="Navy"/>
             </Style>
+            ColorBlGr
+            <Color x:Key="ColorBlack">Black</Color>
+            <Color x:Key="ColorWhite">White</Color>
+
+            <Color x:Key="ColorBlue">Blue</Color>
+            <Color x:Key="ColorGreen">Lime</Color>
 
         </ResourceDictionary>
   </Application.Resources>
