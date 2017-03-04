@@ -2,9 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RepeatingWords.Pages.ToolsPage"
-               xmlns:local="clr-namespace:RepeatingWords;assembly=RepeatingWords"
+              xmlns:local="clr-namespace:RepeatingWords;assembly=RepeatingWords"
+             Title="{local:Translate TitleMain}"
           >
-  <StackLayout Padding="15">
+   
+        
+        
+        <StackLayout Padding="15">
         <Label Text="{local:Translate LabelSettings}"  Style="{DynamicResource LableHeadApp}" HorizontalOptions="Center" />
 
         <Grid>
