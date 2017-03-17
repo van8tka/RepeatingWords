@@ -15,7 +15,7 @@
       <Image Source="screen21.jpg" />
             <Label Text="{locale:Translate LabelScreen22}" FontSize="Medium" Style="{DynamicResource LabelColor}"/>
       <Image Source="screen22.jpg" />
-            <Label Text="{locale:Translate LabelScreen231Win}" FontSize="Medium" Style="{DynamicResource LabelColor}"/>
+            <Label Text="{locale:Translate LabelScreen231}" FontSize="Medium" Style="{DynamicResource LabelColor}"/>
 
             <Label Text="{locale:Translate LabelScreen232}" FontSize="Medium" Style="{DynamicResource LabelColor}"/>
       <Image Source="screen23.jpg" />

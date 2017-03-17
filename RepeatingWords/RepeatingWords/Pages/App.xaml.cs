@@ -52,6 +52,29 @@ namespace RepeatingWords
             MainPage = new NavigationPage(new MainPage());
            
             SetOriginalStyle();
+            SetChooseTranscriptionKeyboard();
+        }
+
+
+      
+        //method for set default chosse keyboard when add word
+        private void SetChooseTranscriptionKeyboard()
+        {
+            try
+            {
+                const string TrKeyboard = "TrKeyboard";
+                const string showKeyboard = "true";
+              
+                object propTrKeyb;
+                if(!App.Current.Properties.TryGetValue(TrKeyboard, out propTrKeyb))
+                {
+                    App.Current.Properties.Add(TrKeyboard, showKeyboard);
+                }
+            }
+            catch
+            {
+
+            }
         }
 
         const string Them="theme";
@@ -64,6 +87,7 @@ namespace RepeatingWords
             try
             {
                 object propThem;
+               
 
                 if (App.Current.Properties.TryGetValue(Them, out propThem))
                 {

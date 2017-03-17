@@ -12,7 +12,7 @@
     <Button x:Name="BtAddWordFrFile" Style="{StaticResource buttonStyle}" Text="{locale:Translate ButtonAddWorFrFile}" Clicked="AddWordsFromFileButtonClick"></Button>
     <Button x:Name="BtRemove" Style="{StaticResource buttonStyle}" Text="{locale:Translate ButtonRemove}" Clicked="DelleteDbButtonClick"></Button>
     <Button x:Name="BtShowWords" Style="{StaticResource buttonStyle}" Text="{locale:Translate ButtonShowWords}" Clicked="ShowWordsDbButtonClick"></Button>
-        
-  </StackLayout>
+           
+        </StackLayout>
     </ScrollView>
 </ContentPage>

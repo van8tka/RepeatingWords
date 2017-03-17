@@ -49,6 +49,8 @@ namespace RepeatingWords.Pages
             else
                  if (Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
             { lang = "en-GB"; }
+           
+
              UpdateWord(Count, FromRus);
 
         }
@@ -77,6 +79,8 @@ namespace RepeatingWords.Pages
             else if (Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
             { lang = "en-GB"; }
             UpdateWord(Count, FromRus);
+            //отключим озвучку для Desktop
+          
         }
 
       
@@ -115,9 +119,11 @@ namespace RepeatingWords.Pages
                 WordForRepeat.TextColor = (Color)Application.Current.Resources["ColorWB"];
                 WordForRepeat.Text = GetWords(count).RusWord;
                 //управление видимостью озвучки
-                ButtonVoice.IsEnabled = false;
-                picker.IsVisible = true;
-                ButtonVoice.Image = "voiceX.png";
+               
+                    ButtonVoice.IsEnabled = false;
+                    picker.IsVisible = true;
+                    ButtonVoice.Image = "voiceX.png";
+              
             }
             else
             {
@@ -133,13 +139,15 @@ namespace RepeatingWords.Pages
                 {//перевод и транскрипцию
                     WordForRepeat.Text = w.EngWord + "\n" + w.Transcription;
                 }
-              
+
                 //управление видимостью озвучки
-                ButtonVoice.IsEnabled = true;
-                ButtonVoice.Image = "voice.png";
-                picker.IsVisible = true;
+               
+                    ButtonVoice.IsEnabled = true;
+                    ButtonVoice.Image = "voice.png";
+                    picker.IsVisible = true;
+              
             }
-            //LabelCountOfWordsTurn.Text = TextTurned + " " + countTurned.ToString();
+          
         }
       
 
@@ -218,8 +226,7 @@ namespace RepeatingWords.Pages
                        
             }
             //сколько слов всего и пройдено сколько
-            //LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString();
-            LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString() + "/" + countTurned.ToString();
+           LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString() + "/" + countTurned.ToString();
         }
 
 

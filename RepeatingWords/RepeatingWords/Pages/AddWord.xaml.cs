@@ -21,9 +21,6 @@ namespace RepeatingWords
             DictionaryName.Text=dict.Name+" ("+ws.ToString()+")";
          
             this.BindingContext = App.Wr.GetWords(dictionary.Id);
-           
-           
-
         }
        
         //обработка перехода на страницу Rendering

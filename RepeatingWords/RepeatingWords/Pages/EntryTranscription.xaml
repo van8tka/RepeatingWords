@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RepeatingWords.Pages.EntryTranscription"
+                        
+            xmlns:locale ="clr-namespace:RepeatingWords;assembly=RepeatingWords"
+            Style="{StaticResource TitleApp}">
+               
+    
+    <Grid>
+
+        <StackLayout VerticalOptions="StartAndExpand">
+            <Label Text="{locale:Translate LabelTranscription}" HorizontalOptions="Center" FontSize="Medium" Style="{DynamicResource LabelColor}"/>
+            <Label x:Name="ETransc"  FontSize="Medium" TextColor="White" BackgroundColor="Gray"  />
+        </StackLayout>
+        <Grid ColumnSpacing="1" RowSpacing="1" BackgroundColor="Gray"  VerticalOptions="End">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+
+                        <locale:KeyButton Text="ɑ" Grid.Column="0" Grid.Row="0" BorderColor="Blue" Clicked="Clik_ɑ" FontSize="12" />
+                        <locale:KeyButton Text="ʌ" Grid.Column="1" Grid.Row="0" BorderColor="Blue" Clicked="Clik_ʌ" FontSize="12"/>
+                        <locale:KeyButton Text="ə" Grid.Column="2" Grid.Row="0" BorderColor="Blue" Clicked="Clik_ə" FontSize="12"/>
+                        <locale:KeyButton Text="ɛ" Grid.Column="3" Grid.Row="0" BorderColor="Blue" Clicked="Clik_ɛ" FontSize="12"/>
+                        <locale:KeyButton Text="æ" Grid.Column="4" Grid.Row="0" BorderColor="Blue" Clicked="Clik_æ" FontSize="12"/>
+                        <locale:KeyButton Text="ɜ" Grid.Column="5" Grid.Row="0" BorderColor="Blue" Clicked="Clik_ɜ" FontSize="12"/>
+                        <locale:KeyButton Text="ʒ" Grid.Column="6" Grid.Row="0" BorderColor="Blue" Clicked="Clik_ʒ" FontSize="12"/>
+                        <locale:KeyButton Text="ı" Grid.Column="7" Grid.Row="0" BorderColor="Blue" Clicked="Clik_ı" FontSize="12"/>
+                        <locale:KeyButton Text="ɪ" Grid.Column="8" Grid.Row="0" BorderColor="Blue" Clicked="Clik_ɪ" FontSize="12"/>
+                        <locale:KeyButton Text="ŋ" Grid.Column="9" Grid.Row="0" BorderColor="Blue" Clicked="Clik_ŋ" FontSize="12"/>
+
+
+                        <locale:KeyButton Text="ɒ" Grid.Column="0" Grid.Row="1" BorderColor="Blue" Clicked="Clik_ɒ" FontSize="12"/>
+                        <locale:KeyButton Text="ʃ" Grid.Column="1" Grid.Row="1" BorderColor="Blue" Clicked="Clik_ʃ" FontSize="12"/>
+                        <locale:KeyButton Text="ð" Grid.Column="2" Grid.Row="1" BorderColor="Blue" Clicked="Clik_ð" FontSize="12"/>
+                        <locale:KeyButton Text="θ" Grid.Column="3" Grid.Row="1" BorderColor="Blue" Clicked="Clik_θ" FontSize="12"/>
+                        <locale:KeyButton Text="ʤ" Grid.Column="4" Grid.Row="1" BorderColor="Blue" Clicked="Clik_ʤ" FontSize="12"/>
+                        <locale:KeyButton Text="ʊ" Grid.Column="5" Grid.Row="1" BorderColor="Blue" Clicked="Clik_ʊ" FontSize="12"/>
+                        <locale:KeyButton Text="b" Grid.Column="6" Grid.Row="1" BorderColor="Blue" Clicked="Clik_b" FontSize="12"/>
+                        <locale:KeyButton Text="d" Grid.Column="7" Grid.Row="1" BorderColor="Blue" Clicked="Clik_d" FontSize="12"/>
+                        <locale:KeyButton Text="e" Grid.Column="8" Grid.Row="1" BorderColor="Blue" Clicked="Clik_e" FontSize="12"/>
+                        <locale:KeyButton Text="f" Grid.Column="9" Grid.Row="1" BorderColor="Blue" Clicked="Clik_f" FontSize="12"/>
+
+
+                        <locale:KeyButton Text="j" Grid.Column="0" Grid.Row="2" BorderColor="Blue" Clicked="Clik_j" FontSize="12"/>
+                        <locale:KeyButton Text="k" Grid.Column="1" Grid.Row="2" BorderColor="Blue" Clicked="Clik_k" FontSize="12"/>
+                        <locale:KeyButton Text="l" Grid.Column="2" Grid.Row="2" BorderColor="Blue" Clicked="Clik_l" FontSize="12"/>
+                        <locale:KeyButton Text="m" Grid.Column="3" Grid.Row="2" BorderColor="Blue" Clicked="Clik_m" FontSize="12"/>
+                        <locale:KeyButton Text="n" Grid.Column="4" Grid.Row="2" BorderColor="Blue" Clicked="Clik_n" FontSize="12"/>
+                        <locale:KeyButton Text="p" Grid.Column="5" Grid.Row="2" BorderColor="Blue" Clicked="Clik_p" FontSize="12"/>
+                        <locale:KeyButton Text="r" Grid.Column="6" Grid.Row="2" BorderColor="Blue" Clicked="Clik_r" FontSize="12"/>
+                        <locale:KeyButton Text="ʧ" Grid.Column="7" Grid.Row="2" BorderColor="Blue" Clicked="Clik_ʧ" FontSize="12"/>
+                        <locale:KeyButton Text="h" Grid.Column="8" Grid.Row="2" BorderColor="Blue" Clicked="Clik_h" FontSize="12"/>
+                        <locale:KeyButton Text="i" Grid.Column="9" Grid.Row="2" BorderColor="Blue" Clicked="Clik_i" FontSize="12"/>
+
+                        <locale:KeyButton Text="t" Grid.Column="0" Grid.Row="3" BorderColor="Blue" Clicked="Clik_t" FontSize="12"/>
+                        <locale:KeyButton Text="u" Grid.Column="1" Grid.Row="3" BorderColor="Blue" Clicked="Clik_u" FontSize="12"/>
+                        <locale:KeyButton Text="v" Grid.Column="2" Grid.Row="3" BorderColor="Blue" Clicked="Clik_v" FontSize="12"/>
+                        <locale:KeyButton Text="w" Grid.Column="3" Grid.Row="3" BorderColor="Blue" Clicked="Clik_w" FontSize="12"/>
+                        <locale:KeyButton Text="z" Grid.Column="4" Grid.Row="3" BorderColor="Blue" Clicked="Clik_z" FontSize="12"/>
+                        <locale:KeyButton Text="s" Grid.Column="5" Grid.Row="3" BorderColor="Blue" Clicked="Clik_s" FontSize="12"/>
+                        <locale:KeyButton Text="[" Grid.Column="6" Grid.Row="3" BorderColor="Blue" Clicked="Clik_LeftSquareBracket" FontSize="12"/>
+                        <locale:KeyButton Text="]" Grid.Column="7" Grid.Row="3" BorderColor="Blue" Clicked="Clik_RightSquareBracket" FontSize="12"/>
+                        <locale:KeyButton Text="Del" Grid.Column="8" Grid.Row="3" Grid.ColumnSpan="2" BorderColor="Blue" Clicked="Clik_Del" BackgroundColor="Silver" FontSize="12"/>
+
+                        <locale:KeyButton Text="g" Grid.Column="0" Grid.Row="4" BorderColor="Blue" Clicked="Clik_g" FontSize="12"/>
+                        <locale:KeyButton Text="ɔ" Grid.Column="1" Grid.Row="4" BorderColor="Blue" Clicked="Clik_ɔ" FontSize="12"/>
+                        <locale:KeyButton Text="," Grid.Column="2" Grid.Row="4" BorderColor="Blue" Clicked="Clik_Comma" FontSize="12"/>
+                        <locale:KeyButton Text="Space" Grid.Column="3" Grid.ColumnSpan="3" Grid.Row="4" BorderColor="Blue" Clicked="Clik_Space" BackgroundColor="Silver" FontSize="12"/>
+                        <locale:KeyButton Text="'" Grid.Column="6" Grid.Row="4" BorderColor="Blue" Clicked="Clik_UpperTouch" FontSize="12"/>
+                        <locale:KeyButton Text=":" Grid.Column="7" Grid.Row="4" BorderColor="Blue" Clicked="Clik_DoublePoint" FontSize="12"/>
+                        <locale:KeyButton Text="Enter" Grid.Column="8" Grid.Row="4" Grid.ColumnSpan="2" BorderColor="Blue" Clicked="Clik_Enter" BackgroundColor="Silver" FontSize="12"/>
+                    </Grid>
+              
+
+            </Grid>
+   
+
+</ContentPage>

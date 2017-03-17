@@ -14,10 +14,10 @@
             <Entry Text="{Binding EngWord}" Placeholder="{locale:Translate LabelSecondWord}" FontSize="Medium" TextColor="White" BackgroundColor="Gray"></Entry>
             
             <Label Text="{locale:Translate LabelTranscription}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" Style="{DynamicResource LabelColor}"/>
-            <Entry Text="{Binding Transcription}" Placeholder="{locale:Translate LabelTranscription}" FontSize="Medium" TextColor="White" BackgroundColor="Gray"></Entry>
-    
-    
-    <Button Style="{StaticResource buttonStyle}" Clicked="CreateWordButtonClick" Text="{locale:Translate ButtonAddWord}"></Button>
+            <Entry Text="{Binding Transcription}" IsEnabled="True" Placeholder="{locale:Translate LabelTranscription}" FontSize="Medium" TextColor="White" BackgroundColor="Gray" Focused="EntryTransc_Focused">    </Entry>
+          
+
+            <Button Style="{StaticResource buttonStyle}" Clicked="CreateWordButtonClick" Text="{locale:Translate ButtonAddWord}"></Button>
   </StackLayout>
     </ScrollView>
 </ContentPage>

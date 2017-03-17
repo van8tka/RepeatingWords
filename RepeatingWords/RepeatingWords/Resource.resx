@@ -246,7 +246,7 @@
     <comment>Далее при сохранении файла указать кодировку UTF-8.</comment>
   </data>
   <data name="LabelScreen231" xml:space="preserve">
-    <value>Load this file into root path of the phone.</value>
+    <value>Load this file into the phone.</value>
     <comment>Закинуть созданный файл на телефон в корневую папку.</comment>
   </data>
   <data name="LabelScreen232" xml:space="preserve">
@@ -423,5 +423,24 @@
   </data>
   <data name="LabelRights" xml:space="preserve">
     <value>All rights reserved.</value>
+  </data>
+  <data name="LabelChooseShowKeyboardTrans" xml:space="preserve">
+    <value>Suggest to select transcription keyboard</value>
+  </data>
+  <data name="LabelShowKeyboard" xml:space="preserve">
+    <value>Suggest</value>
+  </data>
+  <data name="ModalActChooseKeyboard" xml:space="preserve">
+    <value>Select the keyboard:</value>
+  </data>
+  <data name="ModalActSysKeyboard" xml:space="preserve">
+    <value>System keyboard</value>
+  </data>
+  <data name="ModalActTranscKeyboard" xml:space="preserve">
+    <value>Transcription keyboard</value>
+    <comment>Клавиатура транскрипции</comment>
+  </data>
+  <data name="ModalActList" xml:space="preserve">
+    <value>List of words</value>
   </data>
 </root>

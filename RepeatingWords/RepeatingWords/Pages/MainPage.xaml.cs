@@ -79,7 +79,9 @@ namespace RepeatingWords
             if (Device.OS == TargetPlatform.Android)
                 Device.OpenUri(new Uri("https://play.google.com/store/apps/details?id=cardsofwords.cardsofwords"));
             if (Device.OS == TargetPlatform.Windows||Device.OS==TargetPlatform.WinPhone)
-            { }
+            {
+                Device.OpenUri(new Uri("https://www.microsoft.com/ru-ru/store/p/cards-of-words/9n55bwkgshnf"));
+            }
         }
 
 

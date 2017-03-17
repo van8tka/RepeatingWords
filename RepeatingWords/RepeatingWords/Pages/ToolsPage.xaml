@@ -20,6 +20,8 @@
                 <RowDefinition Height="35"/>
                 <RowDefinition Height="35"/>
                 <RowDefinition Height="35"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="35"/>
             </Grid.RowDefinitions>
             <Label Text="{local:Translate LabelChooseTheme}"  Style="{DynamicResource LableHeadApp}" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" />
 
@@ -28,6 +30,11 @@
 
             <Label Text="{local:Translate LabelThemeLight}" Style="{DynamicResource LabelColorWB}" FontSize="Medium" Grid.Column="0" Grid.Row="2" />
             <Switch x:Name="SwLight" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Toggled= "switcher_ToggledLight" Grid.Column="1" Grid.Row="2" />
+
+            <Label Text="{local:Translate LabelChooseShowKeyboardTrans}"  Style="{DynamicResource LableHeadApp}" HorizontalOptions="Center" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" />
+
+            <Label Text="{local:Translate LabelShowKeyboard}" Style="{DynamicResource LabelColorWB}" FontSize="Medium" Grid.Column="0" Grid.Row="4"/>
+            <Switch x:Name="SwShowKeyboard" VerticalOptions="CenterAndExpand"  HorizontalOptions="Center" Toggled= "switcher_ToggledShowKeyboard" Grid.Column="1" Grid.Row="4" />
 
         </Grid>
   </StackLayout>

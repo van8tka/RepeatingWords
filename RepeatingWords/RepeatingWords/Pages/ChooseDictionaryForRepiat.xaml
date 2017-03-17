@@ -8,9 +8,10 @@
   
     <StackLayout>
       <Label Text="{locale:Translate LabelChooseDict}" HorizontalTextAlignment="Center" Style="{StaticResource LableHeadApp}" HeightRequest="70"/>
+        <Button Style="{StaticResource buttonStyle}" Text="{locale:Translate ButtonAddWorFrNet}" Clicked="AddWordsFromNetButtonClick"></Button>
 
 
-      <StackLayout>
+        <StackLayout>
       <ListView x:Name ="dictionaryList" ItemsSource="{Binding}" ItemSelected ="OnItemSelected" SeparatorColor="Green">
         <ListView.ItemTemplate>
           <DataTemplate>

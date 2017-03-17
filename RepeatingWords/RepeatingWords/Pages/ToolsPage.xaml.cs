@@ -12,12 +12,17 @@ namespace RepeatingWords.Pages
         const string Them = "theme";
         const string _whiteThem = "white";
         const string _blackThem = "black";
+        //переменные для показа клавиатуры транскрипции
+        const string TrKeyboard = "TrKeyboard";
+        const string showKeyboard = "true";
+        const string UnShowKeyboard = "false";
 
         public ToolsPage()
         {
             InitializeComponent();
          
             object propThem = "";
+            object propTrKeyb = "";
             if (App.Current.Properties.TryGetValue(Them, out propThem))
             {
                 if (propThem.Equals(_blackThem))
@@ -27,12 +32,37 @@ namespace RepeatingWords.Pages
                 else
                 {
                     SwLight.IsToggled = true;
+                    this.BackgroundColor = Color.Silver;
+                }
+            }
+            if(App.Current.Properties.TryGetValue(TrKeyboard, out propTrKeyb))
+            {
+                if (propTrKeyb.Equals(showKeyboard))
+                {
+                   SwShowKeyboard.IsToggled = true;
+                }
+                else
+                {
+                    SwShowKeyboard.IsToggled = false;
                 }
             }
         }
-      
-              
-        
+
+      private void switcher_ToggledShowKeyboard(object sender, ToggledEventArgs e)
+        {
+          if(SwShowKeyboard.IsToggled==true)
+            {
+                App.Current.Properties.Remove(TrKeyboard);
+                App.Current.Properties.Add(TrKeyboard, showKeyboard);
+            }
+          else
+            {
+                App.Current.Properties.Remove(TrKeyboard);
+                App.Current.Properties.Add(TrKeyboard, UnShowKeyboard);
+            }
+          
+        }
+
 
         //обработка переключателей
         private void switcher_ToggledDark(object sender, ToggledEventArgs e)

@@ -278,6 +278,15 @@ namespace RepeatingWords {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Suggest to select transcription keyboard.
+        /// </summary>
+        internal static string LabelChooseShowKeyboardTrans {
+            get {
+                return ResourceManager.GetString("LabelChooseShowKeyboardTrans", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Choose theme.
         /// </summary>
         internal static string LabelChooseTheme {
@@ -449,7 +458,7 @@ namespace RepeatingWords {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Load this file into root path of the phone..
+        ///   Looks up a localized string similar to Load this file into the phone..
         /// </summary>
         internal static string LabelScreen231 {
             get {
@@ -566,6 +575,15 @@ namespace RepeatingWords {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Suggest.
+        /// </summary>
+        internal static string LabelShowKeyboard {
+            get {
+                return ResourceManager.GetString("LabelShowKeyboard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dark.
         /// </summary>
         internal static string LabelThemeDark {
@@ -611,6 +629,15 @@ namespace RepeatingWords {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Select the keyboard:.
+        /// </summary>
+        internal static string ModalActChooseKeyboard {
+            get {
+                return ResourceManager.GetString("ModalActChooseKeyboard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to From the first language.
         /// </summary>
         internal static string ModalActFromFtoTr {
@@ -625,6 +652,33 @@ namespace RepeatingWords {
         internal static string ModalActFromTrtoF {
             get {
                 return ResourceManager.GetString("ModalActFromTrtoF", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to List of words.
+        /// </summary>
+        internal static string ModalActList {
+            get {
+                return ResourceManager.GetString("ModalActList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to System keyboard.
+        /// </summary>
+        internal static string ModalActSysKeyboard {
+            get {
+                return ResourceManager.GetString("ModalActSysKeyboard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Transcription keyboard.
+        /// </summary>
+        internal static string ModalActTranscKeyboard {
+            get {
+                return ResourceManager.GetString("ModalActTranscKeyboard", resourceCulture);
             }
         }
         

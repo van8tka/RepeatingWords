@@ -23,10 +23,11 @@ namespace RepeatingWords.Pages
             string ModalActFromTrtoF = Resource.ModalActFromTrtoF;
             string ModalException = Resource.ModalException;
             string ModalNoWord = Resource.ModalNoWord;
+            string ModalActList = Resource.ModalActList;
 
             if (words.Any())
             {
-                var action = await DisplayActionSheet(ModalChooseLang, "", "", ModalActFromFtoTr, ModalActFromTrtoF);
+                var action = await DisplayActionSheet(ModalChooseLang, "", "", ModalActFromFtoTr, ModalActFromTrtoF,ModalActList);
                 bool which = true;//для проверки выбрана ли кнопка выбора языка или нет
 
                 if (action == ModalActFromFtoTr)
@@ -41,6 +42,12 @@ namespace RepeatingWords.Pages
                     }
                     else
                     {
+                        if(action == ModalActList)
+                        {
+                            Dictionary d = App.Db.GetDictionary(((Dictionary)e.SelectedItem).Id);
+                            AddWord ad = new AddWord(d);
+                            await Navigation.PushAsync(ad);
+                        }
                         which = false;
                     }
                 }
@@ -54,6 +61,22 @@ namespace RepeatingWords.Pages
             else
                 await DisplayAlert(ModalException, ModalNoWord, "Ок");
 
+        }
+
+        //обр нажатия добавления словарей из интернета
+        protected async void AddWordsFromNetButtonClick(object sender, System.EventArgs e)
+        {
+            //проверим состояние сети.. вкл или выкл
+            bool isConnect = DependencyService.Get<ICheckConnect>().CheckTheNet();
+            if (!isConnect)
+            {
+                await DisplayAlert(Resource.ModalException, Resource.ModalCheckNet, "Ok");
+            }
+            else
+            {
+                LanguageFrNet lng = new LanguageFrNet();
+                await Navigation.PushAsync(lng);
+            }
         }
 
     }

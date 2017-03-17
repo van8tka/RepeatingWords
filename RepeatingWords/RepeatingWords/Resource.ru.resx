@@ -237,7 +237,7 @@
     <value>Далее при сохранении файла указать кодировку UTF-8.</value>
   </data>
   <data name="LabelScreen231" xml:space="preserve">
-    <value>Закинуть созданный файл на телефон в корневую папку.</value>
+    <value>Скопировать созданный файл на телефон.</value>
   </data>
   <data name="LabelScreen232" xml:space="preserve">
     <value>Запустить программу на телефоне, выбрать словарь и нажать кнопку [Добавить слова из файла]</value>
@@ -405,5 +405,24 @@
   </data>
   <data name="LabelRights" xml:space="preserve">
     <value>Все права защищены.</value>
+  </data>
+  <data name="LabelChooseShowKeyboardTrans" xml:space="preserve">
+    <value>Предлагать выбор клавиатуры для ввода транскрипции</value>
+  </data>
+  <data name="LabelShowKeyboard" xml:space="preserve">
+    <value>Предлагать</value>
+  </data>
+  <data name="ModalActChooseKeyboard" xml:space="preserve">
+    <value>Выберите клавиатуру:</value>
+  </data>
+  <data name="ModalActSysKeyboard" xml:space="preserve">
+    <value>Клавиатура системы</value>
+  </data>
+  <data name="ModalActTranscKeyboard" xml:space="preserve">
+    <value>Клавиатура транскрипции</value>
+    <comment>Клавиатура транскрипции</comment>
+  </data>
+  <data name="ModalActList" xml:space="preserve">
+    <value>Список слов</value>
   </data>
 </root>
