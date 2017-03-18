@@ -13,9 +13,7 @@ namespace RepeatingWords
             InitializeComponent();
         }
 
-
-
-
+      
         private async void ChooseDbButtonClick(object sender, System.EventArgs e)
         {
             ChooseDb chd = new ChooseDb();          
@@ -80,7 +78,7 @@ namespace RepeatingWords
                 Device.OpenUri(new Uri("https://play.google.com/store/apps/details?id=cardsofwords.cardsofwords"));
             if (Device.OS == TargetPlatform.Windows||Device.OS==TargetPlatform.WinPhone)
             {
-                Device.OpenUri(new Uri("https://www.microsoft.com/ru-ru/store/p/cards-of-words/9n55bwkgshnf"));
+                Device.OpenUri(new Uri("https://www.microsoft.com/store/apps/9n55bwkgshnf"));
             }
         }
 

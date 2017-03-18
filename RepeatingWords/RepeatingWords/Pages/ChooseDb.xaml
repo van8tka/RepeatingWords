@@ -8,11 +8,11 @@
  
     <StackLayout>
       <Label Text="{local:Translate LabelChooseDictOrCreate}" HorizontalTextAlignment="Center" Style="{StaticResource LableHeadApp}"/>
-      <Button Style="{StaticResource buttonStyle}" Text="{local:Translate ButtonAddDict}" Clicked="AddDictionaryButtonClick"></Button>
-      <Button Style="{StaticResource buttonStyle}" Text="{local:Translate ButtonAddWorFrNet}" Clicked="AddWordsFromNetButtonClick"></Button>
-
-      <StackLayout>
-        <ListView x:Name ="dictionaryList" ItemsSource="{Binding}" ItemSelected ="OnItemSelected" SeparatorColor="Green">
+      <Button x:Name="BtAddDict" Style="{StaticResource buttonStyle}" Text="{local:Translate ButtonAddDict}" Clicked="AddDictionaryButtonClick"></Button>
+        <Button x:Name="BtAddWorFrNet" Style="{StaticResource buttonStyle}" Text="{local:Translate ButtonAddWorFrNet}" Clicked="AddWordsFromNetButtonClick"></Button>
+        <ActivityIndicator x:Name="actIndicator4" Color="Blue" HeightRequest="10"/>
+        <StackLayout>
+        <ListView x:Name ="dictionaryList" ItemsSource="{Binding}" ItemSelected ="OnItemSelected" SeparatorColor="Green" >
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>

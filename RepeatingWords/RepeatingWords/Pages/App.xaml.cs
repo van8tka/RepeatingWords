@@ -53,10 +53,12 @@ namespace RepeatingWords
            
             SetOriginalStyle();
             SetChooseTranscriptionKeyboard();
+           
         }
+     
 
 
-      
+
         //method for set default chosse keyboard when add word
         private void SetChooseTranscriptionKeyboard()
         {
