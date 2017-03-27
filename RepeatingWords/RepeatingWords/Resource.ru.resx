@@ -425,4 +425,10 @@
   <data name="ModalActList" xml:space="preserve">
     <value>Список слов</value>
   </data>
+  <data name="ButtonSendReview" xml:space="preserve">
+    <value>Оставить отзыв</value>
+  </data>
+  <data name="MessagePleaseReview" xml:space="preserve">
+    <value>Пожалуйста оставьте свой отзыв о приложении, Ваше мнение очень важно для нас.</value>
+  </data>
 </root>

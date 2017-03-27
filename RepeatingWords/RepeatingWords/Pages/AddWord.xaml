@@ -27,8 +27,10 @@
                                         </ColumnDefinition>
                                     </Grid.ColumnDefinitions>
                                     <Grid.RowDefinitions>
-                                        <RowDefinition Height="58"/>
-                                        <!--<RowDefinition Height="*"/>-->
+                                        <!--для wind-->
+                                        <!--<RowDefinition Height="58"/>-->
+                                        <!--для андр-->
+                                        <RowDefinition Height="*"/>
                                     </Grid.RowDefinitions>
                                     <Label Text="{Binding RusWord}" Grid.Column="0" FontSize="Medium" Style="{DynamicResource LabelColorWB}">
                                         <Label.FontSize>

@@ -188,6 +188,15 @@ namespace RepeatingWords {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Leave a comment.
+        /// </summary>
+        internal static string ButtonSendReview {
+            get {
+                return ResourceManager.GetString("ButtonSendReview", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to View the list of words.
         /// </summary>
         internal static string ButtonShowWords {
@@ -607,6 +616,15 @@ namespace RepeatingWords {
         internal static string LabelTranscription {
             get {
                 return ResourceManager.GetString("LabelTranscription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please leave the comment about application, your judgement is very important for us..
+        /// </summary>
+        internal static string MessagePleaseReview {
+            get {
+                return ResourceManager.GetString("MessagePleaseReview", resourceCulture);
             }
         }
         

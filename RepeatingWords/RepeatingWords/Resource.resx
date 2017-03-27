@@ -443,4 +443,10 @@
   <data name="ModalActList" xml:space="preserve">
     <value>List of words</value>
   </data>
+  <data name="ButtonSendReview" xml:space="preserve">
+    <value>Leave a comment</value>
+  </data>
+  <data name="MessagePleaseReview" xml:space="preserve">
+    <value>Please leave the comment about application, your judgement is very important for us.</value>
+  </data>
 </root>

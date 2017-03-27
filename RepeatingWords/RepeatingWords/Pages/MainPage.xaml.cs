@@ -72,13 +72,20 @@ namespace RepeatingWords
 
 
 //оставить отзыв о программе
-        private void ClickedLikeButton(object sender, EventArgs e)
+        private async void ClickedLikeButton(object sender, EventArgs e)
         {
-            if (Device.OS == TargetPlatform.Android)
-                Device.OpenUri(new Uri("https://play.google.com/store/apps/details?id=cardsofwords.cardsofwords"));
-            if (Device.OS == TargetPlatform.Windows||Device.OS==TargetPlatform.WinPhone)
+            string MessagePleaseReview = Resource.MessagePleaseReview;
+            string ButtonSendReview = Resource.ButtonSendReview;
+            string ButtonCancel = Resource.ModalActCancel;
+           bool action = await DisplayAlert("", MessagePleaseReview, ButtonSendReview, ButtonCancel);
+            if (action)
             {
-                Device.OpenUri(new Uri("https://www.microsoft.com/store/apps/9n55bwkgshnf"));
+                if (Device.OS == TargetPlatform.Android)
+                    Device.OpenUri(new Uri("https://play.google.com/store/apps/details?id=cardsofwords.cardsofwords"));
+                if (Device.OS == TargetPlatform.Windows || Device.OS == TargetPlatform.WinPhone)
+                {
+                    Device.OpenUri(new Uri("https://www.microsoft.com/store/apps/9n55bwkgshnf"));
+                }
             }
         }
 
