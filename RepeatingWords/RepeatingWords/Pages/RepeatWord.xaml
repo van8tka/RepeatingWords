@@ -22,7 +22,7 @@
             <RowDefinition Height="110*" />
                 </Grid.RowDefinitions>
 
-                <Label x:Name="LabelCountOfWords" Style="{DynamicResource LabelColor}" Grid.Column="0" Grid.Row="0" />
+            <Label x:Name="LabelCountOfWords" Style="{DynamicResource LabelColor}" Grid.Column="0" Grid.Row="0" />
             <Label x:Name="Labelpicker" Text="{locale:Translate PickerText}" Style="{DynamicResource LabelColor}" Grid.Column="1" Grid.Row="0" HorizontalTextAlignment="Center" />
    <Picker x:Name="picker" SelectedIndexChanged="picker_SelectedIndexChanged"  Grid.Column="1" Grid.Row="1" BackgroundColor="Transparent" TextColor="Silver" >
       <Picker.Items>

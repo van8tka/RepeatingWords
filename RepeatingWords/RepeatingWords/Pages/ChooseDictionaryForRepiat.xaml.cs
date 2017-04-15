@@ -6,11 +6,12 @@ namespace RepeatingWords.Pages
 {
     public partial class ChooseDictionaryForRepiat : ContentPage
     {
-      
+        const string NameDbForContinued = "ContinueDictionary";
+        const string NameDbForContinuedLearn = "ContinueDictionary-learning";
         public ChooseDictionaryForRepiat()
         {
             InitializeComponent();
-            this.BindingContext = App.Db.GetDictionarys().OrderBy(x => x.Name);
+            this.BindingContext = App.Db.GetDictionarys().Where(x=>x.Name!=NameDbForContinued && x.Name!=NameDbForContinuedLearn).OrderBy(x => x.Name);
         }
 
         private async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)

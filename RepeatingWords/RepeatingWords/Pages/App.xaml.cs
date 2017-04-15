@@ -11,6 +11,7 @@ namespace RepeatingWords
     {
         //переменная для определения стиля темы приложения
         private bool originalStyle = true;
+     
 
         //исходные данные для инициализации БД
         Dictionary dictInit = new Dictionary()

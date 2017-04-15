@@ -10,7 +10,9 @@ namespace RepeatingWords
 {
     public partial class ChooseDb : ContentPage
     {
-      
+        //имя словаря для продолжения повторения слов(не должно отображаться)
+        const string NameDbForContinued = "ContinueDictionary";
+        const string NameDbForContinuedLearn = "ContinueDictionary-learning";
         public ChooseDb()
         {
             InitializeComponent();
@@ -19,7 +21,7 @@ namespace RepeatingWords
        //обработка перехода на страницу
         protected override void OnAppearing()
         {
-            dictionaryList.ItemsSource = App.Db.GetDictionarys().OrderBy(x=>x.Name);
+            dictionaryList.ItemsSource = App.Db.GetDictionarys().Where(x=>x.Name!=NameDbForContinued && x.Name!= NameDbForContinuedLearn).OrderBy(x=>x.Name);
             actIndicator4.IsVisible = false;
             base.OnAppearing();
         }

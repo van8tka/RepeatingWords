@@ -26,6 +26,7 @@ namespace RepeatingWords.Pages
        //кол-во перевернутых(невыученных слов)
         int countTurned = 0;
         string TextTurned = Resource.LabelCountTurned;
+        const string NameDbForContinued = "ContinueDictionary";
 
 
         public RepeatWord(int iDdictionary, bool FromRus)
@@ -35,8 +36,10 @@ namespace RepeatingWords.Pages
             //переменная для многократного переворота карточки
             Turn = FromRus;
             this.iDdictionary = iDdictionary;
-
+            //получаем карточки и сортируем их рандомно
+           
             words = App.Wr.GetWords(iDdictionary);
+            RandomWordList();
             //кол во слов и пройденных слов
             LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString() + "/" + countTurned.ToString();
             //LabelCountOfWordsTurn.Text = TextTurned+" "+ countTurned.ToString();
@@ -57,6 +60,9 @@ namespace RepeatingWords.Pages
 
 
 
+
+
+//конструктор при продолжении изучения словаря
         public RepeatWord(LastAction la)
         {
             InitializeComponent();
@@ -65,13 +71,11 @@ namespace RepeatingWords.Pages
             Turn = FromRus;
             iDdictionary = la.IdDictionary;
             words = App.Wr.GetWords(la.IdDictionary);
-                              
             //определяем чему равен Count;
-            HowCount(la.IdWord);
+            Count = la.IdWord;
             //сколько слов всего и пройдено
             LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString() + "/" + countTurned.ToString();
-            //LabelCountOfWordsTurn.Text = TextTurned + " " + countTurned.ToString();
-            if (Device.OS == TargetPlatform.Android)
+           if (Device.OS == TargetPlatform.Android)
             {
                 lang = "en_GB";
                 DependencyService.Get<IAdmobInterstitial>().Show("ca-app-pub-5351987413735598/1185308269");
@@ -79,47 +83,39 @@ namespace RepeatingWords.Pages
             else if (Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
             { lang = "en-GB"; }
             UpdateWord(Count, FromRus);
-            //отключим озвучку для Desktop
-          
         }
 
-      
 
 
 
-        private void HowCount(int idword)
+
+        //метод смешивания слов перед выводом
+        private void RandomWordList()
         {
-            int c = 0;
-            foreach(var i in words)
+            List<Words> tempWords = (List<Words>)words;
+            Random rng = new Random();
+            int n = words.Count();
+             //пока не первое слово
+            while (n > 1)
             {
-                if (i.Id == idword)
-                {
-                    break;
-                }
-                else
-                {
-                    c++;
-                }
-           }
-            if (c == words.Count())
-                Count = 0;
-            else
-                Count = c;
+                n--;
+                int k = rng.Next(n + 1);
+                Words value = tempWords[k];
+                tempWords[k] = tempWords[n];
+                tempWords[n] = value;
+            }
+            words = null;
+            words = (IEnumerable<Words>)tempWords;
         }
-
-
 
         //метод для обновления слова
         private void UpdateWord(int count, bool lang)
         {
             if (lang)
-            {
-                //WordForRepeat.TextColor = Color.Lime;
-                              
+            {                    
                 WordForRepeat.TextColor = (Color)Application.Current.Resources["ColorWB"];
                 WordForRepeat.Text = GetWords(count).RusWord;
-                //управление видимостью озвучки
-               
+                //управление видимостью озвучки               
                     ButtonVoice.IsEnabled = false;
                     picker.IsVisible = true;
                     ButtonVoice.Image = "voiceX.png";
@@ -127,7 +123,6 @@ namespace RepeatingWords.Pages
             }
             else
             {
-                //WordForRepeat.TextColor = Color.Blue;
                 WordForRepeat.TextColor = (Color)Application.Current.Resources["ColorBlGr"];
                 Words w = GetWords(count);
                 //если транскрипции нет 
@@ -166,76 +161,77 @@ namespace RepeatingWords.Pages
 
         private async void NextWordButtonClick(object sender, EventArgs e)
         {//для сброса количества перево 
-            Turn = FromRus;
-          
-            int z = words.Count() - 1;
-            if (z > Count)
+           try
             {
-                Count++;
-                UpdateWord(Count, FromRus);
-            }
-            else
-            {
-                string ModalAllWordsComplete = Resource.ModalAllWordsComplete;
-                string ModalFinish = Resource.ModalFinish;
-                string ModalRestart = Resource.ModalRestart;
-                string ModalLerningTurnedWords = Resource.ModalLerningTurnedWords;
+                Turn = FromRus;
 
-
-                var action = await DisplayActionSheet(ModalAllWordsComplete, "", "", ModalFinish, ModalRestart, ModalLerningTurnedWords);
-
-                if (action == ModalFinish)
+                int z = words.Count() - 1;
+                if (z > Count)
                 {
-                    //вызовем метод для проверки есть ли в списке перевернутые слова
-                    //если есть то создадим БД и добавим в нее слова
-                    await CreateTurnedDB();
-                    //перреход на главную страницу
-                    await Navigation.PopToRootAsync();
-                }
-               //если начать заново словарь 
-               if(action == ModalRestart)
-               {
-                  //то список перевернутых слов обновляем
-                  TurnedWords.Clear();
-                  //и количество перевернутых слов обнуляем
-                  countTurned = 0;
-                  //индекс слова обновляем
-                   Count = 0;
-                   //вызываем метод обновления слова
-                   UpdateWord(Count, FromRus);
-               }
-              //если выбрали повторение невыученных в этом словаре     
-              if(action == ModalLerningTurnedWords)
-               {
-                    //вызовем метод для проверки есть ли в списке перевернутые слова
-                    //если есть то создадим БД и добавим в нее слова
-                    await CreateTurnedDB();
-                    //обнулим индекс слов
-                    Count = 0;
-                    //обнулим кол-во перевернутых слов
-                    countTurned = 0;
-                    LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString() + "/" + countTurned.ToString();
-                    //LabelCountOfWordsTurn.Text = TextTurned + " " + countTurned.ToString();
-                    //получим последнюю БД и очистим список перевернутых слов
-                    TurnedWords.Clear();
-                    Dictionary di = App.Db.GetDictionarys().LastOrDefault();
-                    iDdictionary = di.Id;//получим новый список слов из БД
-                    words = App.Wr.GetWords(di.Id);//обновим экран
+                    Count++;
                     UpdateWord(Count, FromRus);
                 }
-                       
+                else
+                {
+                    string ModalAllWordsComplete = Resource.ModalAllWordsComplete;
+                    string ModalFinish = Resource.ModalFinish;
+                    string ModalRestart = Resource.ModalRestart;
+                    string ModalLerningTurnedWords = Resource.ModalLerningTurnedWords;
+
+
+                    var action = await DisplayActionSheet(ModalAllWordsComplete, "", "", ModalFinish, ModalRestart, ModalLerningTurnedWords);
+
+                    if (action == ModalFinish)
+                    {
+                        //вызовем метод для проверки есть ли в списке перевернутые слова
+                        //если есть то создадим БД и добавим в нее слова
+                        await CreateTurnedDB();
+                        //перреход на главную страницу
+                        await Navigation.PopToRootAsync();
+                    }
+                    //если начать заново словарь 
+                    if (action == ModalRestart)
+                    {
+                        //то список перевернутых слов обновляем
+                        TurnedWords.Clear();
+                        //и количество перевернутых слов обнуляем
+                        countTurned = 0;
+                        //индекс слова обновляем
+                        Count = 0;
+                        //метод смешивания слов
+                        RandomWordList();
+                        //вызываем метод обновления слова
+                        UpdateWord(Count, FromRus);
+                    }
+                    //если выбрали повторение невыученных в этом словаре     
+                    if (action == ModalLerningTurnedWords)
+                    {
+                        //вызовем метод для проверки есть ли в списке перевернутые слова
+                        //если есть то создадим БД и добавим в нее слова
+                        await CreateTurnedDB();
+                        //обнулим индекс слов
+                        Count = 0;
+                        //обнулим кол-во перевернутых слов
+                        countTurned = 0;
+                        LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString() + "/" + countTurned.ToString();
+                        //LabelCountOfWordsTurn.Text = TextTurned + " " + countTurned.ToString();
+                        //получим последнюю БД и очистим список перевернутых слов
+                        TurnedWords.Clear();
+                        Dictionary di = App.Db.GetDictionarys().LastOrDefault();
+                        iDdictionary = di.Id;//получим новый список слов из БД
+                        words = App.Wr.GetWords(di.Id);//обновим экран
+                        UpdateWord(Count, FromRus);
+                    }
+
+                }
+                //сколько слов всего и пройдено сколько
+                LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString() + "/" + countTurned.ToString();
             }
-            //сколько слов всего и пройдено сколько
-           LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString() + "/" + countTurned.ToString();
+            catch (Exception er)
+            {
+                await DisplayAlert(Resource.ModalException, er.Message.ToString(), "Ok");
+            }
         }
-
-
-
-
-
-
-
-
 
 
 
@@ -287,25 +283,38 @@ namespace RepeatingWords.Pages
             }
         }
 
+     
+        
+        
         //переопределение метода обработки события при нажатии кнопки НАЗАД, 
         //для его срабатывания надо в MainActivity тоже переопределить метод OnBackPressed
         protected override bool OnBackButtonPressed()
-        {//при нажаттии  на кн выхода сохраняется последнее слово
+        {//проверим наличие словаря для продолжения изучения слов
+            if(!App.Db.GetDictionarys().Where(x=>x.Name==NameDbForContinued).Any())
+            {//если нету то создадим
+                App.Db.CreateDictionary(new Dictionary() { Id = 0, Name = NameDbForContinued });
+            }
+            //обновим слова(или добавим)
+            int IdContinueDict = App.Db.GetDictionarys().Where(x => x.Name == NameDbForContinued).FirstOrDefault().Id;
+            App.Wr.DeleteWords(IdContinueDict);
+            foreach(Words w in words)
+            {
+                w.Id = 0;
+                w.IdDictionary = IdContinueDict;
+                App.Wr.CreateWord(w);
+            }
+            //при нажатии  на кн выхода сохраняется последнее слово
             LastAction i = new LastAction()
             {
                 Id = 0,
-                IdDictionary = iDdictionary,
+                IdDictionary = IdContinueDict,
                 FromRus = FromRus,
-                IdWord = GetWords(Count).Id
+                IdWord = Count
             };
             App.LAr.SaveLastAction(i);
             ComeBack();
             return true;
         }
-
-
-
-
 
         private void ComeBack()
         {
