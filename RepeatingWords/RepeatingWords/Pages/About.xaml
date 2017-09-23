@@ -4,11 +4,14 @@
              x:Class="RepeatingWords.Pages.About"
               xmlns:locale ="clr-namespace:RepeatingWords;assembly=RepeatingWords"
              Style="{StaticResource TitleApp}">
-           
-  
+    <!--панель управлления-->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="Home" Icon="toolbarImageHome.png" Clicked="ClickedHomeCustomButton"/>
+    </ContentPage.ToolbarItems>
+
     <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
         <Image Source="icon.jpg" />
-        <Label Text="Cards of words v1.12" Style="{StaticResource LabelColorWB}" FontSize="Medium" HorizontalTextAlignment="Center"/>
+        <Label Text="Cards of words v1.13" Style="{StaticResource LabelColorWB}" FontSize="Medium" HorizontalTextAlignment="Center"/>
         <Label Text="Copyright © 2017 DevProgram." Style="{StaticResource LabelColorWB}" FontSize="Medium" HorizontalTextAlignment="Center"/>
         <Label Text="{locale:Translate LabelRights}" Style="{StaticResource LabelColorWB}" FontSize="Medium" HorizontalTextAlignment="Center"/>
         <Label Text="{locale:Translate LabelFIO}" Style="{StaticResource LabelColorWB}" FontSize="Medium" HorizontalTextAlignment="Center"/>

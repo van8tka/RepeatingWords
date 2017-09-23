@@ -449,4 +449,7 @@
   <data name="MessagePleaseReview" xml:space="preserve">
     <value>Please leave the comment about application, your judgement is very important for us.</value>
   </data>
+  <data name="ModelNoFillFullNameDictionary" xml:space="preserve">
+    <value>Enter name of the dictionary</value>
+  </data>
 </root>

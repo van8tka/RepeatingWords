@@ -1,4 +1,5 @@
 ﻿using RepeatingWords.Model;
+using System;
 using System.Linq;
 using Xamarin.Forms;
 
@@ -11,7 +12,15 @@ namespace RepeatingWords.Pages
         public ChooseDictionaryForRepiat()
         {
             InitializeComponent();
-            this.BindingContext = App.Db.GetDictionarys().Where(x=>x.Name!=NameDbForContinued && x.Name!=NameDbForContinuedLearn).OrderBy(x => x.Name);
+            this.BindingContext = App.Db.GetDictionarys().Where(x => x.Name != NameDbForContinued && x.Name != NameDbForContinuedLearn).OrderBy(x => x.Name);
+        }
+
+
+        //вызов главной страницы и чистка стека страниц
+        private async void ClickedHomeCustomButton(object sender, EventArgs e)
+        {
+            //выход на главную страницу
+            Application.Current.MainPage = new NavigationPage(new MainPage());
         }
 
         private async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -28,7 +37,7 @@ namespace RepeatingWords.Pages
 
             if (words.Any())
             {
-                var action = await DisplayActionSheet(ModalChooseLang, "", "", ModalActFromFtoTr, ModalActFromTrtoF,ModalActList);
+                var action = await DisplayActionSheet(ModalChooseLang, "", "", ModalActFromFtoTr, ModalActFromTrtoF, ModalActList);
                 bool which = true;//для проверки выбрана ли кнопка выбора языка или нет
 
                 if (action == ModalActFromFtoTr)
@@ -43,7 +52,7 @@ namespace RepeatingWords.Pages
                     }
                     else
                     {
-                        if(action == ModalActList)
+                        if (action == ModalActList)
                         {
                             Dictionary d = App.Db.GetDictionary(((Dictionary)e.SelectedItem).Id);
                             AddWord ad = new AddWord(d);
@@ -52,7 +61,7 @@ namespace RepeatingWords.Pages
                         which = false;
                     }
                 }
-          
+
                 if (which)
                 {
                     RepeatWord rw = new RepeatWord(((Dictionary)e.SelectedItem).Id, FromRussia);

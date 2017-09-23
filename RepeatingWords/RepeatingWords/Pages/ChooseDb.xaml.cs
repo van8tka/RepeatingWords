@@ -18,14 +18,22 @@ namespace RepeatingWords
             InitializeComponent();
             actIndicator4.IsVisible = false;
         }
-       //обработка перехода на страницу
+
+        //вызов главной страницы и чистка стека страниц
+        private async void ClickedHomeCustomButton(object sender, EventArgs e)
+        {
+            //выход на главную страницу
+            Application.Current.MainPage = new NavigationPage(new MainPage());
+        }
+
+        //обработка перехода на страницу
         protected override void OnAppearing()
         {
-            dictionaryList.ItemsSource = App.Db.GetDictionarys().Where(x=>x.Name!=NameDbForContinued && x.Name!= NameDbForContinuedLearn).OrderBy(x=>x.Name);
+            dictionaryList.ItemsSource = App.Db.GetDictionarys().Where(x => x.Name != NameDbForContinued && x.Name != NameDbForContinuedLearn).OrderBy(x => x.Name);
             actIndicator4.IsVisible = false;
             base.OnAppearing();
         }
-       
+
         private async void AddDictionaryButtonClick(object sender, System.EventArgs e)
         {
             CreateDb cdb = new CreateDb();
@@ -56,8 +64,7 @@ namespace RepeatingWords
             try
             {
                 //получаем нажатый элемент
-                //AddWords adb = new AddWords((Dictionary)e.SelectedItem);
-                //await Navigation.PushAsync(adb);
+             
                 string ButtonAddWord = Resource.ButtonAddWord;
                 string ButtonAddWorFrFile = Resource.ButtonAddWorFrFile;
                 string ButtonRemove = Resource.ButtonRemove;
@@ -85,13 +92,13 @@ namespace RepeatingWords
                     RemoveDictionary(dic);
                 }
             }
-          catch { }
+            catch { }
 
         }
 
         private async void RemoveDictionary(Dictionary dic)
         {
-           try
+            try
             {
                 //удаляем словарь
                 App.Db.DeleteDictionary(dic.Id);
@@ -107,7 +114,7 @@ namespace RepeatingWords
                 string ModalRemove = Resource.ModalRemove;
                 await DisplayAlert(null, ModalDict + " " + dic.Name + " " + ModalRemove, "Ок");
                 OnAppearing();
-           }
+            }
             catch { }
         }
 
@@ -127,13 +134,13 @@ namespace RepeatingWords
 
 
 
-//метод добавления слов из файла
+        //метод добавления слов из файла
 
         private async void AddWordsFrFileToDictionary(Dictionary dic)
         {
             try
             {
-               if (Device.OS == TargetPlatform.Android)
+                if (Device.OS == TargetPlatform.Android)
                 {
                     ChooseFile ch = new ChooseFile(dic);
                     await Navigation.PushAsync(ch);
@@ -157,7 +164,7 @@ namespace RepeatingWords
             }
             catch (Exception er)
             {
-                await DisplayAlert("Error", er.Message, "Ok");
+                await DisplayAlert("Error", er.Message + "Probably app doesn't have permission to read data. Please, check settings: Settings->Applications->Application Permission->Storage and find your app. Permissions must be set.", "Ok");
             }
         }
 
@@ -226,6 +233,6 @@ namespace RepeatingWords
         }
 
 
-      
+
     }
 }

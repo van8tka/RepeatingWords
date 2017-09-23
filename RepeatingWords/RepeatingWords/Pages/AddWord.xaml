@@ -4,7 +4,11 @@
              x:Class="RepeatingWords.AddWord"
                 xmlns:locale ="clr-namespace:RepeatingWords;assembly=RepeatingWords"
            Style="{StaticResource TitleApp}">
-
+    <!--панель управлления-->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="Home" Icon="toolbarImageHome.png" Clicked="ClickedHomeCustomButton"/>
+    </ContentPage.ToolbarItems>
+    
     <StackLayout Orientation="Vertical">
       <Label x:Name="DictionaryName"  HorizontalTextAlignment="Center" Style="{StaticResource LableHeadApp}"/>
       <Button Style="{StaticResource buttonStyle}" Text="{locale:Translate ButtonAddWord}" Clicked="CreateWordButtonClick"></Button>
@@ -28,9 +32,9 @@
                                     </Grid.ColumnDefinitions>
                                     <Grid.RowDefinitions>
                                         <!--для wind-->
-                                        <!--<RowDefinition Height="58"/>-->
+                                        <RowDefinition Height="58"/>
                                         <!--для андр-->
-                                        <RowDefinition Height="*"/>
+                                        <!--<RowDefinition Height="*"/>-->
                                     </Grid.RowDefinitions>
                                     <Label Text="{Binding RusWord}" Grid.Column="0" FontSize="Medium" Style="{DynamicResource LabelColorWB}">
                                         <Label.FontSize>

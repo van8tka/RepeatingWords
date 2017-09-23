@@ -1,1 +1,1 @@
-D:\Visual\RepeatingWords\RepeatingWords\RepeatingWords.UWP\AppPackages\RepeatingWords.UWP_1.10.4.0\RepeatingWords.UWP_1.10.4.0_x86_x64_arm.appxbundle
+D:\Visual\RepeatingWords\RepeatingWords\RepeatingWords.UWP\AppPackages\RepeatingWords.UWP_1.12.1.0\RepeatingWords.UWP_1.12.1.0_x86_x64_arm.appxbundle

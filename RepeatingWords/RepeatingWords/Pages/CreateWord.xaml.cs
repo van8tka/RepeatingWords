@@ -29,24 +29,29 @@ namespace RepeatingWords
 
 
         //3 констр при вводе транскрипции со спец клавы
-        public CreateWord(int iddiction,int idWord ,string rus, string eng, string transc)
+        public CreateWord(int iddiction, int idWord, string rus, string eng, string transc)
         {
             InitializeComponent();
             idDiction = iddiction;
             Words wr = new Words
             {
-                Id= idWord,
+                Id = idWord,
                 IdDictionary = idDiction,
                 RusWord = rus,
                 EngWord = eng,
                 Transcription = transc
             };
             this.BindingContext = wr;
-        
+
             FocusCoutTransc = 1;
         }
 
-
+        //вызов главной страницы и чистка стека страниц
+        private async void ClickedHomeCustomButton(object sender, EventArgs e)
+        {
+            //выход на главную страницу
+            Application.Current.MainPage = new NavigationPage(new MainPage());
+        }
 
         private async void CreateWordButtonClick(object sender, System.EventArgs e)
         {
@@ -58,7 +63,7 @@ namespace RepeatingWords
                 string ModelWordChange = Resource.ModelWordChange;
                 string ModelNoFillFull = Resource.ModelNoFillFull;
                 string ModelForAddingWord = Resource.ModelForAddingWord;
-             
+
                 if (!String.IsNullOrEmpty(words.RusWord) && !String.IsNullOrEmpty(words.EngWord))
                 {
                     if (!String.IsNullOrEmpty(words.Transcription))
@@ -130,7 +135,7 @@ namespace RepeatingWords
 
                 }
             }
-           catch { }
+            catch { }
         }
     }
 

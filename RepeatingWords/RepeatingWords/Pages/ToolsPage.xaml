@@ -5,7 +5,10 @@
               xmlns:local="clr-namespace:RepeatingWords;assembly=RepeatingWords"
              Title="{local:Translate TitleMain}"
           >
-   
+    <!--панель управлления-->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="Home" Icon="toolbarImageHome.png" Clicked="ClickedHomeCustomButton"/>
+    </ContentPage.ToolbarItems>
         
         
         <StackLayout Padding="15">

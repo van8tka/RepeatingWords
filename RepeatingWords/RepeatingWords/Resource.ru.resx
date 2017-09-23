@@ -431,4 +431,7 @@
   <data name="MessagePleaseReview" xml:space="preserve">
     <value>Пожалуйста оставьте свой отзыв о приложении, Ваше мнение очень важно для нас.</value>
   </data>
+  <data name="ModelNoFillFullNameDictionary" xml:space="preserve">
+    <value>Введите название словаря</value>
+  </data>
 </root>

@@ -1,4 +1,5 @@
 ﻿
+using System;
 using Xamarin.Forms;
 
 namespace RepeatingWords.Pages
@@ -48,7 +49,16 @@ namespace RepeatingWords.Pages
             }
         }
 
-      private void switcher_ToggledShowKeyboard(object sender, ToggledEventArgs e)
+
+
+        //вызов главной страницы и чистка стека страниц
+        private async void ClickedHomeCustomButton(object sender, EventArgs e)
+        {
+            //выход на главную страницу
+            Application.Current.MainPage = new NavigationPage(new MainPage());
+        }
+
+        private void switcher_ToggledShowKeyboard(object sender, ToggledEventArgs e)
         {
           if(SwShowKeyboard.IsToggled==true)
             {

@@ -12,7 +12,7 @@ namespace RepeatingWords.Pages
         //для определения языка
         bool FromRus;
         //получения ID словаря
-        int  iDdictionary;
+        int iDdictionary;
         //для определения поворота карточки
         bool Turn;
         //для списка слов
@@ -23,7 +23,7 @@ namespace RepeatingWords.Pages
         int countW = 1;
         //язык озвучки
         string lang;
-       //кол-во перевернутых(невыученных слов)
+        //кол-во перевернутых(невыученных слов)
         int countTurned = 0;
         string TextTurned = Resource.LabelCountTurned;
         const string NameDbForContinued = "ContinueDictionary";
@@ -37,7 +37,7 @@ namespace RepeatingWords.Pages
             Turn = FromRus;
             this.iDdictionary = iDdictionary;
             //получаем карточки и сортируем их рандомно
-           
+
             words = App.Wr.GetWords(iDdictionary);
             RandomWordList();
             //кол во слов и пройденных слов
@@ -52,9 +52,8 @@ namespace RepeatingWords.Pages
             else
                  if (Device.OS == TargetPlatform.WinPhone || Device.OS == TargetPlatform.Windows)
             { lang = "en-GB"; }
-           
 
-             UpdateWord(Count, FromRus);
+            UpdateWord(Count, FromRus);
 
         }
 
@@ -62,7 +61,7 @@ namespace RepeatingWords.Pages
 
 
 
-//конструктор при продолжении изучения словаря
+        //конструктор при продолжении изучения словаря
         public RepeatWord(LastAction la)
         {
             InitializeComponent();
@@ -75,7 +74,7 @@ namespace RepeatingWords.Pages
             Count = la.IdWord;
             //сколько слов всего и пройдено
             LabelCountOfWords.Text = words.Count().ToString() + "/" + (countW + Count).ToString() + "/" + countTurned.ToString();
-           if (Device.OS == TargetPlatform.Android)
+            if (Device.OS == TargetPlatform.Android)
             {
                 lang = "en_GB";
                 DependencyService.Get<IAdmobInterstitial>().Show("ca-app-pub-5351987413735598/1185308269");
@@ -85,7 +84,13 @@ namespace RepeatingWords.Pages
             UpdateWord(Count, FromRus);
         }
 
-
+        //вызов главной страницы и чистка стека страниц
+        private async void ClickedHomeCustomButton(object sender, EventArgs e)
+        {
+            SaveLastWorld();
+            //выход на главную страницу
+            ComeBack();
+        }
 
 
 
@@ -95,7 +100,7 @@ namespace RepeatingWords.Pages
             List<Words> tempWords = (List<Words>)words;
             Random rng = new Random();
             int n = words.Count();
-             //пока не первое слово
+            //пока не первое слово
             while (n > 1)
             {
                 n--;
@@ -112,21 +117,21 @@ namespace RepeatingWords.Pages
         private void UpdateWord(int count, bool lang)
         {
             if (lang)
-            {                    
+            {
                 WordForRepeat.TextColor = (Color)Application.Current.Resources["ColorWB"];
                 WordForRepeat.Text = GetWords(count).RusWord;
                 //управление видимостью озвучки               
-                    ButtonVoice.IsEnabled = false;
-                    picker.IsVisible = true;
-                    ButtonVoice.Image = "voiceX.png";
-              
+                ButtonVoice.IsEnabled = false;
+                picker.IsVisible = true;
+                ButtonVoice.Image = "voiceX.png";
+
             }
             else
             {
                 WordForRepeat.TextColor = (Color)Application.Current.Resources["ColorBlGr"];
                 Words w = GetWords(count);
                 //если транскрипции нет 
-                if(w.Transcription=="[]")
+                if (w.Transcription == "[]")
                 {//выводим только перевод
                     WordForRepeat.Text = w.EngWord;
                 }
@@ -136,23 +141,23 @@ namespace RepeatingWords.Pages
                 }
 
                 //управление видимостью озвучки
-               
-                    ButtonVoice.IsEnabled = true;
-                    ButtonVoice.Image = "voice.png";
-                    picker.IsVisible = true;
-              
+
+                ButtonVoice.IsEnabled = true;
+                ButtonVoice.Image = "voice.png";
+                picker.IsVisible = true;
+
             }
-          
+
         }
-      
+
 
 
 
         //для получения слова
         Words GetWords(int index)
         {
-                Words item = words.ElementAt(index);
-                return item;
+            Words item = words.ElementAt(index);
+            return item;
         }
 
 
@@ -161,7 +166,7 @@ namespace RepeatingWords.Pages
 
         private async void NextWordButtonClick(object sender, EventArgs e)
         {//для сброса количества перево 
-           try
+            try
             {
                 Turn = FromRus;
 
@@ -236,8 +241,8 @@ namespace RepeatingWords.Pages
 
 
 
-        //===============================метод создания словаря перевернутых слов=================
-        private async Task  CreateTurnedDB()
+        //===============================метод создания словаря перевернутых слов(невыученных)=================
+        private async Task CreateTurnedDB()
         {
             try
             {
@@ -248,7 +253,7 @@ namespace RepeatingWords.Pages
                     //проверим это словарь который уже изучали или нет(содержит приставку lerning)
                     if (NameD.Contains("-learning"))
                     {
-                       NameDictionary = NameD;
+                        NameDictionary = NameD;
                     }
                     else
                     {
@@ -261,7 +266,7 @@ namespace RepeatingWords.Pages
                         App.Db.DeleteDictionary(deldict.Id);
 
                     }
-                       
+
                     Dictionary dict = new Dictionary()
                     {
                         Id = 0,
@@ -277,27 +282,36 @@ namespace RepeatingWords.Pages
                     }
                 }
             }
-          catch(Exception er)
+            catch (Exception er)
             {
                 await DisplayAlert(Resource.ModalException, er.Message.ToString(), "Ok");
             }
         }
 
-     
-        
-        
+
+
+
         //переопределение метода обработки события при нажатии кнопки НАЗАД, 
         //для его срабатывания надо в MainActivity тоже переопределить метод OnBackPressed
         protected override bool OnBackButtonPressed()
-        {//проверим наличие словаря для продолжения изучения слов
-            if(!App.Db.GetDictionarys().Where(x=>x.Name==NameDbForContinued).Any())
+        {//метод добавления словаря для возможности продолжения с последнего места
+            SaveLastWorld();
+            //выход на главную страницу
+            ComeBack();
+            return true;
+        }
+
+        private void SaveLastWorld()
+        {
+            //проверим наличие словаря для продолжения изучения слов
+            if (!App.Db.GetDictionarys().Where(x => x.Name == NameDbForContinued).Any())
             {//если нету то создадим
                 App.Db.CreateDictionary(new Dictionary() { Id = 0, Name = NameDbForContinued });
             }
             //обновим слова(или добавим)
             int IdContinueDict = App.Db.GetDictionarys().Where(x => x.Name == NameDbForContinued).FirstOrDefault().Id;
             App.Wr.DeleteWords(IdContinueDict);
-            foreach(Words w in words)
+            foreach (Words w in words)
             {
                 w.Id = 0;
                 w.IdDictionary = IdContinueDict;
@@ -312,21 +326,13 @@ namespace RepeatingWords.Pages
                 IdWord = Count
             };
             App.LAr.SaveLastAction(i);
-            ComeBack();
-            return true;
         }
 
+
+        //метод возврата на главную страницу
         private void ComeBack()
         {
-            //платформа windows не обрабатывает Navigation.PopToRootAsync();?????
-            if (Device.OS == TargetPlatform.Android)
-            {
-                Navigation.PopToRootAsync();
-            }
-            else if (Device.OS == TargetPlatform.Windows || Device.OS == TargetPlatform.WinPhone)
-            {
-                Navigation.PopAsync();
-            }
+            Application.Current.MainPage = new NavigationPage(new MainPage());
         }
 
 
@@ -338,7 +344,7 @@ namespace RepeatingWords.Pages
 
         int idTurn = -1;
         private void TurnAroundWordButtonClick(object sender, EventArgs e)
-          {
+        {
             if (Count != idTurn)
             {
                 countTurned++;
@@ -376,7 +382,7 @@ namespace RepeatingWords.Pages
                         {
                             lang = "en-GB";
                         }
-                       
+
                         break;
                     }
                 case "French":
@@ -401,7 +407,7 @@ namespace RepeatingWords.Pages
                         {
                             lang = "de-DE";
                         }
-                      
+
                         break;
                     }
                 case "Polish":
@@ -414,7 +420,7 @@ namespace RepeatingWords.Pages
                         {
                             lang = "pl-PL";
                         }
-                      
+
                         break;
                     }
                 case "Ukrainian":
@@ -427,7 +433,7 @@ namespace RepeatingWords.Pages
                         {
                             lang = "uk-UK";
                         }
-                       
+
                         break;
                     }
                 case "Italian":
@@ -440,7 +446,7 @@ namespace RepeatingWords.Pages
                         {
                             lang = "it-IT";
                         }
-                      
+
                         break;
                     }
                 case "Русский":
@@ -453,7 +459,7 @@ namespace RepeatingWords.Pages
                         {
                             lang = "ru-RU";
                         }
-                      
+
                         break;
                     }
                 case "Chinese":

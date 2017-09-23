@@ -154,6 +154,7 @@
     <Content Include="Assets\Square71x71Logo.scale-100.png" />
     <None Include="Package.StoreAssociation.xml" />
     <AndroidResource Include="icon.png" />
+    <AndroidResource Include="HomeTolbar24.png" />
     <Content Include="screen1.jpg" />
     <Content Include="screen2.jpg" />
     <Content Include="screen21.jpg" />

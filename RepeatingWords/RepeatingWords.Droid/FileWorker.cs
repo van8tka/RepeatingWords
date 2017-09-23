@@ -3,6 +3,7 @@ using System.Linq;
 using System.IO;
 using Xamarin.Forms;
 using System.Threading.Tasks;
+using System;
 
 [assembly: Dependency(typeof(RepeatingWords.Droid.FileWorker))]
 
@@ -12,23 +13,30 @@ namespace RepeatingWords.Droid
     {
         public Task<IEnumerable<string>> GetFilesAsync()
         {
-            IEnumerable<string> filenames = from filepath in Directory.EnumerateFiles(GetDocsPath()) select Path.GetFileName(filepath);
-            List<string> fileTxt = new List<string>();
-            
-            int z = 0;
-            //фильтруем только txt файлы
-            foreach (var i in filenames)
+            try
             {
-                if (i.EndsWith(".txt"))
-                {
-                   fileTxt.Add(filenames.ElementAt(z));
-                }
-                z++;
-            }
+       
+                IEnumerable<string> filenames = from filepath in Directory.EnumerateFiles(GetDocsPath()) select Path.GetFileName(filepath);
+                List<string> fileTxt = new List<string>();
 
-            filenames = (IEnumerable<string>)fileTxt;
-           
-            return Task<IEnumerable<string>>.FromResult(filenames);
+                int z = 0;
+                //фильтруем только txt файлы
+                foreach (var i in filenames)
+                {
+                    if (i.EndsWith(".txt"))
+                    {
+                        fileTxt.Add(filenames.ElementAt(z));
+                    }
+                    z++;
+                }
+
+                filenames = (IEnumerable<string>)fileTxt;              
+                return Task<IEnumerable<string>>.FromResult(filenames);
+            }
+           catch(UnauthorizedAccessException er)
+           {
+                return null;
+           }
         }
 
        

@@ -4,6 +4,11 @@
              x:Class="RepeatingWords.CreateWord"
                xmlns:locale ="clr-namespace:RepeatingWords;assembly=RepeatingWords"
             Style="{StaticResource TitleApp}">
+
+    <!--панель управлления-->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="Home" Icon="toolbarImageHome.png" Clicked="ClickedHomeCustomButton"/>
+    </ContentPage.ToolbarItems>
     <ScrollView>
     <StackLayout>
             

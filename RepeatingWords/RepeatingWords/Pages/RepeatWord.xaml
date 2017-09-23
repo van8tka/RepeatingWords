@@ -4,9 +4,14 @@
              x:Class="RepeatingWords.Pages.RepeatWord"
              xmlns:locale ="clr-namespace:RepeatingWords;assembly=RepeatingWords"
              Style="{StaticResource TitleApp}">
-   
+    <!--панель управлления-->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="Home" Icon="toolbarImageHome.png" Clicked="ClickedHomeCustomButton"/>
+    </ContentPage.ToolbarItems>
+    
     <StackLayout HorizontalOptions="StartAndExpand">
-    <locale:AdMobView WidthRequest="320" HeightRequest="50" />
+
+        <locale:AdMobView WidthRequest="320" HeightRequest="50" />
       <Grid>
          <Grid.ColumnDefinitions>
            <!--определяем ширину столбцов как 25% 50% 25%-->
@@ -37,7 +42,8 @@
        <x:String>Japanese</x:String>
        <x:String>Portuguese</x:String>
        <x:String>Spanish</x:String>
-      </Picker.Items>
+      <x:String>Turkish</x:String>
+                </Picker.Items>
     </Picker>    
       
     

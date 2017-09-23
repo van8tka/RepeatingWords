@@ -1,11 +1,12 @@
 ﻿using SQLite;
+using System.Threading.Tasks;
 
 namespace RepeatingWords.Model
 {
     public class LastActionRepository
     {
         SQLiteConnection database;
-             
+
         public LastActionRepository(SQLiteConnection database)
         {
             this.database = database;
@@ -19,7 +20,7 @@ namespace RepeatingWords.Model
         }
         public int SaveLastAction(LastAction item)
         {
-            if(GetLastAction()!=null)
+            if (GetLastAction() != null)
             {
                 item.Id = GetLastAction().Id;
                 database.Update(item);

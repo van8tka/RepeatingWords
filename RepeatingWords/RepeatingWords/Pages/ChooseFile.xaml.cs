@@ -11,13 +11,24 @@ namespace RepeatingWords.Pages
         Dictionary dictionary;
         public ChooseFile(Dictionary dictionary)
         {
-            InitializeComponent();           
+            InitializeComponent();
             IsLoading = false;
             this.dictionary = dictionary;
-            textPath.Text = DependencyService.Get<IFileWorker>().GetDocsPath().ToString();
-           
+            var Permission = UpdateFileList().Result;
+            if (Permission)
+                textPath.Text = DependencyService.Get<IFileWorker>().GetDocsPath().ToString();
+            else
+                textPath.Text = "App doesn't have permission to read data. Please check settings: Settings->Applications->Application Manager and find your app. Permissions must be set.";
             //загружаем список файлов по пути MyDocuments
-            UpdateFileList();
+
+        }
+
+
+        //вызов главной страницы и чистка стека страниц
+        private async void ClickedHomeCustomButton(object sender, EventArgs e)
+        {
+            //выход на главную страницу
+            Application.Current.MainPage = new NavigationPage(new MainPage());
         }
 
         private bool isLoading;
@@ -33,16 +44,16 @@ namespace RepeatingWords.Pages
 
 
 
-     private async void FileSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void FileSelected(object sender, SelectedItemChangedEventArgs e)
         {
             try
             {
                 IsLoading = true;
-                 
-                    if (e.SelectedItem == null) return;
-                      string filename = (string)e.SelectedItem;
-                List <string> lines = await DependencyService.Get<IFileWorker>().LoadTextAsync(filename);
-               
+
+                if (e.SelectedItem == null) return;
+                string filename = (string)e.SelectedItem;
+                List<string> lines = await DependencyService.Get<IFileWorker>().LoadTextAsync(filename);
+
                 //проходим по списку строк считанных из файла
 
                 char[] delim = { '[', ']' };
@@ -63,10 +74,10 @@ namespace RepeatingWords.Pages
                             Transcription = "[" + fileWords[1] + "]",
                             EngWord = fileWords[2]
                         };//добавим слово в БД
-                       await App.WrAsync.AsyncCreateWord(item);
+                        await App.WrAsync.AsyncCreateWord(item);
                     }
                 }
-           
+
 
                 string ModalAddWords = Resource.ModalAddWords;
                 string ModalException = Resource.ModalException;
@@ -75,8 +86,8 @@ namespace RepeatingWords.Pages
                 if (CreateWordsFromFile)
                 {
                     IsLoading = false;
-                    await DisplayAlert("", ModalAddWords, "Ok");                  
-                    AddWord adw = new AddWord(dictionary);              
+                    await DisplayAlert("", ModalAddWords, "Ok");
+                    AddWord adw = new AddWord(dictionary);
                     await Navigation.PushAsync(adw);
                 }
                 else
@@ -86,19 +97,31 @@ namespace RepeatingWords.Pages
                 }
 
             }
-            catch(Exception er)
+            catch (Exception er)
             {
-               await DisplayAlert("Error", er.Message, "Ok");
+                await DisplayAlert("Error", er.Message, "Ok");
             }
         }
 
-       
-        async void UpdateFileList()
+
+        async Task<bool> UpdateFileList()
         {
             //получаем все файлы
+           
             fileList.ItemsSource = await DependencyService.Get<IFileWorker>().GetFilesAsync();
-            //снимаем выделение
-            fileList.SelectedItem = null;
+            if (fileList != null)
+            {
+                fileList.SelectedItem = null;
+                return true;
+            }
+               
+            else
+            {
+                return false;
+                //снимаем выделение
+            }
+
+
         }
     }
 }

@@ -4,8 +4,11 @@
              x:Class="RepeatingWords.ChooseDb"
                 xmlns:local="clr-namespace:RepeatingWords;assembly=RepeatingWords"
            Style="{StaticResource TitleApp}">
-  
- 
+    <!--панель управлления-->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="Home" Icon="toolbarImageHome.png" Clicked="ClickedHomeCustomButton"/>
+    </ContentPage.ToolbarItems>
+
     <StackLayout>
       <Label Text="{local:Translate LabelChooseDictOrCreate}" HorizontalTextAlignment="Center" Style="{StaticResource LableHeadApp}"/>
       <Button x:Name="BtAddDict" Style="{StaticResource buttonStyle}" Text="{local:Translate ButtonAddDict}" Clicked="AddDictionaryButtonClick"></Button>

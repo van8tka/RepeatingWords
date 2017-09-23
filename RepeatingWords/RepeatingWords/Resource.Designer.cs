@@ -872,6 +872,15 @@ namespace RepeatingWords {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Enter name of the dictionary.
+        /// </summary>
+        internal static string ModelNoFillFullNameDictionary {
+            get {
+                return ResourceManager.GetString("ModelNoFillFullNameDictionary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The word is added!.
         /// </summary>
         internal static string ModelWordAdd {

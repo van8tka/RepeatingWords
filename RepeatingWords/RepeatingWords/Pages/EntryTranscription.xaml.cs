@@ -31,6 +31,14 @@ namespace RepeatingWords.Pages
             ETransc.Text = Trans;
         }
 
+
+        //вызов главной страницы и чистка стека страниц
+        private async void ClickedHomeCustomButton(object sender, EventArgs e)
+        {
+            //выход на главную страницу
+            Application.Current.MainPage = new NavigationPage(new MainPage());
+        }
+
         private void Clik_ɑ(object sender, EventArgs e)
         {
             ETransc.Text = ETransc.Text + "ɑ";
@@ -211,7 +219,7 @@ namespace RepeatingWords.Pages
             ETransc.Text = ETransc.Text + " ";
         }
 
-        private void Clik_Del(object sender, EventArgs e)
+        private async void Clik_Del(object sender, EventArgs e)
         {
            try
             {
@@ -222,8 +230,11 @@ namespace RepeatingWords.Pages
                     ETransc.Text = g.Remove(Lenght - 1);
                 }
             }
-            catch { }
-           
+            catch (Exception er)
+            {
+                await DisplayAlert("Error", er.Message, "Ok");
+            }
+
         }
 
         private async void Clik_Enter(object sender, EventArgs e)
@@ -235,7 +246,10 @@ namespace RepeatingWords.Pages
                 CreateWord cr = new CreateWord(idDict,idWord, RusWord, EngWord, ETransc.Text);
                 await Navigation.PushAsync(cr);
             }
-            catch { }
+            catch (Exception er)
+            {
+                await DisplayAlert("Error", er.Message, "Ok");
+            }
         }
 
     }

@@ -8,24 +8,19 @@ namespace RepeatingWords.Model
 {
     public class WordRepositiry
     {
-      
-
         SQLiteConnection database;
         SQLiteAsyncConnection asyncdatabase;
-
         public WordRepositiry(SQLiteConnection database)
         {
             this.database = database;
         }
-
         public WordRepositiry(SQLiteAsyncConnection asyncdatabase)
         {
             this.asyncdatabase = asyncdatabase;
         }
-
         public IEnumerable<Words> GetWords(int iddiction)
         {
-            return (from i in database.Table<Words>().Where(z=>z.IdDictionary==iddiction) select i).ToList();
+            return (from i in database.Table<Words>().Where(z => z.IdDictionary == iddiction) select i).ToList();
         }
         public Words GetWord(int id)
         {
@@ -35,7 +30,6 @@ namespace RepeatingWords.Model
         {
             return database.Delete<Words>(id);
         }
-
         public int DeleteWords(int iddiction)
         {
             IEnumerable<Words> ListWords = GetWords(iddiction);
@@ -60,14 +54,11 @@ namespace RepeatingWords.Model
         public async Task AsyncCreateWord(Words item)
         {
             if (item.Id == 0)
-               await asyncdatabase.InsertAsync(item);
+                await asyncdatabase.InsertAsync(item);
             else
             {
-               await asyncdatabase.UpdateAsync(item);              
+                await asyncdatabase.UpdateAsync(item);
             }
         }
-
-
-
     }
 }

@@ -4,6 +4,10 @@
              x:Class="RepeatingWords.CreateDb"
              xmlns:local="clr-namespace:RepeatingWords;assembly=RepeatingWords"
              Style="{StaticResource TitleApp}">
+    <!--панель управлления-->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="Home" Icon="toolbarImageHome.png" Clicked="ClickedHomeCustomButton"/>
+    </ContentPage.ToolbarItems>
     <ScrollView>
     <StackLayout>
     <Label Text="{local:Translate LabelNameDict}" VerticalOptions="Center" HorizontalOptions="Center" Style="{StaticResource LableHeadApp}"/>

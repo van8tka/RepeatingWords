@@ -17,11 +17,16 @@ namespace RepeatingWords.Pages
             NameLanguage.Text = lang.NameLanguage;
             actIndicator2.IsRunning = false;
             //метод загрузки списка словаерй выбранного языка по ID языка
-           ListLoad(lang.Id);
+            ListLoad(lang.Id);
         }
 
-              
-       private async Task ListLoad(int idLang)
+        //вызов главной страницы и чистка стека страниц
+        private async void ClickedHomeCustomButton(object sender, EventArgs e)
+        {
+            //выход на главную страницу
+            Application.Current.MainPage = new NavigationPage(new MainPage());
+        }
+        private async Task ListLoad(int idLang)
         {
             actIndicator2.IsRunning = true;
             //получаем данные в формате Json, Диссериализуем их и получаем словари
@@ -29,10 +34,10 @@ namespace RepeatingWords.Pages
             actIndicator2.IsRunning = false;
             //передаем словари(список) в xaml элементу Listview
             dictionaryNetList.ItemsSource = dictionaryList.OrderBy(x => x.Name);
-           
+
         }
-        
-       private async void OnItemSelected(object sender,SelectedItemChangedEventArgs e)
+
+        private async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             try
             {
@@ -45,21 +50,21 @@ namespace RepeatingWords.Pages
                 //получаем список слов выбранного словаря в интеренете
                 IEnumerable<Words> wordsList = await onService.Get(id);
 
-                
-              
+
+
                 //получаем последний словарь(который только что создали)
                 int idLast = App.Db.GetDictionarys().LastOrDefault().Id;
                 //проходим по списку слов и создаем слова для этого словаря
                 await GreateWords(idLast, wordsList);
 
                 actIndicator2.IsRunning = false;
-              
+
                 AddWord adw = new AddWord(dictionaryNet);
                 await Navigation.PushAsync(adw);
             }
             catch (Exception er)
             {
-               await DisplayAlert("Error", er.Message, "Ok");
+                await DisplayAlert("Error", er.Message, "Ok");
             }
         }
         //асинхронный метод добавления слов в ыбранный словарь
@@ -75,7 +80,7 @@ namespace RepeatingWords.Pages
                     Transcription = i.Transcription,
                     EngWord = i.EngWord
                 };
-               await App.WrAsync.AsyncCreateWord(newW);
+                await App.WrAsync.AsyncCreateWord(newW);
             }
         }
     }

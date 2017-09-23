@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using SQLite;
 using Xamarin.Forms;
-
+using System.Threading.Tasks;
 
 namespace RepeatingWords.Model
 {
     public class DictionaryRepository
     {
-       
-
         SQLiteConnection database;
         SQLiteAsyncConnection asyncdatabase;
         public DictionaryRepository(string filename)
@@ -22,15 +20,10 @@ namespace RepeatingWords.Model
             DBConnectionAsync = asyncdatabase;
             database.CreateTable<Dictionary>();
             database.CreateTable<Words>();
-            database.CreateTable<LastAction>();         
+            database.CreateTable<LastAction>();
         }
-
-
         public SQLiteAsyncConnection DBConnectionAsync { get; }
-
         public SQLiteConnection DBConnection { get; }
-      
-
         public IEnumerable<Dictionary> GetDictionarys()
         {
             return (from i in database.Table<Dictionary>() select i).ToList();

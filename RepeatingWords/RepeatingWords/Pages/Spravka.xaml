@@ -4,6 +4,10 @@
              x:Class="RepeatingWords.Spravka"
               xmlns:locale ="clr-namespace:RepeatingWords;assembly=RepeatingWords"
              Style="{StaticResource TitleApp}">
+    <!--панель управлления-->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="Home" Icon="toolbarImageHome.png" Clicked="ClickedHomeCustomButton"/>
+    </ContentPage.ToolbarItems>
     <ScrollView>
         <StackLayout>
             <Label Text="{locale:Translate LabelInstruction}" HorizontalTextAlignment="Center" Style="{StaticResource LableHeadApp}" HeightRequest="150"/>

@@ -29,8 +29,8 @@ namespace RepeatingWords.Droid
 
 
         public async override void OnBackPressed()
-        {          
-                base.OnBackPressed();         
+        {
+            base.OnBackPressed();
         }
 
 

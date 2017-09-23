@@ -3,7 +3,7 @@ using RepeatingWords.Model;
 using Xamarin.Forms;
 using System.Collections.Generic;
 using System.Linq;
-
+using System.Threading.Tasks;
 
 namespace RepeatingWords
 {
@@ -11,7 +11,7 @@ namespace RepeatingWords
     {
         //переменная для определения стиля темы приложения
         private bool originalStyle = true;
-     
+
 
         //исходные данные для инициализации БД
         Dictionary dictInit = new Dictionary()
@@ -19,7 +19,7 @@ namespace RepeatingWords
             Id = 0,
             Name = "ExampleDictionary"
         };
-         List<Words> lw = new List<Words>()
+        List<Words> lw = new List<Words>()
         {
            new Words() {Id=0,IdDictionary=1,RusWord="словарь", EngWord="dictionary", Transcription= "[ˈdɪkʃəneri]" },
            new Words() { Id = 0, IdDictionary = 1, RusWord = "книга", EngWord = "book", Transcription = "[bʊk]" },
@@ -28,12 +28,12 @@ namespace RepeatingWords
 
         public const string DATABASE_NAME = "repeatwords.db";
         public static DictionaryRepository db;
-       
+
         public static DictionaryRepository Db
         {
             get
             {
-                if(db==null)
+                if (db == null)
                 {
                     db = new DictionaryRepository(DATABASE_NAME);
                 }
@@ -50,13 +50,18 @@ namespace RepeatingWords
             InitializeComponent();
             if (Device.OS == TargetPlatform.Windows || Device.OS == TargetPlatform.WinPhone)
                 InitDb();
-            MainPage = new NavigationPage(new MainPage());
-           
+
+            CleanStackAndGoRootPage();
+
             SetOriginalStyle();
             SetChooseTranscriptionKeyboard();
-           
         }
-     
+
+
+        public  void CleanStackAndGoRootPage()
+        {
+          MainPage = new NavigationPage(new MainPage());
+        } 
 
 
 
@@ -67,30 +72,30 @@ namespace RepeatingWords
             {
                 const string TrKeyboard = "TrKeyboard";
                 const string showKeyboard = "true";
-              
+
                 object propTrKeyb;
-                if(!App.Current.Properties.TryGetValue(TrKeyboard, out propTrKeyb))
+                if (!App.Current.Properties.TryGetValue(TrKeyboard, out propTrKeyb))
                 {
                     App.Current.Properties.Add(TrKeyboard, showKeyboard);
                 }
             }
-            catch
+            catch(Exception er)
             {
 
             }
         }
 
-        const string Them="theme";
-         const string _whiteThem = "white";
-         const string _blackThem = "black";
-     
+        const string Them = "theme";
+        const string _whiteThem = "white";
+        const string _blackThem = "black";
+
         //method for set default theme
         private void SetOriginalStyle()
         {
             try
             {
                 object propThem;
-               
+
 
                 if (App.Current.Properties.TryGetValue(Them, out propThem))
                 {
@@ -131,7 +136,7 @@ namespace RepeatingWords
                     Resources["ColorBlGr"] = Resources["ColorBlue"];
                 }
             }
-          catch
+            catch (Exception er)
             {
 
             }
