@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-using Android.Util;
-using Android.Widget;
 using Xamarin.Forms;
 using RepeatingWords;
 using RepeatingWords.Droid;

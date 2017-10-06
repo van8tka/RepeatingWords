@@ -33,8 +33,9 @@
                 <Button Style="{StaticResource buttonStyle}"  Text="{local:Translate ButtonAddDictionaryOrWords}" Clicked="ChooseDbButtonClick"></Button>
                 <Button Style="{StaticResource buttonStyle}"  Text="{local:Translate ChooseDictionaryForRepeat}" Clicked="ChooseDictionaryButtonClick"></Button>
                 <Button Style="{StaticResource buttonStyle}" Text="{local:Translate Continue}" Clicked="ReturnButtonClick"></Button>
-      
-        </StackLayout>
+        <Button Style="{StaticResource buttonStyle}" Text="BackUp" Clicked="BackUpButtonCkick"></Button>
+        <Button Style="{StaticResource buttonStyle}" Text="Restore from backup" Clicked="RestoreFromBackUpButtonCkick"></Button>
+    </StackLayout>
    
 
 </ContentPage>
