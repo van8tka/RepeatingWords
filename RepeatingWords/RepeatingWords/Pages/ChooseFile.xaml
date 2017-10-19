@@ -10,28 +10,43 @@
     </ContentPage.ToolbarItems>
     <Label Text="{local:Translate LabelChooseFile}" HorizontalTextAlignment="Center" Style="{StaticResource LableHeadApp}"/>
 
-  <StackLayout>
-    <Label Text="{local:Translate LabelPathToRoot}" TextColor="Blue" FontSize="Medium"/>
-    <Label x:Name="textPath" TextColor="Blue" FontSize="Medium"/>
-    
-  
-    <ActivityIndicator x:Name="actIndicator3" Color="Blue" />
     <StackLayout>
-    <ListView x:Name ="fileList" ItemsSource="{Binding}" ItemSelected ="FileSelected">
-      <ListView.ItemTemplate>
-        <DataTemplate>
-          <ViewCell>
-            <ViewCell.View>
-              <StackLayout Orientation="Horizontal">
-                <Label Text="{Binding}" FontSize="25" Style="{DynamicResource LabelColor}"/>
-              </StackLayout>
-            </ViewCell.View>
-          </ViewCell>
-        </DataTemplate>
-      </ListView.ItemTemplate>
-    </ListView>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="{local:Translate LabelPathToRoot}" TextColor="Blue" FontSize="Medium"/>
+            <Button x:Name="CreateFolderButton"  Text="Создать каталог" HorizontalOptions="EndAndExpand"  Clicked="ClickedCreateFolderBtn"/>
+        </StackLayout>
+           <Label x:Name="textPath" TextColor="Blue" FontSize="Medium"/>
+
+
+        <ActivityIndicator x:Name="actIndicator3" Color="Blue" />
+        <StackLayout x:Name="stackL">
+            <ListView x:Name ="fileList" ItemsSource="{Binding}" ItemSelected ="FileSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal">
+                                    <local:LabelGestureLongPress Text="{Binding}" FontSize="22" Style="{DynamicResource LabelColor}" >
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="TapOnDirectoryLabel" />
+                                        </Label.GestureRecognizers>
+                                    </local:LabelGestureLongPress>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        <StackLayout>
+            <Label x:Name="LabelInfo" Text="Каталог создан!"  BackgroundColor="Red" TextColor="White" HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
+        </StackLayout>
     </StackLayout>
-  </StackLayout>
 
 
 </ContentPage>
+
+
+
+
+

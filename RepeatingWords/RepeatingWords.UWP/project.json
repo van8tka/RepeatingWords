@@ -2,7 +2,7 @@
   "dependencies": {
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
     "sqlite-net-pcl": "1.1.1",
-    "Xamarin.Forms": "2.3.3.193",
+    "Xamarin.Forms": "2.3.4.270",
     "Xamarin.Plugin.FilePicker": "1.2.1"
   },
   "frameworks": {

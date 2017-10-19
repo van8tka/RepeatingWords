@@ -10,8 +10,8 @@
     </ContentPage.ToolbarItems>
     <ScrollView>
     <StackLayout>
-    <Label Text="{local:Translate LabelNameDict}" VerticalOptions="Center" HorizontalOptions="Center" Style="{StaticResource LableHeadApp}"/>
-    <Entry Text="{Binding Name}" Placeholder="{local:Translate EntryNameDict}" FontSize="Medium" TextColor="White" BackgroundColor="Gray"></Entry>
+    <Label x:Name="LabelName"  Text="{local:Translate LabelNameDict}" VerticalOptions="Center" HorizontalOptions="Center" Style="{StaticResource LableHeadApp}"/>
+    <Entry x:Name="EnterName"  Text="{Binding Name}" Placeholder="{local:Translate EntryNameDict}" FontSize="Medium" TextColor="White" BackgroundColor="Gray"></Entry>
     <Button Style="{StaticResource buttonStyle}" Clicked="CreateDbButtonClick" Text="{local:Translate ButtonCreate}"></Button>
   </StackLayout>
     </ScrollView>

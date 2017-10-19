@@ -69,7 +69,8 @@ namespace RepeatingWords.Droid
             try
             {
                 //получаем корень памяти телефона(может отличаться на разл устройствах)
-                string g = Android.OS.Environment.ExternalStorageDirectory.ToString();
+                string g = Android.OS.Environment.RootDirectory.ToString();
+                //string g = Android.OS.Environment.ExternalStorageDirectory.ToString();
                 return g;
             }
             catch(Exception er)
@@ -78,18 +79,41 @@ namespace RepeatingWords.Droid
             }
         }
 
-        public string CreateFolder(string folderName, string fileName=null)
+
+
+
+
+
+
+        //создание папки для 
+        public string CreateFolder(string folderName, string fileName=null, string filePath=null)
         {
             try
-            {
-                string path = Android.OS.Environment.ExternalStorageDirectory.ToString();
-                string pathToDir = Path.Combine(path, folderName);
-                string pathToFile = Path.Combine(pathToDir, fileName);
+            {//если не передается путь к папке где создать резервную копию
+                if(string.IsNullOrEmpty(filePath))
+                {//то создаем по умолчанию
+                    filePath = Android.OS.Environment.ExternalStorageDirectory.ToString();
+                }
+              //созд путь к папке
+                string pathToDir = Path.Combine(filePath, folderName);
                 if (!Directory.Exists(pathToDir))
-                    Directory.CreateDirectory(pathToDir);
-                //if (!File.Exists(pathToFile))
-                //    File.Create(pathToFile);
-                return pathToFile;
+                {
+                    Directory.CreateDirectory(pathToDir);                  
+                }
+                else
+                {
+                    if (string.IsNullOrEmpty(fileName))
+                        return "exist";
+                }
+                    
+                //созд путь к файлу
+                if (!string.IsNullOrEmpty(fileName))
+                {
+                    string pathToFile = Path.Combine(pathToDir, fileName);
+                    return pathToFile;
+                }
+                else
+                  return pathToDir; 
             }
             catch (Exception er)
             {
@@ -97,6 +121,12 @@ namespace RepeatingWords.Droid
                 return null;
             }
         }
+
+
+
+
+
+
 
 
         public bool WriteFile(string filePathSource, string filePathDestin)
@@ -128,10 +158,12 @@ namespace RepeatingWords.Droid
                     {
                         var list = Directory.GetFiles(pathToDir);
                         string lastFile = string.Empty;
+                       
                         DateTime tempDateTime = DateTime.MinValue;
                         foreach(var i in list)
                         {
-                            var DateTimeCreate = File.GetCreationTime(pathToDir + "/" + i);
+                            var fI = new FileInfo(i);
+                            var DateTimeCreate = fI.LastWriteTime;
                             if(DateTimeCreate>tempDateTime)
                             {
                                 tempDateTime = DateTimeCreate;
@@ -144,25 +176,7 @@ namespace RepeatingWords.Droid
                     else
                         return null;
                 });
-              
-
-
-                //IEnumerable<string> filenames = from filepath in Directory.EnumerateFiles(GetDocsPath()) select Path.GetFileName(filepath);
-                //List<string> fileTxt = new List<string>();
-
-                //int z = 0;
-                ////фильтруем только txt файлы
-                //foreach (var i in filenames)
-                //{
-                //    if (i.EndsWith(".txt"))
-                //    {
-                //        fileTxt.Add(filenames.ElementAt(z));
-                //    }
-                //    z++;
-                //}
-
-                //filenames = (IEnumerable<string>)fileTxt;
-                //return Task<IEnumerable<string>>.FromResult(filenames);
+                                                          
             }
             catch (UnauthorizedAccessException er)
             {
