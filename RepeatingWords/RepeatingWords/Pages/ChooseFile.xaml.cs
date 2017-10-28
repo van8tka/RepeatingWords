@@ -6,6 +6,9 @@ using Xamarin.Forms;
 using System;
 using System.Threading.Tasks;
 using System.Diagnostics;
+using XLabs.Forms.Behaviors;
+using XLabs.Forms.Controls;
+
 
 namespace RepeatingWords.Pages
 {
@@ -14,36 +17,42 @@ namespace RepeatingWords.Pages
         Dictionary dictionary;
         string RootPath;
         bool getFolder;
+        //путь для резервоной копии БД
+        string filePathDb;
+        string fileNameBackUp;
+
         //для выбора ппапки
-        public ChooseFile()
+        public ChooseFile(string filePathDb, string fileNameBackUp)
         {
             InitializeComponent();
+            this.filePathDb = filePathDb;
+            this.fileNameBackUp = fileNameBackUp;
             getFolder = true;
             GetFolderList();
             LabelInfo.Opacity = 0;
+            CreateFolderButton.IsEnabled = true;
+            CreateFolderButton.Opacity = 1;
         }
 
 
         //для добавления слов из выбранного файла и выбора файла
-        public ChooseFile(Dictionary dictionary)
+        public ChooseFile(Dictionary dictionary=null)
         {
             InitializeComponent();
             getFolder = false;
             this.dictionary = dictionary;
-            GetFileList();
+            //GetFileList();
+            GetFolderList();
             //загружаем список файлов по пути MyDocuments
             LabelInfo.Opacity = 0;
-        }
-
-
-      
-        void TapOnDirectoryLabel(object sender, EventArgs e)
-        {
-           
+            CreateFolderButton.IsEnabled = false;
+            CreateFolderButton.Opacity = 0;
         }
 
 
 
+       
+       
 
         private Task GetFolderList()
         {
@@ -51,7 +60,7 @@ namespace RepeatingWords.Pages
             {
                 try
                 {
-                    var Permission = await UpdateFileList(false);
+                    var Permission = await UpdateFileList(getFolder);
                     if (Permission)
                     {
                         RootPath = DependencyService.Get<IFolderWorker>().GetRootPath();
@@ -71,49 +80,58 @@ namespace RepeatingWords.Pages
 
 
 
-        private Task GetFileList()
-        {
-            return Task.Run(async () =>
-            {
-                try
-                {
-                    var Permission = await UpdateFileList();
-                    if (Permission)
-                        textPath.Text = DependencyService.Get<IFileWorker>().GetDocsPath().ToString();
-                    else
-                        textPath.Text = "App doesn't have permission to read data. Please check settings: Settings->Applications->Application Manager and find your app. Permissions must be set.";
+        //private Task GetFileList()
+        //{
+        //    return Task.Run(async () =>
+        //    {
+        //        try
+        //        {
+        //            var Permission = await UpdateFileList();
+        //            if (Permission)
+        //                textPath.Text = DependencyService.Get<IFileWorker>().GetDocsPath().ToString();
+        //            else
+        //                textPath.Text = "App doesn't have permission to read data. Please check settings: Settings->Applications->Application Manager and find your app. Permissions must be set.";
+        //        }
+        //        catch (Exception er)
+        //        {
 
-                }
-                catch (Exception er)
-                {
-
-                }
-            });
-        }
-
+        //        }
+        //    });
+        //}
 
 
 
 
-        private async void FileSelected(object sender, SelectedItemChangedEventArgs e)
+        //при коротком нажатии на папку или на файл
+        private async void FileSelected(string nameItemSelected)
         {
             try
             {
                 IsLoading = true;
-                if (e.SelectedItem == null) return;
-                string filename = (string)e.SelectedItem;
-                if (getFolder)
+                if (nameItemSelected == null) return;
+                string filename = nameItemSelected;
+                var varPath = RootPath + "/" + filename;
+                //проверим тапнут file or folder
+                if (!DependencyService.Get<IFileWorker>().IsFile(varPath))
                 {
                     RootPath = RootPath + "/" + filename;
                     textPath.Text = RootPath;
-                    await UpdateFileList(false, RootPath);
+                    await UpdateFileList(getFolder, RootPath);
                 }
-                else
+                else//если файл 
                 {
-                  await GetWordsFromFile(filename);
+                    if(dictionary!=null)//если dictionary не нуль
+                    {
+                        await GetWordsFromFile(varPath);//то получаем список слов
+                    }//иначе восстановим бэкап
+                    else
+                    {
+
+                    }
+
+                  
                 }
                 IsLoading = false;
-
             }
             catch (Exception er)
             {
@@ -130,52 +148,55 @@ namespace RepeatingWords.Pages
 
 
 
-        private Task GetWordsFromFile(string filename)
+        private Task GetWordsFromFile(string filePath)
         {
             return Task.Run(async () =>
             {
                 try
                 {
-                    List<string> lines = await DependencyService.Get<IFileWorker>().LoadTextAsync(filename);
-
-                    //проходим по списку строк считанных из файла
-
-                    char[] delim = { '[', ']' };
-                    //переменная для проверки добавления слов
-                    bool CreateWordsFromFile = false;
-                    //проход по списку слов
-                    foreach (var i in lines)
-                    {//проверка на наличие разделителей, т.е. транскрипции в строке(символы транскрипции и есть разделители)
-                        if (i.Contains("[") && i.Contains("]"))
-                        {
-                            CreateWordsFromFile = true;
-                            string[] fileWords = i.Split(delim);
-                            Words item = new Words
-                            {
-                                Id = 0,
-                                IdDictionary = dictionary.Id,
-                                RusWord = fileWords[0],
-                                Transcription = "[" + fileWords[1] + "]",
-                                EngWord = fileWords[2]
-                            };//добавим слово в БД
-                            await App.WrAsync.AsyncCreateWord(item);
-                        }
-                    }
-
-
                     string ModalAddWords = Resource.ModalAddWords;
                     string ModalException = Resource.ModalException;
                     string ModalIncorrectFile = Resource.ModalIncorrectFile;
-
-                    if (CreateWordsFromFile)
+                    List<string> lines = await DependencyService.Get<IFileWorker>().LoadTextAsync(filePath);
+                //проходим по списку строк считанных из файла
+                if (lines != null && lines.Count>0)
                     {
-                        await DisplayAlert("", ModalAddWords, "Ok");
-                        AddWord adw = new AddWord(dictionary);
-                        await Navigation.PushAsync(adw);
+                        char[] delim = { '[', ']' };
+                        //переменная для проверки добавления слов
+                        bool CreateWordsFromFile = false;
+                        //проход по списку слов
+                        foreach (var i in lines)
+                        {//проверка на наличие разделителей, т.е. транскрипции в строке(символы транскрипции и есть разделители)
+                            if (i.Contains("[") && i.Contains("]"))
+                            {
+                                CreateWordsFromFile = true;
+                                string[] fileWords = i.Split(delim);
+                                Words item = new Words
+                                {
+                                    Id = 0,
+                                    IdDictionary = dictionary.Id,
+                                    RusWord = fileWords[0],
+                                    Transcription = "[" + fileWords[1] + "]",
+                                    EngWord = fileWords[2]
+                                };//добавим слово в БД
+                                await App.WrAsync.AsyncCreateWord(item);
+                            }
+                        }
+
+                        if (CreateWordsFromFile)
+                        {
+                            await DisplayAlert("", ModalAddWords, "Ok");
+                            AddWord adw = new AddWord(dictionary);
+                            await Navigation.PushAsync(adw);
+                        }
+                        else
+                        {
+                            await DisplayAlert(ModalException, ModalIncorrectFile, "Ok");
+                        }
                     }
                     else
                     {
-                         await DisplayAlert(ModalException, ModalIncorrectFile, "Ok");
+                        await DisplayAlert(ModalException, ModalIncorrectFile, "Ok");
                     }
                 }
                 catch (Exception er)
@@ -189,17 +210,88 @@ namespace RepeatingWords.Pages
 
 
 
+        //обработчик нажатий на папку или на файл(определяет короткий или длинный тап)_
+        private async void GesturesContentView_GestureRecognized(object sender, GestureResult e)
+        {
+            string itemTap = ((Label)((GesturesContentView)sender).Content).Text;
+            switch (e.GestureType)
+            {
+                case GestureType.LongPress:
+                    {
+                        if(getFolder)
+                        {
+                          string pathToSaveBackUp = RootPath + "/" + itemTap;
+                          CreateBackUp(pathToSaveBackUp, itemTap);
+                        }
+                         break;
+                    }
+                case GestureType.SingleTap:
+                    {
+                        FileSelected(itemTap);
+                        break;
+                    }                 
+                //case GestureType.DoubleTap:
+                //    // Add code here
+                //    break;
+                default:
+                    break;
+            }
+        }
 
-     public async Task<bool> UpdateFileList(bool getFilesList = true, string folderPath = null)
+
+
+
+        //создание бэкапап по указанному пути
+        private async void CreateBackUp(string pathToSaveBackUp, string folderName)
+        {
+            try
+            {
+                const string Yes = "Да";
+                const string Cancel = "Нет";
+                var action = await DisplayActionSheet("Вы хотите создать резервную копию в " + folderName, Yes, Cancel);
+                switch (action)
+                {
+                    case Yes:
+                        {
+                            string fullPathBackup = pathToSaveBackUp + "/" + fileNameBackUp;
+                            //создаем резервную копию передаем путь к БД и путь для сохранения резервной копиии
+                            bool succes = DependencyService.Get<IFileWorker>().WriteFile(filePathDb, fullPathBackup);
+                            if (succes)
+                            {
+                                await DisplayAlert("Успешно", "Резервная копия создана по адресу: " + fullPathBackup, "Ок");
+                            }
+                            else
+                            {
+                                await DisplayAlert("Ошибка", "К сожалению во время создания резервной копии произошла ошибка, попробуйте другой способ создания резервной копии.", "Ок");
+                            }
+                          await Navigation.PopAsync();
+                        }
+                        break;
+                    case Cancel:
+                        break;
+                    default: break;
+                }
+            }
+            catch(Exception er)
+            {
+
+            }
+        }
+
+        public async Task<bool> UpdateFileList(bool getFolderList, string folderPath = null)
         {
             try
             {
                 IsLoading = true;
                 //получим список файлов или папок
-                if (getFilesList)
+                if (!getFolderList)
                 {
                     //получаем все файлы
-                    fileList.ItemsSource = await DependencyService.Get<IFileWorker>().GetFilesAsync();
+                    var folderL = await DependencyService.Get<IFolderWorker>().GetFoldersAsync(folderPath);
+                    
+                    var fileL = await DependencyService.Get<IFileWorker>().GetFilesAsync(RootPath);
+                    folderL.AddRange(fileL);
+                    fileList.ItemsSource = folderL;
                 }
                 else //или папок
                 {
@@ -226,14 +318,24 @@ namespace RepeatingWords.Pages
             }
         }
 
+
+
+
+
+
         //создание новой папки
         private async void ClickedCreateFolderBtn(object sender, EventArgs e)
         {
             CreateDb cr = new CreateDb(true,RootPath, this);
             await Navigation.PushAsync(cr);
-            await UpdateFileList(false, RootPath);
+            await UpdateFileList(getFolder, RootPath);
         }
 
+
+
+
+
+        //показываем снизу сообщение 
         public Task ShowInfoMessage(string message)
         {
             LabelInfo.Text = message;
@@ -257,6 +359,9 @@ namespace RepeatingWords.Pages
             //выход на главную страницу
             Application.Current.MainPage = new NavigationPage(new MainPage());
         }
+
+
+
 
         private bool isLoading;
         public bool IsLoading
@@ -287,7 +392,7 @@ namespace RepeatingWords.Pages
                 {
                     RootPath = RootPath.Remove(RootPath.LastIndexOf('/'));
                     textPath.Text = RootPath;
-                    UpdateFileList(false, RootPath);
+                    UpdateFileList(getFolder, RootPath);
                 }
             }            
             else

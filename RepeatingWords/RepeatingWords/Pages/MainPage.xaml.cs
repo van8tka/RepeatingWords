@@ -152,23 +152,14 @@ namespace RepeatingWords
             }
         }
 
+
+
+      
         //создание в указанной папке
         private async void CreateBackUpIntoSetFolder(string fileNameBackup)
         {
-            ChooseFile ch = new ChooseFile();
-            await Navigation.PushAsync(ch);
-
-            //создаем резервную копию передаем путь к БД и путь для сохранения резервной копиии
-            //bool succes = DependencyService.Get<IFileWorker>().WriteFile(filePathDb, filePathDefault);
-            //if (succes)
-            //{
-            //    await DisplayAlert("Успешно", "Резервная копия создана по адресу: "+ filePathDefault, "Ок");
-            //}
-            //else
-            //{
-            //    await DisplayAlert("Ошибка", "К сожалению во время создания резервной копии произошла ошибка, попробуйте другой способ создания резервной копии.", "Ок");
-            //}
-
+            ChooseFile ch = new ChooseFile(filePathDb, fileNameBackup);
+             await  Navigation.PushAsync(ch);
         }
 
 
@@ -190,14 +181,44 @@ namespace RepeatingWords
         //восстановление из backup
         private async void RestoreFromBackUpButtonCkick(object sender, EventArgs e)
         {
-            //для восстановления данных по умолчанию
-            //получим последний файл бэкапа
-            string fileBackUp = await DependencyService.Get<IFileWorker>().GetBackUpFilesAsync(folderNameBackUp);
-            bool succes;
-            if (!string.IsNullOrEmpty(fileBackUp))
+            const string localFolder = "Поиск резервной копии в папке по умолчанию";
+            const string setFolder = "Указать путь к резервной копии";
+            const string googleDriveFolder = "Поиск резервной копии на Google диск";
+            //создание имени файла резервной копии
+            string fileNameBackup = string.Format(fileNameBackupDef + DateTime.Now.ToString("ddMMyyyy") + ".dat");
+
+            var action = await DisplayActionSheet("Поиск резервной копии", "Отмена", null, localFolder, setFolder, googleDriveFolder);
+            switch (action)
             {
-                succes = DependencyService.Get<IFileWorker>().WriteFile(fileBackUp, filePathDb);
+                case localFolder:
+                    {
+                        //для восстановления данных по умолчанию
+                        //получим последний файл бэкапа
+                        string fileBackUp = await DependencyService.Get<IFileWorker>().GetBackUpFilesAsync(folderNameBackUp);
+                        bool succes;
+                        if (!string.IsNullOrEmpty(fileBackUp))
+                        {
+                            succes = DependencyService.Get<IFileWorker>().WriteFile(fileBackUp, filePathDb);
+                        }
+                        break;
+                    }
+                case setFolder:
+                    {
+                        ChooseFile ch = new ChooseFile(null);
+                        await Navigation.PushAsync(ch);
+                        break;
+                    }
+                case googleDriveFolder:
+                    {
+                       
+                        break;
+                    }
+                default: break;
             }
+
+
+
+           
                
         }
     }

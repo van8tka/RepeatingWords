@@ -3,6 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RepeatingWords.Pages.ChooseFile"
                xmlns:local="clr-namespace:RepeatingWords;assembly=RepeatingWords"
+              xmlns:lc="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             xmlns:lb="clr-namespace:XLabs.Forms.Behaviors;assembly=XLabs.Forms"
              Style="{StaticResource TitleApp}">
     <!--панель управлления-->
     <ContentPage.ToolbarItems>
@@ -20,17 +22,26 @@
 
         <ActivityIndicator x:Name="actIndicator3" Color="Blue" />
         <StackLayout x:Name="stackL">
-            <ListView x:Name ="fileList" ItemsSource="{Binding}" ItemSelected ="FileSelected">
-                <ListView.ItemTemplate>
+            <ListView x:Name ="fileList" ItemsSource="{Binding}">
+              <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.View>
-                                <StackLayout Orientation="Horizontal">
-                                    <local:LabelGestureLongPress Text="{Binding}" FontSize="22" Style="{DynamicResource LabelColor}" >
-                                        <Label.GestureRecognizers>
-                                            <TapGestureRecognizer Tapped="TapOnDirectoryLabel" />
-                                        </Label.GestureRecognizers>
-                                    </local:LabelGestureLongPress>
+                                <StackLayout>
+
+                                    <lc:GesturesContentView ExcludeChildren="False" GestureRecognized="GesturesContentView_GestureRecognized">
+                                            <lb:Gestures.Interests>
+                                            <lb:GestureCollection>
+                                                <lb:GestureInterest GestureType="SingleTap" />
+                                                <lb:GestureInterest GestureType="LongPress" />
+                                                <!--<lb:GestureInterest GestureType="Swipe" Direction="Left" GestureCommand="{Binding DumpParam}" GestureParameter="{Binding Ready}"/>
+                                                <lb:GestureInterest GestureType="Swipe" Direction="Right" GestureCommand="{Binding DumpParam}" GestureParameter="{Binding Ready}"/>-->
+                                            </lb:GestureCollection>
+                                        </lb:Gestures.Interests>
+                                        <Label Text="{Binding}" FontSize="22" Style="{DynamicResource LabelColor}" />
+
+                                    </lc:GesturesContentView>
+                                   
                                 </StackLayout>
                             </ViewCell.View>
                         </ViewCell>

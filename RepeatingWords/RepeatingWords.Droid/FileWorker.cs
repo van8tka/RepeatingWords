@@ -12,100 +12,59 @@ namespace RepeatingWords.Droid
 {
     public class FileWorker : IFileWorker
     {
-        public Task<IEnumerable<string>> GetFilesAsync()
+ 
+
+
+
+        public async Task<List<string>> LoadTextAsync(string filepath)
         {
             try
             {
-       
-                IEnumerable<string> filenames = from filepath in Directory.EnumerateFiles(GetDocsPath()) select Path.GetFileName(filepath);
-                List<string> fileTxt = new List<string>();
-
-                int z = 0;
-                //фильтруем только txt файлы
-                foreach (var i in filenames)
+                using (StreamReader reader = File.OpenText(filepath))
                 {
-                    if (i.EndsWith(".txt"))
+                    List<string> lines = new List<string>();
+                    string line;
+                    while ((line = await reader.ReadLineAsync()) != null)
                     {
-                        fileTxt.Add(filenames.ElementAt(z));
+                        lines.Add(line);
                     }
-                    z++;
+                    return lines;
                 }
-
-                filenames = (IEnumerable<string>)fileTxt;              
-                return Task<IEnumerable<string>>.FromResult(filenames);
             }
-           catch(UnauthorizedAccessException er)
-           {
-                return null;
-           }
-        }
-
-       
-
-        public async Task<List<string>> LoadTextAsync(string filename)
-        {
-            string filepath = GetFilePath(filename);
-            using (StreamReader reader = File.OpenText(filepath))
+          catch(Exception er)
             {
-                List<string> lines = new List<string>();
-                string line;
-            while((line= await reader.ReadLineAsync())!=null)
-                {
-                    lines.Add(line);
-                }
-               return lines;
+                throw;
             }
         }
 
 
-        private string GetFilePath(string filename)
-        {
-              return Path.Combine(GetDocsPath(), filename);;
-        }
-
-        //путь к папке MyDocuments
-        public string GetDocsPath()
-        {
-            try
-            {
-                //получаем корень памяти телефона(может отличаться на разл устройствах)
-                string g = Android.OS.Environment.RootDirectory.ToString();
-                //string g = Android.OS.Environment.ExternalStorageDirectory.ToString();
-                return g;
-            }
-            catch(Exception er)
-            {
-                return null;
-            }
-        }
-
-
-
+     
+      
 
 
 
 
         //создание папки для 
-        public string CreateFolder(string folderName, string fileName=null, string filePath=null)
+        public string CreateFolder(string folderName, string fileName = null, string filePath = null)
         {
             try
             {//если не передается путь к папке где создать резервную копию
-                if(string.IsNullOrEmpty(filePath))
+                if (string.IsNullOrEmpty(filePath))
                 {//то создаем по умолчанию
                     filePath = Android.OS.Environment.ExternalStorageDirectory.ToString();
                 }
-              //созд путь к папке
+                //созд путь к папке
                 string pathToDir = Path.Combine(filePath, folderName);
                 if (!Directory.Exists(pathToDir))
                 {
-                    Directory.CreateDirectory(pathToDir);                  
+                    Directory.CreateDirectory(pathToDir);
                 }
                 else
                 {
                     if (string.IsNullOrEmpty(fileName))
                         return "exist";
                 }
-                    
+
                 //созд путь к файлу
                 if (!string.IsNullOrEmpty(fileName))
                 {
@@ -113,12 +72,12 @@ namespace RepeatingWords.Droid
                     return pathToFile;
                 }
                 else
-                  return pathToDir; 
+                    return pathToDir;
             }
             catch (Exception er)
             {
                 Debug.WriteLine("_____________________custom error__________" + er.Message);
-                return null;
+                throw;
             }
         }
 
@@ -128,20 +87,20 @@ namespace RepeatingWords.Droid
 
 
 
-
+        //запись файла резервной копии
         public bool WriteFile(string filePathSource, string filePathDestin)
         {
             try
             {
                 if (File.Exists(filePathDestin))
                     File.Delete(filePathDestin);
-                 File.Copy(filePathSource, filePathDestin);
+                File.Copy(filePathSource, filePathDestin);
                 return true;
             }
-            catch(Exception er)
-            {
+            catch (Exception er)
+            {                
                 Debug.WriteLine("_____custom error___writefileAndroid_______" + er.Message);
-                return false;
+                throw;
             }
         }
 
@@ -150,45 +109,73 @@ namespace RepeatingWords.Droid
         {
             try
             {
-              return Task.Run(() =>
-                {
-                    string path = Android.OS.Environment.ExternalStorageDirectory.ToString();
-                    string pathToDir = Path.Combine(path, folder);
-                    if (Directory.Exists(pathToDir))
-                    {
-                        var list = Directory.GetFiles(pathToDir);
-                        string lastFile = string.Empty;
-                       
-                        DateTime tempDateTime = DateTime.MinValue;
-                        foreach(var i in list)
-                        {
-                            var fI = new FileInfo(i);
-                            var DateTimeCreate = fI.LastWriteTime;
-                            if(DateTimeCreate>tempDateTime)
-                            {
-                                tempDateTime = DateTimeCreate;
-                                lastFile = i;
-                            }
-                        }
-                      
-                        return lastFile;
-                    }
-                    else
-                        return null;
-                });
-                                                          
+                return Task.Run(() =>
+                  {
+                      string path = Android.OS.Environment.ExternalStorageDirectory.ToString();
+                      string pathToDir = Path.Combine(path, folder);
+                      if (Directory.Exists(pathToDir))
+                      {
+                          var list = Directory.GetFiles(pathToDir);
+                          string lastFile = string.Empty;
+
+                          DateTime tempDateTime = DateTime.MinValue;
+                          foreach (var i in list)
+                          {
+                              var fI = new FileInfo(i);
+                              var DateTimeCreate = fI.LastWriteTime;
+                              if (DateTimeCreate > tempDateTime)
+                              {
+                                  tempDateTime = DateTimeCreate;
+                                  lastFile = i;
+                              }
+                          }
+
+                          return lastFile;
+                      }
+                      else
+                          return null;
+                  });
+
             }
             catch (UnauthorizedAccessException er)
             {
-                return null;
+                throw;
             }
             catch (Exception er)
             {
-                return null;
+                throw;
             }
         }
 
 
+        //получение списка файлов по указанному пути
+        public Task<IEnumerable<string>> GetFilesAsync(string pathFolder)
+        {
+            return Task.Run(() =>
+            {
+                try
+                {
+                    if(string.IsNullOrEmpty(pathFolder))
+                        pathFolder = Android.OS.Environment.ExternalStorageDirectory.ToString();
+                    IEnumerable<string> filenames = from filepath in Directory.EnumerateFiles(pathFolder) select Path.GetFileName(filepath);
+                    return filenames;
+                }
+                catch (Exception er)
+                {
+                    throw;
+                }
+            });          
+         }
 
+
+        //isfile???
+        public bool IsFile(string path)
+        {
+            if (File.Exists(path))
+                return true;
+            else
+                return false;
+        }
     }
+
 }
