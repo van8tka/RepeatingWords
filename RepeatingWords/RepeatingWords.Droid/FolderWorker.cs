@@ -46,6 +46,7 @@ namespace RepeatingWords.Droid
                 }
                  catch(Exception er)
                 {
+                    ErrorHandler.getError(er, "FolderWorkerGetFoldersAsync");
                     return null;
                 }
               

@@ -3,10 +3,10 @@ using RepeatingWords.Pages;
 using System;
 using System.Linq;
 using Xamarin.Forms;
-using System.IO;
 using System.Threading.Tasks;
 using System.Diagnostics;
 using System.Collections;
+
 
 namespace RepeatingWords
 {
@@ -95,21 +95,15 @@ namespace RepeatingWords
         {
             try
             {
-                const string localFolder = "Создание в папке по умолчании";
                 const string setFolder = "Создание в указанной папке";
                 const string googleDriveFolder = "Создание на Google диск";
                 //создание имени файла резервной копии
                 string fileNameBackup = string.Format(fileNameBackupDef + DateTime.Now.ToString("ddMMyyyy") + ".dat");
 
-                var action = await DisplayActionSheet("Выберите способ создания резервной копии", "Отмена", null, localFolder, setFolder, googleDriveFolder);
+                var action = await DisplayActionSheet("Выберите способ создания резервной копии", "Отмена", null, setFolder, googleDriveFolder);
                 switch (action)
                 {
-                    case localFolder:
-                        {
-                            CreateBackUpIntoDefaultFolder(fileNameBackup);
-                            break;
-                        }
-                    case setFolder:
+                   case setFolder:
                         {
                             CreateBackUpIntoSetFolder(fileNameBackup);
                             break;
@@ -129,28 +123,7 @@ namespace RepeatingWords
         
         }
 
-        //сохранение в папку по умолчанию
-        private async Task CreateBackUpIntoDefaultFolder(string fileNameBackup)
-        {
-            try
-            {//получим путь к папке
-                string filePathDefault = DependencyService.Get<IFileWorker>().CreateFolder(folderNameBackUp, fileNameBackup);
-                //создаем резервную копию передаем путь к БД и путь для сохранения резервной копиии
-                bool succes = DependencyService.Get<IFileWorker>().WriteFile(filePathDb, filePathDefault);
-                if (succes)
-                {
-                    await DisplayAlert("Успешно", "Резервная копия создана в дирректории CardsOfWordsBackup.", "Ок");
-                }
-                else
-                {
-                    await DisplayAlert("Ошибка", "К сожалению во время создания резервной копии произошла ошибка, попробуйте другой способ создания резервной копии.", "Ок");
-                }
-            }
-            catch(Exception er)
-            {
-                Debug.WriteLine("___________customerror__CreateBackUpIntoDefaultFolder___:" + er.Message);
-            }
-        }
+      
 
 
 
@@ -164,9 +137,10 @@ namespace RepeatingWords
 
 
 
-        private void CreateBackUpIntoGoogleDrive(string fileNameBackup)
+        private async void CreateBackUpIntoGoogleDrive(string fileNameBackup)
         {
-           
+            GoogleEnterPage gp = new GoogleEnterPage();
+            await Navigation.PushAsync(gp);
         }
 
         
@@ -181,28 +155,15 @@ namespace RepeatingWords
         //восстановление из backup
         private async void RestoreFromBackUpButtonCkick(object sender, EventArgs e)
         {
-            const string localFolder = "Поиск резервной копии в папке по умолчанию";
             const string setFolder = "Указать путь к резервной копии";
             const string googleDriveFolder = "Поиск резервной копии на Google диск";
             //создание имени файла резервной копии
             string fileNameBackup = string.Format(fileNameBackupDef + DateTime.Now.ToString("ddMMyyyy") + ".dat");
 
-            var action = await DisplayActionSheet("Поиск резервной копии", "Отмена", null, localFolder, setFolder, googleDriveFolder);
+            var action = await DisplayActionSheet("Поиск резервной копии", "Отмена", null, setFolder, googleDriveFolder);
             switch (action)
             {
-                case localFolder:
-                    {
-                        //для восстановления данных по умолчанию
-                        //получим последний файл бэкапа
-                        string fileBackUp = await DependencyService.Get<IFileWorker>().GetBackUpFilesAsync(folderNameBackUp);
-                        bool succes;
-                        if (!string.IsNullOrEmpty(fileBackUp))
-                        {
-                            succes = DependencyService.Get<IFileWorker>().WriteFile(fileBackUp, filePathDb);
-                        }
-                        break;
-                    }
-                case setFolder:
+               case setFolder:
                     {
                         ChooseFile ch = new ChooseFile(null);
                         await Navigation.PushAsync(ch);
@@ -210,7 +171,7 @@ namespace RepeatingWords
                     }
                 case googleDriveFolder:
                     {
-                       
+                        GetItemsFromGoogle();
                         break;
                     }
                 default: break;
@@ -220,6 +181,18 @@ namespace RepeatingWords
 
            
                
+        }
+
+        private void GetItemsFromGoogle()
+        {
+            try
+            {
+              //var items = DependencyService.Get<IGoogleDriveWorker>().GetGoogleItems();
+             }
+            catch(Exception er)
+            {
+                ErrorHandler.getError(er, "MainPage.GetItemsFromGoogle");
+            }
         }
     }
 }
