@@ -19,5 +19,7 @@ namespace RepeatingWords
         Task<string> GetBackUpFilesAsync(string folder);//получение файла бэкапа из опредго каталога
 
         bool IsFile(string path);//для определения папка или файл
+
+        byte[] GetByteArrayOfBackUpFile(string filePathDb);//получение массива байт из файла бэкапа
     }
 }

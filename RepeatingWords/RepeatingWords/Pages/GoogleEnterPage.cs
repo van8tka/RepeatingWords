@@ -12,39 +12,64 @@ namespace RepeatingWords.Pages
 {
    public class GoogleEnterPage:ContentPage
     {
-        public GoogleEnterPage()
+        string fileNameBackUp;
+        public GoogleEnterPage(string fileNameBackUp)
         {
+            this.fileNameBackUp = fileNameBackUp;
             Title = "Google Drive";
             BackgroundColor = Color.White;
 
             var authRequest = "https://accounts.google.com/o/oauth2/v2/auth"
-                + "?response_type=code&scope=openid"
-                + "&redirect_uri=" + GoogleServices.RedirectUrl
-                + "&client_id=" + GoogleServices.ClientId;
-            var webView = new CustomWebView
+               +"?redirect_uri=" + GoogleServices.RedirectUrl
+               +"&prompt = consent"
+               +"&response_type=code"
+               + "&client_id=" + GoogleServices.ClientId
+               + "&scope=https://www.googleapis.com/auth/drive"
+               + "&access_type=offline";
+             var webView = new CustomWebView
             {
                 Source = authRequest,
-                HeightRequest = 1,               
+                HeightRequest = 1,
             };
 
 
-            //string ua = "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0";
-            //webView.G  .getSettings().setUserAgentString(ua);
-
             webView.Navigated += WebViewOnNavigated;
             Content = webView;
-
         }
+
+
+
+
+        private static string accessToken;
+
 
         private async void WebViewOnNavigated(object sender, WebNavigatedEventArgs e)
         {
             string code = ExtractCodeFromUrl(e.Url);
             if(!string.IsNullOrEmpty(code))
             {
-                string accessToken = await GoogleServices.GetAccessTokenAsync(code);
-                GoogleProfile googleProfle = await GoogleServices.GetUserProfileAsync(accessToken);
+                accessToken = await GoogleServices.GetAccessTokenAsync(code);
+                CreateBackUpInGoogleDrive(accessToken);
             }
         }
+
+
+
+        //создадим папку в google drive
+        private async void CreateBackUpInGoogleDrive(string accessToken)
+        {
+            string folderName = "CardsOfWordsBackup";
+            string idFolderCreate = await GoogleServices.CreateFolderInGDAsync(folderName, accessToken);
+            bool succes = await GoogleServices.UploadFileBackupToGDAsync(idFolderCreate,accessToken, fileNameBackUp);
+            if (succes)
+               await Navigation.PopAsync();
+        }
+
+
+
+
+
+
 
         private string ExtractCodeFromUrl(string url)
         {

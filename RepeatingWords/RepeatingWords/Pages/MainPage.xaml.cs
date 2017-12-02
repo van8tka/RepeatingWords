@@ -139,7 +139,7 @@ namespace RepeatingWords
 
         private async void CreateBackUpIntoGoogleDrive(string fileNameBackup)
         {
-            GoogleEnterPage gp = new GoogleEnterPage();
+            GoogleEnterPage gp = new GoogleEnterPage(fileNameBackup);
             await Navigation.PushAsync(gp);
         }
 

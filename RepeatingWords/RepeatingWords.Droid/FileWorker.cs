@@ -176,10 +176,24 @@ namespace RepeatingWords.Droid
             else
                 return false;
         }
+
+
+
+
+        //получение массива байт из файла бэкапа
+      public byte[] GetByteArrayOfBackUpFile(string filePathDb)
+        {
+            try
+            {
+                byte[] bt = File.ReadAllBytes(filePathDb);
+                return bt;
+            }
+            catch(Exception er)
+            {
+                throw;
+            }
+        }
+
+
     }
-
-
-
-
-
 }
